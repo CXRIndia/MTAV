@@ -1,0 +1,26 @@
+h1{
+  font-size: calcRem(80px);
+  line-height: calcRem(82px);
+  @media only screen and (max-width: 991px){
+    font-size: calcRem(60px);
+    line-height: calcRem(62px);
+  }
+}
+h2{
+  font-size: calcRem(56px);
+  line-height: normal;
+  @media only screen and (max-width: 991px){
+    font-size: calcRem(32px);
+  }
+}
+h3{
+  font-size: calcRem(40px);
+  line-height: normal;
+}
+h4{
+  font-size: calcRem(42px);
+  line-height: normal;
+  @media only screen and (max-width: 991px){
+    font-size: calcRem(22px);
+  }
+}

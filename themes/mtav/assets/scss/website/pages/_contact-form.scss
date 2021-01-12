@@ -1,0 +1,168 @@
+.contact-form-wrapper{
+  background: var(--brand-royal);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  display: none;
+
+  &.show{
+    display: block !important;
+  }
+
+  .contact-form{
+    position: relative;
+
+    .img-breifcase{
+      position: absolute;
+      right: calcRem(110px);
+      top: calcRem(80px);
+      max-width: calcRem(317px);
+      z-index: 1;
+      @media only screen and (max-width: 1024px){
+        top: calcRem(139px);
+        right: calcRem(48px);
+      }
+      @media only screen and (max-width: 991px){
+        max-width: calcRem(317px);
+      }
+      @media only screen and (max-width: 767px){
+        top: calcRem(161px);
+        right: calcRem(24px);
+        max-width: calcRem(141px);
+      }
+    }
+
+    .contact-form-header{
+      background-color: var(--brand-light-blue-grey);
+      padding: calcRem(80px, 0px, 80px, 101px);
+      position: relative;
+      @media only screen and (max-width: 1024px){
+        padding: calcRem(111px, 0px, 120px, 40px);
+      }
+      @media only screen and (max-width: 767px){
+        padding: calcRem(24px, 0px, 60px, 24px);
+      }
+      .icon-arrow{
+        max-width: calcRem(51px);
+        margin-bottom: calcRem(10px);
+        @media only screen and (max-width: 1024px){
+          max-width: calcRem(36px);
+        }
+        @media only screen and (max-width: 767px){
+          max-width: calcRem(33px);
+        }
+      }
+      .btn-close{
+        background-color: transparent;
+        border: 0px;
+        outline: none;
+        position: absolute;
+        top: calcRem(40px);
+        right: calcRem(40px);
+        padding: 0px;
+        @media only screen and (max-width: 991px){
+          top: calcRem(20px);
+          right: calcRem(20px);
+        }
+        @media only screen and (max-width: 767px){
+          top: calcRem(24px);
+          right: calcRem(24px);
+        }
+      }
+      .icon-close{
+        max-width: calcRem(20px);
+      }
+    }
+
+    .title{
+      font-size: calcRem(50px);
+      line-height: calcRem(57px);
+      max-width: calcRem(837px);
+      @media only screen and (max-width: 1024px){
+        font-size: calcRem(32px);
+        line-height: calcRem(37px);
+        max-width: calcRem(323px);
+      }
+      @media only screen and (max-width: 767px){
+        font-size: calcRem(26px);
+        line-height: calcRem(30px);
+        max-width: calcRem(293px);
+      }
+    }
+
+    .contact-grid-wrapper{
+      background-color: var(--brand-royal);
+      padding: calcRem(100px, 100px, 0px);
+      @media only screen and (max-width: 1024px){
+        padding: calcRem(120px, 40px, 0px);
+      }
+      @media only screen and (max-width: 767px){
+        padding: calcRem(107px, 24px, 30px);
+      }
+    }
+
+    .contact-grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: calcRem(40px);
+      @media only screen and (max-width: 1024px){
+        grid-gap: calcRem(20px);
+      }
+      @media only screen and (max-width: 767px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: calcRem(20px);
+      }
+    }
+
+    .note{
+      font-size: calcRem(14px);
+      line-height: calcRem(16px);
+      color: var(--brand-white);
+      margin-top: calcRem(14px);
+      margin-bottom: 0px;
+      @media only screen and (max-width: 1024px){
+        margin-top: calcRem(12px);
+        font-size: calcRem(12px);
+        line-height: calcRem(15px);
+      }
+      @media only screen and (max-width: 767px){
+        margin-top: calcRem(10px);
+        font-size: calcRem(11px);
+        line-height: calcRem(14px);
+      }
+    }
+
+    p input[type="submit"], input[type="submit"]{
+      display: block;
+      font-size: calcRem(22px);
+      line-height: calcRem(22px);
+      color: var(--brand-royal);
+      background-color: var(--brand-white);
+      padding: calcRem(25px);
+      min-width: calcRem(226px);
+      max-width: calcRem(226px);
+      height: calcRem(74px);
+      margin-left: auto;
+      margin-top: calcRem(40px);
+      border: 0px;
+      @media only screen and (max-width: 1024px){
+        font-size: calcRem(16px);
+        line-height: calcRem(16px);
+        min-width: calcRem(167px);
+        max-width: calcRem(167px);
+        padding: calcRem(20px, 10px);
+        height: calcRem(60px);
+      }
+      @media only screen and (max-width: 767px){
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
