@@ -57,12 +57,25 @@ function MTAV_scripts()
     $distFileJson = file_get_contents(__DIR__ . '/dist/assets.json');
     $distFile = json_decode($distFileJson, true);
 
-    wp_enqueue_script('MTAV-js', STYLESHEETURI . '/dist/' . $distFile['website']['js'], array('jquery'), null, true);
-    wp_enqueue_style('MTAV-css', STYLESHEETURI . '/dist/' . $distFile['website']['css']);
+    wp_enqueue_script('mtav-global-js', STYLESHEETURI . '/dist/' . $distFile['global']['js'], array('jquery'), null, true);
+    wp_enqueue_style('mtav-global-css', STYLESHEETURI . '/dist/' . $distFile['global']['css']);
+
+    wp_enqueue_script('mtav-common-js', STYLESHEETURI . '/dist/' . $distFile['common']['js'], array('jquery'), null, true);
+    wp_enqueue_style('mtav-common-css', STYLESHEETURI . '/dist/' . $distFile['common']['css']);
+
+    if (is_single()) {
+        wp_enqueue_script('mtav-single-js', STYLESHEETURI . '/dist/' . $distFile['single']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-single-css', STYLESHEETURI . '/dist/' . $distFile['single']['css']);
+    }
+
+    if (is_archive()) {
+        wp_enqueue_script('mtav-archive-js', STYLESHEETURI . '/dist/' . $distFile['archive']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-archive-css', STYLESHEETURI . '/dist/' . $distFile['archive']['css']);
+    }
 
     wp_localize_script(
-        'MTAV-js',
-        'MTAV_js_var',
+        'mtav-global-js',
+        'mtav_js_var',
         array(
             'ajaxurl' => admin_url('admin-ajax.php'),
         )

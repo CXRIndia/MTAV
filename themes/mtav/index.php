@@ -11,3 +11,12 @@
  */
 
 // Silent is Gold
+
+get_header(); ?>
+
+<div class="main">
+    <p>Main text text </p>
+</div>
+
+<?php
+get_footer();

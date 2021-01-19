@@ -73,24 +73,6 @@ function MTAV_Mime_types($file_types)
 }
 add_filter('upload_mimes', 'MTAV_Mime_types');
 
-
-if (!function_exists('MTAV_Redirect_404_To_homepage') ) {
-
-    /**
-     * Redirect all the page to homepage.
-     *
-     * @return void.
-     */
-    function MTAV_Redirect_404_To_homepage()
-    {
-        if(is_404() || is_single() || is_archive() || is_search()) :
-            wp_safe_redirect(home_url('/'));
-            exit;
-        endif;
-    }
-    add_action('template_redirect', 'MTAV_Redirect_404_To_homepage');
-}
-
 /**
  * Contact Form 7 Zipcode text validation
  *

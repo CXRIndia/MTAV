@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const AssetsPlugin = require('assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = function () {
@@ -33,19 +34,27 @@ module.exports = function () {
   const appPaths = {
     appSrc: resolveApp('.'),
     appBuild: resolveApp('../dist'),
-    // appIndexJs: resolveApp('js/website.js'),
-    appWebsiteJs: resolveApp('js/website.js'),
-    appSingleJs: resolveApp('js/single.js'),
+    appGlobalJs: resolveApp('js/website/global.js'),
+    appSingleJs: resolveApp('js/website/single.js'),
+    appCommonJs: resolveApp('js/website/common.js'),
+    appArchiveJs: resolveApp('js/website/archive.js'),
     appNodeModules: resolveApp('../../node_modules'),
   };
 
   // The property names will be the file names, the values are the files that should be included.
   const entry = {
-    // website: [
-    //   appPaths.appIndexJs
-    // ],
-    website: appPaths.appWebsiteJs,
-	  single: appPaths.appSingleJs,
+    global: [
+      appPaths.appGlobalJs,
+    ],
+    single: [
+      appPaths.appSingleJs,
+    ],
+    common: [
+      appPaths.appCommonJs,
+    ],
+    archive: [
+      appPaths.appArchiveJs,
+    ],
   };
 
   const loaders = {
@@ -58,18 +67,19 @@ module.exports = function () {
     postCss: {
       loader: 'postcss-loader',
       options: {
-        plugins: [
-          autoprefixer({
-            flexbox: 'no-2009',
-          }),
-        ],
+        postcssOptions: {
+          plugins: [
+            autoprefixer({
+              flexbox: 'no-2009',
+            }),
+          ],
+        },
         sourceMap: true,
       },
     },
     sass: {
       loader: 'sass-loader',
       options: {
-        importer: globImporter(),
         sourceMap: true,
       },
     },
@@ -77,18 +87,22 @@ module.exports = function () {
 
   const config = {
     node: {
-      fs: 'empty',
-      net: 'empty',
-      tls: 'empty',
-      child_process: 'empty',
+      global: false,
+      __filename: false,
+      __dirname: false,
+    },
+    resolve: {
+      fallback: {
+        fs: false
+      }
     },
     mode,
     entry,
     output: {
       path: appPaths.appBuild,
-      //publicPath,
-      //filename: `${paths.js}[name]${extensionPrefix}.js`,
-      filename: DEV ? '[name].js' : '[name].[hash:8].js'
+      filename: DEV ? '[name].js' : '[name].[hash:8].js',
+      chunkLoading: 'jsonp',
+      wasmLoading: false,
     },
     performance: {
       hints: false,
@@ -114,8 +128,7 @@ module.exports = function () {
       tinymce: 'tinymce',
     },
     module: {
-      rules: [
-        {
+      rules: [{
           enforce: 'pre',
           test: /\.js|.jsx/,
           loader: 'import-glob',
@@ -124,30 +137,6 @@ module.exports = function () {
         {
           test: /\.js$|.jsx/,
           loader: 'babel-loader',
-          query: {
-            presets: [
-              [
-                "@babel/preset-env",
-                {
-                  useBuiltIns: 'usage',
-                  corejs: "2",
-                  targets: {
-                    browsers: ['last 2 versions', 'ie >= 9'],
-                  },
-                }
-              ],
-              '@wordpress/default',
-            ],
-            plugins: [
-              [
-                '@wordpress/babel-plugin-makepot',
-                {
-                  'output': `${paths.lang}translation.pot`,
-                }
-              ],
-              'transform-class-properties',
-            ],
-          },
           exclude: /(node_modules|bower_components)/,
         },
         {
@@ -167,15 +156,13 @@ module.exports = function () {
         },
         {
           test: /\.(ttf|eot|svg|woff2?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[ext]',
-                outputPath: paths.font,
-              },
+          use: [{
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: paths.font,
             },
-          ],
+          }, ],
           exclude: /(assets)/,
         },
         {
@@ -186,19 +173,10 @@ module.exports = function () {
           test: /\.(gif|png|jpe?g|svg)$/i,
           use: ['file-loader'],
         },
-        {
-          test: /jquery-mousewheel/,
-          loader: "imports-loader?define=>false&this=>window"
-        },
-        {
-          test: /malihu-custom-scrollbar-plugin/,
-          loader: "imports-loader?define=>false&this=>window"
-        }
       ],
     },
     plugins: [
       new MiniCssExtractPlugin({
-        //filename: `${paths.css}[name]${extensionPrefix}.css`,
         filename: DEV ? '[name].css' : '[name].[hash:8].css'
       }),
       new webpack.EnvironmentPlugin({
@@ -208,20 +186,6 @@ module.exports = function () {
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
-      function () {
-        // Custom webpack plugin - remove generated JS files that aren't needed
-        this.hooks.done.tap('webpack', function (stats) {
-          stats.compilation.chunks.forEach(chunk => {
-            if (!chunk.entryModule._identifier.includes('.js')) {
-              chunk.files.forEach(file => {
-                if (file.includes('.js')) {
-                  //fs.unlinkSync(path.join(__dirname, `/${file}`));
-                }
-              });
-            }
-          });
-        });
-      },
 
       //generate assets.json
       new AssetsPlugin({
@@ -229,6 +193,23 @@ module.exports = function () {
         filename: './themes/' + process.env.NODE_SITE + '/dist/assets.json',
       }),
     ],
+    optimization: {
+      minimizer: [new TerserPlugin()],
+
+      splitChunks: {
+        cacheGroups: {
+          vendors: {
+            priority: -10,
+            test: /[\\/]node_modules[\\/]/
+          }
+        },
+
+        chunks: 'async',
+        minChunks: 1,
+        minSize: 30000,
+        name: false
+      }
+    }
   };
 
   if (mode !== 'production') {
