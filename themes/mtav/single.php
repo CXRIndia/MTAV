@@ -16,6 +16,7 @@ get_header(); ?>
 
 <div class="main">
     <p>Single text </p>
+    <?php the_content(); ?>
 </div>
 
 <?php

@@ -1,0 +1,34 @@
+{
+	"name": "clabs",
+	"version": "0.1.0",
+	"description": "This is example test block",
+	"author": "Cemtrexlabs",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format:js": "wp-scripts format-js",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update",
+        "check-engines": "wp-scripts check-engines",
+        "check-licenses": "wp-scripts check-licenses",
+        "lint:md:docs": "wp-scripts lint-md-docs",
+        "lint:md:js": "wp-scripts lint-md-js",
+        "lint:pkg-json": "wp-scripts lint-pkg-json",
+        "test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js",
+		"clean": "rm -rf build/*"
+
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^5.2.2",
+		"@wordpress/blocks": "^6.25.2",
+		"@wordpress/i18n": "^3.17.0"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^13.0.0",
+		"node-sass": "4.14.1"
+	}
+}

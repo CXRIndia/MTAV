@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "clabs-gutenberg/clabs",
+	"title": "Test block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "This is example test block",
+	"textdomain": "clabs",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

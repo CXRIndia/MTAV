@@ -57,45 +57,6 @@ $thankyou_popup_image_alt = MTAV_Get_Image_alt($thankyou_popup_image_id, 'lunchb
 </footer>
 </div>
 
-<!-- contact form -->
-<div class="contact-form-wrapper">
-    <div class="contact-form">
-        <img src="<?php echo esc_url($sweepstakes_popup_image_url) ?>"
-            alt="<?php echo esc_attr($sweepstakes_popup_image_alt) ?>"
-            class="img-breifcase" />
-        <div class="contact-form-header">
-            <img src="<?php echo STYLESHEETURI ?>/assets/images/icons/svg/icon-arrow-blue.svg" alt="" class="icon-arrow">
-            <h1 class="title">
-                <?php echo esc_attr($sweepstakes_popup_title); ?>
-            </h1>
-            <button type="button" class="btn-close">
-                <img src="<?php echo STYLESHEETURI ?>/assets/images/icons/svg/icon-close-popup.svg" alt="" class="icon-close">
-            </button>
-        </div>
-        <div class="contact-grid-wrapper">
-            <?php echo do_shortcode($sweepstakes_popup_contact_form_shortcode); ?>
-        </div>
-    </div>
-</div>
-
-<!-- thank you  -->
-<div class="thank-you-wrapper">
-    <div class="thank-you">
-        <div class="thank-you-header">
-            <img src="<?php echo STYLESHEETURI ?>/assets/images/icons/svg/icon-thumbs-up.svg" alt="" class="icon-thumbs-up">
-            <h1 class="title">
-                <?php echo $thankyou_popup_title ?>
-            </h1>
-            <button type="button" class="btn-close">
-                <img src="<?php echo STYLESHEETURI ?>/assets/images/icons/svg/icon-close-popup.svg" alt="" class="icon-close">
-            </button>
-        </div>
-        <div class="bottom-patch"></div>
-        <img src="<?php echo esc_url($thankyou_popup_image_url); ?>"
-            alt="<?php echo esc_attr($thankyou_popup_image_alt); ?>"
-            class="img-breifcase">
-    </div>
-</div>
 
 </body>
 </html>
