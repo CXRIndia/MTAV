@@ -67,13 +67,7 @@ module.exports = function () {
     postCss: {
       loader: 'postcss-loader',
       options: {
-        postcssOptions: {
-          plugins: [
-            autoprefixer({
-              flexbox: 'no-2009',
-            }),
-          ],
-        },
+        postcssOptions: {},
         sourceMap: true,
       },
     },
