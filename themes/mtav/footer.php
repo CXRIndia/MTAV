@@ -12,12 +12,6 @@
 
 wp_footer();
 
-get_template_part('template-parts/content-footer');
-
 ?>
-
-</div>
-
-
 </body>
 </html>

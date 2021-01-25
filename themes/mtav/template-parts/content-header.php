@@ -13,11 +13,13 @@
 
 <header>
     <div class="container">
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/logo.png" alt="">
+        </div>
         <div class="menu-wrapper">
             <ul>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a href="javascript:void(0)" class="active">
                         Who We Are
                     </a>
                 </li>
@@ -35,7 +37,7 @@
 
             <div class="btn-wrapper">
                 <a href="javascript:void(0)" class="btn btn-primary">
-                    Meet the Team
+                    Sign Up
                 </a>
             </div>
         </div>

@@ -44,6 +44,3 @@
 </head>
 
 <body <?php body_class('transparent-nav'); ?>>
-<div class="common-page">
-<?php
-get_template_part('template-parts/content-header');

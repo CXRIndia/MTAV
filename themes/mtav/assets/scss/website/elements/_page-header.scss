@@ -1,10 +1,30 @@
 header {
     .container{
       .logo{
-
+        img{
+          width: 37px;
+        }
       }
       .menu-wrapper{
+        ul{
+          display: flex;
+          li{
+            padding: 0 40px 0 0;
+            a{
+              color: $brand-white;
+              @include Font-Plakat;
+              &.active{
+                color: $brand-primary;
+              }
+            }
+          }
+        }
 
+        .btn-wrapper{
+          .btn{
+            font-size: 14px;
+          }
+        }
       }
     }
 }
