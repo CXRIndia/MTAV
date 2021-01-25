@@ -8,3 +8,13 @@
 
 // Import global scss and module
 @import "global";
+@import "components/_imgvideo-title";
+
+.home-page{
+  header{
+    display: none;
+  }
+  .body-content{
+    padding-top: 0;
+  }
+}

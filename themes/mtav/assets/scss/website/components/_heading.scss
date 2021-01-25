@@ -1,0 +1,44 @@
+.heading-compo{
+  margin-bottom: 20px;
+  .title{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 13px;
+    @include Font-Pitch;
+    color: $gray;
+    text-transform: capitalize;
+  }
+  .line-block{
+    display: flex;
+    justify-content: space-between;
+    .left-block{
+      display: flex;
+      span{
+        display: inline-block;
+        width: 32px;
+        height: 4px;
+        margin-right: 4px;
+        background-color: $gray;
+      }
+      img{
+
+      }
+    }
+    .right-block{
+      display: flex;
+      span{
+        display: inline-block;
+        width: 68px;
+        height: 4px;
+        background-color: $gray;
+      }
+    }
+  }
+
+  ////
+  &.black{
+    .title{
+      color: $brand-black;
+    }
+  }
+}

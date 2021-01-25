@@ -12,15 +12,18 @@
 get_header();
 ?>
 
-<div class="common-page">
+<div class="common-page home-page">
 
-<?php get_template_part('template-parts/content-header'); ?>
- <div>
-     <?php include THEMEPATH . '/html-template/component/banner.php'; ?>
+    <?php get_template_part('template-parts/content-header'); ?>
+
+    <div class="body-content">
+        <?php include THEMEPATH . '/html-template/component/home/home-banner.php'; ?>
+        <?php include THEMEPATH . '/html-template/component/home/imgvideo-title.php'; ?>
+    </div>
+
+    <?php get_template_part('template-parts/content-footer'); ?>
+
  </div>
 
- <?php get_template_part('template-parts/content-footer'); ?>
-
- </div>
 <?php
 get_footer();

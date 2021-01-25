@@ -31,7 +31,7 @@ $breakpoints: (
     "lap-1302" :     1302px,
     "d-wide1"  :     1336px,
     "d-wide"   :     1440px,
-    "d-large"  :     1680,
+    "d-large"  :     1680px,
 );
 @mixin mq($width, $type: min) {
   @if map_has_key($breakpoints, $width) {

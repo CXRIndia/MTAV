@@ -1,30 +1,40 @@
 header {
+  position: absolute;
+  width: 100%;
     .container{
-      .logo{
-        img{
-          width: 37px;
+      .header-menu{
+        display: flex;
+        justify-content: space-between;
+        padding: 36px 0 0;
+        .logo{
+          img{
+            width: 37px;
+          }
         }
-      }
-      .menu-wrapper{
-        ul{
+        .menu-wrapper{
           display: flex;
-          li{
-            padding: 0 40px 0 0;
-            a{
-              color: $brand-white;
-              @include Font-Plakat;
-              &.active{
-                color: $brand-primary;
+          align-items: center;
+          ul{
+            display: flex;
+            li{
+              padding: 0 40px 0 0;
+              a{
+                color: $brand-white;
+                @include Font-Plakat;
+                &.active{
+                  color: $brand-primary;
+                }
               }
             }
           }
-        }
 
-        .btn-wrapper{
-          .btn{
-            font-size: 14px;
+          .btn-wrapper{
+            .btn{
+              font-size: 14px;
+            }
           }
         }
       }
+
     }
 }

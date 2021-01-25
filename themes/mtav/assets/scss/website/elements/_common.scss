@@ -8,26 +8,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @include Font-Gangster;
   @include rem(font-size, 18);
-  // background-image: url("../../images/png/bg-gradient.png");
+  background-image: url("../../images/png/bg-gradient.png");
   background-size: contain;
   background-color: #ccc;
-  .common-page{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-      .header{
+}
+.common-page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+    .header{
 
-      }
-      //
-      .body-content{
-        flex: 1;
-      }
-      //
-      .footer{
+    }
+    //
+    .body-content{
+      flex: 1;
+      padding-top: 190px;
+    }
+    //
+    .footer{
 
-      }
-  }
+    }
 }
 
 a {
@@ -49,28 +50,6 @@ a {
   max-width: 100%;
 }
 
-// Common default style for Ul
-ul.common-style {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-
-  li {
-    display: inline-block;
-
-    a {}
-  }
-}
-
-///////
-.dsk-block {
-  @include mq('t-768', 'max') {
-    display: none;
-  }
-}
-
-.mo-block {
-  @include mq('t-768', 'min') {
-    display: none;
-  }
+.text-uppercase{
+  text-transform: uppercase;
 }
