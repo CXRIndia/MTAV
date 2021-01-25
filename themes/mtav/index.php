@@ -18,6 +18,8 @@ get_header(); ?>
     <div class="container">
         <h1>Test</h1>
     </div>
+    <div class="banner-wrapper" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/bg-gradient.png');">
+</div>
 </div>
 
 <?php

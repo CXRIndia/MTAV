@@ -8,7 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @include Font-Gangster;
   @include rem(font-size, 18);
-  // background-image: url('../../../images/png/bg-gradient.png');
+  background-image: url("../../images/png/bg-gradient.png");
+  // url("../../images/quote-left.svg");
   .common-page{
     display: flex;
     flex-direction: column;
