@@ -14,7 +14,6 @@
 
 get_header(); ?>
 
-
 <div class="main">
     <div class="container">
         <h1>Test</h1>

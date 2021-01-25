@@ -12,5 +12,32 @@
 ?>
 
 <header>
-    <h1>Header</h1>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="menu-wrapper">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        Who We Are
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        Campaigns
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        Shop
+                    </a>
+                </li>
+            </ul>
+
+            <div class="btn-wrapper">
+                <a href="javascript:void(0)" class="btn btn-primary">
+                    Meet the Team
+                </a>
+            </div>
+        </div>
+    </div>
 </header>
