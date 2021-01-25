@@ -35,8 +35,8 @@ module.exports = function () {
     appSrc: resolveApp('.'),
     appBuild: resolveApp('../dist'),
     appGlobalJs: resolveApp('js/website/global.js'),
-    appSingleJs: resolveApp('js/website/single.js'),
-    appCommonJs: resolveApp('js/website/common.js'),
+    appSingleJs: resolveApp('js/website/article.js'),
+    appHomeJs: resolveApp('js/website/home.js'),
     appArchiveJs: resolveApp('js/website/archive.js'),
     appNodeModules: resolveApp('../../node_modules'),
   };
@@ -46,11 +46,11 @@ module.exports = function () {
     global: [
       appPaths.appGlobalJs,
     ],
-    single: [
+    article: [
       appPaths.appSingleJs,
     ],
-    common: [
-      appPaths.appCommonJs,
+    home: [
+      appPaths.appHomeJs,
     ],
     archive: [
       appPaths.appArchiveJs,

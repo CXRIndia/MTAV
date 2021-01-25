@@ -58,14 +58,13 @@ function MTAV_scripts()
     $distFile = json_decode($distFileJson, true);
 
     wp_enqueue_script('mtav-global-js', STYLESHEETURI . '/dist/' . $distFile['global']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-global-css', STYLESHEETURI . '/dist/' . $distFile['global']['css']);
 
-    wp_enqueue_script('mtav-common-js', STYLESHEETURI . '/dist/' . $distFile['common']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-common-css', STYLESHEETURI . '/dist/' . $distFile['common']['css']);
+    wp_enqueue_script('mtav-home-js', STYLESHEETURI . '/dist/' . $distFile['home']['js'], array('jquery'), null, true);
+    wp_enqueue_style('mtav-home-css', STYLESHEETURI . '/dist/' . $distFile['home']['css']);
 
     if (is_single()) {
-        wp_enqueue_script('mtav-single-js', STYLESHEETURI . '/dist/' . $distFile['single']['js'], array('jquery'), null, true);
-        wp_enqueue_style('mtav-single-css', STYLESHEETURI . '/dist/' . $distFile['single']['css']);
+        wp_enqueue_script('mtav-single-js', STYLESHEETURI . '/dist/' . $distFile['article']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-single-css', STYLESHEETURI . '/dist/' . $distFile['article']['css']);
     }
 
     if (is_archive()) {

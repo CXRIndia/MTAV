@@ -44,4 +44,4 @@
 </head>
 
 <body <?php body_class('transparent-nav'); ?>>
-<div class="page-home">
+<div class="common-page">

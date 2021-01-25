@@ -1,0 +1,38 @@
+//-----------------------------------------------------------------
+// Heading Fonts Sizes
+//-----------------------------------------------------------------
+h1, h2, h3, h4, h5, h6{
+  @include Font-Plakat;
+  color: $brand-black;
+}
+h1{
+    @include rem(font-size, 40);
+    @include rem(font-size, 44);
+    @media(max-width: 767px){
+    }
+}
+
+h2{
+    @media(max-width: 767px){
+    }
+}
+
+h3{
+    @media(max-width: 767px){
+    }
+}
+
+h4{
+    @media(max-width: 767px){
+    }
+}
+
+h5{
+    @media(max-width: 767px){
+    }
+}
+
+h6{
+    @media(max-width: 767px){
+    }
+}

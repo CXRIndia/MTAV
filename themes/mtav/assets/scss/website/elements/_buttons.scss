@@ -1,0 +1,28 @@
+//==============* Button mixin *=======================
+.btn {
+  font-size: 10px;
+  border-radius: 4px;
+  @include rem(padding, 11, 16, 13);
+  line-height: 1;
+  border: 1px solid;
+  display: inline-block;
+  transition: all .3s;
+
+  @include mq(t-768, max) {}
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &.btn-primary {
+    background: $brand-primary;
+    border-color: $brand-primary;
+    color: $brand-white;
+
+    &:hover,
+    &:focus {
+      background: darken($color: $brand-primary, $amount: 5%);
+      border-color: darken($color: $brand-primary, $amount: 5%);
+    }
+  }
+}

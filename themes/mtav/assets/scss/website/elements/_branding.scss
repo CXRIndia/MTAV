@@ -1,0 +1,31 @@
+//-----------------------------------------------------------------
+// Color Palette
+//-----------------------------------------------------------------
+$brand-white   : #FFFFFF;
+$brand-black   : #000000;
+
+// Branding Colors
+$brand-primary : #efbc10;
+$brand-error   : #e50000;
+
+$gray-darker   : #151515;
+$gray-dark     : #131313;
+$gray          : #838991; // Font base color
+$gray-light    : #abb6bc;
+$gray-lighter  : #f6f6fb;
+
+//-----------------------------------------------------------------
+// Color Classes
+//-----------------------------------------------------------------
+.brand-white { color: $brand-white; }
+.brand-black { color: $brand-black; }
+
+//
+.gray-darker { color: $gray-darker; }
+.gray-dark { color: $gray-dark; }
+.gray { color: $gray; }
+.gray-light { color: $gray-light; }
+.gray-lighter{ color:$gray-lighter; }
+//
+
+.brand-primary { color: $brand-primary; }

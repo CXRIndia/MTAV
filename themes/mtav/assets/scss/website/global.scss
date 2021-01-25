@@ -1,12 +1,17 @@
-// @charset 'utf-8';
+@import 'elements/_reset';
+@import 'elements/_branding';
+@import 'elements/_fonts';
+@import 'elements/_mixins';
+@import 'elements/_typography';
+@import 'elements/_buttons';
+@import 'elements/_form';
+@import 'elements/_container-cust';
 
-// //abstracts
-// @import "abstracts";
+@import "elements/_common";
+@import "elements/_cust-modal";
 
-// //pages
-// @import "pages";
+@import "elements/_page-header";
+@import "elements/_page-footer";
 
-body{
-  background-color: red;
-}
+
 

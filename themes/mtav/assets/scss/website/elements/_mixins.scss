@@ -1,0 +1,154 @@
+//==============* Input Placeholder mixin *================
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+//.form-control{
+//  @include input-placeholder{
+//    color: #9C9C9C;
+//  }
+//}
+
+//==============* Breakpoint mixin *=======================
+
+$breakpoints: (
+    "p-320"    :     320px,
+    "p-400"    :     400px,
+    "p-480"    :     480px,
+    "p-576"    :     576px,
+    "p-640"    :     640px,
+    "t-768"    :     768px,
+    "t-992"    :     992px,
+    "t-1025"   :     1025px,
+    "d-1200"   :     1200px,
+    "desktop"  :     1248px,
+    "mac"      :     1280px,
+    "lap-1302" :     1302px,
+    "d-wide1"  :     1336px,
+    "d-wide"   :     1440px,
+    "d-large"  :     1680,
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+//.site-header {
+//  @include mq('t-992', 'max') {
+//    padding: 10px;
+//  }
+//}
+//
+
+//==============* Truncate Text mixin *=======================
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+//.abc{
+//  @include truncate(300px);
+//}
+
+//==============* Animation mixin *=======================
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation:    $animations;
+  -o-animation:      $animations;
+  animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+// .test123{
+//   @include animation('pulsate 1s ease-out infinite');
+// }
+// @include keyframes(pulsate) {
+//   0% {transform: scale(0.1); opacity: 0.0;}
+//   50% {opacity: 1.0;}
+//   100% {transform: scale(1); opacity: 0.0;}
+// }
+
+//==============* Anchor mixin *=======================
+
+@mixin link-shudo {
+  &:hover { @content; }
+  &:active { @content; }
+  &:focus { @content; }
+}
+
+//==============* Position abs mixin *=======================
+
+@mixin absPosition ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+//.box {
+//  @include absPosition(5px, 20px, 10px, 15px);
+//}
+
+//==============* PX to REM mixin *=======================
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value/16}rem;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  }
+
+  #{$property}: $pxValues;
+}
+
+// .test{
+//   @include rem(font-size, 16);
+//   @include rem(padding, 20);
+// }

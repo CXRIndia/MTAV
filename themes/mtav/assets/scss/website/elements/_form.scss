@@ -1,0 +1,50 @@
+//====================* Form Style Start *=======================
+.form-group{
+  //margin-bottom: 20px;
+  position: relative;
+  @include mq(t-768, max){
+    //margin-bottom: 26px;
+  }
+  .form-control{
+    @include input-placeholder{
+
+    }
+    &:focus{
+
+    }
+    &.error{
+
+    }
+  }
+  ///
+  .input-group{
+    input{
+
+    }
+    .input-group-btn{
+
+      .btn{
+        @include link-shudo{
+        }
+      }
+    }
+  }
+}
+
+
+////////////// iphone zoom scss
+@media screen and (device-aspect-ratio: 375/667) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{ font-size: 16px; }
+}
+
+@media screen and (device-aspect-ratio: 9/16) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{ font-size: 16px; }
+}
