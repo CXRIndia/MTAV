@@ -17,8 +17,11 @@ get_header();
     <?php get_template_part('template-parts/content-header'); ?>
 
     <div class="body-content">
+
         <?php include THEMEPATH . '/html-template/component/home/home-banner.php'; ?>
+
         <?php include THEMEPATH . '/html-template/component/home/imgvideo-title.php'; ?>
+
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>
