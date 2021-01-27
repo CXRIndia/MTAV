@@ -12,6 +12,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+docker-compose.yml
 
 .directory
 yarn.lock

@@ -1,0 +1,14 @@
+// @charset 'utf-8';
+
+// //abstracts
+// @import "abstracts";
+
+// //pages
+// @import "pages";
+
+// Import global scss and module
+@import "global";
+@import "components/whoweare/_whoweare-banner";
+@import "components/whoweare/_educate-section";
+@import "components/whoweare/_ivoted";
+@import "components/whoweare/_structure-section";

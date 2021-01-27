@@ -62,6 +62,9 @@ function MTAV_scripts()
     wp_enqueue_script('mtav-home-js', STYLESHEETURI . '/dist/' . $distFile['home']['js'], array('jquery'), null, true);
     wp_enqueue_style('mtav-home-css', STYLESHEETURI . '/dist/' . $distFile['home']['css']);
 
+    wp_enqueue_script('mtav-whoweare-js', STYLESHEETURI . '/dist/' . $distFile['whoweare']['js'], array('jquery'), null, true);
+    wp_enqueue_style('mtav-whoweare-css', STYLESHEETURI . '/dist/' . $distFile['whoweare']['css']);
+
     if (is_single()) {
         wp_enqueue_script('mtav-single-js', STYLESHEETURI . '/dist/' . $distFile['article']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-single-css', STYLESHEETURI . '/dist/' . $distFile['article']['css']);
