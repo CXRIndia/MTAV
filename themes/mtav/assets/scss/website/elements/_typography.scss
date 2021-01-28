@@ -26,6 +26,8 @@ h3{
 }
 
 h4{
+  @include rem(font-size, 22);
+    @include rem(line-height, 28);
     @media(max-width: 767px){
     }
 }
