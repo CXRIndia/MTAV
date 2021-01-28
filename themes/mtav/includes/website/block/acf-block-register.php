@@ -103,6 +103,30 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-the-need-block',
+            'title'             => __('MTAV The Need Block'),
+            'description'       => __('A custom the need format block.'),
+            'render_callback'   => 'MTAV_The_Need_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-the-impact-block',
+            'title'             => __('MTAV The Impact Block'),
+            'description'       => __('A custom the impact format block.'),
+            'render_callback'   => 'MTAV_The_Impact_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
