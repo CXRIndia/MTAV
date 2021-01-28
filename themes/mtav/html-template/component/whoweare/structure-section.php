@@ -10,7 +10,7 @@
         </div>
         <h1>Structure of More Than A Vote in 2021</h1>
         <div class="structure-block">
-            <div class="block-left">
+            <div class="block-left block-wrapper">
                 <div class="block-top">
                     <div class="block-top-left">
                         <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/png/more-than-yellow.png" alt="">
@@ -27,7 +27,7 @@
                     <p>More Than A Vote will create media platforms and distribute content that entertains and informs our target audience (people of color under 35) about issues of race and politics, leveraging our talent and voice to stay relevant in the culture.</p>
                 </div>
             </div>
-            <div class="block-right">
+            <div class="block-right block-wrapper">
                 <div class="block-top">
                     <div class="block-top-left">
                         <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/png/more-than-black.png" alt="">

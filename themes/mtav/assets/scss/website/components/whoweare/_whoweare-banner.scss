@@ -15,17 +15,44 @@
     display: flex;
     position: relative;
     z-index: 2;
-    .container{
+    @include mq('t-992', 'max') {
+      min-height: 100vh;
+    }
+    .container-fluid{
       margin-top: auto;
       margin-bottom: 100px;
+      padding: 0 100px;
+      @include mq('t-992', 'max') {
+        padding: 0 58px 0 40px;
+        margin-bottom: 71px;
+      }
+      @include mq('t-768', 'max') {
+        padding: 0 24px 0 24px;
+        margin-bottom: 56px;
+      }
     }
     .heading-compo {
       margin-bottom: 60px;
+      @include mq('t-992', 'max') {
+        margin-bottom: 31px;
+      }
+      @include mq('t-768', 'max') {
+        margin-bottom: 20px;
+      }
     }
     h1{
       font-size: 42px;
       line-height: 56px;
       margin-bottom: 40px;
+      @include mq('t-992', 'max') {
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 24px;
+      }
+      @include mq('t-768', 'max') {
+        font-size: 25px;
+        line-height: 32px;
+      }
     }
   }
 }

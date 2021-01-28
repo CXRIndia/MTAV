@@ -2,24 +2,72 @@
   background-image: url("../../images/png/yellow-bg.png");
   .ivoted-inner-wrapper{
     display: flex;
+    @include mq(t-768, max) {
+      flex-direction: column;
+    }
     .image-wrapper{
       width: 39%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      img{
+        @include mq(t-992, max) {
+          max-width: 202px;
+        }
+        @include mq(t-768, max) {
+          max-width: 151px;
+        }
+      }
+      @include mq(t-768, max) {
+        order: 2;
+        justify-content: center;
+        width: 100%;
+        padding-left: 32px;
+      }
     }
     .content-section{
       margin-top: 80px;
       margin-bottom: 118px;
       width: 61%;
+      @include mq(t-992, max) {
+        margin-top: 108px;
+        margin-bottom: 72px;
+        margin-left: 35px;
+      }
+      @include mq(t-768, max) {
+        order: 1;
+        padding: 24px 9px 24px 9px;
+        margin: 0;
+        width: 100%;
+      }
       h1{
         margin-bottom: 14px;
+        @include mq(t-992, max) {
+          font-size: 32px;
+          line-height: 37px;
+          margin-bottom: 35px;
+        }
+        @include mq(t-768, max) {
+          font-size: 25px;
+          line-height: 32px;
+          margin-bottom: 16px;
+        }
       }
       p{
         font-size: 22px;
         line-height: 1.4;
         letter-spacing: 0.5px;
         margin-bottom: 40px;
+        @include mq(t-992, max) {
+          font-size: 18px;
+          letter-spacing: 0.41px;
+          margin-bottom: 24px;
+        }
+        @include mq(t-768, max) {
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0.32px;
+        }
       }
     }
   }

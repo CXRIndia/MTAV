@@ -7,6 +7,11 @@
     @include Font-Pitch;
     color: $gray;
     text-transform: capitalize;
+    @include mq('t-768', 'max') {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 8px;
+    }
   }
   .line-block{
     display: flex;
@@ -19,9 +24,16 @@
         height: 4px;
         margin-right: 4px;
         background-color: $gray;
+        @include mq('t-768', 'max') {
+          width: 24px;
+          height: 3px;
+          margin-right: 2px;
+        }
       }
       img{
-
+        @include mq('t-768', 'max') {
+          width: 25px;
+        }
       }
     }
     .right-block{
@@ -31,6 +43,10 @@
         width: 68px;
         height: 4px;
         background-color: $gray;
+        @include mq('t-768', 'max') {
+          width: 50px;
+          height: 3px;
+        }
       }
     }
   }
