@@ -1,6 +1,6 @@
 <?php
 /**
- * Sweepstakes popup settings
+ * MTAV two column data block acf settings
  * php version 7.4
  *
  * @category MTAV
@@ -12,14 +12,14 @@
 
 acf_add_local_field_group(
     array(
-    'key' => 'group_5f8fec6f2f770',
-    'title' => 'Sweepstakes Popup Settings',
+    'key' => 'group_60129f3d49929',
+    'title' => 'MTAV Two Column Data Block Settings',
     'fields' => array(
         array(
-            'key' => 'field_5f8fec853682f',
-            'label' => 'Title',
-            'name' => 'sweepstakes_popup_title',
-            'type' => 'text',
+            'key' => 'field_60129f5258dd5',
+            'label' => 'Block Title',
+            'name' => 'block_title',
+            'type' => 'wysiwyg',
             'instructions' => '',
             'required' => 0,
             'conditional_logic' => 0,
@@ -28,16 +28,35 @@ acf_add_local_field_group(
                 'class' => '',
                 'id' => '',
             ),
-            'default_value' => 'Enter the Below Information for a Chance to Win!',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-            'maxlength' => '',
+            'default_value' => '',
+            'tabs' => 'all',
+            'toolbar' => 'full',
+            'media_upload' => 1,
+            'delay' => 0,
         ),
         array(
-            'key' => 'field_5f8feca736830',
-            'label' => 'Image',
-            'name' => 'sweepstakes_popup_image',
+            'key' => 'field_6012a03758dd6',
+            'label' => 'Left Column Data',
+            'name' => 'left_column_data',
+            'type' => 'wysiwyg',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'tabs' => 'all',
+            'toolbar' => 'full',
+            'media_upload' => 1,
+            'delay' => 0,
+        ),
+        array(
+            'key' => 'field_6012a05058dd7',
+            'label' => 'Right Column Image',
+            'name' => 'right_column_image',
             'type' => 'image',
             'instructions' => '',
             'required' => 0,
@@ -59,10 +78,10 @@ acf_add_local_field_group(
             'mime_types' => '',
         ),
         array(
-            'key' => 'field_5f8fecbb36831',
-            'label' => 'Contact Form Shortcode',
-            'name' => 'sweepstakes_popup_contact_form_shortcode',
-            'type' => 'text',
+            'key' => 'field_6012a06958dd8',
+            'label' => 'Right Column Data',
+            'name' => 'right_column_data',
+            'type' => 'wysiwyg',
             'instructions' => '',
             'required' => 0,
             'conditional_logic' => 0,
@@ -72,18 +91,18 @@ acf_add_local_field_group(
                 'id' => '',
             ),
             'default_value' => '',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-            'maxlength' => '',
+            'tabs' => 'all',
+            'toolbar' => 'full',
+            'media_upload' => 1,
+            'delay' => 0,
         ),
     ),
     'location' => array(
         array(
             array(
-                'param' => 'options_page',
+                'param' => 'block',
                 'operator' => '==',
-                'value' => 'acf-options-sweepstakes-popup',
+                'value' => 'acf/mtav-two-column-data-block',
             ),
         ),
     ),

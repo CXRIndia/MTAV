@@ -30,7 +30,9 @@ if (!function_exists('MTAV_setup')) {
 
         register_nav_menus(
             array(
-                'menu-1' => esc_html__('Primary', 'MTAV'),
+                'primary' => esc_html__('Primary', 'MTAV'),
+                'secondary' => esc_html__('Secondary', 'MTAV'),
+                'footer-menu' => esc_html__('Footer', 'MTAV')
             )
         );
 
