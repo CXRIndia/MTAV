@@ -1,6 +1,6 @@
 <?php
 /**
- * Thank you popup settings
+ * Custom header settings
  * php version 7.4
  *
  * @category MTAV
@@ -12,32 +12,13 @@
 
 acf_add_local_field_group(
     array(
-    'key' => 'group_5f8fef9a77ace',
-    'title' => 'Thank you Popup Settings',
+    'key' => 'group_60114716882c8',
+    'title' => 'Header Settings',
     'fields' => array(
         array(
-            'key' => 'field_5f8fefa2b0830',
-            'label' => 'Title',
-            'name' => 'thankyou_popup_title',
-            'type' => 'text',
-            'instructions' => '',
-            'required' => 0,
-            'conditional_logic' => 0,
-            'wrapper' => array(
-                'width' => '',
-                'class' => '',
-                'id' => '',
-            ),
-            'default_value' => 'Thank You for Entering! We Have Sent You a Confirmation Email, Good Luck!',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-            'maxlength' => '',
-        ),
-        array(
-            'key' => 'field_5f8fefc8b0831',
-            'label' => 'Image',
-            'name' => 'thankyou_popup_image',
+            'key' => 'field_60114724c7b4f',
+            'label' => 'Logo Image',
+            'name' => 'logo_image',
             'type' => 'image',
             'instructions' => '',
             'required' => 0,
@@ -64,7 +45,7 @@ acf_add_local_field_group(
             array(
                 'param' => 'options_page',
                 'operator' => '==',
-                'value' => 'acf-options-thank-you-popup',
+                'value' => 'acf-options-header',
             ),
         ),
     ),

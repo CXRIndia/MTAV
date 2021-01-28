@@ -55,6 +55,55 @@ function MTAV_Get_Image_alt($attachmentId, $default = null)
     return $image_alt;
 }
 
+/**
+ * Function to create the image with crop points
+ *
+ * @param array $image Image array.
+ * @param int   $width Image size to return.
+ * @param array $ratio Image ratio to return.
+ *
+ * @return string Return the image URL.
+ */
+function MTAV_Get_image( $image, $width = null, $ratio = null )
+{
+
+    if ($image && ! empty($image) && ! empty($image[0]) ) {
+
+        $url = $image[0];
+
+        $dimention = null;
+
+        if ($image[1] > $image[2] ) {
+            $dimention = $image[2];
+        } else {
+            $dimention = $image[1];
+        }
+
+        if (! empty($width) && ! empty($ratio) ) {
+
+            $height = ( $dimention * $ratio[1] ) / $ratio[0];
+
+            $params = array(
+            'crop' => '0,0,' . (int) $dimention . 'px,' . (int) $height . 'px',
+            'w'    => $width . 'px',
+            );
+
+            $url .= '?' . build_query($params);
+        } elseif (! empty($width) ) {
+
+            $params = array(
+            'w' => $width . 'px',
+            );
+
+            $url .= '?' . build_query($params);
+        }
+
+        return $url;
+    } else {
+        return '';
+    }
+}
+
 
 /**
  * Add support for svg images.
@@ -72,6 +121,20 @@ function MTAV_Mime_types($file_types)
     return $file_types;
 }
 add_filter('upload_mimes', 'MTAV_Mime_types');
+
+/**
+ * MTAV remove p tag from content
+ *
+ * @param string $content post content.
+ *
+ * @return string $content
+ */
+function MTAV_Remove_ptag($content)
+{
+    $content = str_ireplace('<p>', '', $content);
+    $content = str_ireplace('</p>', '', $content);
+    return $content;
+}
 
 /**
  * Contact Form 7 Zipcode text validation
