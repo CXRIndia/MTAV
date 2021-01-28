@@ -43,6 +43,18 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-numbers-slider-block',
+            'title'             => __('MTAV Homepage Numbers Sliders Block'),
+            'description'       => __('A custom numbers slider format block.'),
+            'render_callback'   => 'MTAV_Numbers_Slider_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
