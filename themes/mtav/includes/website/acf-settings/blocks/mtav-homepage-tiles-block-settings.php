@@ -1,6 +1,6 @@
 <?php
 /**
- * CXR right image data block acf settings
+ * MTAV homepage tiles block acf settings
  * php version 7.4
  *
  * @category MTAV

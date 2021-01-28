@@ -15,7 +15,7 @@
   *
   * @return $array gutenberg block
   */
-function Wacoal_Acf_init()
+function MTAV_Acf_init()
 {
     if (function_exists('acf_register_block') ) {
 
@@ -31,7 +31,19 @@ function Wacoal_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-who-we-are-block',
+            'title'             => __('MTAV Homepage Who We Are Block'),
+            'description'       => __('A custom who we are format block.'),
+            'render_callback'   => 'MTAV_Who_We_Are_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
-add_action('acf/init', 'Wacoal_Acf_init');
+add_action('acf/init', 'MTAV_Acf_init');
