@@ -53,3 +53,41 @@ a {
 .text-uppercase{
   text-transform: uppercase;
 }
+.separator{
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  &:after{
+    content: "";
+    background-image: url("../../images/icons/horizontal-border.svg");
+    background-size: contain;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+  }
+}
+.letter-main-wrapper{
+  padding: 80px 0;
+  h2{
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .two-columned-section{
+    display: flex;
+    .section-left{
+      padding-right: 20px;
+    }
+    .section-right{
+      padding-left: 20px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+    img{
+      margin-bottom: 40px;
+    }
+  }
+}

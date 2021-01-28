@@ -12,22 +12,28 @@
 
 ?>
 
-<section class="hero"
-    style="background-image: url(<?php echo esc_url($background_image_url) ?>)">
-    <div class="overlay">
-        <div class="hero__data">
-            <img class="lazyload" data-src="<?php echo esc_url($block_image_url);?>"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                alt="<?php echo esc_attr($block_image_alt)?>"/>
-            <div class="hero__data-description">
-                <p><?php echo wp_kses_post($content_text) ?></p>
+<div class="banner" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')">
+    <div class="inner-wrapper">
+        <div class="container-fluid">
+            <div class="heading-compo">
+                <!-- <h5 class="title">
+                Who We Are
+                </h5> -->
+                <div class="line-block">
+                    <div class="left-block">
+                        <span></span>
+                        <span></span>
+                        <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/title-icon-wh.svg" alt="">
+                    </div>
+                    <div class="right-block">
+                        <span></span>
+                    </div>
+                </div>
             </div>
+            <h1 class="brand-white">AN OPEN LETTER TO OUR FANS OF EVERY AGE, RACE AND GENDER</h1>
+            <p>Converting Sports Arenas into Voting Locations</p>
+            <button class="btn btn-primary">Meet the Team</button>
         </div>
-        <a href="#about" class="icon-down-arrow">
-            <img class="lazyload"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="<?php echo STYLESHEETURI ?>/assets/images/icons/svg/icon-arrow-down.svg"
-                alt="down-arrow">
-        </a>
     </div>
-</section>
+</div>
+
