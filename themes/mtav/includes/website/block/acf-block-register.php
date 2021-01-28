@@ -67,6 +67,18 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-i-voted-block',
+            'title'             => __('MTAV I Voted Block'),
+            'description'       => __('A custom I voted format block.'),
+            'render_callback'   => 'MTAV_I_Voted_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
