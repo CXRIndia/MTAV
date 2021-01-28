@@ -103,6 +103,78 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-the-need-block',
+            'title'             => __('MTAV The Need Block'),
+            'description'       => __('A custom the need format block.'),
+            'render_callback'   => 'MTAV_The_Need_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-the-impact-block',
+            'title'             => __('MTAV The Impact Block'),
+            'description'       => __('A custom the impact format block.'),
+            'render_callback'   => 'MTAV_The_Impact_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-our-partners-block',
+            'title'             => __('MTAV Our Partners Block'),
+            'description'       => __('A custom our partners format block.'),
+            'render_callback'   => 'MTAV_Our_Partners_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-two-column-data-with-video-block',
+            'title'             => __('MTAV Two Column Data with Video Block'),
+            'description'       => __('A custom two column data with video format block.'),
+            'render_callback'   => 'MTAV_Data_Video_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-players-block',
+            'title'             => __('MTAV Players Block'),
+            'description'       => __('A custom players format block.'),
+            'render_callback'   => 'MTAV_Players_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-staff-block',
+            'title'             => __('MTAV Staff Block'),
+            'description'       => __('A custom staff format block.'),
+            'render_callback'   => 'MTAV_Staff_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
