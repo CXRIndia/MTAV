@@ -1,5 +1,8 @@
 .imgvideo-title-sec-two{
   display: flex;
+  @include mq(t-768, max) {
+    flex-direction: column;
+  }
   .gradient-bg{
     position: absolute;
     height: 100%;
@@ -11,22 +14,42 @@
   .content-block{
     z-index: 1;
   }
-
+  .heading-compo{
+    @include mq(t-992, max) {
+      margin-bottom: 24px;
+    }
+    @include mq(t-768, max) {
+      margin-bottom: 20px;
+    }
+  }
   .big-block-wrapper{
     width: 66%;
-    min-height: 56.3vw;
     background-size: cover;
     padding: 80px 10vw 80px 6.87vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    @include mq('d-large', 'min') {
-      min-height: 50vw;
+    @include mq(t-992, max) {
+      padding: 40px;
+    }
+    @include mq(t-768, max) {
+      width: 100%;
+      padding: 70px 24px 40px 24px;
+      background-position: center;
     }
     h1.title{
       margin-bottom: 40px;
       color: $brand-white;
+      @include mq(t-992, max) {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 10px;
+      }
+      @include mq(t-768, max) {
+        font-size: 25px;
+        margin-bottom: 7px;
+      }
     }
   }
   p{
@@ -35,19 +58,57 @@
     letter-spacing: 0.5px;
     color: $brand-white;
     margin-bottom: 40px;
+    @include mq(t-992, max) {
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: 0.2px;
+      margin-bottom: 20px;
+    }
+    @include mq(t-768, max) {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.32px;
+      margin-bottom: 24px;
+    }
   }
   .small-block-wrapper{
     width: 34%;
     display: flex;
     flex-direction: column;
     padding: 80px 100px 90px 50px;
+    @include mq(t-992, max) {
+      padding: 48px;
+    }
+    @include mq(t-768, max) {
+      width: 100%;
+      padding: 56px 24px 34px 24px;
+    }
     h5.section-title{
       font-size: 18px;
       line-height: 22px;
       margin-bottom: 56px;
+      @include mq(t-992, max) {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 32px;
+      }
+      @include mq(t-768, max) {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 40px;
+      }
     }
     .section-block{
       position: relative;
+      @include mq(t-768, max) {
+        display: flex;
+        padding-bottom: 19.5px;
+        margin-bottom: 19.5px;
+      }
+      &:last-child{
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
       &:after{
         content: "";
         background-image: url("../../images/icons/horizontal-border.svg");
@@ -56,17 +117,47 @@
         width: 100%;
         position: absolute;
         bottom: 36px;
+        @include mq(t-992, max) {
+          bottom: 18px;
+        }
+        @include mq(t-768, max) {
+          bottom: 0;
+        }
       }
       .count{
         font-size: 60px;
         line-height: 72px;
         margin-bottom: 8px;
+        @include mq(t-992, max) {
+          font-size: 32px;
+          line-height: 1.4;
+          margin-bottom: 5px;
+        }
+        @include mq(t-768, max) {
+          line-height: 40px;
+          padding-right: 24px;
+          margin-bottom: 0;
+        }
       }
       .section-text{
         font-size: 18px;
         line-height: 22px;
         padding-bottom: 36px;
         margin-bottom: 36px;
+        @include mq(t-992, max) {
+          font-size: 10px;
+          line-height: 12px;
+          padding-bottom: 18px;
+          margin-bottom: 17px;
+        }
+        @include mq(t-768, max) {
+          font-size: 14px;
+          line-height: 16px;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          max-width: 183px;
+          margin-left: auto;
+        }
       }
       &:last-child{
         &:after{

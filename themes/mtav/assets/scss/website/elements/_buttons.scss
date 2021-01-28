@@ -8,7 +8,14 @@
   display: inline-block;
   transition: all .3s;
   cursor: pointer;
-  @include mq(t-768, max) {}
+  @include mq(t-992, max) {
+    @include rem(font-size, 18);
+    @include rem(padding, 17, 47, 17, 49);
+  }
+  @include mq(t-768, max) {
+    width: 100%;
+    text-align: center;
+  }
 
   &:focus {
     box-shadow: none !important;

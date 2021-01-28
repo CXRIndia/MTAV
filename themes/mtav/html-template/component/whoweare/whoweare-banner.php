@@ -1,6 +1,6 @@
 <div class="whoweare-banner" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')">
     <div class="whoweare-inner-wrapper">
-        <div class="container">
+        <div class="container-fluid">
             <div class="heading-compo">
                 <h5 class="title">
                 Who We Are
