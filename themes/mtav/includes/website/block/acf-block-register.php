@@ -127,6 +127,18 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-our-partners-block',
+            'title'             => __('MTAV Our Partners Block'),
+            'description'       => __('A custom our partners format block.'),
+            'render_callback'   => 'MTAV_Our_Partners_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
