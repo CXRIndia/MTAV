@@ -55,6 +55,18 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-protect-black-voters-block',
+            'title'             => __('MTAV Protect Black Voters Block'),
+            'description'       => __('A custom protect black voters format block.'),
+            'render_callback'   => 'MTAV_Protect_Black_Voters_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
