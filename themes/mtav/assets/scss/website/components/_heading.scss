@@ -56,5 +56,18 @@
     .title{
       color: $brand-black;
     }
+
+    .line-block{
+      .left-block{
+        span{
+          background-color: $brand-black;
+        }
+      }
+      .right-block{
+        span{
+          background-color: $brand-black;
+        }
+      }
+    }
   }
 }
