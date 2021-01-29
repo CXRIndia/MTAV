@@ -1,57 +1,18 @@
-.whoweare-banner{
-  position: relative;
-  &:before{
-    content: "";
-    background: rgba(0,0,0,0.48);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-  .whoweare-inner-wrapper{
-    min-height: 810px;
-    display: flex;
-    position: relative;
-    z-index: 2;
-    @include mq('t-992', 'max') {
-      min-height: 100vh;
-    }
-    .container-fluid{
-      margin-top: auto;
-      margin-bottom: 100px;
-      padding: 0 100px;
+.whoweare-page{
+  .banner{
+    .inner-wrapper{
+      min-height: 810px;
       @include mq('t-992', 'max') {
-        padding: 0 58px 0 40px;
-        margin-bottom: 71px;
+        min-height: 100vh;
       }
-      @include mq('t-768', 'max') {
-        padding: 0 24px 0 24px;
-        margin-bottom: 56px;
-      }
-    }
-    .heading-compo {
-      margin-bottom: 60px;
-      @include mq('t-992', 'max') {
-        margin-bottom: 31px;
-      }
-      @include mq('t-768', 'max') {
-        margin-bottom: 20px;
-      }
-    }
-    h1{
-      font-size: 42px;
-      line-height: 56px;
-      margin-bottom: 40px;
-      @include mq('t-992', 'max') {
-        font-size: 32px;
-        line-height: 37px;
-        margin-bottom: 24px;
-      }
-      @include mq('t-768', 'max') {
-        font-size: 25px;
-        line-height: 32px;
+      .heading-compo {
+        margin-bottom: 60px;
+        @include mq('t-992', 'max') {
+          margin-bottom: 31px;
+        }
+        @include mq('t-768', 'max') {
+          margin-bottom: 20px;
+        }
       }
     }
   }

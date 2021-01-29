@@ -18,7 +18,7 @@
     @include mq('t-992', 'max') {
       min-height: 100vh;
     }
-    .container-fluid{
+    .container{
       margin-top: auto;
       margin-bottom: 100px;
       padding: 0 100px;
@@ -29,15 +29,6 @@
       @include mq('t-768', 'max') {
         padding: 0 24px 0 24px;
         margin-bottom: 56px;
-      }
-    }
-    .heading-compo {
-      margin-bottom: 60px;
-      @include mq('t-992', 'max') {
-        margin-bottom: 31px;
-      }
-      @include mq('t-768', 'max') {
-        margin-bottom: 20px;
       }
     }
     h1{
