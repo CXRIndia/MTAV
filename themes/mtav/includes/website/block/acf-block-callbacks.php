@@ -87,3 +87,48 @@ function MTAV_Who_We_Are_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for black voters block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Protect_Black_Voters_Block_Render_callback( $block )
+{
+
+    $left_column_data        = get_field('left_column_data');
+    $left_column_title       = $left_column_data['title'];
+    $left_column_description = $left_column_data['description'];
+    $left_column_img_id      = $left_column_data['block_image'];
+    $left_column_btn_label   = $left_column_data['button_label'];
+    $left_column_btn_url     = $left_column_data['button_url'];
+    $video_url               = $left_column_data['video_url'];
+    $video_thumbnail         = $left_column_data['video_thumbnail'];
+
+    $right_column_data  = get_field('right_column_data');
+    $right_column_title = $right_column_data['title'];
+    $numbers_data       = $right_column_data['numbers_data'];
+
+    // error_log('$left_column_data'.print_r($left_column_data, 1));
+
+    if ($left_column_img_id && !empty($left_column_img_id)) {
+        $left_column_img_array = wp_get_attachment_image_src($left_column_img_id, 'full');
+        $left_column_img_alt   = MTAV_Get_Image_alt($left_column_img_id, "Column Image");
+        $left_column_img_url   = MTAV_Get_image($left_column_img_array);
+    }
+
+    $shortcode_template  = 'template-parts/blocks/protect-black-voters-block.php';
+
+    if (! empty($left_column_data) || !empty($right_column_data) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Protect Black Voters Block:</u></h4>
+            <span style="color:red">Protect Black Voters Block</span>
+            <?php
+        }
+    }
+}
