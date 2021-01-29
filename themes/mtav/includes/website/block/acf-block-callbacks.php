@@ -111,8 +111,6 @@ function MTAV_Protect_Black_Voters_Block_Render_callback( $block )
     $right_column_title = $right_column_data['title'];
     $numbers_data       = $right_column_data['numbers_data'];
 
-    // error_log('$left_column_data'.print_r($left_column_data, 1));
-
     if ($left_column_img_id && !empty($left_column_img_id)) {
         $left_column_img_array = wp_get_attachment_image_src($left_column_img_id, 'full');
         $left_column_img_alt   = MTAV_Get_Image_alt($left_column_img_id, "Column Image");
@@ -128,6 +126,42 @@ function MTAV_Protect_Black_Voters_Block_Render_callback( $block )
             ?>
             <h4><u>MTAV Protect Black Voters Block:</u></h4>
             <span style="color:red">Protect Black Voters Block</span>
+            <?php
+        }
+    }
+}
+
+/**
+ * Callback function for I voted block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_I_Voted_Block_Render_callback( $block )
+{
+
+    $block_image_id = get_field('block_image');
+    $title          = get_field('title');
+    $description    = get_field('description');
+    $btn_label      = get_field('button_label');
+    $btn_url        = get_field('button_url');
+
+    if ($block_image_id && !empty($block_image_id)) {
+        $block_img_array = wp_get_attachment_image_src($block_image_id, 'full');
+        $block_img_alt   = MTAV_Get_Image_alt($block_image_id, "Column Image");
+        $block_img_url   = MTAV_Get_image($block_img_array);
+    }
+
+    $shortcode_template  = 'template-parts/blocks/i-voted-block.php';
+
+    if (! empty($block_image_id) || !empty($title) || !empty($description) || !empty($btn_label)) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV I Voted Block:</u></h4>
+            <span style="color:red">I Voted Block</span>
             <?php
         }
     }
