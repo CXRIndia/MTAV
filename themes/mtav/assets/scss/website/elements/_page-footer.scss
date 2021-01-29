@@ -6,11 +6,22 @@ footer{
   }
   .stay-connect-wrapper{
     padding: 100px 0;
+    @include mq('t-768', 'max') {
+      padding: 56px 0;
+    }
     .stay-connect-block{
       display: flex;
+      @include mq('t-768', 'max') {
+        flex-direction: column;
+      }
       .content-block{
         width: 50%;
-        padding-right: 50px;
+        @include mq('t-768', 'min') {
+          padding-right: 50px;
+        }
+        @include mq('t-768', 'max') {
+          width: 100%;
+        }
         .title{
           margin-bottom: 16px;
           color: $brand-white;
@@ -23,6 +34,9 @@ footer{
 
       .form-wrapper{
         width: 50%;
+        @include mq('t-768', 'max') {
+          width: 100%;
+        }
       }
     }
   }
@@ -34,33 +48,57 @@ footer{
   .page-footer{
     display: flex;
     justify-content: space-between;
+    @include mq('t-768', 'max') {
+      flex-direction: column
+    }
     .copy-right{
       @include rem(font-size, 16);
       display: flex;
+      @include mq('t-768', 'max') {
+        flex-direction: column
+      }
       p{
         padding-right: 100px;
+        @include Font-GangsterBold;
+        @include mq('t-992', 'max') {
+          font-size: 10px;
+          padding-right: 40px;
+        }
+        @include mq('t-768', 'max') {
+          font-size: 14px;
+          line-height: 16px;
+          padding-right: 0;
+          margin-bottom: 16px;
+        }
       }
-      // .terms-privacy{
-      //   a{
-      //     color: $brand-white;
-      //     @include rem(font-size, 16);
-      //     display: inline-block;
-      //     &:not(:last-child){
-      //       margin-right: 40px;
-      //     }
-      //   }
-      // }
 
       #menu-footer-menu{
         display: flex;
+        @include mq('t-768', 'max') {
+          flex-direction: column;
+          margin-bottom: 32px;
+        }
         li{
+          display: flex;
           &:not(:last-child){
             margin-right: 40px;
+            a{
+              @include mq('t-768', 'max') {
+                margin-bottom: 8px;
+              }
+            }
           }
           a{
             color: $brand-white;
             @include rem(font-size, 16);
             display: inline-block;
+            @include mq('t-992', 'max') {
+              font-size: 10px;
+            }
+            @include mq('t-768', 'max') {
+              font-size: 12px;
+              line-height: 14px;
+            }
           }
         }
       }

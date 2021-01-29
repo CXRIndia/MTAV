@@ -72,5 +72,13 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
                 </div>
             </div> -->
         </div>
+
+        <div class="hamburger-wrapper">
+            <a href="">
+                <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hamburger-menu-icon.svg" alt="">
+            </a>
+        </div>
+
+
     </div>
 </header>
