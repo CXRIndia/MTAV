@@ -40,13 +40,27 @@ footer{
       p{
         padding-right: 100px;
       }
-      .terms-privacy{
-        a{
-          color: $brand-white;
-          @include rem(font-size, 16);
-          display: inline-block;
+      // .terms-privacy{
+      //   a{
+      //     color: $brand-white;
+      //     @include rem(font-size, 16);
+      //     display: inline-block;
+      //     &:not(:last-child){
+      //       margin-right: 40px;
+      //     }
+      //   }
+      // }
+
+      #menu-footer-menu{
+        display: flex;
+        li{
           &:not(:last-child){
             margin-right: 40px;
+          }
+          a{
+            color: $brand-white;
+            @include rem(font-size, 16);
+            display: inline-block;
           }
         }
       }
