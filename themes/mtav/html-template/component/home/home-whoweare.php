@@ -26,7 +26,7 @@
                 </a>
             </div>
 
-            <div>
+            <div class="img-wrapper">
                 <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/png/home-whoweare-banner.png" alt="">
             </div>
         </div>
