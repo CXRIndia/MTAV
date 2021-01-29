@@ -35,7 +35,7 @@ require('../../scss/website/home-page.scss');
   })
     .setPin(".js-handanimation")
     .setTween(wipeAnimation)
-    .addIndicators({name: "1 (duration: 7000)"})
+    // .addIndicators({name: "1 (duration: 7000)"})
     .addTo(controller);
 
   //Timeinterval for animation delay
