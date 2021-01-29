@@ -18,17 +18,34 @@
             </div>
         </div>
         <div class="separator"></div>
-        <div class="two-columned-section">
-            <div class="section-left">
-                <p>Let’s start with the obvious. You need to register and you need to vote. Get your friends to register and to vote. Use early voting or vote by mail where you can. When someone you know starts with the old tropes of “my vote doesn’t matter” or “the whole thing is B.S.,” shut it down. We all know that if our vote didn’t matter, they wouldn’t be spending so much time and money trying to keep us from voting.</p>
-                <p>Voting is the most important thing you can do. It’s also not enough. Not ever, but especially not in 2020.</p>
-                <p>For those who are young and healthy, volunteer to work the polls on Election Day. The average poll worker is 60 years old. Most cannot risk COVID-19 to ensure we can vote. Our grandparents, parents, aunties and uncles are being asked to risk their lives to open a polling location? No way. And don’t just volunteer to work polls, but volunteer to work in the most vulnerable communities where you are needed.</p>
-                <p>Second, volunteer your time and money to an organization mobilizing for this fight. More Than A Vote is partnering with NAACP Legal Defense Fund, When We All Vote, Fair Fight and the Florida Rights Restoration Coalition. These groups and others like them are in our community fighting for our people and they need all the help they can get.</p>
+        <div class="second-section">
+            <h2>So what can you do?</h2>
+            <div class="two-columned-section">
+                <div class="section-left">
+                    <p>Let’s start with the obvious. You need to register and you need to vote. Get your friends to register and to vote. Use early voting or vote by mail where you can. When someone you know starts with the old tropes of “my vote doesn’t matter” or “the whole thing is B.S.,” shut it down. We all know that if our vote didn’t matter, they wouldn’t be spending so much time and money trying to keep us from voting.</p>
+                    <p>Voting is the most important thing you can do. It’s also not enough. Not ever, but especially not in 2020.</p>
+                    <p>For those who are young and healthy, volunteer to work the polls on Election Day. The average poll worker is 60 years old. Most cannot risk COVID-19 to ensure we can vote. Our grandparents, parents, aunties and uncles are being asked to risk their lives to open a polling location? No way. And don’t just volunteer to work polls, but volunteer to work in the most vulnerable communities where you are needed.</p>
+                    <p>Second, volunteer your time and money to an organization mobilizing for this fight. More Than A Vote is partnering with NAACP Legal Defense Fund, When We All Vote, Fair Fight and the Florida Rights Restoration Coalition. These groups and others like them are in our community fighting for our people and they need all the help they can get.</p>
+                </div>
+                <div class="section-right">
+                    <p>Third, share information that will educate, energize and protect Black voters. Use your influence to create change. Use your social media to share accurate information about how to vote and where to vote safely. Follow the groups we listed above, as well as More Than A Vote. We are all sharing critical and accurate information. Do not recklessly post B.S. from unknown places. Take this election seriously. Become trusted community leaders and activists who help keep our people informed and empowered.</p>
+                    <p>We are publishing this open letter along with our complete list of founding members. More Than A Vote is just getting started. There will be new members and new initiatives to educate, energize and protect Black voters and hold those in power accountable. Right now, we are continuing our protest by combating Black voter suppression in 2020. We ask you to do the same.</p>
+                </div>
             </div>
-            <div class="section-right">
-                <p>Third, share information that will educate, energize and protect Black voters. Use your influence to create change. Use your social media to share accurate information about how to vote and where to vote safely. Follow the groups we listed above, as well as More Than A Vote. We are all sharing critical and accurate information. Do not recklessly post B.S. from unknown places. Take this election seriously. Become trusted community leaders and activists who help keep our people informed and empowered.</p>
-                <p>We are publishing this open letter along with our complete list of founding members. More Than A Vote is just getting started. There will be new members and new initiatives to educate, energize and protect Black voters and hold those in power accountable. Right now, we are continuing our protest by combating Black voter suppression in 2020. We ask you to do the same.</p>
-            </div>
+        </div>
+        <div class="signed-section">
+            <h2>Signed, THE COALITION MEMBERS:<br/>
+            ALESHIA OCASIO, ALLYSON FELIX, ALVIN KAMARA, ANDREW HAWKINS, ARIKE OGUNBOWALE,
+            A’JA WILSON, BEN SIMMONS, BOBBY WAGNER, BRITTNEY GRINER, BUN B, CC SABATHIA,
+            CJ MCCOLLUM, CARLTON DAVIS, CARON BUTLER, CHINEY OGWUMIKE, DAMIAN LILLARD,
+            DARE OGUNBOWALE, DAVID PRICE, DEANDRE HOPKINS, DRAYMOND GREEN,
+            ELIZABETH WILLIAMS, EMMANUEL ACHO, ERIC BLEDSOE, JACK FLAHERTY, JALEN ROSE,
+            JASON HEYWARD, JAYLEN BROWN, JEFF OKUDAH, JEREMY EBOBISSE, JOZY ALTIDORE,
+            JUSTIN MORROW, KENDRICK PERKINS, KEVIN HART, KRISTI TOLIVER, KYLE LOWRY,
+            LEBRON JAMES, LISA LESLIE, MARCUS STROMAN, MARIA TAYLOR, MICHAEL VICK,
+            MIKE EVANS, MO BAMBA, ODELL BECKHAM JR, OFFSET, PATRICK MAHOMES, RAY ALLEN,
+            RENEE MONTGOMERY, SKYLAR DIGGINS, SLOANE STEPHENS, TASHA CLOUD, TIM ANDERSON,
+            TONI BRAXTON, TRAE YOUNG, UDONIS HASLEM</h2>
         </div>
     </div>
 </div>
