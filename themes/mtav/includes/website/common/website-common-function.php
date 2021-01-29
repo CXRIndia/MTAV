@@ -172,3 +172,30 @@ function MTAV_WP_Backend_edit($blockName)
     </div>
     <?php
 }
+
+/**
+ * Function used to create block category
+ *
+ * @param $categories $array
+ * @param $post       post type
+ *
+ * @return void
+ */
+function MTAV_Block_categories( $categories, $post )
+{
+    $temp = array(
+        'slug'  => 'mtav',
+        'title' => __('MTAV category', 'cxr'),
+        'icon'  => 'wordpress',
+    );
+
+    $newCategories    = array();
+    $newCategories[0] = $temp;
+
+    foreach ($categories as $category) {
+        $newCategories[] = $category;
+    }
+
+    return $newCategories;
+}
+add_filter('block_categories', 'MTAV_Block_categories', 10, 2);

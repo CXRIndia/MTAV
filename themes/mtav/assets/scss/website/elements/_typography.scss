@@ -9,7 +9,15 @@ h1, h2, h3, h4, h5, h6{
 h1{
     @include rem(font-size, 40);
     @include rem(line-height, 44);
+
+    @include mq('t-992', 'max') {
+      @include rem(font-size, 32);
+      @include rem(line-height, 37);
+    }
+
     @media(max-width: 767px){
+      @include rem(font-size, 25);
+      @include rem(line-height, 32);
     }
 }
 
