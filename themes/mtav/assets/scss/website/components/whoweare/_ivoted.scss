@@ -36,7 +36,7 @@
       }
       @include mq(t-768, max) {
         order: 1;
-        padding: 24px 9px 24px 9px;
+        padding: 24px 0 24px 0;
         margin: 0;
         width: 100%;
       }

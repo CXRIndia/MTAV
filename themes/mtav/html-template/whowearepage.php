@@ -18,7 +18,8 @@ get_header();
 
     <div class="body-content">
 
-    <?php include THEMEPATH . '/html-template/component/whoweare/whoweare-banner.php'; ?>
+    <?php get_template_part('template-parts/blocks/banner/banner'); ?>
+    <!-- <?php include THEMEPATH . '/html-template/component/whoweare/whoweare-banner.php'; ?> -->
     <?php include THEMEPATH . '/html-template/component/whoweare/educate-section.php'; ?>
     <?php include THEMEPATH . '/html-template/component/whoweare/ivoted.php'; ?>
     <?php include THEMEPATH . '/html-template/component/whoweare/structure-section.php'; ?>

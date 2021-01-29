@@ -4,7 +4,7 @@
     padding: 72px 0;
   }
   @include mq(t-768, max) {
-    padding: 56px 9px;
+    padding: 56px 0;
   }
   .heading-compo {
     @include mq(t-992, max) {
