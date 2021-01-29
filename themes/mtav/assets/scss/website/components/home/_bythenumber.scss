@@ -3,4 +3,56 @@
   .heading-compo{
     margin-bottom: 60px;
   }
+
+  //
+  .slider-wrapper{
+    padding: 0 80px;
+    margin-bottom: 40px;
+    position: relative;
+    .bythenumber-slider{
+
+      .swiper-slide{
+        .slider-content{
+          text-transform: uppercase;
+          .number{
+            @include Font-Plakat;
+            font-size: 60px;
+            line-height: 72px;
+            margin-bottom: 11px;
+          }
+          .content{
+            @include Font-Plakat;
+            font-size: 18px;
+            line-height: 22px;
+            max-width: 296px;
+          }
+        }
+      }
+    }
+
+    //
+    .bythenumber-next,
+    .bythenumber-prev{
+      top: calc(50% - 16px);
+      width: 20px;
+      height: 32px;
+      margin-top: 0;
+      background-size: cover;
+    }
+    .bythenumber-next{
+      background-image: url('../../images/icons/slide-right.svg');
+      right: 0;
+      &:after{
+        display: none;
+      }
+    }
+    .bythenumber-prev{
+      background-image: url('../../images/icons/slide-left.svg');
+      left: 0;
+      &:after{
+        display: none;
+      }
+    }
+  }
+
 }

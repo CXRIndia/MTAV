@@ -20,14 +20,59 @@
         <div class="slider-wrapper">
             <div class="swiper-container bythenumber-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <p class="number">10</p>
+                            <div class="content">
+                                arenas activated into polling sites
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <p class="number">42K+</p>
+                            <div class="content">
+                                poll workers
+                                recruited through
+                                “We Got Next” campaign
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <p class="number">$3.1M</p>
+                            <div class="content">
+                                raised for “We Got Next” with NAACP legal Defense Fund
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <p class="number">$100K</p>
+                            <div class="content">
+                                raised for
+                                Florida Rights RestorationCoalition
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <p class="number">10</p>
+                            <div class="content">
+                                cities offering
+                                free rides to the polls with Lyft
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next bythenumber-next"></div>
-                <div class="swiper-button-prev bythenumber-prev"></div>
             </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next bythenumber-next"></div>
+                <div class="swiper-button-prev bythenumber-prev"></div>
         </div>
     </div>
 </div>
