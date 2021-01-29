@@ -22,6 +22,10 @@ get_header();
 
         <?php include THEMEPATH . '/html-template/component/home/imgvideo-title.php'; ?>
 
+        <?php include THEMEPATH . '/html-template/component/home/home-whoweare.php'; ?>
+
+        <?php include THEMEPATH . '/html-template/component/home/home-bythenumber.php'; ?>
+
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>

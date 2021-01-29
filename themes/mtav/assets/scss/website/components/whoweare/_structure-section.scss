@@ -13,13 +13,6 @@
     @include mq(t-768, max) {
       margin-bottom: 20px;
     }
-    .line-block {
-      .left-block {
-        span{
-          background-color: $brand-black;
-        }
-      }
-    }
   }
   h1{
     max-width: 520px;

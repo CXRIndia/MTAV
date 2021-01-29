@@ -27,9 +27,9 @@ $youtube_url    = get_field('youtube_link', 'options');
             <div class="stay-connect-wrapper">
 
                 <div class="heading-compo">
-                    <h5 class="title">
+                    <!-- <h5 class="title">
                         By The Numbers
-                    </h5>
+                    </h5> -->
                     <div class="line-block">
                         <div class="left-block">
                             <span></span>

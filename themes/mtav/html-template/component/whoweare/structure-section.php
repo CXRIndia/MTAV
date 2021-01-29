@@ -1,6 +1,6 @@
 <div class="structure-section">
     <div class="container">
-        <div class="heading-compo">
+        <div class="heading-compo black">
             <div class="line-block">
                 <div class="left-block">
                     <span></span>
