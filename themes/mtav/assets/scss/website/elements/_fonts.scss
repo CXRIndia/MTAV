@@ -16,11 +16,17 @@
  }
 
  @include font-cust(GangsterGrotesk-Regular, '../../fonts/GangsterGrotesk-Regular');
+ @include font-cust(GangsterGrotesk-Bold, '../../fonts/GangsterGrotesk-Bold');
  @include font-cust(Pitch-Regular, '../../fonts/Pitch-Regular');
  @include font-cust(Plakat-Regular, '../../fonts/Plakat-Regular');
 
  @mixin Font-Gangster {
   font-family:"GangsterGrotesk-Regular";
+  font-weight: normal;
+ }
+
+ @mixin Font-GangsterBold {
+  font-family:"GangsterGrotesk-Bold";
   font-weight: normal;
  }
 
