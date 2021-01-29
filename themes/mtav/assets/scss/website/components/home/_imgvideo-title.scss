@@ -25,9 +25,22 @@
     @include mq('d-large', 'min') {
       min-height: 50vw;
     }
+    @include mq(t-992, max) {
+      padding: 40px;
+      width: 66.7%;
+    }
+    @include mq(t-768, max) {
+      width: 100%;
+      padding: 70px 24px 40px 24px;
+      background-position: center;
+    }
     h1.title{
       margin-bottom: 40px;
       color: $brand-white;
+      @include mq('t-992', 'max') {
+        @include rem(font-size, 26);
+        @include rem(line-height, 32);
+      }
     }
   }
 
@@ -35,6 +48,10 @@
     width: 30%;
     display: flex;
     flex-direction: column;
+    @include mq(t-992, max) {
+      width: auto;
+      flex: 1;
+    }
     .single-block{
       background-size: cover;
       padding: 40px 2.77vw;
@@ -43,6 +60,9 @@
       flex-direction: column;
       justify-content: flex-end;
       position: relative;
+      @include mq('t-992', 'max') {
+        padding: 24px;
+      }
       //
       .heading-compo{
         margin-bottom: 12px;
@@ -50,6 +70,10 @@
           width: 20px;
           height: 3px;
           margin-right: 3px;
+          @include mq('t-992', 'max') {
+            height: 2px;
+            margin-right: 2px;
+          }
         }
       }
       //
@@ -57,17 +81,35 @@
         margin-bottom: 21px;
         color: $brand-white;
         max-width: 90%;
+        @include mq('t-992', 'max') {
+          @include rem(font-size, 16);
+          margin-bottom: 16px;
+          line-height: normal;
+        }
       }
       .content{
         @include Font-Pitch;
         letter-spacing: .41px;
         color: $brand-white;
         margin-bottom: 20px;
+        @include mq('t-992', 'max') {
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: .27px;
+          margin-bottom: 16px;
+        }
       }
       .btn-wrapper{
         .btn{
           font-size: 18px;
           @include rem(padding, 13, 13, 15);
+          min-width: 163px;
+
+          @include mq('t-992', 'max') {
+            font-size: 14px;
+            padding: 7px 15px 9px;
+            min-width: 136px;
+          }
         }
       }
     }
@@ -83,6 +125,9 @@
         align-items: center;
         justify-content: center;
         height: 100px;
+        @include mq('t-992', 'max') {
+          font-size: 14px;
+        }
       }
     }
   }

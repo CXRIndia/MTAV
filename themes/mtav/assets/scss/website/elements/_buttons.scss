@@ -10,7 +10,7 @@
   cursor: pointer;
   @include mq(t-992, max) {
     @include rem(font-size, 18);
-    @include rem(padding, 17, 47, 17, 49);
+    @include rem(padding, 13, 24, 15);
   }
   @include mq(t-768, max) {
     width: 100%;

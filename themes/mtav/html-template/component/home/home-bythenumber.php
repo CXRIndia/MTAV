@@ -18,7 +18,16 @@
         </div>
 
         <div class="slider-wrapper">
-            <h1>Slider</h1>
+            <div class="swiper-container bythenumber-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 1</div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next bythenumber-next"></div>
+                <div class="swiper-button-prev bythenumber-prev"></div>
+            </div>
         </div>
     </div>
 </div>
