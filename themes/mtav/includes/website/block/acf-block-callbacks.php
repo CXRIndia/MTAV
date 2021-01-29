@@ -51,3 +51,39 @@ function MTAV_Tiles_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for who we are block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Who_We_Are_Block_Render_callback( $block )
+{
+
+    $title = get_field('title');
+    $subhead = get_field('subhead');
+    $button_label = get_field('button_label');
+    $button_url = get_field('button_url');
+    $block_img_id = get_field('block_image');
+
+    if ($block_img_id && !empty($block_img_id)) {
+        $block_img_array = wp_get_attachment_image_src($block_img_id, 'full');
+        $block_img_alt   = MTAV_Get_Image_alt($block_img_id, "CXR logo");
+        $block_img_url   = MTAV_Get_image($block_img_array);
+    }
+
+    $shortcode_template  = 'template-parts/blocks/homepage-who-we-are-block.php';
+
+    if (! empty($title) || !empty($subhead) || !empty($block_img_id) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Who We Are Block:</u></h4>
+            <span style="color:red">Empty Who We Are Block</span>
+            <?php
+        }
+    }
+}
