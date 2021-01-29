@@ -11,7 +11,7 @@
  */
 
 /**
- * Callback function for image block
+ * Callback function for homepage tiles block
  *
  * @param [type] $block Block.
  *
@@ -19,29 +19,34 @@
  */
 function MTAV_Tiles_Block_Render_callback( $block )
 {
-    $background_image_id = get_field('background_image');
-    $shortcode_template  = 'template-parts/blocks/banner/banner.php';
+    $big_tile_data          = get_field('big_tile_data');
+    $big_tile_title         = $big_tile_data['title'];
+    $big_tile_subhead       = $big_tile_data['subhead'];
+    $big_tile_img_id        = $big_tile_data['tile_background_image'];
+    $big_tile_btn_label     = $big_tile_data['button_label'];
+    $big_tile_btn_url       = $big_tile_data['button_url'];
+    $big_tile_video_url     = $big_tile_data['video_url'];
+    $big_tile_video_thum_id = $big_tile_data['video_thumbnail'];
 
-    if (! empty($background_image_id) ) {
+    if ($big_tile_img_id && !empty($big_tile_img_id)) {
+        $big_tile_img_array = wp_get_attachment_image_src($big_tile_img_id, 'full');
+        $big_tile_img_alt   = MTAV_Get_Image_alt($big_tile_img_id, "CXR logo");
+        $big_tile_img_url   = MTAV_Get_image($big_tile_img_array);
+    }
 
-        if (is_admin()) {
-            echo MTAV_WP_Backend_edit('Dropbox Banner Block');
-        } else {
-            $background_image_url   = MTAV_Get_Image_src($background_image_id);
-            $block_image_id         = get_field('block_image');
-            $block_image_url        = MTAV_Get_Image_src($block_image_id);
-            $block_image_alt        = MTAV_Get_Image_alt($block_image_id, 'logo');
-            $content_text           = get_field('content_text');
+    $small_tile_data    = get_field('small_tile_data');
+    $view_button_label  = get_field('view_button_label');
+    $view_button_url    = get_field('view_button_url');
 
-            include locate_template($shortcode_template);
-        }
+    $shortcode_template  = 'template-parts/blocks/homepage-tiles-block.php';
+
+    if (! empty($big_tile_data) || !empty($small_tile_data) || !empty($view_button_label) ) {
+        include locate_template($shortcode_template);
     } else {
         if (is_admin() ) {
             ?>
-            <h4>
-                <u>Dropbox Banner Block:</u>
-            </h4>
-            <span style="color:red">Empty Dropbox Block</span>
+            <h4><u>MTAV Tiles Block:</u></h4>
+            <span style="color:red">Empty Tiles Block</span>
             <?php
         }
     }
