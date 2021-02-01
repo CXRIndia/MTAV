@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: WhathaveWeDone
+ * Template Name: WhathaveWeDone - HTML
  * php version 7.4
  *
  * @category MTAV
@@ -30,6 +30,110 @@ get_header();
                             </div>
                         </div>
                     </div>
+
+                    <h1 class="title">2020 Lookback</h1>
+                </div>
+
+                <div class="lookback-wrapper">
+                    <div class="single-block" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')">
+                        <div class="content-block">
+                            <div class="heading-compo">
+                                <div class="line-block">
+                                    <div class="left-block">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1 class="inner-title">
+                                PROTECT HOME COURT
+                            </h1>
+                            <p class="content">
+                                Converting Sports Arenas into Voting Locations
+                            </p>
+                            <div class="btn-wrapper">
+                                <a href="" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-block" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')">
+                        <div class="content-block">
+                            <div class="heading-compo">
+                                <div class="line-block">
+                                    <div class="left-block">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1 class="inner-title">
+                                PROTECT HOME COURT
+                            </h1>
+                            <p class="content">
+                                Converting Sports Arenas into Voting Locations
+                            </p>
+                            <div class="btn-wrapper">
+                                <a href="" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-block" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')">
+                        <div class="content-block">
+                            <div class="heading-compo">
+                                <div class="line-block">
+                                    <div class="left-block">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1 class="inner-title">
+                                PROTECT HOME COURT
+                            </h1>
+                            <p class="content">
+                                Converting Sports Arenas into Voting Locations
+                            </p>
+                            <div class="btn-wrapper">
+                                <a href="" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-block" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')">
+                        <div class="content-block">
+                            <div class="heading-compo">
+                                <div class="line-block">
+                                    <div class="left-block">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1 class="inner-title">
+                                PROTECT HOME COURT
+                            </h1>
+                            <p class="content">
+                                Converting Sports Arenas into Voting Locations
+                            </p>
+                            <div class="btn-wrapper">
+                                <a href="" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,7 +141,7 @@ get_header();
 
     <?php get_template_part('template-parts/content-footer'); ?>
 
- </div>
+</div>
 
 <?php
 get_footer();

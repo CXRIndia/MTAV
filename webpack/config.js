@@ -40,6 +40,7 @@ module.exports = function () {
     appWhoweareJs: resolveApp('js/website/whoweare.js'),
     appletterJs: resolveApp('js/website/letter.js'),
     appWhatwedoneJs: resolveApp('js/website/whathavewedone.js'),
+    appTalentJs: resolveApp('js/website/talent.js'),
     appArchiveJs: resolveApp('js/website/archive.js'),
     appNodeModules: resolveApp('../../node_modules'),
   };
@@ -63,6 +64,9 @@ module.exports = function () {
     ],
     whatwedone: [
       appPaths.appWhatwedoneJs,
+    ],
+    talent: [
+      appPaths.appTalentJs,
     ],
     archive: [
       appPaths.appArchiveJs,

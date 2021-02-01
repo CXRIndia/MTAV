@@ -13,15 +13,12 @@
                         <span></span>
                         <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/title-icon-wh.svg" alt="">
                     </div>
-                    <!-- <div class="right-block">
-                        <span></span>
-                    </div> -->
                 </div>
             </div>
 
             <h1 class="title brand-white">CHANGE ISN’T MADE BY WATCHING FROM THE SIDELINES</h1>
             <div class="btn-wrapper">
-                <a href="javascript:void(0)" class="btn btn-primary">
+                <a href="javascript:void(0)" class="btn btn-primary js-fullvideo">
                     Watch Full Video
                 </a>
             </div>

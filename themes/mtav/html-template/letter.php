@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Letterpage
+ * Template Name: Letterpage - HTML
  * php version 7.4
  *
  * @category MTAV
@@ -18,8 +18,8 @@ get_header();
 
     <div class="body-content">
 
-    <?php include THEMEPATH . '/html-template/component/banner.php'; ?>
-    <?php include THEMEPATH . '/html-template/component/letter/letter-content.php'; ?>
+    <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
+    <?php require THEMEPATH . '/html-template/component/letter/letter-content.php'; ?>
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>

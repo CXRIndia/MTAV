@@ -18,13 +18,13 @@ get_header();
 
     <div class="body-content">
 
-        <?php include THEMEPATH . '/html-template/component/home/home-banner.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/home/home-banner.php'; ?>
 
-        <?php include THEMEPATH . '/html-template/component/home/imgvideo-title.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/home/imgvideo-title.php'; ?>
 
-        <?php include THEMEPATH . '/html-template/component/home/home-whoweare.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/home/home-whoweare.php'; ?>
 
-        <?php include THEMEPATH . '/html-template/component/home/home-bythenumber.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/home/home-bythenumber.php'; ?>
 
     </div>
 

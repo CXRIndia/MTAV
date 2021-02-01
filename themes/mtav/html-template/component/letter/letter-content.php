@@ -1,5 +1,6 @@
-<div class="container">
+
     <div class="letter-main-wrapper">
+    <div class="container">
         <h2>The following letter is penned by the founding members of the More Than A Vote coalition. Written in the summer of 2020 amid the growing COVID-19 pandemic and nationwide protests for racial justice, it states the mission of our organization and highlights the initial goals that this coalition of athletes and artists endeavored to accomplish on behalf of our community.</h2>
         <div class="two-columned-section">
             <div class="section-left">
@@ -17,7 +18,11 @@
                 <p>The third form of voter suppression is deliberately lying to and misinforming Black voters. It is publishing and broadcasting wrong and intimidating information to our community to keep us from voting through fear and confusion. Shouldn’t surprise anyone, but those trying to spread false information on social media about the election target Black voters more aggressively than any other voters. More Than A Vote will be working with our partners to use our voices and influence to help share accurate information and to educate about voting.</p>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="separator"></div>
+    </div>
+    <div class="container">
         <div class="second-section">
             <h2>So what can you do?</h2>
             <div class="two-columned-section">
@@ -33,6 +38,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="signed-section">
             <h2>Signed, THE COALITION MEMBERS:<br/>
             ALESHIA OCASIO, ALLYSON FELIX, ALVIN KAMARA, ANDREW HAWKINS, ARIKE OGUNBOWALE,

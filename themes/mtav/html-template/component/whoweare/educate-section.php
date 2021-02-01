@@ -4,25 +4,19 @@
         <div class="gradient-bg"></div>
         <div class="content-block">
             <div class="heading-compo">
-                <!-- <h5 class="title">
-                    2020 Lookback
-                </h5> -->
                 <div class="line-block">
                     <div class="left-block">
                         <span></span>
                         <span></span>
                         <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/title-icon-wh.svg" alt="">
                     </div>
-                    <!-- <div class="right-block">
-                        <span></span>
-                    </div> -->
                 </div>
             </div>
 
             <h1 class="title brand-white">educate, energize, and protect Black voters </h1>
             <p>More Than a Vote launched in June of 2020, following the murders of George Floyd, Breonna Taylor, and the Black Lives Matter protests with the goal of energizing, educating, and protecting Black voters.</p>
             <div class="btn-wrapper">
-                <a href="javascript:void(0)" class="btn btn-primary">
+                <a href="javascript:void(0)" class="btn btn-primary js-fullvideo">
                     Watch Full Video
                 </a>
             </div>
