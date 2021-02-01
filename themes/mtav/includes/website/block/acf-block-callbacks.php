@@ -193,3 +193,30 @@ function MTAV_Structure_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for MTAV numbers slider block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Numbers_Slider_Block_Render_callback( $block )
+{
+
+    $subhead  = get_field('subhead');
+    $slider_data = get_field('slider_data');
+
+    $shortcode_template  = 'template-parts/blocks/numbers-slider-block.php';
+
+    if (! empty($subhead) || !empty($slider_data) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Numbers Slider Block:</u></h4>
+            <span style="color:red">Numbers Slider Block</span>
+            <?php
+        }
+    }
+}
