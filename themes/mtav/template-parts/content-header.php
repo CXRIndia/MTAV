@@ -23,7 +23,7 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
         <?php if($logo_id && !empty($logo_id)) : ?>
             <div class="logo">
                 <a href="javascript:void(0)">
-                <img src="<?php echo esc_url($logo_image_url); ?>" alt="Logo Image">
+                    <img src="<?php echo esc_url($logo_image_url); ?>" alt="Logo Image">
                 </a>
             </div>
         <?php endif; ?>
@@ -46,35 +46,10 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
                 );
                 wp_nav_menu($args); ?>
             </div>
-            <!-- <div class="menu-wrapper">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0)" class="active">
-                            Who We Are
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            Campaigns
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            Shop
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="btn-wrapper">
-                    <a href="javascript:void(0)" class="btn btn-primary">
-                        Sign Up
-                    </a>
-                </div>
-            </div> -->
         </div>
 
         <div class="hamburger-wrapper">
-            <a href="">
+            <a href="javascript:void(0)" class="js-menuopen">
                 <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hamburger-menu-icon.svg" alt="">
             </a>
         </div>
@@ -82,3 +57,36 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
 
     </div>
 </header>
+
+<div class="mobile-menu">
+    <div class="menu-header">
+        <div class="logo">
+            <a href="javascript:void(0)">
+                <img src="<?php echo esc_url($logo_image_url); ?>" alt="Logo Image">
+            </a>
+        </div>
+        <a href="javascript:void(0)" class="menu-close js-menuclose">
+            <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/menu-close-icon.svg" alt="">
+        </a>
+    </div>
+
+    <div class="menu-wrapper">
+        <?php $args=array(
+            'theme_location' => 'primary',
+            'menu'           => 'main-menu',
+            'container'      => false ,
+            'items_wrap'     => '<ul id="%1$s">%3$s</ul>',
+        );
+        wp_nav_menu($args); ?>
+        <div class="btn-wrapper">
+            <?php $args=array(
+                'theme_location' => 'secondary',
+                'menu'           =>'signup-menu',
+                'container'      => false ,
+                'items_wrap'     => '<ul id="%1$s">%3$s</ul>',
+            );
+            wp_nav_menu($args); ?>
+        </div>
+
+    </div>
+</div>
