@@ -11,6 +11,5 @@
  */
 
 get_template_part('template-parts/components/banner');
-require THEMEPATH . '/html-template/component/letter/letter-content.php';
 
 the_content();

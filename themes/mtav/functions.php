@@ -72,7 +72,7 @@ function MTAV_scripts()
         wp_enqueue_style('mtav-whoweare-css', STYLESHEETURI . '/dist/' . $distFile['whoweare']['css']);
     }
 
-    if (is_page_template('html-template/letter.php')) {
+    if (is_page_template('html-template/letter.php') || is_page_template('letter.php')) {
         wp_enqueue_script('mtav-letter-js', STYLESHEETURI . '/dist/' . $distFile['letter']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-letter-css', STYLESHEETURI . '/dist/' . $distFile['letter']['css']);
     }
