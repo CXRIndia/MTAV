@@ -58,6 +58,7 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
     </div>
 </header>
 
+<!-- START : Mobile Menu -->
 <div class="mobile-menu">
     <div class="menu-header">
         <div class="logo">
@@ -88,5 +89,19 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
             wp_nav_menu($args); ?>
         </div>
 
+    </div>
+</div>
+
+<!-- START : Full Video Popup -->
+<div class="fullvideo-popup">
+    <div class="header">
+        <a href="javascript:void(0)" class="js-video-close">
+            <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/modal-close.svg" alt="">
+        </a>
+    </div>
+    <div class="popup-body">
+        <video playsinline="" autoplay="" muted="" width="" controls>
+            <source src="https://youtu.be/9xwazD5SyVg" type="video/mp4" />
+        </video>
     </div>
 </div>

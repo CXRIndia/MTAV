@@ -12,5 +12,71 @@
 .whatwedone-page{
   .lookback-compo{
     padding: 80px 0;
+
+    .header{
+      .heading-compo{
+
+      }
+      h1.title{
+      }
+    }
+
+    //
+    .lookback-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .single-block{
+        margin-top: 50px;
+        padding: 40px;
+        position: relative;
+        min-height: 570px;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        &:before{
+          content: "";
+          background: rgba(0,0,0,0.4);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+        }
+
+        .content-block{
+          color: $brand-white;
+          z-index: 1;
+          position: relative;
+          .heading-compo{
+            margin-bottom: 38px;
+          }
+          .inner-title{
+            margin-bottom: 16px;
+            color: $brand-white;
+          }
+
+          .content{
+            margin-bottom: 40px;
+            font-size: 22px;
+            letter-spacing: .5px;
+          }
+
+          .btn-wrapper{
+            a{
+
+            }
+          }
+        }
+
+        &:nth-child(3n-1){
+          width: calc(50% - 25px);
+        }
+        &:nth-child(3n+3){
+          width: calc(50% - 25px);
+        }
+      }
+    }
   }
 }
