@@ -39,6 +39,7 @@ module.exports = function () {
     appHomeJs: resolveApp('js/website/home.js'),
     appWhoweareJs: resolveApp('js/website/whoweare.js'),
     appletterJs: resolveApp('js/website/letter.js'),
+    appWhatwedoneJs: resolveApp('js/website/whathavewedone.js'),
     appArchiveJs: resolveApp('js/website/archive.js'),
     appNodeModules: resolveApp('../../node_modules'),
   };
@@ -59,6 +60,9 @@ module.exports = function () {
     ],
     letter: [
       appPaths.appletterJs,
+    ],
+    whatwedone: [
+      appPaths.appWhatwedoneJs,
     ],
     archive: [
       appPaths.appArchiveJs,
