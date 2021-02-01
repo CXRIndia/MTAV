@@ -5,7 +5,9 @@ import ScrollMagic from 'ScrollMagic';
 import 'animation.gsap';
 import 'debug.addIndicators';
 
-import Swiper from 'swiper';
+import Swiper, { Navigation } from 'swiper';
+// configure Swiper to use modules
+Swiper.use([Navigation]);
 
 require('../../scss/website/components/mtav-swiper.scss');
 
