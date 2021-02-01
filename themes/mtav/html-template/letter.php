@@ -18,7 +18,7 @@ get_header();
 
     <div class="body-content">
 
-    <?php get_template_part('template-parts/blocks/banner/banner'); ?>
+    <?php include THEMEPATH . '/html-template/component/banner.php'; ?>
     <?php include THEMEPATH . '/html-template/component/letter/letter-content.php'; ?>
     </div>
 
