@@ -166,3 +166,30 @@ function MTAV_I_Voted_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for MTAV Structure block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Structure_Block_Render_callback( $block )
+{
+
+    $section_title  = get_field('title');
+    $structure_data = get_field('structure_data');
+
+    $shortcode_template  = 'template-parts/blocks/structure-block.php';
+
+    if (! empty($section_title) || !empty($structure_data) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Structure Block:</u></h4>
+            <span style="color:red">Structure Block</span>
+            <?php
+        }
+    }
+}
