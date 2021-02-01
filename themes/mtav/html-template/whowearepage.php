@@ -17,12 +17,10 @@ get_header();
     <?php get_template_part('template-parts/content-header'); ?>
 
     <div class="body-content">
-
-    <?php get_template_part('template-parts/blocks/banner/banner'); ?>
-    <!-- <?php include THEMEPATH . '/html-template/component/whoweare/whoweare-banner.php'; ?> -->
-    <?php include THEMEPATH . '/html-template/component/whoweare/educate-section.php'; ?>
-    <?php include THEMEPATH . '/html-template/component/whoweare/ivoted.php'; ?>
-    <?php include THEMEPATH . '/html-template/component/whoweare/structure-section.php'; ?>
+        <?php include THEMEPATH . '/html-template/component/banner.php'; ?>
+        <?php include THEMEPATH . '/html-template/component/whoweare/educate-section.php'; ?>
+        <?php include THEMEPATH . '/html-template/component/whoweare/ivoted.php'; ?>
+        <?php include THEMEPATH . '/html-template/component/whoweare/structure-section.php'; ?>
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>
