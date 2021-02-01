@@ -6,9 +6,22 @@ footer{
   }
   .stay-connect-wrapper{
     padding: 100px 0;
+    @include mq('t-992', 'max') {
+      padding: 40px 0 72px;
+    }
     @include mq('t-768', 'max') {
       padding: 56px 0;
     }
+
+    .heading-compo{
+      @include mq('t-992', 'max') {
+        margin-bottom: 40px;
+      }
+      @include mq('t-768', 'max') {
+        margin-bottom: 20px;
+      }
+    }
+
     .stay-connect-block{
       display: flex;
       @include mq('t-768', 'max') {
@@ -21,14 +34,32 @@ footer{
         }
         @include mq('t-768', 'max') {
           width: 100%;
+          margin-bottom: 24px;
         }
         .title{
           margin-bottom: 16px;
           color: $brand-white;
+          @include mq('t-992', 'max') {
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 9px;
+          }
+          @include mq('t-768', 'max') {
+            margin-bottom: 7px;
+          }
         }
         .content{
           @include rem(font-size, 22);
           letter-spacing: .5px;
+          @include mq('t-992', 'max') {
+            font-size: 12px;
+            letter-spacing: .2px;
+          }
+          @include mq('t-768', 'max') {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: .32px;
+          }
         }
       }
 
@@ -44,6 +75,12 @@ footer{
   //
   .bottom-footer{
     padding: 32px 0;
+    @include mq('t-992', 'max') {
+      padding: 16px 0 18px;
+    }
+    @include mq('t-768', 'max') {
+      padding: 32px 0;
+    }
   }
   .page-footer{
     display: flex;
@@ -54,8 +91,12 @@ footer{
     .copy-right{
       @include rem(font-size, 16);
       display: flex;
+      align-items: center;
       @include mq('t-768', 'max') {
         flex-direction: column
+      }
+      @include mq('t-768', 'max') {
+        align-items: flex-start;
       }
       p{
         padding-right: 100px;

@@ -19,6 +19,9 @@ header {
       .logo {
         img {
           width: 37px;
+          @include mq('t-992', 'max') {
+            width: 38px;
+          }
           @include mq('t-768', 'max') {
             width: 30px;
           }
@@ -62,7 +65,7 @@ header {
                 @include rem(padding, 13, 32, 15);
                 @include Font-Pitch;
                 line-height: 1;
-                border: 1px solid;
+                border: 3px solid;
                 display: inline-block;
                 transition: all .3s;
                 cursor: pointer;
@@ -84,9 +87,10 @@ header {
 
                 &:hover,
                 &:focus {
-                  background: darken($color: $brand-primary, $amount: 5%);
-                  border-color: darken($color: $brand-primary, $amount: 5%);
                   box-shadow: none !important;
+                  background: $brand-black;
+                  border-color: $brand-primary;
+                  color: $brand-primary;
                 }
               }
             }
