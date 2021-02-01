@@ -24,6 +24,33 @@ function MTAV_Pingback_header()
 add_action('wp_head', 'MTAV_Pingback_header');
 
 /**
+ * Get header html
+ *
+ * @param string $classname class name.
+ *
+ * @return $classname div with classname
+ */
+function MTAV_Page_Entry_top($classname)
+{
+    get_header();
+    echo "<div class=\"common-page $classname\">\n"; // phpcs:ignore
+    get_template_part('template-parts/content-header');
+}
+
+/**
+ * Get footer html
+ *
+ * @return $div bottom page div
+ */
+function MTAV_Page_Entry_bottom()
+{
+    get_template_part('template-parts/content-footer');
+    echo "</div>\n";
+    get_footer();
+}
+
+
+/**
  * Get MTAV Image source
  *
  * @param int    $attachmentId image ID.
@@ -185,7 +212,7 @@ function MTAV_Block_categories( $categories, $post )
 {
     $temp = array(
         'slug'  => 'mtav',
-        'title' => __('MTAV category', 'cxr'),
+        'title' => __('MTAV category', 'mtav'),
         'icon'  => 'wordpress',
     );
 

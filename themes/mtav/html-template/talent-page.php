@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Talent
+ * Template Name: Talent - HTML
  * php version 7.4
  *
  * @category MTAV

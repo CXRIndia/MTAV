@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: WhathaveWeDone - HTML
+ * Template Name: What have We Done
  * php version 7.4
  *
  * @category MTAV

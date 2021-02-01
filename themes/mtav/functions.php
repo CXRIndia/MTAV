@@ -61,21 +61,31 @@ function MTAV_scripts()
 
     wp_enqueue_script('mtav-global-js', STYLESHEETURI . '/dist/' . $distFile['global']['js'], array('jquery'), null, true);
 
-    wp_enqueue_script('mtav-home-js', STYLESHEETURI . '/dist/' . $distFile['home']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-home-css', STYLESHEETURI . '/dist/' . $distFile['home']['css']);
 
-    wp_enqueue_script('mtav-whoweare-js', STYLESHEETURI . '/dist/' . $distFile['whoweare']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-whoweare-css', STYLESHEETURI . '/dist/' . $distFile['whoweare']['css']);
+    if (is_front_page() || is_page_template('html-template/homepage.php')) {
+        wp_enqueue_script('mtav-home-js', STYLESHEETURI . '/dist/' . $distFile['home']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-home-css', STYLESHEETURI . '/dist/' . $distFile['home']['css']);
+    }
 
-    wp_enqueue_script('mtav-letter-js', STYLESHEETURI . '/dist/' . $distFile['letter']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-letter-css', STYLESHEETURI . '/dist/' . $distFile['letter']['css']);
+    if (is_page_template('html-template/whowearepage.php') || is_page_template('whoweare.php')) {
+        wp_enqueue_script('mtav-whoweare-js', STYLESHEETURI . '/dist/' . $distFile['whoweare']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-whoweare-css', STYLESHEETURI . '/dist/' . $distFile['whoweare']['css']);
+    }
 
-    wp_enqueue_script('mtav-whatwedone-js', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-whatwedone-css', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['css']);
+    if (is_page_template('html-template/letter.php')) {
+        wp_enqueue_script('mtav-letter-js', STYLESHEETURI . '/dist/' . $distFile['letter']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-letter-css', STYLESHEETURI . '/dist/' . $distFile['letter']['css']);
+    }
 
-    wp_enqueue_script('mtav-talent-js', STYLESHEETURI . '/dist/' . $distFile['talent']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-talent-css', STYLESHEETURI . '/dist/' . $distFile['talent']['css']);
+    if (is_page_template('html-template/whathavewedone.php')) {
+        wp_enqueue_script('mtav-whatwedone-js', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-whatwedone-css', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['css']);
+    }
 
+    if (is_page_template('html-template/talent-page.php')) {
+        wp_enqueue_script('mtav-talent-js', STYLESHEETURI . '/dist/' . $distFile['talent']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-talent-css', STYLESHEETURI . '/dist/' . $distFile['talent']['css']);
+    }
 
     if (is_single()) {
         wp_enqueue_script('mtav-single-js', STYLESHEETURI . '/dist/' . $distFile['article']['js'], array('jquery'), null, true);

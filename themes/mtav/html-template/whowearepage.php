@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: WhoWeArepage
+ * Template Name: WhoWeArepage - HTML
  * php version 7.4
  *
  * @category MTAV
