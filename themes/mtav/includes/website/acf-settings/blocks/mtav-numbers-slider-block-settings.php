@@ -50,7 +50,7 @@ acf_add_local_field_group(
             'collapsed' => '',
             'min' => 0,
             'max' => 0,
-            'layout' => 'table',
+            'layout' => 'block',
             'button_label' => '',
             'sub_fields' => array(
                 array(
@@ -90,31 +90,6 @@ acf_add_local_field_group(
                     'toolbar' => 'full',
                     'media_upload' => 1,
                     'delay' => 0,
-                ),
-                array(
-                    'key' => 'field_6012703319e4e',
-                    'label' => 'Check for Two Column Description',
-                    'name' => 'check_for_two_column_description',
-                    'type' => 'checkbox',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'choices' => array(
-                        'check' => 'Two Column Description',
-                    ),
-                    'allow_custom' => 0,
-                    'default_value' => array(
-                        0 => 'check',
-                    ),
-                    'layout' => 'horizontal',
-                    'toggle' => 0,
-                    'return_format' => 'value',
-                    'save_custom' => 0,
                 ),
             ),
         ),
