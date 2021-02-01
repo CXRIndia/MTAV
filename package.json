@@ -6,7 +6,7 @@
     "start": "NODE_ENV=development NODE_SITE=mtav node ./webpack/start.js",
     "build": "NODE_ENV=production NODE_SITE=mtav node ./webpack/build.js",
     "sniff:setup": "chmod +x sniff_setup.sh && ./sniff_setup.sh",
-    "docker:start": "docker-compose down && docker-compose up --build",
+    "docker:start": "docker-compose down && COMPOSE_HTTP_TIMEOUT=200 docker-compose up --build",
     "docker:setup": "docker exec -it mtav-php sh -c /setup.sh",
     "docker:shell": "docker exec -it mtav-php /bin/bash",
     "docker:ip": "docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mtav-nginx",
