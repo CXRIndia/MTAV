@@ -19,6 +19,7 @@ require('../../scss/website/home-page.scss');
   var swiper = new Swiper('.bythenumber-slider', {
     slidesPerView: 3,
     spaceBetween: 30,
+    slidesPerGroup: 3,
     navigation: {
       nextEl: '.bythenumber-next',
       prevEl: '.bythenumber-prev',

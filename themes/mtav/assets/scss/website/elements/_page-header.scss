@@ -2,109 +2,126 @@ header {
   position: absolute;
   width: 100%;
   z-index: 100;
+  top: 0;
 
-  .container {
-    .header-menu {
-      display: flex;
-      justify-content: space-between;
-      padding: 36px 0 0;
-      align-items: center;
-      @include mq('t-992', 'max') {
-        padding: 40px 0 0;
-      }
-      @include mq('t-768', 'max') {
-        padding-top: 24px;
-      }
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0 0;
+    align-items: center;
+    @include mq('t-992', 'max') {
+      padding: 40px 0 0;
+    }
+    @include mq('t-768', 'max') {
+      padding-top: 24px;
+    }
 
-      .logo {
-        img {
-          width: 37px;
-          @include mq('t-992', 'max') {
-            width: 38px;
-          }
-          @include mq('t-768', 'max') {
-            width: 30px;
-          }
+    .logo {
+      img {
+        width: 37px;
+        @include mq('t-992', 'max') {
+          width: 38px;
         }
-      }
-
-      .menu-wrapper {
-        display: flex;
-        align-items: center;
         @include mq('t-768', 'max') {
-          display: none;
+          width: 30px;
         }
+      }
+    }
 
-        ul {
+    .menu-wrapper {
+      display: flex;
+      align-items: center;
+      @include mq('t-768', 'max') {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          padding: 0 40px 0 0;
           display: flex;
 
-          li {
-            padding: 0 40px 0 0;
-            display: flex;
+          a {
+            color: $brand-white;
+            @include Font-Plakat;
+            @include mq('t-992', 'max') {
+              font-size: 12px;
+            }
 
+            &.active {
+              color: $brand-primary;
+            }
+          }
+        }
+      }
+
+      .btn-wrapper {
+        ul {
+          li {
+            padding-right: 0;
             a {
-              color: $brand-white;
-              @include Font-Plakat;
-              @include mq('t-992', 'max') {
-                font-size: 12px;
+              font-size: 14px;
+              @include rem(padding, 13, 32, 15);
+              @include Font-Pitch;
+              line-height: 1;
+              border: 3px solid;
+              display: inline-block;
+              transition: all .3s;
+              cursor: pointer;
+              background: $brand-primary;
+              border-color: $brand-primary;
+              color: $brand-black;
+              min-width: 123px;
+              text-align: center;
+
+              @include mq(t-992, max) {
+                font-size: 14px;
+                @include rem(padding, 13, 24, 15);
               }
 
-              &.active {
+              @include mq(t-768, max) {
+                width: 100%;
+                text-align: center;
+              }
+
+              &:hover,
+              &:focus {
+                box-shadow: none !important;
+                background: $brand-black;
+                border-color: $brand-primary;
                 color: $brand-primary;
               }
             }
           }
         }
+      }
+    }
 
-        .btn-wrapper {
-          ul {
-            li {
-              padding-right: 0;
-              a {
-                font-size: 14px;
-                @include rem(padding, 13, 32, 15);
-                @include Font-Pitch;
-                line-height: 1;
-                border: 3px solid;
-                display: inline-block;
-                transition: all .3s;
-                cursor: pointer;
-                background: $brand-primary;
-                border-color: $brand-primary;
-                color: $brand-black;
-                min-width: 123px;
-                text-align: center;
+    .hamburger-wrapper{
+      @include mq('t-768', 'min') {
+        display: none;
+      }
+    }
+  }
 
-                @include mq(t-992, max) {
-                  font-size: 14px;
-                  @include rem(padding, 13, 24, 15);
-                }
+}
 
-                @include mq(t-768, max) {
-                  width: 100%;
-                  text-align: center;
-                }
-
-                &:hover,
-                &:focus {
-                  box-shadow: none !important;
-                  background: $brand-black;
-                  border-color: $brand-primary;
-                  color: $brand-primary;
-                }
-              }
+//
+.header-position{
+  header{
+    position: relative;
+    .header-menu{
+      .menu-wrapper{
+        ul{
+          li{
+            a{
+              color: $brand-black;
             }
           }
         }
       }
-
-      .hamburger-wrapper{
-        @include mq('t-768', 'min') {
-          display: none;
-        }
-      }
     }
-
   }
 }
 
