@@ -10,5 +10,6 @@
  * @link     MTAV
  */
 
-// Admin Common Functions
-require_once THEMEPATH . '/includes/admin/common/admin-common-functions.php';
+foreach ( glob(THEMEPATH . '/includes/admin/post-types/*.php') as $filename ) {
+    include $filename;
+}
