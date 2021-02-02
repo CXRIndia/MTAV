@@ -100,8 +100,6 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
         </a>
     </div>
     <div class="popup-body">
-        <video playsinline="" autoplay="" muted="" width="" controls>
-            <source src="https://youtu.be/9xwazD5SyVg" type="video/mp4" />
-        </video>
+        <iframe src="https://www.youtube.com/embed/9xwazD5SyVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div> -->
