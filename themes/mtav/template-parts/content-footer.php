@@ -92,28 +92,28 @@ $youtube_url    = get_field('youtube_link', 'options');
                     <ul>
                     <?php if($facebook_url && !empty($facebook_url)) :?>
                         <li>
-                            <a href="<?php echo esc_url($facebook_url);?>">
+                            <a href="<?php echo esc_url($facebook_url);?>" target="_blank">
                                 <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/fb-icon.svg" alt="facebook">
                             </a>
                         </li>
                     <?php endif; ?>
                     <?php if($twitter_url && !empty($twitter_url)) :?>
                         <li>
-                            <a href="<?php echo esc_url($twitter_url);?>">
+                            <a href="<?php echo esc_url($twitter_url);?>" target="_blank">
                                 <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/twitter-icon.svg" alt="twitter">
                             </a>
                         </li>
                     <?php endif; ?>
                     <?php if($instagram_url && !empty($instagram_url)) :?>
                         <li>
-                            <a href="<?php echo esc_url($instagram_url);?>">
+                            <a href="<?php echo esc_url($instagram_url);?>" target="_blank">
                                 <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/instagram-icon.svg" alt="instagram">
                             </a>
                         </li>
                     <?php endif; ?>
                     <?php if($youtube_url && !empty($youtube_url)) :?>
                         <li>
-                            <a href="<?php echo esc_url($youtube_url);?>">
+                            <a href="<?php echo esc_url($youtube_url);?>" target="_blank">
                                 <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/youtube-icon.svg" alt="youtube">
                             </a>
                         </li>
