@@ -16,8 +16,7 @@ get_header();
 
     <?php get_template_part('template-parts/content-header'); ?>
 
-    <div class="body-content">
-
+    <div class="body-content letter-main-wrapper">
     <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
     <?php require THEMEPATH . '/html-template/component/letter/letter-content.php'; ?>
     </div>
