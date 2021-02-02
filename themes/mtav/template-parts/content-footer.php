@@ -58,7 +58,7 @@ $youtube_url    = get_field('youtube_link', 'options');
                     <div class="form-wrapper">
                     <?php echo do_shortcode('[contact-form-7 id="24" title="Stay Connected"]');?>
                     <?php if($note && !empty($note)) :?>
-                        <?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?>
+                        <p><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
                     <?php endif; ?>
                     </div>
                 </div>

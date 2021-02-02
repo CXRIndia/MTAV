@@ -93,7 +93,7 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
 </div>
 
 <!-- START : Full Video Popup -->
-<div class="fullvideo-popup">
+<!-- <div class="fullvideo-popup">
     <div class="header">
         <a href="javascript:void(0)" class="js-video-close">
             <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/modal-close.svg" alt="">
@@ -104,4 +104,4 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
             <source src="https://youtu.be/9xwazD5SyVg" type="video/mp4" />
         </video>
     </div>
-</div>
+</div> -->
