@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Letterpage - HTML
+ * Template Name: Talent
  * php version 7.4
  *
  * @category MTAV
@@ -12,18 +12,17 @@
 get_header();
 ?>
 
-<div class="common-page letter-page">
+<div class="common-page talent-page">
 
     <?php get_template_part('template-parts/content-header'); ?>
 
-    <div class="body-content letter-main-wrapper">
-    <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
-    <?php require THEMEPATH . '/html-template/component/letter/letter-content.php'; ?>
+    <div class="body-content">
+        <?php include THEMEPATH . '/html-template/component/banner.php'; ?>
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>
 
- </div>
+</div>
 
 <?php
 get_footer();
