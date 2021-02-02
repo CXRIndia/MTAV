@@ -19,7 +19,9 @@ get_header();
     <div class="body-content letter-main-wrapper">
         <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
         <?php require THEMEPATH . '/html-template/component/need-solve.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/campaign-launch.php'; ?>
         <?php require THEMEPATH . '/html-template/component/campaign/map.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/our-partners.php'; ?>
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>
