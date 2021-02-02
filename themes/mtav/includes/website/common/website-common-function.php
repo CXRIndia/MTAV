@@ -233,24 +233,42 @@ function MTAV_Block_categories( $categories, $post )
 }
 add_filter('block_categories', 'MTAV_Block_categories', 10, 2);
 
-
-function na_remove_slug( $post_link, $post, $leavename )
+/**
+ * Function used to remove slug
+ *
+ * @param $post_link $array
+ * @param $post      object
+ *
+ * @return void
+ */
+function MTAV_Remove_slug( $post_link, $post )
 {
-    if ('team' != $post->post_type || 'publish' != $post->post_status ) {
-        return $post_link;
+    if ('team' === $post->post_type && 'publish' === $post->post_status ) {
+        $post_link = str_replace('/' . $post->post_type . '/', '/', $post_link);
     }
-    $post_link = str_replace('/' . $post->post_type . '/', '/', $post_link);
     return $post_link;
 }
-add_filter('post_type_link', 'na_remove_slug', 10, 3);
+add_filter('post_type_link', 'MTAV_Remove_slug', 10, 3);
 
-function na_parse_request( $query )
+/**
+ * Function used to parse request.
+ *
+ * @param $query object
+ *
+ * @return void
+ */
+function MTAV_Parse_request( $query )
 {
-    if (! $query->is_main_query() || 2 != count($query->query) || ! isset($query->query['page']) ) {
+    if (! $query->is_main_query()
+        || 2 != count($query->query)
+        || ! isset($query->query['page'])
+    ) {
         return;
     }
     if (! empty($query->query['name']) ) {
         $query->set('post_type', array( 'post', 'team', 'page' ));
     }
 }
-add_action('pre_get_posts', 'na_parse_request');
+add_action('pre_get_posts', 'MTAV_Parse_request');
+
+add_filter('wpcf7_autop_or_not', '__return_false');

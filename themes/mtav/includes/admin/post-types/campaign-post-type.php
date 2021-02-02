@@ -1,6 +1,6 @@
 <?php
 /**
- * Project Custom Post Type
+ * Campaign Post Type
  * php version 7.4
  *
  * @category CXR
@@ -24,6 +24,7 @@ function MTAV_Change_Post_label()
     $submenu['edit.php'][10][0] = 'Add Campaign';
     $submenu['edit.php'][16][0] = 'Campaign Tags';
 }
+add_action('admin_menu', 'MTAV_Change_Post_label');
 
 /**
  * To Change WP default post name
@@ -48,6 +49,4 @@ function MTAV_Change_Post_object()
     $labels->menu_name = 'Campaign';
     $labels->name_admin_bar = 'Campaign';
 }
-
-add_action('admin_menu', 'MTAV_Change_Post_label');
 add_action('init', 'MTAV_Change_Post_object');

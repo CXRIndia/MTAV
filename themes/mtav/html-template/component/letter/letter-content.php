@@ -1,5 +1,5 @@
 
-    <div class="letter-main-wrapper">
+
     <div class="container">
         <h2>The following letter is penned by the founding members of the More Than A Vote coalition. Written in the summer of 2020 amid the growing COVID-19 pandemic and nationwide protests for racial justice, it states the mission of our organization and highlights the initial goals that this coalition of athletes and artists endeavored to accomplish on behalf of our community.</h2>
         <div class="two-columned-section">
@@ -54,6 +54,5 @@
             RENEE MONTGOMERY, SKYLAR DIGGINS, SLOANE STEPHENS, TASHA CLOUD, TIM ANDERSON,
             TONI BRAXTON, TRAE YOUNG, UDONIS HASLEM</h2>
         </div>
-    </div>
 </div>
 

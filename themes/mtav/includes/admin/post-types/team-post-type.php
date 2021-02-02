@@ -1,6 +1,6 @@
 <?php
 /**
- * Service Custom Post Type
+ * Team Custom Post Type
  * php version 7.4
  *
  * @category MTAV
@@ -15,7 +15,7 @@
  *
  * @return $labels for post type
  */
-function MTAV_Custom_Post_type()
+function MTAV_Team_Custom_Post_type()
 {
     $labels = array(
         'name'                => _x('Team', 'Post Type General Name'),
@@ -52,17 +52,10 @@ function MTAV_Custom_Post_type()
         'publicly_queryable'  => true,
         'capability_type'     => 'post',
         'show_in_rest'        => true,
-        'rewrite' => array(
-            'slug' => '/',
-            'with_front' => false
-        ),
-        // This is where we add taxonomies to our CPT
-        'taxonomies'          => array( 'category', 'post_tag' ),
+        'rewrite'            => false,
     );
 
     // Registering your Custom Post Type
     register_post_type('team', $args);
-
 }
-
-add_action('init', 'MTAV_Custom_Post_type', 0);
+add_action('init', 'MTAV_Team_Custom_Post_type', 0);

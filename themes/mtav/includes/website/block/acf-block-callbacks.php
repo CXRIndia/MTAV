@@ -222,13 +222,13 @@ function MTAV_Numbers_Slider_Block_Render_callback( $block )
 }
 
 /**
- * Callback function for two column data block
+ * Callback function for two column data with image block
  *
  * @param [type] $block Block.
  *
  * @return void
  */
-function MTAV_Two_Column_Data_Block_Render_callback( $block )
+function MTAV_Data_Image_Block_Render_callback( $block )
 {
 
     $block_title         = get_field('block_title');
@@ -242,9 +242,83 @@ function MTAV_Two_Column_Data_Block_Render_callback( $block )
         $right_column_img_url   = MTAV_Get_image($right_column_img_array);
     }
 
-    $shortcode_template  = 'template-parts/blocks/two-column-data-block.php';
+    $shortcode_template  = 'template-parts/blocks/two-column-data-block-with-image.php';
 
     if (! empty($block_title) || !empty($left_column_data) || !empty($right_column_img_id) || !empty($right_column_data) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Two Columns Data with Image Block:</u></h4>
+            <span style="color:red">Two Columns Data with Image Block</span>
+            <?php
+        }
+    }
+}
+
+/**
+ * Callback function for bold content data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Bold_Content_Block_Render_callback( $block )
+{
+
+    $bold_data = get_field('bold_content_data');
+
+    $shortcode_template  = 'template-parts/blocks/bold-content-data-block.php';
+
+    if (! empty($bold_data)) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Bold Content Data Block:</u></h4>
+            <span style="color:red">Bold Content Data Block</span>
+            <?php
+        }
+    }
+}
+
+/**
+ * Callback function for separator content data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Separator_Block_Render_callback( $block )
+{
+    $shortcode_template  = 'template-parts/blocks/mtav-separator-block.php';
+
+    include locate_template($shortcode_template);
+
+    if (is_admin() ) {
+        ?>
+            <h4><u>MTAV Separator</u></h4>
+        <?php
+    }
+}
+
+/**
+ * Callback function for two column data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Two_Column_Data_Block_Render_callback( $block )
+{
+
+    $block_title         = get_field('block_title');
+    $left_column_data    = get_field('left_column_data');
+    $right_column_data   = get_field('right_column_data');
+
+    $shortcode_template  = 'template-parts/blocks/two-column-data-block.php';
+
+    if (! empty($block_title) || !empty($left_column_data) || !empty($right_column_data) ) {
         include locate_template($shortcode_template);
     } else {
         if (is_admin() ) {

@@ -13,7 +13,7 @@
 MTAV_Page_Entry_top('letter-page');
 ?>
 
-<div class="body-content">
+<div class="body-content letter-main-wrapper">
     <?php
     while ( have_posts() ) :
         the_post();

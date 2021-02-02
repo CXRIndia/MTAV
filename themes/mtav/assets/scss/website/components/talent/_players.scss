@@ -1,0 +1,149 @@
+.players-compo{
+  padding: 80px 0;
+  background-image: url("../../images/png/bg-transpernt.png");
+  background-size: contain;
+  position: relative;
+  @include mq('t-992', 'max') {
+    padding: 72px 0;
+  }
+  @include mq('t-768', 'max') {
+    padding: 56px 0;
+    margin: 0 12px;
+  }
+  &:after{
+    content: "";
+    background-color: $brand-primary;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  }
+
+  > .container{
+    padding: 0 12px;
+  }
+
+  //
+  .header{
+    .heading-compo{
+
+    }
+    h1.title{
+      margin-bottom: 20px;
+      @include mq('t-992', 'max') {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 16px;
+      }
+      @include mq('t-768', 'max') {
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //
+  .players-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+    @include mq('t-992', 'max') {
+      margin: 0 -20px;
+    }
+    @include mq('t-768', 'max') {
+      margin: 0;
+    }
+    .single-block{
+      width: 33.33%;
+      padding: 0 25px;
+      display: flex;
+      @include mq('t-992', 'max') {
+        width: 50%;
+        padding: 0 20px;
+      }
+      @include mq('t-768', 'max') {
+        padding: 0;
+        width: 100%;
+      }
+      > div{
+        display: flex;
+        padding: 40px 0;
+        position: relative;
+        width: 100%;
+        @include mq('t-992', 'max') {
+          padding: 24px 0 18px;
+        }
+        @include mq('t-768', 'max') {
+          padding: 25px 0;
+        }
+        &:after{
+          content: "";
+          background-image: url("../../images/icons/dash.svg");
+          background-size: contain;
+          height: 1px;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          @include mq('t-992', 'max') {
+            background-size: 18px 1px;
+          }
+          @include mq('t-768', 'max') {
+            background-size: 21px 1px;
+          }
+        }
+      }
+
+      .icon{
+        margin-right: 14px;
+        display: flex;
+        @include mq('t-992', 'max') {
+          margin-right: 13px;
+        }
+        @include mq('t-768', 'max') {
+          margin-right: 16px;
+        }
+        img{
+          @include mq('t-992', 'max') {
+            max-width: 17px;
+          }
+          @include mq('t-768', 'max') {
+            max-width: 23px;
+          }
+        }
+      }
+      .content-block{
+        display: flex;
+        flex-direction: column;
+        .inner-title{
+          font-size: 26px;
+          line-height: 30px;
+          margin-bottom: 2px;
+          @include mq('t-992', 'max') {
+            font-size: 18px;
+            line-height: 20px;
+          }
+          @include mq('t-768', 'max') {
+            font-size: 25px;
+            line-height: 32px;
+          }
+        }
+        .link{
+          color: $brand-black;
+          @include mq('t-992', 'max') {
+            font-size: 12px;
+            line-height: 16px;
+          }
+          @include mq('t-768', 'max') {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: .32px;
+          }
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
