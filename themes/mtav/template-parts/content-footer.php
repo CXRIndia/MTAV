@@ -13,6 +13,7 @@
 <?php
 $title          = get_field('title', 'options');
 $description    = get_field('description', 'options');
+$contact_form   = get_field('contact_form', 'options');
 $note           = get_field('add_note', 'options');
 $copyright_text = get_field('copyright_text', 'options');
 $facebook_url   = get_field('facebook_link', 'options');
@@ -27,9 +28,6 @@ $youtube_url    = get_field('youtube_link', 'options');
             <div class="stay-connect-wrapper">
 
                 <div class="heading-compo">
-                    <!-- <h5 class="title">
-                        By The Numbers
-                    </h5> -->
                     <div class="line-block">
                         <div class="left-block">
                             <span></span>
@@ -55,8 +53,11 @@ $youtube_url    = get_field('youtube_link', 'options');
                         </p>
                     <?php endif; ?>
                     </div>
+
+                    <?php if($contact_form && !empty($contact_form)) :?>
                     <div class="form-wrapper">
-                    <?php echo do_shortcode('[contact-form-7 id="24" title="Stay Connected"]');?>
+                        <?php echo do_shortcode($contact_form);?>
+                    <?php endif; ?>
                     <?php if($note && !empty($note)) :?>
                         <?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?>
                     <?php endif; ?>
