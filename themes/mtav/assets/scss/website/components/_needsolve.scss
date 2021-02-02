@@ -1,0 +1,74 @@
+.need-solve--wrapper {
+  padding: 80px 0;
+  background-image: url("../../images/png/bg-transpernt.png");
+  background-size: contain;
+  position: relative;
+  @include mq('t-992', 'max') {
+    padding: 72px 0;
+  }
+  @include mq('t-768', 'max') {
+    padding: 56px 0;
+    margin: 0 12px;
+  }
+  &:after{
+    content: "";
+    background-color: $brand-primary;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+
+.need-solve--inner-wrapper {
+    display: flex;
+
+    @include mq('t-768', 'min') {
+      justify-content: space-between;
+    }
+
+    .need-solve--left {
+
+      @include mq('t-768', 'min') {
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .need-solve--image {
+        display: flex;
+
+        @include mq('t-768', 'min') {
+          margin-top: 50px;
+        }
+      }
+    }
+
+    .need-solve--right {
+
+      @include mq('t-768', 'min') {
+        max-width: 513px;
+        width: 100%;
+      }
+
+      .need-solve--image {
+        display: flex;
+
+        @include mq('t-768', 'min') {
+          justify-content: flex-end;
+          margin-bottom: 16px;
+        }
+      }
+
+    }
+
+    .content-para {
+
+      @include mq('t-768', 'min') {
+        font-size: 22px;
+        letter-spacing: 0.5px;
+        margin-top: 20px;
+      }
+    }
+}

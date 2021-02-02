@@ -65,8 +65,118 @@ footer{
 
       .form-wrapper{
         width: 50%;
+        padding-left: 58px;
+        @include mq('t-992', 'max') {
+          padding-left: 0;
+        }
         @include mq('t-768', 'max') {
           width: 100%;
+        }
+
+        .main-form{
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -11px;
+          @include mq('t-768', 'max') {
+            margin: 0;
+          }
+          .form-group{
+            padding: 0 11px;
+            width: 50%;
+            margin-bottom: 16px;
+            @include mq('t-992', 'max') {
+              margin-bottom: 8px;
+            }
+            @include mq('t-768', 'max') {
+              margin-bottom: 16px;
+              width: 100%;
+              padding: 0;
+            }
+            .lbl-title{
+              font-size: 14px;
+              @include Font-Pitch;
+              display: flex;
+              margin-bottom: 10px;
+              @include mq('t-992', 'max') {
+                font-size: 12px;
+                margin-bottom: 4px;
+              }
+              @include mq('t-768', 'max') {
+                font-size: 14px;
+                margin-bottom: 10px;
+              }
+            }
+            .wpcf7-form-control-wrap{
+              display: flex;
+              input{
+                color: $brand-white;
+                width: 100%;
+                padding: 10px 15px;
+                border: 1px solid #fff;
+                min-height: 46px;
+                background-color: transparent;
+                @include mq('t-992', 'max') {
+                  min-height: 32px;
+                }
+                @include mq('t-768', 'max') {
+                  min-height: 46px;
+                }
+              }
+            }
+          }
+        }
+
+        .btn-wrapper{
+          margin: 6px 0 12px;
+          @include mq('t-992', 'max') {
+            margin: 8px 0 16px;
+          }
+          input{
+            font-size: 20px;
+            @include rem(padding, 11, 32, 13);
+            @include Font-Pitch;
+            line-height: 1;
+            border: 3px solid;
+            display: inline-block;
+            transition: all .3s;
+            cursor: pointer;
+            background: $brand-primary;
+            border-color: $brand-primary;
+            color: $brand-black;
+            min-width: 176px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            @include mq(t-992, max) {
+              @include rem(font-size, 11);
+              min-width: 112px;
+              letter-spacing: .55px;
+              @include rem(padding, 8, 10, 7);
+            }
+            @include mq(t-768, max) {
+              font-size: 18px;
+              height: 56px;
+              width: 100%;
+              text-align: center;
+            }
+
+            &:hover,
+            &:focus {
+              background: $brand-black;
+              border-color: $brand-primary;
+              color: $brand-primary;
+            }
+          }
+        }
+
+        .form-content{
+          font-size: 12px;
+          @include Font-Pitch;
+          padding-right: 100px;
+          @include mq(t-992, max) {
+            font-size: 10px;
+            padding-right: 0;
+          }
         }
       }
     }

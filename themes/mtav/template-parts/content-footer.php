@@ -59,7 +59,7 @@ $youtube_url    = get_field('youtube_link', 'options');
                         <?php echo do_shortcode($contact_form);?>
                     <?php endif; ?>
                     <?php if($note && !empty($note)) :?>
-                        <p><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
+                        <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
                     <?php endif; ?>
                     </div>
                 </div>

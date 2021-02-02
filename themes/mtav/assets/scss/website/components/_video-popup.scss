@@ -23,9 +23,14 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    video{
-      width: 85%;
+    // video{
+    //   width: 85%;
+    //   margin: 0 auto;
+    // }
+    iframe{
+      width: 90%;
       margin: 0 auto;
+      height: 90%;
     }
   }
   &.open{
