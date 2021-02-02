@@ -42,22 +42,23 @@ $youtube_url    = get_field('youtube_link', 'options');
 
                 <div class="stay-connect-block">
                     <div class="content-block">
-                    <?php if($title && !empty($title)) :?>
-                        <h1 class="title">
-                            <?php echo wp_kses_post($title); ?>
-                        </h1>
-                    <?php endif; ?>
-                    <?php if($description && !empty($description)) :?>
-                        <p class="content">
-                        <?php echo wp_kses_post(MTAV_Remove_ptag($description)); ?>
-                        </p>
-                    <?php endif; ?>
+                        <?php if($title && !empty($title)) :?>
+                            <h1 class="title">
+                                <?php echo wp_kses_post($title); ?>
+                            </h1>
+                        <?php endif; ?>
+                        <?php if($description && !empty($description)) :?>
+                            <p class="content">
+                            <?php echo wp_kses_post(MTAV_Remove_ptag($description)); ?>
+                            </p>
+                        <?php endif; ?>
                     </div>
 
-                    <?php if($contact_form && !empty($contact_form)) :?>
                     <div class="form-wrapper">
-                        <?php echo do_shortcode($contact_form);?>
-                    <?php endif; ?>
+                    <?php if ($contact_form && !empty($contact_form)) {
+                         echo do_shortcode($contact_form);
+                    };
+                    ?>
                     <?php if($note && !empty($note)) :?>
                         <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
                     <?php endif; ?>
