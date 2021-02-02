@@ -30,7 +30,7 @@ function MTAV_Tiles_Block_Render_callback( $block )
 
     if ($big_tile_img_id && !empty($big_tile_img_id)) {
         $big_tile_img_array = wp_get_attachment_image_src($big_tile_img_id, 'full');
-        $big_tile_img_alt   = MTAV_Get_Image_alt($big_tile_img_id, "CXR logo");
+        $big_tile_img_alt   = MTAV_Get_Image_alt($big_tile_img_id, "logo");
         $big_tile_img_url   = MTAV_Get_image($big_tile_img_array);
     }
 
@@ -70,7 +70,7 @@ function MTAV_Who_We_Are_Block_Render_callback( $block )
 
     if ($block_img_id && !empty($block_img_id)) {
         $block_img_array = wp_get_attachment_image_src($block_img_id, 'full');
-        $block_img_alt   = MTAV_Get_Image_alt($block_img_id, "CXR logo");
+        $block_img_alt   = MTAV_Get_Image_alt($block_img_id, "logo");
         $block_img_url   = MTAV_Get_image($block_img_array);
     }
 
