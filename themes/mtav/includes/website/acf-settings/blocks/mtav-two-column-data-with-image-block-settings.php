@@ -1,6 +1,6 @@
 <?php
 /**
- * MTAV two column data block acf settings
+ * MTAV two column data block with image acf settings
  * php version 7.4
  *
  * @category MTAV
@@ -12,11 +12,11 @@
 
 acf_add_local_field_group(
     array(
-    'key' => 'group_6019100d70691',
-    'title' => 'MTAV Two Column Data Block Settings',
+    'key' => 'group_60129f3d49929',
+    'title' => 'MTAV Two Column Data with Image Block Settings',
     'fields' => array(
         array(
-            'key' => 'field_601910105177c',
+            'key' => 'field_60129f5258dd5',
             'label' => 'Block Title',
             'name' => 'block_title',
             'type' => 'wysiwyg',
@@ -35,7 +35,7 @@ acf_add_local_field_group(
             'delay' => 0,
         ),
         array(
-            'key' => 'field_60191010517f3',
+            'key' => 'field_6012a03758dd6',
             'label' => 'Left Column Data',
             'name' => 'left_column_data',
             'type' => 'wysiwyg',
@@ -54,7 +54,31 @@ acf_add_local_field_group(
             'delay' => 0,
         ),
         array(
-            'key' => 'field_6019101051884',
+            'key' => 'field_6012a05058dd7',
+            'label' => 'Right Column Image',
+            'name' => 'right_column_image',
+            'type' => 'image',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'return_format' => 'id',
+            'preview_size' => 'medium',
+            'library' => 'all',
+            'min_width' => '',
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => '',
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+        ),
+        array(
+            'key' => 'field_6012a06958dd8',
             'label' => 'Right Column Data',
             'name' => 'right_column_data',
             'type' => 'wysiwyg',
@@ -78,7 +102,7 @@ acf_add_local_field_group(
             array(
                 'param' => 'block',
                 'operator' => '==',
-                'value' => 'acf/mtav-two-column-data-block',
+                'value' => 'acf/mtav-two-column-data-with-image-block',
             ),
         ),
     ),
