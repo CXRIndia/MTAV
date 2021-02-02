@@ -226,3 +226,5 @@ function MTAV_Block_categories( $categories, $post )
     return $newCategories;
 }
 add_filter('block_categories', 'MTAV_Block_categories', 10, 2);
+
+add_filter('wpcf7_autop_or_not', '__return_false');

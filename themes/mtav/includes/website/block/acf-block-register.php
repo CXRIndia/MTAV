@@ -105,6 +105,18 @@ function MTAV_Acf_init()
 
         acf_register_block_type(
             array(
+            'name'              => 'mtav-two-column-data-with-image-block',
+            'title'             => __('MTAV Two Column Data with Image Block'),
+            'description'       => __('A custom two column data with image format block.'),
+            'render_callback'   => 'MTAV_Data_Image_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
             'name'              => 'mtav-the-need-block',
             'title'             => __('MTAV The Need Block'),
             'description'       => __('A custom the need format block.'),
