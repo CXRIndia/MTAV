@@ -255,3 +255,29 @@ function MTAV_Two_Column_Data_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for bold content data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Bold_Content_Block_Render_callback( $block )
+{
+
+    $bold_data = get_field('bold_content_data');
+
+    $shortcode_template  = 'template-parts/blocks/bold-content-data-block.php';
+
+    if (! empty($bold_data)) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Bold Content Data Block:</u></h4>
+            <span style="color:red">Bold Content Data Block</span>
+            <?php
+        }
+    }
+}

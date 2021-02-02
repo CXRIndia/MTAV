@@ -175,6 +175,30 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-separator-block',
+            'title'             => __('MTAV Separator Block'),
+            'description'       => __('A custom separator format block.'),
+            'render_callback'   => 'MTAV_Separator_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-bold-content-block',
+            'title'             => __('MTAV Bold Content Block'),
+            'description'       => __('A custom bold content format block.'),
+            'render_callback'   => 'MTAV_Bold_Content_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 

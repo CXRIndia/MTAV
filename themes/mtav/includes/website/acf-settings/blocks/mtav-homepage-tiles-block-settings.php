@@ -330,6 +330,11 @@ acf_add_local_field_group(
                 'operator' => '==',
                 'value' => 'acf/mtav-tiles-block',
             ),
+            array(
+                'param' => 'page_type',
+                'operator' => '==',
+                'value' => 'front_page',
+            ),
         ),
     ),
     'menu_order' => 0,
