@@ -1,5 +1,6 @@
 .banner{
   position: relative;
+  background-size: cover;
   &:before{
     content: "";
     background: rgba(0,0,0,0.48);
@@ -20,14 +21,14 @@
     }
     .container{
       margin-top: auto;
-      margin-bottom: 100px;
-      padding: 0 100px;
+      margin-bottom: 80px;
+      // padding: 0 100px;
       @include mq('t-992', 'max') {
-        padding: 0 58px 0 40px;
+        // padding: 0 58px 0 40px;
         margin-bottom: 71px;
       }
       @include mq('t-768', 'max') {
-        padding: 0 24px 0 24px;
+        // padding: 0 24px 0 24px;
         margin-bottom: 56px;
       }
     }
