@@ -10,22 +10,13 @@
  * @link     MTAV
  */
 
-get_header();
+//get_header();
 
+MTAV_Page_Entry_top('home-page');
 ?>
-<div class="common-page home-page">
-
-<?php get_template_part('template-parts/content-header'); ?>
-
-    <div class="body-content">
+<div class="body-content">
+    <?php require locate_template('template-parts/front-page.php'); ?>
+</div>
 
 <?php
-
-require locate_template('template-parts/front-page.php');
-
-get_template_part('template-parts/content-footer'); ?>
-
- </div>
-
-<?php
-get_footer();
+MTAV_Page_Entry_bottom();

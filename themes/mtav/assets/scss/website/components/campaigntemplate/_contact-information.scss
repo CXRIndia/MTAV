@@ -1,0 +1,33 @@
+.contactinfo-compo{
+  padding: 80px 0;
+  .conatctinfo-wrapper{
+    display: flex;
+    .content-block{
+      padding-right: 27.5px;
+      width: 50%;
+    }
+    .heading-compo{
+
+    }
+    h1.main-title{
+      margin-bottom: 20px;
+    }
+    .content{
+      font-size: 22px;
+      letter-spacing: .5px;
+      line-height: 26px;
+    }
+
+    //
+    .form-wrapper{
+      padding-left: 27.5px;
+      width: 50%;
+    }
+  }
+
+  ///////// Form
+  #can_embed_form.can_float #form_col1,
+  #can_embed_form.can_float #form_col2{
+    width: 100%!important;
+  }
+}

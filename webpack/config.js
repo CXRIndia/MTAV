@@ -40,6 +40,8 @@ module.exports = function () {
     appWhoweareJs: resolveApp('js/website/whoweare.js'),
     appletterJs: resolveApp('js/website/letter.js'),
     appCampaignJs: resolveApp('js/website/campaign.js'),
+    appCampaignTemplateJs: resolveApp('js/website/campaigntemplate.js'),
+    appError404Js: resolveApp('js/website/error404.js'),
     appWhatwedoneJs: resolveApp('js/website/whathavewedone.js'),
     appTalentJs: resolveApp('js/website/talent.js'),
     appArchiveJs: resolveApp('js/website/archive.js'),
@@ -74,6 +76,12 @@ module.exports = function () {
     ],
     campaign: [
       appPaths.appCampaignJs,
+    ],
+    campaigntemplate: [
+      appPaths.appCampaignTemplateJs,
+    ],
+    error404: [
+      appPaths.appError404Js,
     ],
   };
 

@@ -174,6 +174,22 @@ acf_add_local_field_group(
             'default_value' => 'https://www.youtube.com/MoreThanAVote',
             'placeholder' => '',
         ),
+        array(
+            'key' => 'field_601958e3599ef',
+            'label' => 'Tiktok Link',
+            'name' => 'tiktok_link',
+            'type' => 'url',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => 'https://www.tiktok.com/@morethanavote',
+            'placeholder' => '',
+        ),
     ),
     'location' => array(
         array(
