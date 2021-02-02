@@ -281,3 +281,23 @@ function MTAV_Bold_Content_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for separator content data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Separator_Block_Render_callback( $block )
+{
+    $shortcode_template  = 'template-parts/blocks/mtav-separator-block.php';
+
+    include locate_template($shortcode_template);
+
+    if (is_admin() ) {
+        ?>
+            <h4><u>MTAV Separator</u></h4>
+        <?php
+    }
+}
