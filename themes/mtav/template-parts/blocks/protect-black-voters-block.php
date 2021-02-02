@@ -12,6 +12,17 @@
 
 ?>
 
+<div class="fullvideo-popup">
+    <div class="header">
+        <a href="javascript:void(0)" class="js-video-close">
+            <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/modal-close.svg" alt="">
+        </a>
+    </div>
+    <div class="popup-body">
+        <iframe src="<?php echo esc_url($video_url);?>?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 <div class="container-fluid imgvideo-title-sec-two">
     <div class="big-block-wrapper"
         style="background-image: url('<?php echo  esc_url($left_column_img_url); ?>')">
@@ -41,7 +52,7 @@
 
             <?php if($left_column_btn_label && !empty($left_column_btn_label)) :?>
                 <div class="btn-wrapper">
-                    <a href="javascript:void(0)" class="btn btn-primary">
+                    <a href="javascript:void(0)" class="btn btn-primary js-fullvideo">
                         <?php echo wp_kses_post($left_column_btn_label);?>
                     </a>
                 </div>
