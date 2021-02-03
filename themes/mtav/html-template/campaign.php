@@ -18,6 +18,7 @@ get_header();
 
     <div class="body-content letter-main-wrapper">
         <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/the-impact.php'; ?>
         <?php require THEMEPATH . '/html-template/component/need-solve.php'; ?>
         <?php require THEMEPATH . '/html-template/component/campaign-launch.php'; ?>
         <?php require THEMEPATH . '/html-template/component/campaign/map.php'; ?>
