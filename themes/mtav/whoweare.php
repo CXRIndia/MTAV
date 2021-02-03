@@ -17,7 +17,8 @@ MTAV_Page_Entry_top('whoweare-page');
     <?php
     while ( have_posts() ) :
         the_post();
-        include locate_template('template-parts/whoweare.php');
+        get_template_part('template-parts/components/banner');
+        the_content();
     endwhile;
     ?>
 </div>

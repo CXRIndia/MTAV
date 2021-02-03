@@ -17,7 +17,9 @@ MTAV_Page_Entry_top('talent-page');
     <?php
     while ( have_posts() ) :
         the_post();
-        include locate_template('template-parts/talent.php');
+        get_template_part('template-parts/components/banner');
+        get_template_part('template-parts/components/talent/players');
+        get_template_part('template-parts/components/talent/staff');
     endwhile;
     ?>
 </div>

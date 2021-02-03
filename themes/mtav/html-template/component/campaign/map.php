@@ -316,7 +316,7 @@
 
                 <div class="map-details--info">
                     <div class="content">
-                        Additional states with high<br> recruitment numbers
+                        Additional states with high recruitment numbers
                     </div>
                     <div class="color-code light-gray">
 
