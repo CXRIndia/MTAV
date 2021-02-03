@@ -63,11 +63,12 @@ function MTAV_Tiles_Block_Render_callback( $block )
 function MTAV_Who_We_Are_Block_Render_callback( $block )
 {
 
-    $title = get_field('title');
-    $subhead = get_field('subhead');
-    $button_label = get_field('button_label');
-    $button_url = get_field('button_url');
-    $block_img_id = get_field('block_image');
+    $title           = get_field('title');
+    $subhead         = get_field('subhead');
+    $button_label    = get_field('button_label');
+    $button_url      = get_field('button_url');
+    $open_in_new_tab = get_field('open_in_new_tab');
+    $block_img_id    = get_field('block_image');
 
     if ($block_img_id && !empty($block_img_id)) {
         $block_img_array = wp_get_attachment_image_src($block_img_id, 'full');

@@ -120,7 +120,7 @@
         <div class="viewmore-wrapper">
             <a href="<?php echo esc_url($view_button_url); ?>"
             <?php if($view_btn_open_in_new_tab == true) : echo "target='_blank'";
-            endif;?>>>
+            endif;?>>
                 <?php echo wp_kses_post($view_button_label);?>
             </a>
         </div>
