@@ -34,9 +34,10 @@ function MTAV_Tiles_Block_Render_callback( $block )
         $big_tile_img_url   = MTAV_Get_image($big_tile_img_array);
     }
 
-    $small_tile_data    = get_field('small_tile_data');
-    $view_button_label  = get_field('view_button_label');
-    $view_button_url    = get_field('view_button_url');
+    $small_tile_data          = get_field('small_tile_data');
+    $view_button_label        = get_field('view_button_label');
+    $view_button_url          = get_field('view_button_url');
+    $view_btn_open_in_new_tab = get_field('open_in_new_tab');
 
     $shortcode_template  = 'template-parts/blocks/homepage-tiles-block.php';
 
@@ -62,11 +63,12 @@ function MTAV_Tiles_Block_Render_callback( $block )
 function MTAV_Who_We_Are_Block_Render_callback( $block )
 {
 
-    $title = get_field('title');
-    $subhead = get_field('subhead');
-    $button_label = get_field('button_label');
-    $button_url = get_field('button_url');
-    $block_img_id = get_field('block_image');
+    $title           = get_field('title');
+    $subhead         = get_field('subhead');
+    $button_label    = get_field('button_label');
+    $button_url      = get_field('button_url');
+    $open_in_new_tab = get_field('open_in_new_tab');
+    $block_img_id    = get_field('block_image');
 
     if ($block_img_id && !empty($block_img_id)) {
         $block_img_array = wp_get_attachment_image_src($block_img_id, 'full');
@@ -146,6 +148,7 @@ function MTAV_I_Voted_Block_Render_callback( $block )
     $description    = get_field('description');
     $btn_label      = get_field('button_label');
     $btn_url        = get_field('button_url');
+    $open_in_new_tab = get_field('open_in_new_tab');
 
     if ($block_image_id && !empty($block_image_id)) {
         $block_img_array = wp_get_attachment_image_src($block_image_id, 'full');
@@ -325,6 +328,32 @@ function MTAV_Two_Column_Data_Block_Render_callback( $block )
             ?>
             <h4><u>MTAV Two Columns Data Block:</u></h4>
             <span style="color:red">Two Columns Data Block</span>
+            <?php
+        }
+    }
+}
+
+/**
+ * Callback function for two column data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_The_Need_Block_Render_callback( $block )
+{
+
+    $block_data = get_field('block_data');
+
+    $shortcode_template  = 'template-parts/blocks/the-need-block.php';
+
+    if (! empty($block_data) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Need Data Block:</u></h4>
+            <span style="color:red">The Need Data Block</span>
             <?php
         }
     }

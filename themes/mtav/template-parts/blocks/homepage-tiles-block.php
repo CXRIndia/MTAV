@@ -19,7 +19,7 @@
         </a>
     </div>
     <div class="popup-body">
-        <iframe src="<?php echo esc_url($big_tile_video_url);?>?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="<?php echo esc_url($big_tile_video_url);?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -68,6 +68,7 @@
         $small_tile_subtitle  = $small_tile['subtitle'];
         $small_tile_btn_label = $small_tile['button_label'];
         $small_tile_btn_url   = $small_tile['button_url'];
+        $open_in_new_tab      = $small_tile['open_in_new_tab'];
 
         if ($small_tile_img_id && !empty($small_tile_img_id)) {
             $small_tile_img_array = wp_get_attachment_image_src($small_tile_img_id, 'full');
@@ -102,7 +103,10 @@
 
                 <?php if($small_tile_btn_label && !empty($small_tile_btn_label)) :?>
                 <div class="btn-wrapper">
-                    <a href="javascript:void(0)" class="btn btn-primary">
+                    <a href="<?php echo esc_url($small_tile_btn_url);?>"
+                    class="btn btn-primary"
+                    <?php if($open_in_new_tab == true) : echo "target='_blank'";
+                    endif;?>>
                         <?php echo wp_kses_post($small_tile_btn_label);?>
                     </a>
                 </div>
@@ -114,7 +118,9 @@
     }?>
     <?php if($view_button_label && !empty($view_button_label)) :?>
         <div class="viewmore-wrapper">
-            <a href="<?php echo esc_url($view_button_url); ?>">
+            <a href="<?php echo esc_url($view_button_url); ?>"
+            <?php if($view_btn_open_in_new_tab == true) : echo "target='_blank'";
+            endif;?>>
                 <?php echo wp_kses_post($view_button_label);?>
             </a>
         </div>

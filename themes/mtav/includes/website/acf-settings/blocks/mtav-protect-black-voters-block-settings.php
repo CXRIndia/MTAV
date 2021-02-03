@@ -112,22 +112,6 @@ acf_add_local_field_group(
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_6012798cc0c14',
-                    'label' => 'Button URL',
-                    'name' => 'button_url',
-                    'type' => 'url',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'default_value' => '',
-                    'placeholder' => '',
-                ),
-                array(
                     'key' => 'field_60127997c0c15',
                     'label' => 'Video URL',
                     'name' => 'video_url',

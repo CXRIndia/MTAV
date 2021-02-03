@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Talent - HTML
+ * Template Name: Campaign Template 03 - HTML
  * php version 7.4
  *
  * @category MTAV
@@ -12,19 +12,17 @@
 get_header();
 ?>
 
-<div class="common-page talent-page">
+<div class="common-page campaigntemplate-page header-position">
 
     <?php get_template_part('template-parts/content-header'); ?>
 
-    <div class="body-content">
-        <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
-        <?php require THEMEPATH . '/html-template/component/talent/players.php'; ?>
-        <?php require THEMEPATH . '/html-template/component/talent/staff.php'; ?>
+    <div class="body-content letter-main-wrapper">
+        <?php require THEMEPATH . '/html-template/component/campaign-launch.php'; ?>
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>
 
-</div>
+ </div>
 
 <?php
 get_footer();

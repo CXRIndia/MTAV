@@ -20,10 +20,11 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
 <header>
     <div class="container">
         <div class="header-menu">
-        <?php if($logo_id && !empty($logo_id)) : ?>
+        <?php if($logo_image_url && !empty($logo_image_url)) : ?>
             <div class="logo">
-                <a href="javascript:void(0)">
-                    <img src="<?php echo esc_url($logo_image_url); ?>" alt="Logo Image">
+                <a href="<?php echo esc_url(home_url()) ?>">
+                    <img src="<?php echo esc_url($logo_image_url); ?>"
+                        alt="Logo Image">
                 </a>
             </div>
         <?php endif; ?>
@@ -62,8 +63,9 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
 <div class="mobile-menu">
     <div class="menu-header">
         <div class="logo">
-            <a href="javascript:void(0)">
-                <img src="<?php echo esc_url($logo_image_url); ?>" alt="Logo Image">
+            <a href="<?php echo esc_url($logo_image_url); ?>">
+                <img src="<?php echo esc_url($logo_image_url); ?>"
+                alt="Logo Image">
             </a>
         </div>
         <a href="javascript:void(0)" class="menu-close js-menuclose">

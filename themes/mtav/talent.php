@@ -9,20 +9,17 @@
  * @license  https://cemtrexlabs.com 1.0
  * @link     MTAV
  */
-get_header();
+
+MTAV_Page_Entry_top('talent-page');
 ?>
 
-<div class="common-page talent-page">
-
-    <?php get_template_part('template-parts/content-header'); ?>
-
-    <div class="body-content">
-        <?php include THEMEPATH . '/html-template/component/banner.php'; ?>
-    </div>
-
-    <?php get_template_part('template-parts/content-footer'); ?>
-
+<div class="body-content">
+    <?php
+    while ( have_posts() ) :
+        the_post();
+        include locate_template('template-parts/talent.php');
+    endwhile;
+    ?>
 </div>
 
-<?php
-get_footer();
+<?php MTAV_Page_Entry_bottom();

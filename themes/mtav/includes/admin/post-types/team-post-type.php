@@ -38,7 +38,7 @@ function MTAV_Team_Custom_Post_type()
         'label'               => __('Our Team'),
         'description'         => __('Our Team'),
         'labels'              => $labels,
-        'supports'            => array( 'title', 'thumbnail' ),
+        'supports'            => array( 'title' ),
         'hierarchical'        => false,
         'public'              => true,
         'show_ui'             => true,

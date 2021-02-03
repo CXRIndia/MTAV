@@ -1,19 +1,59 @@
 .campaign-launch--wrapper {
   padding: 80px 0;
+  @include mq(t-992, max) {
+    padding: 72px 0;
+  }
+  @include mq(t-768, max) {
+    padding: 56px 0;
+  }
 }
 
 .campign-launch--inner {
   display: flex;
   justify-content: space-between;
-
+  @include mq(t-992, max) {
+    flex-direction: column;
+  }
+  .mobile-heading{
+    display: none;
+    @include mq(t-768, max) {
+      display: block;
+    }
+  }
   .content {
     max-width: 560px;
     width: 100%;
-
+    @include mq(t-768, max) {
+      order: 2;
+    }
+    .heading-compo {
+      @include mq(t-768, max) {
+        display: none;
+      }
+    }
+    h1{
+      @include mq(t-992, max) {
+        font-size: 26px;
+        line-height: 32px;
+      }
+      @include mq(t-768, max) {
+        display: none;
+      }
+    }
     .para {
       font-size: 22px;
       letter-spacing: 0.5px;
       margin-top: 20px;
+      @include mq(t-992, max) {
+        font-size: 18px;
+        letter-spacing: 0.41px;
+        margin-top: 8px;
+      }
+      @include mq(t-768, max) {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.32px;
+      }
     }
   }
 
@@ -21,9 +61,20 @@
     max-width: 616px;
     width: 100%;
     padding-top: 30px;
-
+    @include mq(t-992, max) {
+      padding-top: 16px;
+      max-width: 408px;
+      margin-left: auto;
+      margin-right: 22px;
+    }
+    @include mq(t-768, max) {
+      padding-top: 20px;
+    }
     video {
       width: 100%;
+      @include mq(t-768, max) {
+        order: 1;
+      }
     }
   }
 }

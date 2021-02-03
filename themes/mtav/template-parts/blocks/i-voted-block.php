@@ -33,9 +33,12 @@
             endif;?>
 
             <?php if($btn_label && !empty($btn_label)) :?>
-                <button class="btn btn-black">
+                <a href="<?php echo esc_url($btn_url);?>"
+                   class="btn btn-black"
+                   <?php if($open_in_new_tab == true) : echo "target='_blank'";
+                   endif;?>>
                     <?php echo wp_kses_post($btn_label);?>
-                </button>
+                </a>
             <?php endif;?>
 
             </div>
