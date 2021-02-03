@@ -28,6 +28,7 @@
     .bythenumber-slider{
 
       .swiper-slide{
+        overflow: hidden;
         > div{
           display: flex;
           margin: 0 -22px;
@@ -118,12 +119,19 @@
         top: auto;
         position: relative;
       }
+      @include mq('t-768', 'max') {
+        width: 24px;
+        height: 10px;
+      }
     }
     .bythenumber-next{
       background-image: url('../../images/icons/slide-right.svg');
       right: 0;
       @include mq('t-992', 'max') {
         order: 2;
+      }
+      @include mq('t-768', 'max') {
+        background-image: url('../../images/icons/media-slider-next.svg');
       }
       &:after{
         display: none;
@@ -132,6 +140,9 @@
     .bythenumber-prev{
       background-image: url('../../images/icons/slide-left.svg');
       left: 0;
+      @include mq('t-768', 'max') {
+        background-image: url('../../images/icons/media-slider-prev.svg');
+      }
       &:after{
         display: none;
       }
