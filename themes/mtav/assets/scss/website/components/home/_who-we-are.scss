@@ -1,21 +1,49 @@
 .whoweare-sec{
   background-color: $brand-black;
   padding-top: 60px;
+  @include mq('t-992', 'max') {
+    padding-top: 72px;
+  }
+  @include mq('t-768', 'max') {
+    padding-top: 40px;
+  }
   .header-block{
     .heading-compo{
       margin-bottom: 69px;
+      @include mq('t-992', 'max') {
+        margin-bottom: 41px;
+      }
+      @include mq('t-768', 'max') {
+        margin-bottom: 20px;
+      }
     }
     h1{
       margin-bottom: 40px;
+      @include mq('t-992', 'max') {
+        margin-bottom: 24px;
+      }
     }
     .btn-wrapper{
       margin-bottom: 24px;
+      @include mq('t-992', 'max') {
+        margin-bottom: 13px;
+      }
+      @include mq('t-768', 'max') {
+        margin-bottom: 17px;
+      }
       .btn{
-
+        text-align: center;
+        @include mq('t-992', 'max') {
+          min-width: 240px;
+        }
       }
     }
     .img-wrapper{
       padding: 0 30px;
+      @include mq('t-768', 'max') {
+        padding: 0;
+        margin: 0 -24px;
+      }
       img{
         max-width: 100%;
       }

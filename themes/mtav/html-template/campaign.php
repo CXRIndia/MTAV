@@ -20,6 +20,7 @@ get_header();
         <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
         <?php require THEMEPATH . '/html-template/component/the-impact.php'; ?>
         <?php require THEMEPATH . '/html-template/component/need-solve.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/inthe-media.php'; ?>
         <?php require THEMEPATH . '/html-template/component/campaign-launch.php'; ?>
         <?php require THEMEPATH . '/html-template/component/campaign/map.php'; ?>
         <?php require THEMEPATH . '/html-template/component/our-partners.php'; ?>

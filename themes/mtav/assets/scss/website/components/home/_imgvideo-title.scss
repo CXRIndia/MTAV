@@ -1,5 +1,8 @@
 .imgvideo-title-sec{
   display: flex;
+  @include mq('t-768', 'max') {
+    flex-direction: column;
+  }
   .gradient-bg{
     background-color: rgba(0,0,0,.3);
     position: absolute;
@@ -31,8 +34,9 @@
     }
     @include mq(t-768, max) {
       width: 100%;
-      padding: 70px 24px 40px 24px;
+      padding: 40px 24px;
       background-position: center;
+      min-height: 419px;
     }
     h1.title{
       margin-bottom: 40px;
@@ -40,6 +44,10 @@
       @include mq('t-992', 'max') {
         @include rem(font-size, 26);
         @include rem(line-height, 32);
+      }
+      @include mq('t-768', 'max') {
+        @include rem(font-size, 26);
+        margin-bottom: 24px;
       }
     }
   }
@@ -63,6 +71,10 @@
       @include mq('t-992', 'max') {
         padding: 24px;
       }
+      @include mq('t-768', 'max') {
+        min-height: 419px;
+        padding: 40px 24px;
+      }
       //
       .heading-compo{
         margin-bottom: 12px;
@@ -73,6 +85,10 @@
           @include mq('t-992', 'max') {
             height: 2px;
             margin-right: 2px;
+          }
+          @include mq('t-768', 'max') {
+            height: 3px;
+            width: 24px;
           }
         }
       }
@@ -86,6 +102,9 @@
           margin-bottom: 16px;
           line-height: normal;
         }
+        @include mq('t-768', 'max') {
+          @include rem(font-size, 26);
+        }
       }
       .content{
         @include Font-Pitch;
@@ -98,6 +117,11 @@
           letter-spacing: .27px;
           margin-bottom: 16px;
         }
+        @include mq('t-768', 'max') {
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 24px;
+        }
       }
       .btn-wrapper{
         .btn{
@@ -108,8 +132,13 @@
 
           @include mq('t-992', 'max') {
             font-size: 14px;
-            padding: 7px 15px 9px;
+            padding: 5px 15px 7px;
             min-width: 136px;
+          }
+          @include mq('t-768', 'max') {
+            font-size: 18px;
+            text-align: center;
+            @include rem(padding, 11, 24, 13);
           }
         }
       }
@@ -128,6 +157,12 @@
         height: 100px;
         @include mq('t-992', 'max') {
           font-size: 14px;
+          height: 56px;
+        }
+        @include mq('t-768', 'max') {
+          font-size: 16px;
+          height: 80px;
+          border-bottom: 1px solid #fffcf4;
         }
       }
     }
