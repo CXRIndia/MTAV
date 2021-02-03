@@ -34,9 +34,10 @@ function MTAV_Tiles_Block_Render_callback( $block )
         $big_tile_img_url   = MTAV_Get_image($big_tile_img_array);
     }
 
-    $small_tile_data    = get_field('small_tile_data');
-    $view_button_label  = get_field('view_button_label');
-    $view_button_url    = get_field('view_button_url');
+    $small_tile_data          = get_field('small_tile_data');
+    $view_button_label        = get_field('view_button_label');
+    $view_button_url          = get_field('view_button_url');
+    $view_btn_open_in_new_tab = get_field('open_in_new_tab');
 
     $shortcode_template  = 'template-parts/blocks/homepage-tiles-block.php';
 

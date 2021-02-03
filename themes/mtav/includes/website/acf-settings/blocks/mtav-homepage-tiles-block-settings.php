@@ -112,22 +112,6 @@ acf_add_local_field_group(
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_601261894b0ff',
-                    'label' => 'Button URL',
-                    'name' => 'button_url',
-                    'type' => 'url',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'default_value' => '',
-                    'placeholder' => '',
-                ),
-                array(
                     'key' => 'field_6012619a4b100',
                     'label' => 'Video URL',
                     'name' => 'video_url',
@@ -208,7 +192,7 @@ acf_add_local_field_group(
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_6013cdc79a913',
+                    'key' => 'field_601a56c4f21f0',
                     'label' => 'Subtitle',
                     'name' => 'subtitle',
                     'type' => 'wysiwyg',
@@ -285,6 +269,30 @@ acf_add_local_field_group(
                     'default_value' => '',
                     'placeholder' => '',
                 ),
+                array(
+                    'key' => 'field_601a45339b782',
+                    'label' => 'Open in New Tab',
+                    'name' => 'open_in_new_tab',
+                    'type' => 'checkbox',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'choices' => array(
+                        'new_tab' => 'New Tab',
+                    ),
+                    'allow_custom' => 0,
+                    'default_value' => array(
+                    ),
+                    'layout' => 'horizontal',
+                    'toggle' => 0,
+                    'return_format' => 'value',
+                    'save_custom' => 0,
+                ),
             ),
         ),
         array(
@@ -321,6 +329,30 @@ acf_add_local_field_group(
             ),
             'default_value' => '',
             'placeholder' => '',
+        ),
+        array(
+            'key' => 'field_601a45989b783',
+            'label' => 'Open in New Tab',
+            'name' => 'open_in_new_tab',
+            'type' => 'checkbox',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'choices' => array(
+                'new_tab' => 'New Tab',
+            ),
+            'allow_custom' => 0,
+            'default_value' => array(
+            ),
+            'layout' => 'horizontal',
+            'toggle' => 0,
+            'return_format' => 'value',
+            'save_custom' => 0,
         ),
     ),
     'location' => array(
