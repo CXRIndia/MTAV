@@ -17,9 +17,9 @@ get_header();
     <?php get_template_part('template-parts/content-header'); ?>
 
     <div class="body-content">
-        <?php include THEMEPATH . '/html-template/component/banner.php'; ?>
-        <?php include THEMEPATH . '/html-template/component/talent/players.php'; ?>
-        <?php include THEMEPATH . '/html-template/component/talent/staff.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/banner.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/talent/players.php'; ?>
+        <?php require THEMEPATH . '/html-template/component/talent/staff.php'; ?>
     </div>
 
     <?php get_template_part('template-parts/content-footer'); ?>
