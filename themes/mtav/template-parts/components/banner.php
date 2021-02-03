@@ -19,6 +19,7 @@ $mtav_banner_subtitle   = $top_banner_data['banner_subtitle'];
 $mtav_banner_subhead    = $top_banner_data['banner_subhead'];
 $mtav_banner_btn_label  = $top_banner_data['button_label'];
 $mtav_banner_btn_url    = $top_banner_data['button_url'];
+$mtav_banner_img_url    = '';
 
 if ($mtav_banner_image_id && !empty($mtav_banner_image_id)) {
     $mtav_banner_img_array = wp_get_attachment_image_src($mtav_banner_image_id, 'full');
