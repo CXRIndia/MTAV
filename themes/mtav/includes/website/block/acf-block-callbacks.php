@@ -358,3 +358,74 @@ function MTAV_The_Need_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for the impact data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_The_Impact_Block_Render_callback( $block )
+{
+
+    $block_title = get_field('title');
+    $style = get_field('select_style');
+
+    if ($style == 'three_col_data') {
+
+        $first_col_title = get_field('first_column_title');
+        $first_col_desc = get_field('first_column_description');
+        $second_col_title = get_field('second_column_title');
+        $second_col_desc = get_field('second_column_description');
+        $third_col_title = get_field('third_column_title');
+        $third_col_desc = get_field('third_column_description');
+
+        $shortcode_template  = 'template-parts/blocks/three-col-impact-structure-block.php';
+    } elseif ($style == 'four_col_data') {
+        $four_col_data = get_field('four_col_block_data');
+        $shortcode_template  = 'template-parts/blocks/four-col-impact-structure-block.php';
+    } else {
+        $four_col_data_with_desc = get_field('four_col_with_desc_block_data');
+        $shortcode_template  = 'template-parts/blocks/four-col-desc-impact-structure-block.php';
+    }
+
+    if (! empty($style) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Impact Data Block:</u></h4>
+            <span style="color:red">The Impact Data Block</span>
+            <?php
+        }
+    }
+}
+
+/**
+ * Callback function for two column data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Data_Video_Block_Render_callback( $block )
+{
+
+    $title = get_field('title');
+    $description = get_field('description');
+    $video_url = get_field('video_url');
+
+    $shortcode_template  = 'template-parts/blocks/two-col-data-video-block.php';
+
+    if (! empty($title) || !empty($description) || !empty($video_url) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Two Column Data with Video Block:</u></h4>
+            <span style="color:red">MTAV Two Column Data with Video Block</span>
+            <?php
+        }
+    }
+}
