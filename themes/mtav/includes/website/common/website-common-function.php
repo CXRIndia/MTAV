@@ -272,3 +272,15 @@ function MTAV_Parse_request( $query )
 add_action('pre_get_posts', 'MTAV_Parse_request');
 
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+/**
+ * Function to remove Yoast plugin setting from custom post type
+ *
+ * @return void.
+ */
+function MTAV_Remove_Yoast_Metabox_reservations()
+{
+    remove_meta_box('wpseo_meta', 'team', 'normal');
+    remove_meta_box('wpseo_meta', 'mtav-media', 'normal');
+}
+add_action('add_meta_boxes', 'MTAV_Remove_Yoast_Metabox_reservations', 11);
