@@ -1,7 +1,19 @@
 .bythenumber-sec{
   padding: 80px 0;
+  @include mq('t-992', 'max') {
+    padding: 72px 0;
+  }
+  @include mq('t-768', 'max') {
+    padding: 56px 0;
+  }
   .heading-compo{
     margin-bottom: 60px;
+    @include mq('t-992', 'max') {
+      margin-bottom: 24px;
+    }
+    @include mq('t-768', 'max') {
+      margin-bottom: 44px;
+    }
   }
 
   //
@@ -9,28 +21,91 @@
     padding: 0 80px;
     margin-bottom: 40px;
     position: relative;
+    @include mq('t-992', 'max') {
+      padding: 0;
+      margin-bottom: 0;
+    }
     .bythenumber-slider{
 
       .swiper-slide{
+        overflow: hidden;
+        > div{
+          display: flex;
+          margin: 0 -22px;
+          @include mq('t-768', 'max') {
+            flex-direction: column;
+          }
+        }
         .slider-content{
+          width: 33.33%;
+          padding: 0 22px;
           text-transform: uppercase;
+          @include mq('t-768', 'max') {
+            width: 100%;
+            display: flex;
+            padding-bottom: 20px;
+            position: relative;
+          }
+          &:not(:last-child){
+            @include mq('t-768', 'max') {
+              margin-bottom: 20px;
+            }
+          }
+
+          &:after{
+            @include mq('t-768', 'max') {
+              content: "";
+              background-image: url("../../images/icons/dash.svg");
+              background-size: contain;
+              height: 1px;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              background-size: 21px 1px;
+            }
+          }
           .number{
             @include Font-Plakat;
             font-size: 60px;
             line-height: 72px;
             margin-bottom: 11px;
+            @include mq('t-992', 'max') {
+              font-size: 40px;
+              line-height: 44px;
+              margin-bottom: 8px;
+            }
+            @include mq('t-768', 'max') {
+              font-size: 32px;
+              line-height: 40px;
+              flex: 42% 0 0;
+            }
           }
           .content{
             @include Font-Plakat;
             font-size: 18px;
             line-height: 22px;
             max-width: 296px;
+            @include mq('t-992', 'max') {
+              font-size: 12px;
+              line-height: 14px;
+            }
+            @include mq('t-768', 'max') {
+              font-size: 14px;
+              line-height: 16px;
+            }
           }
         }
       }
     }
 
     //
+    .arrow-wrapper{
+      @include mq('t-992', 'max') {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
     .bythenumber-next,
     .bythenumber-prev{
       top: calc(50% - 16px);
@@ -38,10 +113,26 @@
       height: 32px;
       margin-top: 0;
       background-size: cover;
+      @include mq('t-992', 'max') {
+        width: 14px;
+        height: 24px;
+        top: auto;
+        position: relative;
+      }
+      @include mq('t-768', 'max') {
+        width: 24px;
+        height: 10px;
+      }
     }
     .bythenumber-next{
       background-image: url('../../images/icons/slide-right.svg');
       right: 0;
+      @include mq('t-992', 'max') {
+        order: 2;
+      }
+      @include mq('t-768', 'max') {
+        background-image: url('../../images/icons/media-slider-next.svg');
+      }
       &:after{
         display: none;
       }
@@ -49,6 +140,9 @@
     .bythenumber-prev{
       background-image: url('../../images/icons/slide-left.svg');
       left: 0;
+      @include mq('t-768', 'max') {
+        background-image: url('../../images/icons/media-slider-prev.svg');
+      }
       &:after{
         display: none;
       }

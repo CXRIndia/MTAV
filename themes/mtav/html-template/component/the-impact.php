@@ -127,7 +127,7 @@
         <!-- -->
 
 
-        <!-- Structure One -->
+        <!-- Structure Three -->
         <div class="impact-structure--three">
             <div class="imapact-content">
                 <h6 class="imapact-content--subtitle">Wisonsin</h6>
