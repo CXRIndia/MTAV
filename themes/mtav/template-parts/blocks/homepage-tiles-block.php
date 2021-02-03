@@ -19,7 +19,7 @@
         </a>
     </div>
     <div class="popup-body">
-        <iframe src="<?php echo esc_url($big_tile_video_url);?>?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="<?php echo esc_url($big_tile_video_url);?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
