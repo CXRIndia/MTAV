@@ -87,7 +87,9 @@ function MTAV_scripts()
         wp_enqueue_style('mtav-letter-css', STYLESHEETURI . '/dist/' . $distFile['letter']['css']);
     }
 
-    if (is_page_template('html-template/whathavewedone.php')) {
+    if (is_page_template('html-template/whathavewedone.php')
+        || is_page_template('whathavewedone.php')
+    ) {
         wp_enqueue_script('mtav-whatwedone-js', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-whatwedone-css', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['css']);
     }
