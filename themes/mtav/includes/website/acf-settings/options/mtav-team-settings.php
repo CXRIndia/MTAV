@@ -36,8 +36,8 @@ acf_add_local_field_group(
         ),
         array(
             'key' => 'field_601a39ecb2227',
-            'label' => 'Instagram Feed',
-            'name' => 'instagram_feed',
+            'label' => 'Instagram Handle',
+            'name' => 'instagram_handle',
             'type' => 'text',
             'instructions' => '',
             'required' => 0,
@@ -99,7 +99,7 @@ acf_add_local_field_group(
         array(
             'key' => 'field_601a410010315',
             'label' => 'Select Person Designation',
-            'name' => 'select_person_designation',
+            'name' => 'person_designation',
             'type' => 'radio',
             'instructions' => '',
             'required' => 0,

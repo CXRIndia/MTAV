@@ -32,8 +32,32 @@ acf_add_local_field_group(
             'sub_fields' => array(
                 array(
                     'key' => 'field_6013e32eaaa7e',
-                    'label' => 'Banner Background Image',
+                    'label' => 'Desktop Banner Background Image',
                     'name' => 'banner_background_image',
+                    'type' => 'image',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'return_format' => 'id',
+                    'preview_size' => 'medium',
+                    'library' => 'all',
+                    'min_width' => '',
+                    'min_height' => '',
+                    'min_size' => '',
+                    'max_width' => '',
+                    'max_height' => '',
+                    'max_size' => '',
+                    'mime_types' => '',
+                ),
+                array(
+                    'key' => 'field_601a67d7d1011',
+                    'label' => 'Mobile Banner Background Image',
+                    'name' => 'mob_banner_background_image',
                     'type' => 'image',
                     'instructions' => '',
                     'required' => 0,
@@ -162,6 +186,13 @@ acf_add_local_field_group(
                 'value' => 'front_page',
             ),
         ),
+        array(
+            array(
+                'param' => 'post_type',
+                'operator' => '==',
+                'value' => 'post',
+            ),
+        ),
     ),
     'menu_order' => 0,
     'position' => 'normal',
@@ -173,3 +204,4 @@ acf_add_local_field_group(
     'description' => '',
     )
 );
+
