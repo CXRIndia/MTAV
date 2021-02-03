@@ -23,6 +23,12 @@
       z-index: 0;
       height: 100%;
       margin: 0 auto;
+      @include mq('t-992', 'max') {
+        width: calc(100% - 40px);
+      }
+      @media(min-width: 768px){
+        width: calc(100% - 24px);
+      }
     }
   }
   //
@@ -37,6 +43,12 @@
     img{
       max-width: 100%;
       width: auto !important;
+      @include mq('t-992', 'max') {
+        max-width: 318px;
+      }
+      @include mq('t-768', 'max') {
+        max-width: 268px;
+      }
     }
   }
   //
@@ -45,6 +57,9 @@
     position: absolute;
     right: 80px;
     bottom: 40px;
+    @include mq('t-992', 'max') {
+      display: none;
+    }
     img{
       max-width: 100%;
       width: auto !important;
@@ -64,45 +79,137 @@
       img {
         width: 100%;
       }
+    }
 
-      &.hand1-wrapper {
+    .dsk-block{
+      width: 100%;
+      height: 100%;
+      @media(max-width: 1025px){
+        display: none;
+      }
+      > div{
+        position: absolute;
+      }
+      .hand1-wrapper {
         z-index: 6;
         width: 55%;
         top: 27%;
       }
-
-      &.hand2-wrapper {
+      .hand2-wrapper {
         z-index: 5;
         width: 50%;
         right: 0;
         top: 25%;
       }
-
-      &.hand3-wrapper {
+      .hand3-wrapper {
         z-index: 4;
         width: 34%;
         right: 17%;
       }
-
-      &.hand4-wrapper {
+      .hand4-wrapper {
         z-index: 3;
         bottom: 0;
         left: 27.5%;
         width: 33.7%;
       }
-
-      &.hand5-wrapper {
+      .hand5-wrapper {
         z-index: 2;
         right: 14%;
         bottom: 0;
         width: 36.68%;
       }
-
-      &.hand6-wrapper {
+      .hand6-wrapper {
         z-index: 1;
         left: 24%;
         top: 0;
         width: 36%;
+      }
+    }
+    .tablet-block{
+      width: 100%;
+      height: 100%;
+      @media(min-width: 1025px){
+        display: none;
+      }
+      @media(max-width: 767px){
+        display: none;
+      }
+      > div{
+        position: absolute;
+      }
+      .hand1-wrapper {
+        z-index: 6;
+        top: 27%;
+        width: 58.5%;
+      }
+      .hand2-wrapper {
+        z-index: 5;
+        right: 0;
+        top: 25%;
+        width: 52%;
+      }
+      .hand3-wrapper {
+        z-index: 4;
+        right: 0;
+        width: 63.5%;
+      }
+      .hand4-wrapper {
+        z-index: 3;
+        bottom: 0;
+        width: 64%;
+      }
+      .hand5-wrapper {
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+        width: 65.5%;
+      }
+      .hand6-wrapper {
+        z-index: 1;
+        top: 0;
+        width: 59.3%;
+      }
+    }
+    .mo-block{
+      width: 100%;
+      height: 100%;
+      @media(min-width: 768px){
+        display: none;
+      }
+      > div{
+        position: absolute;
+      }
+      .hand1-wrapper {
+        z-index: 6;
+        top: 27%;
+        width: 58.5%;
+      }
+      .hand2-wrapper {
+        z-index: 5;
+        right: 0;
+        top: 25%;
+        width: 52.6%;
+      }
+      .hand3-wrapper {
+        z-index: 4;
+        right: 0;
+        width: 64.3%;
+      }
+      .hand4-wrapper {
+        z-index: 3;
+        bottom: 0;
+        width: 64%;
+      }
+      .hand5-wrapper {
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+        width: 66.5%;
+      }
+      .hand6-wrapper {
+        z-index: 1;
+        top: 0;
+        width: 59.3%;
       }
     }
   }

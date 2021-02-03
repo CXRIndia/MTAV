@@ -67,8 +67,10 @@ function MTAV_scripts()
     wp_enqueue_script('mtav-campaigntemplate-js', STYLESHEETURI . '/dist/' . $distFile['campaigntemplate']['js'], array('jquery'), null, true);
     wp_enqueue_style('mtav-campaigntemplate-css', STYLESHEETURI . '/dist/' . $distFile['campaigntemplate']['css']);
 
-    wp_enqueue_script('mtav-error404-js', STYLESHEETURI . '/dist/' . $distFile['error404']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-error404-css', STYLESHEETURI . '/dist/' . $distFile['error404']['css']);
+    if (is_404() || is_page_template('html-template/error404-page.php')) {
+        wp_enqueue_script('mtav-error404-js', STYLESHEETURI . '/dist/' . $distFile['error404']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-error404-css', STYLESHEETURI . '/dist/' . $distFile['error404']['css']);
+    }
 
     if (is_front_page() || is_page_template('html-template/homepage.php')) {
         wp_enqueue_script('mtav-home-js', STYLESHEETURI . '/dist/' . $distFile['home']['js'], array('jquery'), null, true);

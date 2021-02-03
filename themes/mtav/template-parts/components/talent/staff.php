@@ -55,6 +55,8 @@ if(!empty($staff_ids)) :
                 $staffName   = get_field('name', $staff_id);
                 $staffJobTitle = get_field('job_title', $staff_id);
                 $staffImageId = get_field('person_image', $staff_id);
+                $staffImageAlt = '';
+                $staffImageUrl = '';
 
                 if ($staffImageId && !empty($staffImageId)) {
                     $staffImageArray = wp_get_attachment_image_src($staffImageId, 'full');
