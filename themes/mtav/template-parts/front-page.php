@@ -1,3 +1,17 @@
+<?php
+/**
+ * Front page template file
+ * php version 7.4
+
+ * @category MTAV
+ * @package  MTAV
+ * @author   Cemtrexlabs <hello@cemtrexlabs.com>
+ * @license  https://cemtrexlabs.com 1.0
+ * @link     MTAV
+ */
+
+?>
+
 <div class="js-hand-trigger"></div>
 <div class="dummy"></div>
 <div class="hand-banner js-handanimation">
@@ -81,3 +95,6 @@
         </div>
     </div>
 </div>
+
+
+<?php the_content(); ?>
