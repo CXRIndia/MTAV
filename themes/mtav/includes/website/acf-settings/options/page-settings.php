@@ -186,6 +186,13 @@ acf_add_local_field_group(
                 'value' => 'front_page',
             ),
         ),
+        array(
+            array(
+                'param' => 'post_type',
+                'operator' => '==',
+                'value' => 'post',
+            ),
+        ),
     ),
     'menu_order' => 0,
     'position' => 'normal',
