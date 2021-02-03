@@ -32,6 +32,11 @@
     .need-solve--left {
 
       @include mq('t-768', 'min') {
+        max-width: 324px;
+        width: 100%;
+      }
+
+      @include mq('t-992', 'min') {
         max-width: 600px;
         width: 100%;
       }
@@ -40,6 +45,10 @@
         display: flex;
 
         @include mq('t-768', 'min') {
+          margin-top: 26px;
+        }
+
+        @include mq('t-992', 'min') {
           margin-top: 50px;
         }
       }
@@ -48,6 +57,11 @@
     .need-solve--right {
 
       @include mq('t-768', 'min') {
+        max-width: 324px;
+        width: 100%;
+      }
+
+      @include mq('t-992', 'min') {
         max-width: 513px;
         width: 100%;
       }
@@ -66,6 +80,12 @@
     .content-para {
 
       @include mq('t-768', 'min') {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        margin-top: 8px;
+      }
+
+      @include mq('t-992', 'min') {
         font-size: 22px;
         letter-spacing: 0.5px;
         margin-top: 20px;
