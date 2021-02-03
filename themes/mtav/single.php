@@ -10,14 +10,18 @@
  * @link     MTAV
  */
 
-// Silent is Gold
+MTAV_Page_Entry_top('campaign-page');
 
-get_header(); ?>
+?>
 
-<div class="main">
-    <p>Single text </p>
-    <?php the_content(); ?>
-</div>
+<div class="body-content letter-main-wrapper">
+<?php
+while ( have_posts() ) :
+    the_post();
+    get_template_part('template-parts/components/banner');
+endwhile;
+?>
+    </div>
 
 <?php
-get_footer();
+MTAV_Page_Entry_bottom();

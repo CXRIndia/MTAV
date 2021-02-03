@@ -3,5 +3,55 @@
 @import "components/campaigntemplate/_contact-information";
 
 .campaigntemplate-page{
-
+  .contactinfo-compo{
+    @include mq(t-768, max) {
+      padding: 56px 0;
+    }
+  }
+  .conatctinfo-wrapper{
+    @include mq(t-768, max) {
+      flex-direction: column;
+    }
+    .content-block{
+      @include mq(t-768, max) {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+    .content{
+      @include mq(t-768, max) {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.32px;
+      }
+    }
+    .form-wrapper{
+      @include mq(t-768, max) {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 40px;
+      }
+    }
+    .main-title{
+      @include mq(t-768, max) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .campaigntemplate-main-wrapper{
+    .campaign-launch--wrapper{
+      background-image: url("../../images/png/bg-transpernt.png");
+      background-size: contain;
+      position: relative;
+      &::after{
+        content: "";
+        background-color: $brand-primary;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+      }
+    }
+  }
 }

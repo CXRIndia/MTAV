@@ -15,6 +15,17 @@
 <div class="campaign-launch--wrapper">
     <div class="container">
         <div class="campign-launch--inner">
+            <div class="mobile-heading">
+                <div class="heading-compo black">
+                    <div class="line-block">
+                        <div class="left-block">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <h1>CAMPAIGN LAUNCH</h1>
+            </div>
             <div class="content">
                 <div class="heading-compo black">
                     <div class="line-block">
