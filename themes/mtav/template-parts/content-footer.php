@@ -48,8 +48,10 @@ $youtube_url    = get_field('youtube_link', 'options');
                             </h1>
                         <?php endif; ?>
                         <?php if($description && !empty($description)) :?>
-                            <p class="content">
+                            <p class="content" id="contact_hide">
                             <?php echo wp_kses_post(MTAV_Remove_ptag($description)); ?>
+                            </p>
+                            <p class="content" id="contact_form_msg">
                             </p>
                         <?php endif; ?>
                     </div>
