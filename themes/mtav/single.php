@@ -19,6 +19,7 @@ MTAV_Page_Entry_top('campaign-page');
 while ( have_posts() ) :
     the_post();
     get_template_part('template-parts/components/banner');
+    the_content();
 endwhile;
 ?>
     </div>

@@ -332,3 +332,29 @@ function MTAV_Two_Column_Data_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for two column data block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_The_Need_Block_Render_callback( $block )
+{
+
+    $block_data = get_field('block_data');
+
+    $shortcode_template  = 'template-parts/blocks/the-need-block.php';
+
+    if (! empty($block_data) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Need Data Block:</u></h4>
+            <span style="color:red">The Need Data Block</span>
+            <?php
+        }
+    }
+}
