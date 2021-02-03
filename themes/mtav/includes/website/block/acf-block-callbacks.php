@@ -429,3 +429,30 @@ function MTAV_Data_Video_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for our partners block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Our_Partners_Block_Render_callback( $block )
+{
+
+    $title = get_field('title');
+    $partners = get_field('our_partners');
+
+    $shortcode_template  = 'template-parts/blocks/our-partners-block.php';
+
+    if (! empty($title) || !empty($partners) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Our Partners Block:</u></h4>
+            <span style="color:red">MTAV Our Partners Block</span>
+            <?php
+        }
+    }
+}
