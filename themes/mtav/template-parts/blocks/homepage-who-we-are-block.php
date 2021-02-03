@@ -41,7 +41,10 @@
 
             <?php if($button_label && !empty($button_label)) :?>
             <div class="btn-wrapper">
-                <a href="<?php echo esc_url($button_url);?>" class="btn btn-primary">
+                <a href="<?php echo esc_url($button_url);?>"
+                   class="btn btn-primary"
+                   <?php if($open_in_new_tab == true) : echo "target='_blank'";
+                   endif;?>>
                     <?php echo wp_kses_post($button_label); ?>
                 </a>
             </div>
