@@ -23,7 +23,9 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
         <?php if($logo_image_url && !empty($logo_image_url)) : ?>
             <div class="logo">
                 <a href="<?php echo esc_url(home_url()) ?>">
-                    <img src="<?php echo esc_url($logo_image_url); ?>"
+                    <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="<?php echo esc_url($logo_image_url); ?>"
                         alt="Logo Image">
                 </a>
             </div>
@@ -51,7 +53,9 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
 
         <div class="hamburger-wrapper">
             <a href="javascript:void(0)" class="js-menuopen">
-                <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hamburger-menu-icon.svg" alt="">
+                <img class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hamburger-menu-icon.svg" alt="">
             </a>
         </div>
 
@@ -69,7 +73,9 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
             </a>
         </div>
         <a href="javascript:void(0)" class="menu-close js-menuclose">
-            <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/menu-close-icon.svg" alt="">
+            <img class="lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/menu-close-icon.svg" alt="">
         </a>
     </div>
 
@@ -80,7 +86,7 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
             'container'      => false ,
             'items_wrap'     => '<ul id="%1$s">%3$s</ul>',
         );
-        wp_nav_menu($args); ?>
+                          wp_nav_menu($args); ?>
         <div class="btn-wrapper">
             <?php $args=array(
                 'theme_location' => 'secondary',

@@ -29,7 +29,9 @@
         <div class="section-right">
 
         <?php if($right_column_img_id && !empty($right_column_img_id)) :?>
-            <img src="<?php echo esc_url($right_column_img_url); ?>" />
+            <img class="lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="<?php echo esc_url($right_column_img_url); ?>" />
         <?php endif; ?>
 
         <?php if($right_column_data && !empty($right_column_data)) :

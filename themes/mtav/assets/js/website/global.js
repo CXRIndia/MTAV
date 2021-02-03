@@ -1,5 +1,9 @@
 require('jquery');
 
+import 'lazysizes';
+window.lazySizesConfig = window.lazySizesConfig || {};
+window.lazySizesConfig.loadMode = 1;
+
 (function ($) {
   //// START : Mobile Menu Modal
   $('.js-menuopen').on('click', function () {

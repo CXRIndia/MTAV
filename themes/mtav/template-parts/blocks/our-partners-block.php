@@ -44,7 +44,9 @@
                 ?>
 
             <div class="logo">
-                <img src="<?php echo esc_url($logo_img_url); ?>" />
+                <img class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="<?php echo esc_url($logo_img_url); ?>" />
             </div>
             <?php }
         }?>

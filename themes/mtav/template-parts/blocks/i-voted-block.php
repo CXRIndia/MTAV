@@ -18,7 +18,9 @@
 
         <?php if($block_image_id && !empty($block_image_id)) :?>
             <div class="image-wrapper">
-                <img src="<?php echo esc_url($block_img_url); ?>" />
+                <img class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="<?php echo esc_url($block_img_url); ?>" />
             </div>
         <?php endif;?>
 

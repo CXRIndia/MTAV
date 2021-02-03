@@ -57,7 +57,9 @@
 
                     <?php if($block_img_id && !empty($block_img_id)) :?>
                     <div class="need-solve--image">
-                        <img src="<?php echo esc_url($block_img_url); ?>" />
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url($block_img_url); ?>" />
                     </div>
                     <?php endif;?>
 
@@ -68,7 +70,9 @@
 
                     <?php if($block_img_id && !empty($block_img_id)) :?>
                     <div class="need-solve--image">
-                        <img src="<?php echo esc_url($block_img_url); ?>" />
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url($block_img_url); ?>" />
                     </div>
                     <?php endif;?>
 

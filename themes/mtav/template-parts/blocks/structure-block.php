@@ -51,7 +51,9 @@
 
                     <?php if($top_left_img_id && !empty($top_left_img_id)) :?>
                     <div class="block-top-left">
-                        <img src="<?php echo esc_url($top_left_img_url); ?>"
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url($top_left_img_url); ?>"
                              alt="<?php echo wp_kses_post($top_left_img_alt); ?>">
                     </div>
                     <?php endif;?>
@@ -60,7 +62,9 @@
 
                     <?php if($top_right_img_id && !empty($top_right_img_id)) :?>
                         <div class="c-section">
-                            <img src="<?php echo esc_url($top_right_img_url); ?>"
+                            <img class="lazyload"
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="<?php echo esc_url($top_right_img_url); ?>"
                                  alt="<?php echo wp_kses_post($top_right_img_alt); ?>">
                         </div>
                     <?php endif;?>
@@ -92,7 +96,9 @@
 
                     <?php if($top_left_img_id && !empty($top_left_img_id)) :?>
                     <div class="block-top-left">
-                        <img src="<?php echo esc_url($top_left_img_url); ?>"
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url($top_left_img_url); ?>"
                              alt="<?php echo wp_kses_post($top_left_img_alt); ?>">
                     </div>
                     <?php endif;?>
@@ -101,7 +107,9 @@
 
                     <?php if($top_right_img_id && !empty($top_right_img_id)) :?>
                         <div class="c-section">
-                            <img src="<?php echo esc_url($top_right_img_url); ?>"
+                            <img class="lazyload"
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="<?php echo esc_url($top_right_img_url); ?>"
                                  alt="<?php echo wp_kses_post($top_right_img_alt); ?>">
                         </div>
                     <?php endif;?>

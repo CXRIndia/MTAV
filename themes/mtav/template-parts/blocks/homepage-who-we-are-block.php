@@ -25,7 +25,9 @@
                     <div class="left-block">
                         <span></span>
                         <span></span>
-                        <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/title-icon-wh.svg" alt="">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/title-icon-wh.svg" alt="">
                     </div>
                     <div class="right-block">
                         <span></span>
@@ -52,7 +54,9 @@
 
             <?php if($block_img_id && !empty($block_img_id)) :?>
             <div class="img-wrapper">
-                <img src="<?php echo esc_url($block_img_url); ?>"
+                <img class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="<?php echo esc_url($block_img_url); ?>"
                      alt="<?php echo esc_attr($block_img_alt); ?>">
             </div>
             <?php endif; ?>

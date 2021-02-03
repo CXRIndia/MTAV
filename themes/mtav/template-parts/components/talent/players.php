@@ -61,7 +61,9 @@ if(!empty($players_ids)) :
                     <div class="single-block">
                         <div>
                             <div class="icon">
-                                <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hand-icon.svg" alt="">
+                                <img class="lazyload"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hand-icon.svg" alt="">
                             </div>
                             <div class="content-block">
                                 <h3 class="inner-title">

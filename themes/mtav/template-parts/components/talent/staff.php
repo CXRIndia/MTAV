@@ -67,7 +67,9 @@ if(!empty($staff_ids)) :
                 <div class="single-block">
                     <div>
                         <div class="staff-member">
-                            <img src="<?php echo esc_url($staffImageUrl); ?>"
+                            <img class="lazyload"
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-src="<?php echo esc_url($staffImageUrl); ?>"
                                 alt="<?php echo esc_attr($staffImageAlt); ?>">
                         </div>
 
