@@ -10,8 +10,6 @@
  * @link     MTAV
  */
 
-//get_header();
-
 MTAV_Page_Entry_top('home-page');
 ?>
 <div class="body-content">
