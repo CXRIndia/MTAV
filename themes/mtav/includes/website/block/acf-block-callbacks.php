@@ -147,6 +147,7 @@ function MTAV_I_Voted_Block_Render_callback( $block )
     $description    = get_field('description');
     $btn_label      = get_field('button_label');
     $btn_url        = get_field('button_url');
+    $open_in_new_tab = get_field('open_in_new_tab');
 
     if ($block_image_id && !empty($block_image_id)) {
         $block_img_array = wp_get_attachment_image_src($block_image_id, 'full');
