@@ -211,6 +211,18 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-map-block',
+            'title'             => __('MTAV Map Block'),
+            'description'       => __('A custom map format block.'),
+            'render_callback'   => 'MTAV_Map_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 

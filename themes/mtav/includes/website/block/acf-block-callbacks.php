@@ -458,3 +458,23 @@ function MTAV_Our_Partners_Block_Render_callback( $block )
         }
     }
 }
+
+/**
+ * Callback function for map block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Map_Block_Render_callback( $block )
+{
+    $shortcode_template  = 'template-parts/blocks/mtav-map-block.php';
+
+    include locate_template($shortcode_template);
+
+    if (is_admin() ) {
+        ?>
+            <h4><u>MTAV Map</u></h4>
+        <?php
+    }
+}
