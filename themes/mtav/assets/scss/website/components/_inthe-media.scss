@@ -4,11 +4,10 @@
   background-size: contain;
   position: relative;
   @include mq('t-992', 'max') {
-    padding: 72px 0;
+    padding: 72px 0 50px;
   }
   @include mq('t-768', 'max') {
-    padding: 56px 0;
-    margin: 0 12px;
+    padding: 56px 0 34px;
   }
   &:after{
     content: "";
@@ -19,14 +18,33 @@
     top: 0;
     z-index: -1;
   }
+  h1{
+    @include mq(t-992, max) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    @include mq(t-768, max) {
+      font-size: 25px;
+    }
+  }
 }
-
 
 .media-slider-wrapper {
   margin-top: 60px;
-
+  @include mq(t-992, max) {
+    margin-top: 24px;
+  }
+  @include mq(t-768, max) {
+    margin-top: 40px;
+  }
   .media-slider {
     padding-left: 7vw;
+    @include mq(t-992, max) {
+      padding-left: 40px;
+    }
+    @include mq(t-768, max) {
+      padding-left: 24px;
+    }
   }
   .swiper-wrapper {
 
@@ -39,7 +57,13 @@
       padding: 50px;
       background-size: cover;
       background-repeat: no-repeat;
-
+      @include mq(t-992, max) {
+        height: 279px;
+        padding: 24px;
+      }
+      @include mq(t-768, max) {
+        height: 185px;
+      }
       &::before {
         content: '';
         position: absolute;
@@ -63,6 +87,25 @@
         line-height: 32px;
         text-transform: uppercase;
         margin-bottom: 24px;
+        @include mq(t-992, max) {
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 12px;
+        }
+        @include mq(t-768, max) {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .btn{
+        @include mq(t-992, max) {
+          font-size: 14px;
+          padding: 7px 16px;
+        }
+        @include mq(t-768, max) {
+          font-size: 12px;
+          padding: 9px 23px;
+        }
       }
     }
   }
@@ -72,12 +115,22 @@
   position: relative;
   height: 22px;
   margin-top: 40px;
-
+  @include mq(t-768, max) {
+    margin-top: 24px;
+  }
   .swiper-button-next, .swiper-button-prev {
       width: 50px;
       height: 22px;
       background-repeat: no-repeat;
-
+      @include mq(t-992, max) {
+        width: 36px;
+        height: 15px;
+        background-size: contain;
+      }
+      @include mq(t-768, max) {
+        width: 24px;
+        height: 10px;
+      }
       &:after {
         content: '';
       }

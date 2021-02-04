@@ -11,8 +11,16 @@
  */
 
 ?>
-
-<div class="banner" style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')">
+<script>
+                jQuery( document ).ready(function() {
+                if (screen.width > 767) {
+                        document.getElementById("bannerImage").style.backgroundImage = "url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner.png')";
+                } else{
+                        document.getElementById("bannerImage").style.backgroundImage = "url('url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/whoweare-banner-mobile.png')')";
+                }
+                });
+        </script>
+<div id = "bannerImage" class="banner">
     <div class="inner-wrapper">
         <div class="container">
             <div class="heading-compo">

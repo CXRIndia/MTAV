@@ -1,5 +1,20 @@
 .partners--wrapper {
-  padding: 80px 0;
+  padding: 80px 0 26px;
+  @include mq('t-992', 'max') {
+    padding: 72px 0 18px;
+  }
+  @include mq('t-768', 'max') {
+    padding: 56px 0 2px;
+  }
+  h1{
+    @include mq(t-992, max) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    @include mq(t-768, max) {
+      font-size: 25px;
+    }
+  }
 }
 
 .partners-logo--wrapper {
@@ -7,7 +22,12 @@
   display: flex;
   flex-wrap: wrap;
   margin: 100px -20px 0;
-
+  @include mq(t-992, max) {
+    margin: 40px -16px 0;
+  }
+  @include mq(t-768, max) {
+    margin: 40px 0 0;
+  }
   .logo {
     max-width: 280px;
     display: flex;
@@ -18,5 +38,20 @@
     width: 100%;
     height: 140px;
     align-items: center;
+    @include mq(t-992, max) {
+      max-width: 148px;
+      margin: 0 16px 54px;
+      height: 61px;
+    }
+    @include mq(t-768, max) {
+      max-width: 150px;
+      margin-bottom:54px;
+      height: 64px;
+      margin-left: 0;
+      margin-right: 0;
+      &:nth-child(2n + 1){
+        margin-right: 27px;
+      }
+    }
   }
 }
