@@ -73,17 +73,34 @@
             <?php endif;?>
 
                 <div class="imapact-content--two-column">
+                <?php if($first_col_data && !empty($first_col_data)) :?>
                     <div class="imapact-content--para">
-                        <div>DESUS AND MERO</div>
-                        <div>CARLON BUTLER</div>
-                        <div>CHARLAMAGNE THE GOD</div>
-                        <div>JALEN ROSE</div>
+                    <?php foreach ($first_col_data as $data) {
+
+                        $text = $data['add_text'];
+
+                        if ($text && !empty($text)) {
+                            ?>
+
+                        <div><?php echo wp_kses_post($text);?></div>
+
+                        <?php }
+                    }?>
                     </div>
+                <?php endif;?>
+
+                <?php if($second_col_data && !empty($second_col_data)) :?>
                     <div class="imapact-content--para">
-                        <div>DESUS AND MERO</div>
-                        <div>JEMELE HILL</div>
-                        <div>RENEE MONTGOMERY</div>
+                    <?php foreach ($second_col_data as $data) {
+                        $text = $data['add_text'];
+
+                        if ($text && !empty($text)) {
+                            ?>
+                        <div><?php echo wp_kses_post($text);?></div>
+                        <?php }
+                    }?>
                     </div>
+                <?php endif;?>
                 </div>
             </div>
         </div>
