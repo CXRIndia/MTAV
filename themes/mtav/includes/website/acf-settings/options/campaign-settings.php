@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom page settings
+ * Campaign post settings
  * php version 7.4
  *
  * @category MTAV
@@ -12,11 +12,11 @@
 
 acf_add_local_field_group(
     array(
-    'key' => 'group_6013e2dc20aa0',
-    'title' => 'Page Settings',
+    'key' => 'group_601beeac1b1a6',
+    'title' => 'Campaign Post Settings',
     'fields' => array(
         array(
-            'key' => 'field_6013e31caaa7d',
+            'key' => 'field_601beead39f83',
             'label' => 'Top Banner Settings',
             'name' => 'top_banner_settings',
             'type' => 'group',
@@ -31,7 +31,7 @@ acf_add_local_field_group(
             'layout' => 'block',
             'sub_fields' => array(
                 array(
-                    'key' => 'field_6013e32eaaa7e',
+                    'key' => 'field_601beeae0a76e',
                     'label' => 'Desktop Banner Background Image',
                     'name' => 'banner_background_image',
                     'type' => 'image',
@@ -55,7 +55,7 @@ acf_add_local_field_group(
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_601a67d7d1011',
+                    'key' => 'field_601beeae0a7ba',
                     'label' => 'Mobile Banner Background Image',
                     'name' => 'mob_banner_background_image',
                     'type' => 'image',
@@ -79,7 +79,31 @@ acf_add_local_field_group(
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_6013e34baaa7f',
+                    'key' => 'field_601beef5c3f41',
+                    'label' => 'Campaign Listing Image',
+                    'name' => 'campaign_listing_image',
+                    'type' => 'image',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'return_format' => 'id',
+                    'preview_size' => 'medium',
+                    'library' => 'all',
+                    'min_width' => '',
+                    'min_height' => '',
+                    'min_size' => '',
+                    'max_width' => '',
+                    'max_height' => '',
+                    'max_size' => '',
+                    'mime_types' => '',
+                ),
+                array(
+                    'key' => 'field_601beeae0a805',
                     'label' => 'Banner Title',
                     'name' => 'banner_title',
                     'type' => 'wysiwyg',
@@ -98,7 +122,7 @@ acf_add_local_field_group(
                     'delay' => 0,
                 ),
                 array(
-                    'key' => 'field_6013e359aaa80',
+                    'key' => 'field_601beeae0a850',
                     'label' => 'Banner Subhead',
                     'name' => 'banner_subhead',
                     'type' => 'text',
@@ -117,7 +141,7 @@ acf_add_local_field_group(
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_6013e363aaa81',
+                    'key' => 'field_601beeae0a89a',
                     'label' => 'Banner Subtitle',
                     'name' => 'banner_subtitle',
                     'type' => 'wysiwyg',
@@ -135,60 +159,6 @@ acf_add_local_field_group(
                     'media_upload' => 1,
                     'delay' => 0,
                 ),
-                array(
-                    'key' => 'field_6013e374aaa82',
-                    'label' => 'Button Label',
-                    'name' => 'button_label',
-                    'type' => 'text',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'default_value' => '',
-                    'placeholder' => '',
-                    'prepend' => '',
-                    'append' => '',
-                    'maxlength' => '',
-                ),
-                array(
-                    'key' => 'field_6013e37eaaa83',
-                    'label' => 'Button URL',
-                    'name' => 'button_url',
-                    'type' => 'url',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'default_value' => '',
-                    'placeholder' => '',
-                ),
-                array(
-                    'key' => 'field_601be248d3f8a',
-                    'label' => 'Open in New Tab',
-                    'name' => 'open_in_new_tab',
-                    'type' => 'true_false',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'message' => '',
-                    'default_value' => 0,
-                    'ui' => 0,
-                    'ui_on_text' => '',
-                    'ui_off_text' => '',
-                ),
             ),
         ),
     ),
@@ -197,7 +167,7 @@ acf_add_local_field_group(
             array(
                 'param' => 'post_type',
                 'operator' => '==',
-                'value' => 'page',
+                'value' => 'post',
             ),
         ),
     ),
