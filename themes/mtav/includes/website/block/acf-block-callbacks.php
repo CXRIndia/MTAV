@@ -380,6 +380,8 @@ function MTAV_The_Impact_Block_Render_callback( $block )
         $second_col_desc = get_field('second_column_description');
         $third_col_title = get_field('third_column_title');
         $third_col_desc = get_field('third_column_description');
+        $first_col_data = $third_col_desc['first_column_data'];
+        $second_col_data = $third_col_desc['second_column_data'];
 
         $shortcode_template  = 'template-parts/blocks/three-col-impact-structure-block.php';
     } elseif ($style == 'four_col_data') {
