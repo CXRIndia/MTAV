@@ -40,35 +40,44 @@
             <div class="swiper-container bythenumber-slider">
                 <div class="swiper-wrapper">
                 <?php
+                $count       = 1;
                 foreach ($slider_data as $data) {
                     $title       = $data['title'];
                     $description = $data['desciption'];
-                    if($title || $description) :?>
+                    ?>
 
+                    <?php echo $count; if(($count == 1 || $count % 3 == 1) ) :?>
                     <div class="swiper-slide">
-                        <div class="slider-content">
+                        <div>
+                    <?php endif;?>
+                            <div class="slider-content">
 
-                        <?php if($title && !empty($title)) :?>
-                            <p class="number"><?php echo wp_kses_post($title);?></p>
-                        <?php endif;?>
+                            <?php if($title && !empty($title)) :?>
+                                <p class="number"><?php echo wp_kses_post($title);?></p>
+                            <?php endif;?>
 
-                        <?php if($description && !empty($description)) :?>
-                            <div class="content">
-                                <?php echo wp_kses_post(MTAV_Remove_ptag($description));?>
+                            <?php if($description && !empty($description)) :?>
+                                <div class="content">
+                                    <?php echo wp_kses_post(MTAV_Remove_ptag($description));?>
+                                </div>
+                            <?php endif;?>
+
                             </div>
-                        <?php endif;?>
-
+                    <?php if($count % 3 == 0 ) :?>
                         </div>
                     </div>
-                        <?php
+                                <?php
                     endif;
+                    $count++;
                 } ?>
 
                 </div>
             </div>
             <!-- Add Arrows -->
-            <div class="swiper-button-next bythenumber-next"></div>
+            <div class="arrow-wrapper">
+                <div class="swiper-button-next bythenumber-next"></div>
                 <div class="swiper-button-prev bythenumber-prev"></div>
+            </div>
         </div>
         <?php endif; ?>
 
