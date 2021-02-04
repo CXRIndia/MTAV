@@ -290,8 +290,9 @@
         font-size: 30px;
       }
       br{
-        @include mq(t-768, max) {}
-        display: none;
+        @include mq(t-768, max) {
+          display: none;
+        }
       }
     }
 

@@ -29,7 +29,7 @@
         <div class="separator"></div>
 
         <!-- Structure One -->
-        <!-- <div class="impact-structure--one">
+        <div class="impact-structure--one">
             <div class="imapact-content">
                 <h1 class="imapact-content--title">42K+</h1>
                 <div class="imapact-content--para">People signed up to be poll workers</div>
@@ -49,7 +49,7 @@
                 <h1 class="imapact-content--title">5.4M+</h1>
                 <div class="imapact-content--para">Youtube ad impressions</div>
             </div>
-        </div> -->
+        </div>
 
         <!-- structure Two -->
         <!-- <div class="impact-structure--two">
@@ -84,7 +84,7 @@
 
 
         <!-- Structure Three -->
-        <div class="impact-structure--three">
+        <!-- <div class="impact-structure--three">
             <div class="imapact-content">
                 <h6 class="imapact-content--subtitle">Wisonsin</h6>
                 <h1 class="imapact-content--title">Wisdom/<br>Expo</h1>
@@ -98,7 +98,7 @@
 
             <div class="imapact-content">
                 <h6 class="imapact-content--subtitle">North Carolina</h6>
-                <h1 class="imapact-content--title">Forward<br>Justice</h1>
+                <h1 class="imapact-content--title">Forward <br>Justice</h1>
                 <div class="imapact-content--para">
                     <ul>
                         <li>“Know your rights” mailer to 80K universe for voter education - heavily targeting returning citizens</li>
@@ -128,7 +128,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </div>
