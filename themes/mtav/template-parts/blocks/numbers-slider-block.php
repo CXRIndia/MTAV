@@ -46,7 +46,7 @@
                     $description = $data['desciption'];
                     ?>
 
-                    <?php echo $count; if(($count == 1 || $count % 3 == 1) ) :?>
+                    <?php if(($count == 1 || $count % 3 == 1) ) :?>
                     <div class="swiper-slide">
                         <div>
                     <?php endif;?>
