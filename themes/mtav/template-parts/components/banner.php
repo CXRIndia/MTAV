@@ -81,9 +81,10 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
             <?php endif; ?>
 
             <?php if($mtav_banner_btn_label && !empty($mtav_banner_btn_label)) :?>
-            <button class="btn btn-primary">
+            <a href="<?php echo esc_url($mtav_banner_btn_url);?>"
+               class="btn btn-primary">
                 <?php echo wp_kses_post($mtav_banner_btn_label); ?>
-            </button>
+            </a>
             <?php endif; ?>
 
         </div>
