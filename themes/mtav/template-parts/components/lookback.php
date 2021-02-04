@@ -47,7 +47,7 @@ foreach ($all_categories as $key => $category) {
                 $top_banner_data    = $mtav_banner_fields['top_banner_settings'];
                 $campaignTitle      = $top_banner_data['banner_title'];
                 $campaignSubTitle   = $top_banner_data['banner_subtitle'];
-                $campaignImgId      = $top_banner_data['banner_background_image'];
+                $campaignImgId      = $top_banner_data['campaign_listing_image'];
                 $btn_url            = get_permalink($campaign->ID);
                 $campaignImgUrl     = '';
 
