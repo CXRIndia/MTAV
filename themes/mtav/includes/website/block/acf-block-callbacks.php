@@ -478,3 +478,29 @@ function MTAV_Map_Block_Render_callback( $block )
         <?php
     }
 }
+
+/**
+ * Callback function for media block
+ *
+ * @param [type] $block Block.
+ *
+ * @return void
+ */
+function MTAV_Media_Block_Render_callback( $block )
+{
+    $title = get_field('title');
+    $media_ids = get_field('select_media');
+
+    $shortcode_template  = 'template-parts/blocks/mtav-media-block.php';
+
+    if (! empty($title) || !empty($media_id) ) {
+        include locate_template($shortcode_template);
+    } else {
+        if (is_admin() ) {
+            ?>
+            <h4><u>MTAV Media Block:</u></h4>
+            <span style="color:red">MTAV Media Block</span>
+            <?php
+        }
+    }
+}
