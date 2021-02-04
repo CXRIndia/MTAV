@@ -79,7 +79,12 @@ img{
 }
 .spacer{
   height: 50px;
-
+  @include mq(t-992, max) {
+    height: 30px;
+  }
+  @include mq(t-768, max) {
+    height: 36px;
+  }
 }
 .content-main-wrapper{
   padding: 80px 0;
@@ -109,24 +114,74 @@ img{
       line-height: 28px;
       margin-bottom: 40px;
       text-transform: uppercase;
+      @include mq(t-992, max) {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+      }
+      @include mq(t-768, max) {
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 16px;
+      }
     }
     p{
       font-size: 18px;
       line-height: 22px;
       margin-bottom: 30px;
+      @include mq(t-992, max) {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+      @include mq(t-768, max) {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 16px;
+        letter-spacing: 0.32px;
+      }
     }
     ul{
       list-style: disc;
       padding-left: 40px;
       padding-bottom: 30px;
+      font-size: 18px;
+      line-height: 22px;
+      @include mq(t-992, max) {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      @include mq(t-768, max) {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+        letter-spacing: 0.32px;
+      }
     }
     ol{
       list-style: decimal;
       padding-left: 40px;
       padding-bottom: 30px;
+      font-size: 18px;
+      line-height: 22px;
+      @include mq(t-992, max) {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      @include mq(t-768, max) {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+        letter-spacing: 0.32px;
+      }
     }
     .one-tab{
       margin-left: 20px;
+      @include mq(t-768, max) {
+        margin-left: 16px;
+      }
     }
   }
 }
