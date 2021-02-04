@@ -223,6 +223,18 @@ function MTAV_Acf_init()
             )
         );
 
+        acf_register_block_type(
+            array(
+            'name'              => 'mtav-media-block',
+            'title'             => __('MTAV Media Block'),
+            'description'       => __('A custom media format block.'),
+            'render_callback'   => 'MTAV_Media_Block_Render_callback',
+            'category'          => 'mtav',
+            'icon'              => 'id-alt',
+            'keywords'          => array( 'image' ),
+            )
+        );
+
     }
 }
 
