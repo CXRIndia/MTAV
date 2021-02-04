@@ -17,6 +17,17 @@
         <div class="container">
 
             <div class="need-solve--inner-wrapper">
+            <div class="mobile-heading">
+                <div class="heading-compo black">
+                    <div class="line-block">
+                        <div class="left-block">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <h1>the need</h1>
+            </div>
                 <div class="need-solve--left">
                     <div class="need-solve--content">
                         <div>
@@ -41,6 +52,17 @@
                 </div>
 
                 <div class="need-solve--right">
+                    <div class="mobile-heading">
+                        <div class="heading-compo black">
+                            <div class="line-block">
+                                <div class="left-block">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1>the Solve</h1>
+                    </div>
                     <div class="need-solve--image">
                         <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/the-solve.jpg" />
                     </div>

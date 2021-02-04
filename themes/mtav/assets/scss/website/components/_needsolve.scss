@@ -8,7 +8,6 @@
   }
   @include mq('t-768', 'max') {
     padding: 56px 0;
-    margin: 0 12px;
   }
   &:after{
     content: "";
@@ -24,13 +23,25 @@
 
 .need-solve--inner-wrapper {
     display: flex;
-
+    @include mq('t-768', 'max') {
+      flex-direction: column;
+    }
     @include mq('t-768', 'min') {
       justify-content: space-between;
     }
-
+    .mobile-heading{
+      display: none;
+      @include mq(t-768, max) {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
     .need-solve--left {
-
+      @include mq(t-768, max) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 56px;
+      }
       @include mq('t-768', 'min') {
         max-width: 324px;
         width: 100%;
@@ -43,13 +54,38 @@
 
       .need-solve--image {
         display: flex;
-
+        @include mq(t-768, max) {
+          order: 1;
+          margin-bottom: 20px;
+        }
         @include mq('t-768', 'min') {
           margin-top: 26px;
         }
 
         @include mq('t-992', 'min') {
           margin-top: 50px;
+        }
+      }
+      .need-solve--content{
+        @include mq(t-768, max) {
+          order: 2;
+        }
+        .heading-compo {
+          @include mq(t-768, max) {
+            display: none;
+          }
+        }
+        h1{
+          @include mq(t-768, max) {
+            display: none;
+          }
+        }
+        .content-para{
+          @include mq(t-768, max) {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.32px;
+          }
         }
       }
     }
@@ -68,13 +104,26 @@
 
       .need-solve--image {
         display: flex;
-
+        @include mq(t-768, max) {
+          margin-bottom: 20px;
+        }
         @include mq('t-768', 'min') {
           justify-content: flex-end;
           margin-bottom: 16px;
         }
       }
-
+      .need-solve--content{
+        .heading-compo {
+          @include mq(t-768, max) {
+            display: none;
+          }
+        }
+        h1{
+          @include mq(t-768, max) {
+            display: none;
+          }
+        }
+      }
     }
 
     .content-para {
@@ -89,6 +138,11 @@
         font-size: 22px;
         letter-spacing: 0.5px;
         margin-top: 20px;
+      }
+      @include mq(t-768, max) {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.32px;
       }
     }
 }
