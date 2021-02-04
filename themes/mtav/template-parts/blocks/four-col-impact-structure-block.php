@@ -54,7 +54,7 @@
 
             <?php if($title && !empty($title)) :?>
                 <h1 class="imapact-content--title">
-                    <?php echo wp_kses_post($title);?>
+                    <?php echo wp_kses_post(MTAV_Remove_ptag($title));?>
                 </h1>
             <?php endif; ?>
 

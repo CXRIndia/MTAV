@@ -42,10 +42,14 @@ foreach ($all_categories as $key => $category) {
             <div class="lookback-wrapper">
 
             <?php foreach ($campaign_posts as $key => $campaign) {
-                $campaignTitle    = get_field('banner_title', $campaign->ID);
-                $campaignSubTitle = get_field('banner_subtitle', $campaign->ID);
-                $campaignImgId    = get_field('banner_background_image', $campaign->ID);
-                $campaignImgUrl   = '';
+
+                $mtav_banner_fields = get_fields($campaign->ID);
+                $top_banner_data    = $mtav_banner_fields['top_banner_settings'];
+                $campaignTitle      = $top_banner_data['banner_title'];
+                $campaignSubTitle   = $top_banner_data['banner_subtitle'];
+                $campaignImgId      = $top_banner_data['banner_background_image'];
+                $btn_url            = get_permalink($campaign->ID);
+                $campaignImgUrl     = '';
 
                 if ($campaignImgId && !empty($campaignImgId)) {
                     $campaignImgArray = wp_get_attachment_image_src($campaignImgId, 'full');
@@ -65,13 +69,13 @@ foreach ($all_categories as $key => $category) {
                         </div>
 
                         <h1 class="inner-title">
-                            <?php echo esc_attr($campaignTitle); ?>
+                            <?php echo wp_kses_post(MTAV_Remove_ptag($campaignTitle)); ?>
                         </h1>
                         <p class="content">
-                            <?php echo esc_attr($campaignSubTitle); ?>
+                            <?php echo wp_kses_post(MTAV_Remove_ptag($campaignSubTitle)); ?>
                         </p>
                         <div class="btn-wrapper">
-                            <a href="" class="btn btn-primary">
+                            <a href="<?php echo esc_url($btn_url)?>" class="btn btn-primary">
                                 Learn More
                             </a>
                         </div>
