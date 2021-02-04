@@ -31,28 +31,6 @@
         <!-- Structure One -->
         <!-- <div class="impact-structure--one">
             <div class="imapact-content">
-                <h1 class="imapact-content--title">10<br>ARENAS</h1>
-                <div class="imapact-content--para">Activated into polling sites</div>
-            </div>
-
-            <div class="imapact-content">
-                <h1 class="imapact-content--title">10+<br>CITIES</h1>
-                <div class="imapact-content--para">OFFERING FREE RIDES TO THE POLLS WITH LYFT</div>
-            </div>
-
-            <div class="imapact-content">
-                <h1 class="imapact-content--title">300K+</h1>
-                <div class="imapact-content--para">VOTED AT ARENAS</div>
-            </div>
-
-            <div class="imapact-content">
-                <h1 class="imapact-content--title">7<br>cities</h1>
-                <div class="imapact-content--para">WITH WHEN WE ALL VOTE FOR EARLY VOTE ACTIVATIONS</div>
-            </div>
-        </div> -->
-
-        <!-- <div class="impact-structure--one">
-            <div class="imapact-content">
                 <h1 class="imapact-content--title">42K+</h1>
                 <div class="imapact-content--para">People signed up to be poll workers</div>
             </div>
@@ -70,28 +48,6 @@
             <div class="imapact-content">
                 <h1 class="imapact-content--title">5.4M+</h1>
                 <div class="imapact-content--para">Youtube ad impressions</div>
-            </div>
-        </div>
-
-        <div class="impact-structure--one">
-            <div class="imapact-content">
-                <h1 class="imapact-content--title">$100K</h1>
-                <div class="imapact-content--para">Raised for Florida Rights Restoration Coalition</div>
-            </div>
-
-            <div class="imapact-content">
-                <h1 class="imapact-content--title">650K</h1>
-                <div class="imapact-content--para">Views of Vicks Vlogs</div>
-            </div>
-
-            <div class="imapact-content">
-                <h1 class="imapact-content--title">13K</h1>
-                <div class="imapact-content--para">Individuals eligible to vote in the state of Forida for the 2020 election</div>
-            </div>
-
-            <div class="imapact-content">
-                <h1 class="imapact-content--title">Amyway Center</h1>
-                <div class="imapact-content--para">Activated into a voting site in Orlando</div>
             </div>
         </div> -->
 
@@ -153,7 +109,7 @@
 
             <div class="imapact-content">
                 <h6 class="imapact-content--subtitle">Michigan</h6>
-                <h1 class="imapact-content--title">Michigan<br>Liberation<br>oraganization</h1>
+                <h1 class="imapact-content--title">Michigan <br>Liberation <br>oraganization</h1>
                 <div class="imapact-content--para">
                     <ul>
                         <li>Voter information campaign to a 500K universe </li>
