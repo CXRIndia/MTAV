@@ -20,6 +20,7 @@ $mtav_banner_subhead        = $top_banner_data['banner_subhead'];
 $mtav_banner_btn_label      = $top_banner_data['button_label'];
 $mtav_banner_btn_url        = $top_banner_data['button_url'];
 $mtav_mob_banner_image_id   = $top_banner_data['mob_banner_background_image'];
+$open_in_new_tab            = $top_banner_data['open_in_new_tab'];
 $mtav_banner_img_url        = '';
 
 if ($mtav_banner_image_id && !empty($mtav_banner_image_id)) {
@@ -82,7 +83,9 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
 
             <?php if($mtav_banner_btn_label && !empty($mtav_banner_btn_label)) :?>
             <a href="<?php echo esc_url($mtav_banner_btn_url);?>"
-               class="btn btn-primary">
+               class="btn btn-primary"
+                <?php if($open_in_new_tab == true) : echo "target='_blank'";
+                endif;?>>
                 <?php echo wp_kses_post($mtav_banner_btn_label); ?>
             </a>
             <?php endif; ?>
