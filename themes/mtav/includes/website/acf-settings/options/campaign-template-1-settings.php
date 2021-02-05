@@ -81,13 +81,6 @@ acf_add_local_field_group(
                 'value' => 'campaign1.php',
             ),
         ),
-        array(
-            array(
-                'param' => 'page_template',
-                'operator' => '==',
-                'value' => 'campaign3.php',
-            ),
-        ),
     ),
     'menu_order' => 0,
     'position' => 'normal',

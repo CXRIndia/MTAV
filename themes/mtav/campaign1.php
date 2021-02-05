@@ -14,9 +14,9 @@ MTAV_Page_Entry_top('campaigntemplate-page header-position');
 
 $page_id     = get_the_ID();
 $all_fields  = get_fields($page_id);
-$title       = get_field('title');
-$description = get_field('description');
-$form_code   = get_field('form_code');
+$title       = $all_fields['title'];
+$description = $all_fields['description'];
+$form_code   = $all_fields['form_code'];
 
 ?>
 

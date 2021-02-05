@@ -1,6 +1,6 @@
 <?php
 /**
- * Campaign template 2 settings
+ * Campaign template 3 settings
  * php version 7.4
  *
  * @category MTAV
@@ -12,11 +12,11 @@
 
 acf_add_local_field_group(
     array(
-    'key' => 'group_601d328463454',
-    'title' => 'Campaign Template 2 Settings',
+    'key' => 'group_601d392880ebf',
+    'title' => 'Campaign Template 3 Settings',
     'fields' => array(
         array(
-            'key' => 'field_601d3290b1595',
+            'key' => 'field_601d392a8aea3',
             'label' => 'Title',
             'name' => 'title',
             'type' => 'text',
@@ -35,7 +35,7 @@ acf_add_local_field_group(
             'maxlength' => '',
         ),
         array(
-            'key' => 'field_601d32afb1596',
+            'key' => 'field_601d392a8aef2',
             'label' => 'Description',
             'name' => 'description',
             'type' => 'wysiwyg',
@@ -54,7 +54,64 @@ acf_add_local_field_group(
             'delay' => 0,
         ),
         array(
-            'key' => 'field_601d32b6b1597',
+            'key' => 'field_601d3988a1fa8',
+            'label' => 'Form Code',
+            'name' => 'form_code',
+            'type' => 'textarea',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'maxlength' => '',
+            'rows' => '',
+            'new_lines' => '',
+        ),
+        array(
+            'key' => 'field_601d3949a1fa5',
+            'label' => 'Video Section Title',
+            'name' => 'video_section_title',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'maxlength' => '',
+        ),
+        array(
+            'key' => 'field_601d3960a1fa6',
+            'label' => 'Video Section Description',
+            'name' => 'video_section_description',
+            'type' => 'wysiwyg',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'tabs' => 'all',
+            'toolbar' => 'full',
+            'media_upload' => 1,
+            'delay' => 0,
+        ),
+        array(
+            'key' => 'field_601d392a8af33',
             'label' => 'Video Thumbnail Image',
             'name' => 'video_thumbnail_image',
             'type' => 'image',
@@ -78,7 +135,7 @@ acf_add_local_field_group(
             'mime_types' => '',
         ),
         array(
-            'key' => 'field_601d32eeb1598',
+            'key' => 'field_601d392a8af75',
             'label' => 'Video URL',
             'name' => 'video_url',
             'type' => 'url',
@@ -99,7 +156,7 @@ acf_add_local_field_group(
             array(
                 'param' => 'page_template',
                 'operator' => '==',
-                'value' => 'campaign2.php',
+                'value' => 'campaign3.php',
             ),
         ),
     ),
