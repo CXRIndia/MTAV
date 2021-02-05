@@ -284,3 +284,29 @@ function MTAV_Remove_Yoast_Metabox_reservations()
     remove_meta_box('wpseo_meta', 'mtav-media', 'normal');
 }
 add_action('add_meta_boxes', 'MTAV_Remove_Yoast_Metabox_reservations', 11);
+
+/**
+ * Function used to get video ID.
+ *
+ * @param $url video url
+ *
+ * @return $url  embed video url
+ */
+function MTAV_Get_Youtube_Video_url( $url )
+{
+    $video_id      = null;
+    $youtube_url_parts = wp_parse_url($url);
+
+    if (! empty($youtube_url_parts['query']) ) {
+        $youtube_query_parts = [];
+        wp_parse_str($youtube_url_parts['query'], $youtube_query_parts);
+
+        if (! empty($youtube_query_parts['v']) ) {
+            $video_id = $youtube_query_parts['v'];
+        }
+    }
+
+    $youtube_url = 'https://www.youtube.com/embed/'.$video_id;
+
+    return $youtube_url;
+}

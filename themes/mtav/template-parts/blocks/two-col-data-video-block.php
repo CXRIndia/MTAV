@@ -52,7 +52,7 @@
 
             </div>
             <div class="video">
-                <iframe src="<?php echo esc_url($video_url);?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="<?php echo esc_url(MTAV_Get_Youtube_Video_url($video_url));?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
