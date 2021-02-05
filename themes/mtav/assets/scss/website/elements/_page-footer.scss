@@ -133,7 +133,7 @@ footer{
           }
           input{
             font-size: 20px;
-            @include rem(padding, 11, 32, 13);
+            @include rem(padding, 9, 32, 11);
             @include Font-Pitch;
             line-height: 1;
             border: 3px solid;

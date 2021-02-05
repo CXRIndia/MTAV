@@ -12,10 +12,21 @@
 
 ?>
 
+<div class="fullvideo-popup">
+    <div class="header">
+        <a href="javascript:void(0)" class="js-video-close">
+            <img class="lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/modal-close.svg" alt="">
+        </a>
+    </div>
+    <div class="popup-body">
+    <iframe src="<?php echo esc_url(MTAV_Get_Youtube_Video_url($video_url));?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 <div class="campaign-launch--wrapper">
-    <div class="container">
-        <div class="campign-launch--inner">
-            <div class="mobile-heading">
+<div class="mobile-heading">
                 <div class="heading-compo black">
                     <div class="line-block">
                         <div class="left-block">
@@ -30,6 +41,8 @@
                 <?php endif;?>
 
             </div>
+    <div class="container">
+        <div class="campign-launch--inner">
             <div class="content">
                 <div class="heading-compo black">
                     <div class="line-block">
@@ -52,7 +65,10 @@
 
             </div>
             <div class="video">
-                <iframe src="<?php echo esc_url(MTAV_Get_Youtube_Video_url($video_url));?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="javascript:void(0)" class="js-fullvideo">
+                    <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/play.svg" class="play-icon" />
+                    <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/png/campaign-thumbnail.jpg" class="thumbnail-image" />
+                </a>
             </div>
         </div>
     </div>
