@@ -123,9 +123,6 @@
             display: none;
           }
         }
-        @include mq('t-992', 'min') {
-          margin-left: 100px;
-        }
       }
     }
 
