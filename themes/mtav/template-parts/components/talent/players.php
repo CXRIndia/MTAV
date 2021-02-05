@@ -22,6 +22,7 @@ $args = array(
         ),
     ),
     'fields'     => 'ids',
+    'posts_per_page' => -1,
 );
 $query = new WP_Query($args);
 
