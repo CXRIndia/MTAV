@@ -60,7 +60,7 @@
 
                         <?php if($description && !empty($description)) :?>
                         <div class="content-para">
-                             <?php echo wp_kses_post(MTAV_Remove_ptag($description));?>
+                             <?php echo wp_kses_post($description);?>
                         </div>
                         <?php endif;?>
 
@@ -116,7 +116,7 @@
 
                         <?php if($description && !empty($description)) :?>
                         <div class="content-para">
-                             <?php echo wp_kses_post(MTAV_Remove_ptag($description));?>
+                             <?php echo wp_kses_post($description);?>
                         </div>
                         <?php endif;?>
 
