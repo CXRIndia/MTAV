@@ -405,7 +405,7 @@ function MTAV_The_Impact_Block_Render_callback( $block )
 }
 
 /**
- * Callback function for two column data block
+ * Callback function for two column data video block
  *
  * @param [type] $block Block.
  *
@@ -505,29 +505,3 @@ function MTAV_Media_Block_Render_callback( $block )
     }
 }
 
-/**
- * Callback function for data with form block
- *
- * @param [type] $block Block.
- *
- * @return void
- */
-function MTAV_Data_Form_Block_Render_callback( $block )
-{
-    $title = get_field('title');
-    $description = get_field('description');
-    $form_code = get_field('form_code');
-
-    $shortcode_template  = 'template-parts/blocks/mtav-data-form-block.php';
-
-    if (! empty($title) || !empty($description) || !empty($form_code)) {
-        include locate_template($shortcode_template);
-    } else {
-        if (is_admin() ) {
-            ?>
-            <h4><u>MTAV Data Form Block:</u></h4>
-            <span style="color:red">MTAV Data Form Block</span>
-            <?php
-        }
-    }
-}

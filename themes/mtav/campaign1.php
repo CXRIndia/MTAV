@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Campaign Template
+ * Template Name: Campaign Template 1
  * php version 7.4
  *
  * @category MTAV
@@ -11,13 +11,20 @@
  */
 
 MTAV_Page_Entry_top('campaigntemplate-page header-position');
+
+$page_id     = get_the_ID();
+$all_fields  = get_fields($page_id);
+$title       = get_field('title');
+$description = get_field('description');
+$form_code   = get_field('form_code');
+
 ?>
 
 <div class="body-content campaigntemplate-main-wrapper">
     <?php
     while ( have_posts() ) :
         the_post();
-        include locate_template('template-parts/campaign.php');
+        include locate_template('template-parts/campaign1.php');
     endwhile;
     ?>
 </div>
