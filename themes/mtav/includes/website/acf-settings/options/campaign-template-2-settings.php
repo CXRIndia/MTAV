@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom page settings
+ * Campaign template 2 settings
  * php version 7.4
  *
  * @category MTAV
@@ -199,33 +199,20 @@ acf_add_local_field_group(
                 'operator' => '==',
                 'value' => 'page',
             ),
-        ),
-        array(
             array(
                 'param' => 'page_template',
                 'operator' => '!=',
                 'value' => 'campaign1.php',
             ),
-        ),
-        array(
             array(
                 'param' => 'page_template',
                 'operator' => '!=',
                 'value' => 'campaign2.php',
             ),
-        ),
-        array(
             array(
                 'param' => 'page_template',
                 'operator' => '!=',
                 'value' => 'campaign3.php',
-            ),
-        ),
-        array(
-            array(
-                'param' => 'page_type',
-                'operator' => '==',
-                'value' => 'front_page',
             ),
         ),
     ),
