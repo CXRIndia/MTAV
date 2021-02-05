@@ -14,6 +14,9 @@
     }
   }
   h1{
+    @include mq(t-992, max) {
+      font-size: 26px;
+    }
     @include mq(t-768, max) {
       font-size: 25px;
       line-height: 32px;
@@ -81,8 +84,9 @@
       @include Font-Plakat;
       text-transform: uppercase;
       @include mq(t-768, max) {
-        max-width: 183px;
+        width: 183px;
         margin-left: auto;
+        font-size: 14px;
       }
       @include mq('t-768', 'min') {
         font-size: 12px;
@@ -190,6 +194,7 @@
         font-size: 14px;
         display: flex;
         flex-direction: column;
+        font-size: 14px;
         justify-content: center;
       }
       > div{
@@ -210,7 +215,7 @@
     justify-content: space-between;
     @include mq(t-768, max) {
       flex-direction: column;
-      max-width: 183px;
+      width: 183px;
       margin-left: auto;
       font-size: 14px;
       justify-content: center;

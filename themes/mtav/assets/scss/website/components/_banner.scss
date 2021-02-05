@@ -1,6 +1,7 @@
 .banner{
   position: relative;
   background-size: cover;
+  background-position: center;
   &:before{
     content: "";
     background: rgba(0,0,0,0.48);

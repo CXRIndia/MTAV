@@ -29,6 +29,17 @@
                 $block_img_url    = MTAV_Get_image($block_img_array);
 
                 if ($key % 2 == 0) {?>
+                <div class="mobile-heading">
+                <div class="heading-compo black">
+                    <div class="line-block">
+                        <div class="left-block">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <h1><?php echo wp_kses_post($title);?></h1>
+            </div>
                 <div class="need-solve--left">
                     <div class="need-solve--content">
                         <div>
@@ -67,7 +78,17 @@
                 <?php } else {?>
 
                 <div class="need-solve--right">
-
+                <div class="mobile-heading">
+                        <div class="heading-compo black">
+                            <div class="line-block">
+                                <div class="left-block">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1><?php echo wp_kses_post($title);?></h1>
+                    </div>
                     <?php if($block_img_id && !empty($block_img_id)) :?>
                     <div class="need-solve--image">
                         <img class="lazyload"

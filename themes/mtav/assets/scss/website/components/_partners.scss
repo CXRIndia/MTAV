@@ -45,12 +45,17 @@
     }
     @include mq(t-768, max) {
       max-width: 150px;
-      margin-bottom:54px;
+      margin-bottom:32px;
       height: 64px;
       margin-left: 0;
       margin-right: 0;
       &:nth-child(2n + 1){
         margin-right: 27px;
+      }
+    }
+    img{
+      @include mq(t-992, max) {
+        max-height: 50px;
       }
     }
   }
