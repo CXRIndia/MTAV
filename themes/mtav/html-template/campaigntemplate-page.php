@@ -16,7 +16,7 @@ get_header();
 
     <?php get_template_part('template-parts/content-header'); ?>
 
-    <div class="body-content letter-main-wrapper">
+    <div class="body-content campaigntemplate-main-wrapper">
         <?php require THEMEPATH . '/html-template/component/campaigntemplate/contactinformation.php'; ?>
     </div>
 
