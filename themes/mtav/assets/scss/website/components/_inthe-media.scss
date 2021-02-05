@@ -39,11 +39,14 @@
   }
   .media-slider {
     padding-left: 7vw;
+    padding-right: 100px;
     @include mq(t-992, max) {
       padding-left: 40px;
+      padding-right: 35px;
     }
     @include mq(t-768, max) {
       padding-left: 24px;
+      padding-right: 24px;
     }
   }
   .swiper-wrapper {
@@ -117,6 +120,16 @@
   margin-top: 40px;
   @include mq(t-768, max) {
     margin-top: 24px;
+  }
+  .swiper-button-disabled{
+    &.swiper-button-prev{
+      background-image: url("../../images/icons/media-slider-prev-white.svg") !important;
+      opacity: 1;
+    }
+    &.swiper-button-next{
+      background-image: url("../../images/icons/media-slider-next-white.svg") !important;
+      opacity: 1;
+    }
   }
   .swiper-button-next, .swiper-button-prev {
       width: 50px;
