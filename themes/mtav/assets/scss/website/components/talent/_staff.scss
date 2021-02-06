@@ -64,6 +64,7 @@
         padding: 40px 0 29px;
         position: relative;
         width: 100%;
+        align-items: flex-start;
         @include mq('t-992', 'max') {
           padding: 40px 0 16px;
         }
@@ -92,6 +93,23 @@
         margin-bottom: 21px;
         @include mq('t-992', 'max') {
           margin-bottom: 16px;
+        }
+        @include mq('t-768', 'max') {
+          display: block;
+        }
+        background-color: $brand-primary;
+        border-radius: 50%;
+        img{
+          max-width: 234px;
+          @include mq(t-992, max) {
+            max-width: 324px;
+          }
+          @include mq(t-768, max) {
+            max-width: 100%;
+          }
+          &:hover{
+            filter: grayscale(80%);
+          }
         }
       }
 

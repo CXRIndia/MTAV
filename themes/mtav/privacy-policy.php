@@ -10,7 +10,7 @@
  * @link     MTAV
  */
 
-MTAV_Page_Entry_top('campaigntemplate-page header-position');
+MTAV_Page_Entry_top('has-black-hamburger campaigntemplate-page header-position');
 ?>
 
 <div class="body-content content-main-wrapper">

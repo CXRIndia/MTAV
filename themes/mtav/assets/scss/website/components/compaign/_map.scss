@@ -6,9 +6,9 @@
   @include mq('t-992', 'max') {
     padding: 72px 0;
   }
-  // @include mq('t-768', 'max') {
-  //   display: none;
-  // }
+  @include mq('t-768', 'max') {
+    display: none;
+  }
   &:after{
     content: "";
     background-color: $brand-primary;

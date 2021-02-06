@@ -53,9 +53,14 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
 
         <div class="hamburger-wrapper">
             <a href="javascript:void(0)" class="js-menuopen">
-                <img class="lazyload"
+                <img class="lazyload white-hamburger"
                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hamburger-menu-icon.svg" alt="">
+            </a>
+            <a href="javascript:void(0)" class="js-menuopen">
+                <img class="lazyload black-hamburger"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/hamburger-menu-icon-black.svg" alt="">
             </a>
         </div>
 

@@ -10,7 +10,7 @@
  * @link     MTAV
  */
 
-MTAV_Page_Entry_top('error404-page header-position');
+MTAV_Page_Entry_top('has-black-hamburger error404-page header-position');
 ?>
 
 <div class="body-content">

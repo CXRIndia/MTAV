@@ -15,7 +15,9 @@ header {
     @include mq('t-768', 'max') {
       padding-top: 24px;
     }
-
+    .black-hamburger{
+      display: none;
+    }
     .logo {
       img {
         width: 37px;
@@ -216,5 +218,17 @@ header {
 
   &.open{
     display: flex;
+  }
+}
+.has-black-hamburger{
+  .header-menu{
+    .hamburger-wrapper{
+      .black-hamburger{
+        display: block;
+      }
+      .white-hamburger{
+        display: none;
+      }
+    }
   }
 }

@@ -20,6 +20,7 @@ $facebook_url   = get_field('facebook_link', 'options');
 $twitter_url    = get_field('twitter_link', 'options');
 $instagram_url  = get_field('instagram_link', 'options');
 $youtube_url    = get_field('youtube_link', 'options');
+$tiktok_url    = get_field('tiktok_link', 'options');
 ?>
 
 <footer>
@@ -59,10 +60,29 @@ $youtube_url    = get_field('youtube_link', 'options');
                     </div>
 
                     <div class="form-wrapper">
-                    <?php if ($contact_form && !empty($contact_form)) {
-                         echo do_shortcode($contact_form);
-                    };
-                    ?>
+                    <div class="main-form">
+<div class="form-group">
+    <label class="lbl-title">First Name</label>
+    <input type="text" name="your-name" value="" >
+    <span class="error">First name is required</span>
+</div>
+<div class="form-group">
+    <label class="lbl-title">Email</label>
+    <input type="email" name="your-email" value="" >
+</div>
+<div class="form-group">
+    <label class="lbl-title">Mobile Number</label>
+    <input type="text" name="your-number" value="" >
+</div>
+<div class="form-group">
+    <label class="lbl-title">Zip Code</label>
+    <input type="text" name="zip-code" value="" >
+</div>
+</div>
+<div class="btn-wrapper">
+<input type="submit" value="Send">
+</div>
+
                     <?php if($note && !empty($note)) :?>
                         <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
                     <?php endif; ?>
@@ -128,6 +148,15 @@ $youtube_url    = get_field('youtube_link', 'options');
                                 <img class="lazyload"
                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                                     data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/youtube-icon.svg" alt="youtube">
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if($tiktok_url && !empty($tiktok_url)) :?>
+                        <li>
+                            <a href="<?php echo esc_url($tiktok_url);?>" target="_blank">
+                                <img class="lazyload"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/ticktok-icon.svg" alt="youtube">
                             </a>
                         </li>
                     <?php endif; ?>

@@ -30,7 +30,7 @@
       }
       @include mq('t-768', 'max') {
         // padding: 0 24px 0 24px;
-        margin-bottom: 56px;
+        margin-bottom: 24px;
       }
     }
     h1{
@@ -69,6 +69,8 @@
       }
       @include mq('t-768', 'max') {
         line-height: 32px;
+        margin-top: 24px;
+        padding: 9px;
       }
     }
   }

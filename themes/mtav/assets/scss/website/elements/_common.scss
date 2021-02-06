@@ -141,6 +141,13 @@ img{
         letter-spacing: 0.32px;
       }
     }
+    a{
+      color: $brand-black;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
     ul{
       list-style: disc;
       padding-left: 40px;
