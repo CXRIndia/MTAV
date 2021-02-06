@@ -61,11 +61,19 @@ function MTAV_scripts()
 
     wp_enqueue_script('mtav-global-js', STYLESHEETURI . '/dist/' . $distFile['global']['js'], array('jquery'), null, true);
 
-    wp_enqueue_script('mtav-campaign-js', STYLESHEETURI . '/dist/' . $distFile['campaign']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-campaign-css', STYLESHEETURI . '/dist/' . $distFile['campaign']['css']);
-
-    wp_enqueue_script('mtav-campaigntemplate-js', STYLESHEETURI . '/dist/' . $distFile['campaigntemplate']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-campaigntemplate-css', STYLESHEETURI . '/dist/' . $distFile['campaigntemplate']['css']);
+    if (is_page_template('html-template/campaigntemplate-page.php')
+        || is_page_template('html-template/campaigntemplate02-page.php')
+        || is_page_template('html-template/campaigntemplate03-page.php')
+        || is_page_template('campaign1.php')
+        || is_page_template('campaign2.php')
+        || is_page_template('campaign3.php')
+        || is_page_template('terms-condition.php')
+        || is_page_template('privacy-policy.php')
+        || is_page_template('cookie-policy.php')
+    ) {
+        wp_enqueue_script('mtav-campaigntemplate-js', STYLESHEETURI . '/dist/' . $distFile['campaigntemplate']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-campaigntemplate-css', STYLESHEETURI . '/dist/' . $distFile['campaigntemplate']['css']);
+    }
 
     if (is_404() || is_page_template('html-template/error404-page.php')) {
         wp_enqueue_script('mtav-error404-js', STYLESHEETURI . '/dist/' . $distFile['error404']['js'], array('jquery'), null, true);
@@ -102,8 +110,8 @@ function MTAV_scripts()
     }
 
     if (is_single()) {
-        wp_enqueue_script('mtav-single-js', STYLESHEETURI . '/dist/' . $distFile['article']['js'], array('jquery'), null, true);
-        wp_enqueue_style('mtav-single-css', STYLESHEETURI . '/dist/' . $distFile['article']['css']);
+        wp_enqueue_script('mtav-campaign-js', STYLESHEETURI . '/dist/' . $distFile['campaign']['js'], array('jquery'), null, true);
+        wp_enqueue_style('mtav-campaign-css', STYLESHEETURI . '/dist/' . $distFile['campaign']['css']);
     }
 
     if (is_archive()) {

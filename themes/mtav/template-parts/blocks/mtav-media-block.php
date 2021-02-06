@@ -65,27 +65,6 @@
                     </div>
                 <?php }
                 ?>
-
-                    <!-- <div class="swiper-slide" style="background-image: url(<?php echo esc_url(THEMEURI); ?>/assets/images/the-need.jpg);">
-                        <div class="slider-content">
-                            <div class="title">Lebron james joins push to turn out ex-felon vote in florida</div>
-                            <a href="#" class="btn btn-primary">Read the full story</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide" style="background-image: url(<?php echo esc_url(THEMEURI); ?>/assets/images/the-need.jpg);">
-                        <div class="slider-content">
-                            <div class="title">Lebron james joins push to turn out ex-felon vote in florida</div>
-                            <a href="#" class="btn btn-primary">Read the full story</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide" style="background-image: url(<?php echo esc_url(THEMEURI); ?>/assets/images/the-need.jpg);">
-                        <div class="slider-content">
-                            <div class="title">Lebron james joins push to turn out ex-felon vote in florida</div>
-                            <a href="#" class="btn btn-primary">Read the full story</a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@
  * @link     MTAV
  */
 
+$privacy_page_link = get_permalink(get_page_by_path('Cookie Policy'));
 ?>
 
 <div class="container">
@@ -41,7 +42,7 @@
     </ul>
     <p>Social Media:</p>
     <p class="one-tab">We may obtain information about you from your social media accounts or services when you choose to interact with us 	(for example, when you 	log in to leave a comment on a social media platform such as Facebook, Instagram, TikTok, Snapchat and Twitter.) Please check your settings and the privacy policies of the social media sites you use for more information.</p>
-    <p class="one-tab">We also use “cookies” to help us improve the performance of our Sites and campaigns. You can find out more about our use of cookies in our cookie policy.</p>
+    <p class="one-tab">We also use “cookies” to help us improve the performance of our Sites and campaigns. You can find out more about our use of cookies in our <a href="<?php echo esc_url($privacy_page_link);?>">cookie policy</a>.</p>
     <div class="spacer"></div>
     <h5>WHAT INFORMATION DO WE COLLECT?</h5>
     <p>We collect Personal Information that helps us make informed decisions about the resources we provide and manage, fundraise more efficiently, and give you the best possible experience during our events, on our website, and from our communications</p>
@@ -119,5 +120,5 @@
     <div class="spacer"></div>
     <h5>HOW TO CONTACT US</h5>
     <p>This Privacy Notice was prepared to be as comprehensive as possible, but it does not include an exhaustive list of every aspect of our collection and use of Personal Information. However, we would be happy to provide any further information or explanation about our practices.</p>
-    <p>If you have any questions, comments or suggestions, please let us know by contacting us at legal@morethanavote.org.</p>
+    <p>If you have any questions, comments or suggestions, please let us know by contacting us at <a href="mailto:legal@morethanavote.org">legal@morethanavote.org</a>.</p>
 </div>

@@ -35,7 +35,6 @@ module.exports = function () {
     appSrc: resolveApp('.'),
     appBuild: resolveApp('../dist'),
     appGlobalJs: resolveApp('js/website/global.js'),
-    appSingleJs: resolveApp('js/website/article.js'),
     appHomeJs: resolveApp('js/website/home.js'),
     appWhoweareJs: resolveApp('js/website/whoweare.js'),
     appletterJs: resolveApp('js/website/letter.js'),
@@ -52,9 +51,6 @@ module.exports = function () {
   const entry = {
     global: [
       appPaths.appGlobalJs,
-    ],
-    article: [
-      appPaths.appSingleJs,
     ],
     home: [
       appPaths.appHomeJs,
