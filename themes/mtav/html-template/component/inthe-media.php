@@ -28,9 +28,11 @@
     </div>
 
     <div class="media-slider-wrapper">
+        <div class="container" id="sliderPadding"></div>
             <div class="swiper-container media-slider">
+
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url(<?php echo esc_url(THEMEURI); ?>/assets/images/the-need.jpg);">
+                    <div class="swiper-slide first-swiper-slide" style="background-image: url(<?php echo esc_url(THEMEURI); ?>/assets/images/the-need.jpg);">
                         <div class="slider-content">
                             <div class="title">Lebron james joins push to turn out ex-felon vote in florida</div>
                             <a href="#" class="btn btn-primary">Read the full story</a>
@@ -58,6 +60,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 

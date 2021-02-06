@@ -40,7 +40,8 @@
       }
     }
     .img-wrapper{
-      padding: 0 30px;
+      // padding: 0 30px;
+      display: flex;
       @include mq('t-768', 'max') {
         padding: 0;
         margin: 0 -24px;
