@@ -41,8 +41,15 @@ function MTAV_Tiles_Block_Render_callback( $block )
 
     $shortcode_template  = 'template-parts/blocks/homepage-tiles-block.php';
 
-    if (! empty($big_tile_data) || !empty($small_tile_data) || !empty($view_button_label) ) {
-        include locate_template($shortcode_template);
+    if (! empty($big_tile_data)
+        || !empty($small_tile_data)
+        || !empty($view_button_label)
+    ) {
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Tile Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -79,7 +86,11 @@ function MTAV_Who_We_Are_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/homepage-who-we-are-block.php';
 
     if (! empty($title) || !empty($subhead) || !empty($block_img_id) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Who We Are Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -122,7 +133,11 @@ function MTAV_Protect_Black_Voters_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/protect-black-voters-block.php';
 
     if (! empty($left_column_data) || !empty($right_column_data) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Protect Black Voters Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -158,8 +173,16 @@ function MTAV_I_Voted_Block_Render_callback( $block )
 
     $shortcode_template  = 'template-parts/blocks/i-voted-block.php';
 
-    if (! empty($block_image_id) || !empty($title) || !empty($description) || !empty($btn_label)) {
-        include locate_template($shortcode_template);
+    if (! empty($block_image_id)
+        || !empty($title)
+        || !empty($description)
+        || !empty($btn_label)
+    ) {
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV I Voted Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -186,7 +209,11 @@ function MTAV_Structure_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/structure-block.php';
 
     if (! empty($section_title) || !empty($structure_data) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Structure Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -213,7 +240,11 @@ function MTAV_Numbers_Slider_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/numbers-slider-block.php';
 
     if (! empty($subhead) || !empty($slider_data) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Number Slider Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -247,8 +278,16 @@ function MTAV_Data_Image_Block_Render_callback( $block )
 
     $shortcode_template  = 'template-parts/blocks/two-column-data-block-with-image.php';
 
-    if (! empty($block_title) || !empty($left_column_data) || !empty($right_column_img_id) || !empty($right_column_data) ) {
-        include locate_template($shortcode_template);
+    if (! empty($block_title)
+        || !empty($left_column_data)
+        || !empty($right_column_img_id)
+        || !empty($right_column_data)
+    ) {
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Two Column Data with Image Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -274,7 +313,11 @@ function MTAV_Bold_Content_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/bold-content-data-block.php';
 
     if (! empty($bold_data)) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Bold Content Data Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -296,12 +339,10 @@ function MTAV_Separator_Block_Render_callback( $block )
 {
     $shortcode_template  = 'template-parts/blocks/mtav-separator-block.php';
 
-    include locate_template($shortcode_template);
-
-    if (is_admin() ) {
-        ?>
-            <h4><u>MTAV Separator</u></h4>
-        <?php
+    if (is_admin()) {
+        echo MTAV_WP_Backend_edit('MTAV Separator Block');
+    } else {
+        include locate_template($shortcode_template);
     }
 }
 
@@ -321,8 +362,15 @@ function MTAV_Two_Column_Data_Block_Render_callback( $block )
 
     $shortcode_template  = 'template-parts/blocks/two-column-data-block.php';
 
-    if (! empty($block_title) || !empty($left_column_data) || !empty($right_column_data) ) {
-        include locate_template($shortcode_template);
+    if (! empty($block_title)
+        || !empty($left_column_data)
+        || !empty($right_column_data)
+    ) {
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Two Columns Data Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -348,7 +396,11 @@ function MTAV_The_Need_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/the-need-block.php';
 
     if (! empty($block_data) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV The Need Data Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -398,7 +450,11 @@ function MTAV_The_Impact_Block_Render_callback( $block )
     }
 
     if (! empty($style) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV The Impact Data Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -426,7 +482,11 @@ function MTAV_Data_Video_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/two-col-data-video-block.php';
 
     if (! empty($title) || !empty($description) || !empty($video_url) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Two Column Data with Video Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -454,7 +514,11 @@ function MTAV_Our_Partners_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/our-partners-block.php';
 
     if (! empty($title) || !empty($partners) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Our Pasrtners Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>
@@ -476,12 +540,10 @@ function MTAV_Map_Block_Render_callback( $block )
 {
     $shortcode_template  = 'template-parts/blocks/mtav-map-block.php';
 
-    include locate_template($shortcode_template);
-
-    if (is_admin() ) {
-        ?>
-            <h4><u>MTAV Map</u></h4>
-        <?php
+    if (is_admin()) {
+        echo MTAV_WP_Backend_edit('MTAV Map Block');
+    } else {
+        include locate_template($shortcode_template);
     }
 }
 
@@ -500,7 +562,11 @@ function MTAV_Media_Block_Render_callback( $block )
     $shortcode_template  = 'template-parts/blocks/mtav-media-block.php';
 
     if (! empty($title) || !empty($media_id) ) {
-        include locate_template($shortcode_template);
+        if (is_admin()) {
+            echo MTAV_WP_Backend_edit('MTAV Media Block');
+        } else {
+            include locate_template($shortcode_template);
+        }
     } else {
         if (is_admin() ) {
             ?>

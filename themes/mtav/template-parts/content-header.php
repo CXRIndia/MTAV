@@ -68,7 +68,9 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
     <div class="menu-header">
         <div class="logo">
             <a href="<?php echo esc_url($logo_image_url); ?>">
-                <img src="<?php echo esc_url($logo_image_url); ?>"
+                <img class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="<?php echo esc_url($logo_image_url); ?>"
                 alt="Logo Image">
             </a>
         </div>
@@ -99,15 +101,3 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
 
     </div>
 </div>
-
-<!-- START : Full Video Popup -->
-<!-- <div class="fullvideo-popup">
-    <div class="header">
-        <a href="javascript:void(0)" class="js-video-close">
-            <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/modal-close.svg" alt="">
-        </a>
-    </div>
-    <div class="popup-body">
-        <iframe src="https://www.youtube.com/embed/9xwazD5SyVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div> -->

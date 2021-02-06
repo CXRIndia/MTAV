@@ -24,7 +24,6 @@
                 <div class="left-block">
                     <span></span>
                     <span></span>
-                    <!-- <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/title-icon-wh.svg" alt=""> -->
                     <img class="lazyload"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/title-icon-black.svg" alt="">

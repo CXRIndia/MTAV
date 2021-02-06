@@ -66,8 +66,12 @@
             </div>
             <div class="video">
                 <a href="javascript:void(0)" class="js-fullvideo">
-                    <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/play.svg" class="play-icon" />
-                    <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/png/campaign-thumbnail.jpg" class="thumbnail-image" />
+                    <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/play.svg" class="play-icon" />
+                    <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/png/campaign-thumbnail.jpg" class="thumbnail-image" />
                 </a>
             </div>
         </div>
