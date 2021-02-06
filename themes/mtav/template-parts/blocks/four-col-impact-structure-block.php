@@ -26,7 +26,7 @@
 
 ?>
 
-<div class="the-impact--wrapper">
+<div class="the-impact--wrapper has-separator">
     <div class="container">
         <div>
             <div class="heading-compo black">
@@ -71,4 +71,10 @@
 
     </div>
 </div>
+<div class="optional-separator">
+    <div class="container">
+        <div class="separator"></div>
+    </div>
+</div>
+
 
