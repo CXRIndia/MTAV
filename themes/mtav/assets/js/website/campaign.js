@@ -31,10 +31,11 @@ require('../../scss/website/campaign-page.scss');
     breakpoints: {
       992: {
         spaceBetween: 40,
-      },
-      991: {
-        spaceBetween: 24,
         slidesPerView: 2.3,
+      },
+      768: {
+        spaceBetween: 24,
+        slidesPerView: 2.2,
       }
    },
     navigation: {

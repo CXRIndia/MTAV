@@ -405,7 +405,7 @@ function MTAV_The_Impact_Block_Render_callback( $block )
 }
 
 /**
- * Callback function for two column data block
+ * Callback function for two column data video block
  *
  * @param [type] $block Block.
  *
@@ -444,6 +444,7 @@ function MTAV_Our_Partners_Block_Render_callback( $block )
 
     $title = get_field('title');
     $partners = get_field('our_partners');
+    $open_in_new_tab = get_field('open_image_link_in_new_tab');
 
     $shortcode_template  = 'template-parts/blocks/our-partners-block.php';
 
@@ -504,3 +505,4 @@ function MTAV_Media_Block_Render_callback( $block )
         }
     }
 }
+

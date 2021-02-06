@@ -36,6 +36,14 @@
         margin-bottom: 20px;
       }
     }
+    .need-solve--content{
+      h1{
+        @include mq(t-992, max) {
+          font-size: 26px;
+          line-height: 32px;
+        }
+      }
+    }
     .need-solve--left {
       @include mq(t-768, max) {
         display: flex;
@@ -51,7 +59,9 @@
         max-width: 600px;
         width: 100%;
       }
-
+      @media(min-width: 992px) and (max-width: 1024px){
+        max-width: 400px;
+      }
       .need-solve--image {
         display: flex;
         @include mq(t-768, max) {
@@ -101,7 +111,9 @@
         max-width: 513px;
         width: 100%;
       }
-
+      @media(min-width: 992px) and (max-width: 1024px){
+        max-width: 400px;
+      }
       .need-solve--image {
         display: flex;
         @include mq(t-768, max) {
