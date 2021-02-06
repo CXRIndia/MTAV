@@ -371,6 +371,11 @@ function MTAV_The_Impact_Block_Render_callback( $block )
 
     $block_title = get_field('title');
     $style = get_field('select_style');
+    $below_separator = get_field('check_for_below_separator');
+
+    if ($below_separator == 'true') {
+        $class = 'has-separator';
+    }
 
     if ($style == 'three_col_data') {
 

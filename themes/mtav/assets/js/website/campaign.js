@@ -44,5 +44,29 @@ require('../../scss/website/campaign-page.scss');
     },
   });
 
+  var marginleft = $("#sliderPadding").offset().left;
+  // $('.media-slider').css('padding-left', marginleft + "px");
+  $('.media-slider').css('padding-left', marginleft + "px");
+  // $(".media-slider").width($(".media-slider").width() + marginleft );
+
+  // $('.media-slider').css('margin-right', marginleft + "px");
+
+
+  // /* START : Container margin Left Calulate  */
+  // let ContainerMargin = function () {
+  //   // let mLeft = $("#sliderPadding").css('margin-left');
+  //   let marginleft = $("#sliderPadding").offset().left;
+  //   // let fLeft = mLeft.replace("px", "");
+  //   // let valueOfLeft = parseInt(fLeft) + 15;
+  //   $('.media-slider').css('padding-left', marginleft + "px");
+
+  // }
+  // /* END : Container margin Left Calulate  */
+  // $(window).on("load", function (e) {
+  //   ContainerMargin();
+  //   console.log(marginleft);
+  // })
+
+  // console.log(marginleft);
   console.log('Campaign js');
 })(jQuery);

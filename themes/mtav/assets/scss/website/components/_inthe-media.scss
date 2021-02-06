@@ -37,9 +37,13 @@
   @include mq(t-768, max) {
     margin-top: 40px;
   }
+  #sliderPadding {
+    // height: 100px;
+  }
   .media-slider {
-    padding-left: 7vw;
-    padding-right: 100px;
+    // padding-left: 7vw;
+    // padding-right: 100px;
+    // display: flex;
     @include mq(t-992, max) {
       padding-left: 40px;
       padding-right: 35px;

@@ -12,21 +12,7 @@
 
 ?>
 
-<?php
-/**
- * The Impact template
- * php version 7.4
- *
- * @category MTAV
- * @package  MTAV
- * @author   Cemtrexlabs <hello@cemtrexlabs.com>
- * @license  https://cemtrexlabs.com 1.0
- * @link     MTAV
- */
-
-?>
-
-<div class="the-impact--wrapper">
+<div class="the-impact--wrapper <?php echo $class;?>">
     <div class="container">
         <div>
             <div class="heading-compo black">
@@ -71,4 +57,11 @@
 
     </div>
 </div>
+<?php if($below_separator == 'true') :?>
+<div class="optional-separator">
+    <div class="container">
+        <div class="separator"></div>
+    </div>
+</div>
+<?php endif;?>
 
