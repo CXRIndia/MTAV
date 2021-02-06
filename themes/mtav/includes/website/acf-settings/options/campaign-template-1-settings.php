@@ -1,6 +1,6 @@
 <?php
 /**
- * MTAV data form block acf settings
+ * Campaign template 1 settings
  * php version 7.4
  *
  * @category MTAV
@@ -13,7 +13,7 @@
 acf_add_local_field_group(
     array(
     'key' => 'group_601d1b7f50a48',
-    'title' => 'MTAV Data with Form Block Settings',
+    'title' => 'Campaign Template 1 Settings',
     'fields' => array(
         array(
             'key' => 'field_601d1b89b7021',
@@ -76,9 +76,9 @@ acf_add_local_field_group(
     'location' => array(
         array(
             array(
-                'param' => 'block',
+                'param' => 'page_template',
                 'operator' => '==',
-                'value' => 'acf/mtav-data-from-block',
+                'value' => 'campaign1.php',
             ),
         ),
     ),
@@ -92,3 +92,4 @@ acf_add_local_field_group(
     'description' => '',
     )
 );
+

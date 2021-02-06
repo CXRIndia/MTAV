@@ -235,18 +235,6 @@ function MTAV_Acf_init()
             )
         );
 
-        acf_register_block_type(
-            array(
-            'name'              => 'mtav-data-from-block',
-            'title'             => __('MTAV Data with Form Block'),
-            'description'       => __('A custom data form format block.'),
-            'render_callback'   => 'MTAV_Data_Form_Block_Render_callback',
-            'category'          => 'mtav',
-            'icon'              => 'id-alt',
-            'keywords'          => array( 'image' ),
-            )
-        );
-
     }
 }
 

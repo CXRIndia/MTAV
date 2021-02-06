@@ -33,7 +33,7 @@ require('../../scss/website/home-page.scss');
 
   var scene = new ScrollMagic.Scene({
     triggerElement: ".js-hand-trigger",
-    duration: 5000,
+    duration: 1000,
     triggerHook: 0,
   })
     .setPin(".js-handanimation")
@@ -90,6 +90,11 @@ require('../../scss/website/home-page.scss');
       TweenMax.to(".hand6-wrapper", .5, {
         top: '-33%',
         left: '4%',
+        ease: Linear.easeNone,
+      }),
+      TweenMax.to(".logo-wrapper--anim", 0.3, {
+        marginTop: '0',
+        opacity: '1',
         ease: Linear.easeNone,
       }),
     ]);

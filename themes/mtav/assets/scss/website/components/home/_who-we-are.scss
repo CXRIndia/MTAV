@@ -19,6 +19,7 @@
     }
     h1{
       margin-bottom: 40px;
+      max-width: 1080px;
       @include mq('t-992', 'max') {
         margin-bottom: 24px;
       }
