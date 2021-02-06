@@ -3,6 +3,12 @@
   @include mq(t-768, max) {
     padding: 56px 0 0;
   }
+  &.has-separator{
+    padding-bottom: 40px;
+    @include mq(t-768, max) {
+      padding-bottom: 0;
+    }
+  }
   .separator {
     padding: 40px 0 23px;
     @include mq('t-768', 'min') {
@@ -49,6 +55,9 @@
       @include mq(t-768, max) {
         margin-bottom: 0;
       }
+      &::after{
+        background-image: none;
+      }
     }
     &:after{
       @include mq(t-768, max) {
@@ -68,6 +77,7 @@
         margin-right: 24px;
         font-size: 32px;
         line-height: 40px;
+        width: 145px;
       }
       @include mq('t-768', 'min') {
         font-size: 31px;
@@ -260,8 +270,12 @@
 
     @include mq('t-992', 'min') {
       max-width: 270px;
+      margin-right: 20px;
     }
-
+    @include mq('t-1025', 'min') {
+      max-width: 270px;
+      margin-right: 0;
+    }
     &--subtitle {
       margin-bottom: 10px;
       @include mq(t-768, max) {
@@ -290,8 +304,10 @@
         font-size: 16px;
         line-height: 1;
       }
-
       @include mq('t-992', 'min') {
+        font-size: 22px;
+      }
+      @include mq('t-1025', 'min') {
         font-size: 30px;
       }
       br{
@@ -314,11 +330,15 @@
       }
 
       @include mq('t-992', 'min') {
+        line-height: 18px;
+        font-size: 14px;
+        margin-top: 22px;
+      }
+      @include mq('t-1025', 'min') {
         line-height: 21px;
         font-size: 18px;
         margin-top: 22px;
       }
-
       ul {
         list-style-type: disc;
         @include mq(t-768, max) {

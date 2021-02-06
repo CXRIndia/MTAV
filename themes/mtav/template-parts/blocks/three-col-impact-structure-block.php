@@ -12,7 +12,7 @@
 
 ?>
 
-<div class="the-impact--wrapper">
+<div class="the-impact--wrapper <?php echo $class;?>">
     <div class="container">
         <div>
             <div class="heading-compo black">
@@ -107,3 +107,10 @@
 
     </div>
 </div>
+<?php if($below_separator == 'true') :?>
+<div class="optional-separator">
+    <div class="container">
+        <div class="separator"></div>
+    </div>
+</div>
+<?php endif;?>
