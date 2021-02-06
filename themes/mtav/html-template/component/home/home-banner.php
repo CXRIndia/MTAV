@@ -9,7 +9,7 @@
             </div>
 
             <div class="logo-wrapper">
-                <img src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/morethanvote-logo.svg" alt="">
+                <img class="logo-wrapper--anim" src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/morethanvote-logo.svg" alt="">
             </div>
 
             <div class="scroll-arrow">

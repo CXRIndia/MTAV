@@ -12,11 +12,14 @@ require('../../scss/website/campaign-page.scss');
     console.log('Test');
 
     $(".city").mouseover(function () {
-        // $('.number-div').hide();
+        $('.city').hide();
+        $(this).show();
         $(this).next().show();
+        // $(this).show();
     });
     $(".city").mouseout(function () {
       $('.city').next().hide();
+      $('.city').show();
     })
 
     // START : Home By The NUmber Js
