@@ -478,6 +478,13 @@ function MTAV_Data_Video_Block_Render_callback( $block )
     $title = get_field('title');
     $description = get_field('description');
     $video_url = get_field('video_url');
+    $video_thumb_img_id = get_field('video_thumbnail');
+
+    if ($video_thumb_img_id && !empty($video_thumb_img_id)) {
+        $video_thumb_img_array = wp_get_attachment_image_src($video_thumb_img_id, 'full');
+        $video_thumb_img_alt   = MTAV_Get_Image_alt($video_thumb_img_id, "Column Image");
+        $video_thumb_img_url   = MTAV_Get_image($video_thumb_img_array);
+    }
 
     $shortcode_template  = 'template-parts/blocks/two-col-data-video-block.php';
 

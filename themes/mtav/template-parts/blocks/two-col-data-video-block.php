@@ -71,7 +71,7 @@
                         data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/play.svg"/>
                     <img class="lazyload thumbnail-image"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/png/campaign-thumbnail.jpg" />
+                        data-src="<?php echo esc_url($video_thumb_img_url); ?>" />
                 </a>
             </div>
         </div>

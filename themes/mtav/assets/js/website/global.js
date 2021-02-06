@@ -28,6 +28,8 @@ window.lazySizesConfig.loadMode = 1;
     // $('.fullvideo-popup').removeClass('open');
     $('.fullvideo-popup').fadeOut();
     $('body').removeClass('modal-open');
+    // $('iframe').get(0).pause();
+    $("iframe").attr("src", $("iframe").attr("src"));
   });
   //// END : Full Video Popup
 

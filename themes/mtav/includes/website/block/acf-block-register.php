@@ -26,7 +26,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom tiles format block.'),
             'render_callback'   => 'MTAV_Tiles_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-full-width',
             'keywords'          => array( 'image' ),
             )
         );
@@ -38,7 +38,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom who we are format block.'),
             'render_callback'   => 'MTAV_Who_We_Are_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-center',
             'keywords'          => array( 'image' ),
             )
         );
@@ -50,7 +50,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom numbers slider format block.'),
             'render_callback'   => 'MTAV_Numbers_Slider_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'leftright',
             'keywords'          => array( 'image' ),
             )
         );
@@ -62,7 +62,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom protect black voters format block.'),
             'render_callback'   => 'MTAV_Protect_Black_Voters_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-full-width',
             'keywords'          => array( 'image' ),
             )
         );
@@ -74,7 +74,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom I voted format block.'),
             'render_callback'   => 'MTAV_I_Voted_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-full-width',
             'keywords'          => array( 'image' ),
             )
         );
@@ -86,7 +86,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom MTAV structure format block.'),
             'render_callback'   => 'MTAV_Structure_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-full-width',
             'keywords'          => array( 'image' ),
             )
         );
@@ -98,7 +98,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom MTAV two column data format block.'),
             'render_callback'   => 'MTAV_Two_Column_Data_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-full-width',
             'keywords'          => array( 'image' ),
             )
         );
@@ -110,7 +110,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom two column data with image format block.'),
             'render_callback'   => 'MTAV_Data_Image_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'image-alt',
             'keywords'          => array( 'image' ),
             )
         );
@@ -122,7 +122,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom the need format block.'),
             'render_callback'   => 'MTAV_The_Need_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-full-width',
             'keywords'          => array( 'image' ),
             )
         );
@@ -134,7 +134,7 @@ function MTAV_Acf_init()
             'description'       => __('A custom the impact format block.'),
             'render_callback'   => 'MTAV_The_Impact_Block_Render_callback',
             'category'          => 'mtav',
-            'icon'              => 'id-alt',
+            'icon'              => 'align-full-width',
             'keywords'          => array( 'image' ),
             )
         );
