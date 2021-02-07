@@ -68,6 +68,9 @@
           color: $brand-white;
           z-index: 1;
           position: relative;
+          @include mq(t-768, max) {
+            width: 100%;
+          }
           .heading-compo{
             margin-bottom: 38px;
             @include mq(t-992, max) {

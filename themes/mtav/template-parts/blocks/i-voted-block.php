@@ -27,7 +27,7 @@
             <div class="content-section">
 
             <?php if($title && !empty($title)) :?>
-                <h1><?php echo wp_kses_post($title);?></h1>
+                <h1><?php echo wp_kses_post(MTAV_Remove_ptag($title));?></h1>
             <?php endif;?>
 
             <?php if($title && !empty($title)) :

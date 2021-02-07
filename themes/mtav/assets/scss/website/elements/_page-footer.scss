@@ -178,6 +178,9 @@ footer{
             font-size: 10px;
             padding-right: 0;
           }
+          @include mq(t-768, max) {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -264,6 +267,9 @@ footer{
           align-items: center;
           &:not(:last-child){
             padding-right: 24px;
+            @include mq(t-768, max) {
+              padding-right: 40px;
+            }
           }
           a{
             display: inline-flex;

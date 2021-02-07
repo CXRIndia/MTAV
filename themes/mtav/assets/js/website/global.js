@@ -56,5 +56,12 @@ window.lazySizesConfig.loadMode = 1;
     }, false);
   });
 
+  $(window).scroll(function(){
+    var sticky = $('header'),
+        scroll = $(window).scrollTop();
+
+    if (scroll >= 50) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
 
 })(jQuery);

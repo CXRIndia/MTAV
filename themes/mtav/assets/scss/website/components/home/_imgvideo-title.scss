@@ -45,9 +45,10 @@
       @include mq('t-992', 'max') {
         @include rem(font-size, 26);
         @include rem(line-height, 32);
+        margin-bottom: 16px;
       }
       @include mq('t-768', 'max') {
-        @include rem(font-size, 26);
+        @include rem(font-size, 25);
         margin-bottom: 24px;
       }
     }
@@ -71,10 +72,12 @@
       position: relative;
       @include mq('t-992', 'max') {
         padding: 24px;
+        height: 188px;
       }
       @include mq('t-768', 'max') {
         min-height: 419px;
         padding: 40px 24px;
+        height: auto;
       }
       //
       .heading-compo{
@@ -139,7 +142,7 @@
           @include mq('t-768', 'max') {
             font-size: 18px;
             text-align: center;
-            @include rem(padding, 11, 24, 13);
+            @include rem(padding, 15, 24, 17);
           }
         }
       }
@@ -156,6 +159,7 @@
         align-items: center;
         justify-content: center;
         height: 100px;
+        transition: all .3s;
         @include mq('t-992', 'max') {
           font-size: 14px;
           height: 56px;
@@ -164,6 +168,10 @@
           font-size: 16px;
           height: 80px;
           border-bottom: 1px solid #fffcf4;
+        }
+        &:hover{
+          background-color: $brand-primary;
+          color: $brand-black;
         }
       }
     }

@@ -18,6 +18,12 @@
     top: 0;
     z-index: -1;
   }
+  h1{
+    @include mq(t-992, max) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
 }
 
 .map-svg--wrapper {

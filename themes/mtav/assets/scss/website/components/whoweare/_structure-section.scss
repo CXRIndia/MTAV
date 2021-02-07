@@ -1,13 +1,13 @@
 .structure-section{
   padding: 80px 0;
-  @include mq(t-992, max) {
+  @include mq(t-1025, max) {
     padding: 72px 0;
   }
   @include mq(t-768, max) {
     padding: 56px 0;
   }
   .heading-compo {
-    @include mq(t-992, max) {
+    @include mq(t-1025, max) {
       margin-bottom: 25px;
     }
     @include mq(t-768, max) {
@@ -17,7 +17,7 @@
   h1{
     max-width: 520px;
     margin-bottom: 50px;
-    @include mq(t-992, max) {
+    @include mq(t-1025, max) {
       font-size: 26px;
       line-height: 32px;
       margin-bottom: 45px;
@@ -56,7 +56,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 32px;
-        @include mq(t-992, max) {
+        @include mq(t-1025, max) {
           padding: 40px;
           margin-bottom: 17px;
         }
@@ -68,7 +68,7 @@
           margin-right: 45px;
           padding-top: 30px;
           padding-bottom: 30px;
-          @include mq(t-992, max) {
+          @include mq(t-1025, max) {
             padding-top: 19px;
             padding-bottom: 19px;
             padding-right: 16px;
@@ -81,7 +81,7 @@
             margin-right: 30px;
           }
           img{
-            @include mq(t-992, max) {
+            @include mq(t-1025, max) {
               max-width: 38px;
             }
             @include mq(t-768, max) {
@@ -92,7 +92,7 @@
         .block-top-right{
           .c-section{
             img{
-              @include mq(t-992, max) {
+              @include mq(t-1025, max) {
                 max-width: 144px;
               }
               @include mq(t-768, max) {
@@ -105,7 +105,7 @@
             line-height: 20px;
             margin-top: 14px;
             text-align: right;
-            @include mq(t-992, max) {
+            @include mq(t-1025, max) {
               margin-top: 7px;
               font-size: 11px;
               line-height: 12px;
@@ -120,7 +120,7 @@
       .block-bottom{
         h4{
           margin-bottom: 16px;
-          @include mq(t-992, max) {
+          @include mq(t-1025, max) {
             font-size: 14px;
             line-height: 18px;
             margin-bottom: 8px;
@@ -134,7 +134,7 @@
           font-size: 22px;
           line-height: 1.4;
           letter-spacing: 0.5px;
-          @include mq(t-992, max) {
+          @include mq(t-1025, max) {
             font-size: 12px;
             letter-spacing: 0.2px;
           }
@@ -148,7 +148,7 @@
       &.block-left{
         padding-right: 100px;
         position: relative;
-        @include mq(t-992, max) {
+        @include mq(t-1025, max) {
           padding-right: 40.5px;
         }
         @include mq(t-768, max) {
@@ -182,7 +182,7 @@
       }
       &.block-right{
         padding-left: 100px;
-        @include mq(t-992, max) {
+        @include mq(t-1025, max) {
           padding-left: 40.5px;
         }
         @include mq(t-768, max) {

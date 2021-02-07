@@ -98,7 +98,6 @@
         margin-left: auto;
         font-size: 14px;
         display: flex;
-    align-items: center;
       }
       @include mq('t-768', 'min') {
         font-size: 12px;
@@ -164,6 +163,8 @@
           font-size: 18px;
           line-height: 18px;
           max-width: 120px;
+          display: flex;
+          align-items: flex-start;
         }
       }
     }
@@ -208,7 +209,6 @@
         flex-direction: column;
         font-size: 14px;
         justify-content: center;
-    align-items: center;
       }
       > div{
         margin-bottom: 10px;

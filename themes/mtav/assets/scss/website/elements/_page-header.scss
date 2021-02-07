@@ -3,7 +3,6 @@ header {
   width: 100%;
   z-index: 100;
   top: 0;
-
   .header-menu {
     display: flex;
     justify-content: space-between;
@@ -27,6 +26,9 @@ header {
         @include mq('t-768', 'max') {
           width: 30px;
         }
+        &.scrolled-logo{
+          display: none;
+        }
       }
     }
 
@@ -43,7 +45,11 @@ header {
         li {
           padding: 0 40px 0 0;
           display: flex;
-
+          &.current-menu-item {
+            a{
+              color: $brand-primary;
+            }
+          }
           a {
             color: $brand-white;
             @include Font-Plakat;
@@ -228,6 +234,48 @@ header {
       }
       .white-hamburger{
         display: none;
+      }
+    }
+  }
+  .fixed{
+    .header-menu {
+      .hamburger-wrapper {
+        .white-hamburger{
+          display: block;
+        }
+        .black-hamburger{
+          display: none;
+        }
+      }
+    }
+  }
+}
+body{
+  header{
+    transition: all 0.3s ease;
+    &.fixed{
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top:0; left:0;
+      width: 100%;
+      .header-menu{
+        padding: 20px 0;
+        @include mq(t-992, max) {
+          padding: 24px 0;
+        }
+        @include mq(t-768, max) {
+          padding: 20px 0;
+        }
+        .logo{
+          img{
+            &.normal-logo{
+              display: none;
+            }
+            &.scrolled-logo{
+              display: block;
+            }
+          }
+        }
       }
     }
   }

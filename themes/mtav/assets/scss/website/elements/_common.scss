@@ -199,3 +199,15 @@ img{
     padding-bottom: 0;
   }
 }
+.mobile-hidden-only{
+  display: block;
+  @include mq(t-768, max) {
+    display: none;
+  }
+}
+.mobile-visible-only{
+  display: none;
+  @include mq(t-768, max) {
+    display: block;
+  }
+}

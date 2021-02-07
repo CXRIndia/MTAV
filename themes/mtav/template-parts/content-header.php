@@ -23,9 +23,15 @@ $logo_image_url   = MTAV_Get_image($logo_image_array);
         <?php if($logo_image_url && !empty($logo_image_url)) : ?>
             <div class="logo">
                 <a href="<?php echo esc_url(home_url()) ?>">
-                    <img class="lazyload"
+                    <img class="normal-logo lazyload"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="<?php echo esc_url($logo_image_url); ?>"
+                        alt="Logo Image">
+                </a>
+                <a href="<?php echo esc_url(home_url()) ?>">
+                    <img class="scrolled-logo lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/scrolled-logo.svg"
                         alt="Logo Image">
                 </a>
             </div>

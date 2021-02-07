@@ -46,8 +46,17 @@
         padding: 0;
         margin: 0 -24px;
       }
+      @include mq(t-768, max) {
+        display: block;
+      }
       img{
         max-width: 100%;
+        @include mq('t-992', 'max') {
+          padding: 0 30px;
+        }
+        @include mq('t-768', 'max') {
+          padding: 0;
+        }
       }
     }
   }
