@@ -31,6 +31,9 @@
       width: 90%;
       margin: 0 auto;
       height: 90%;
+      @include mq(t-768, max) {
+        height: 80%;
+      }
     }
   }
   &.open{
