@@ -50,4 +50,14 @@ window.lazySizesConfig.loadMode = 1;
     if (scroll >= 50) sticky.addClass('fixed');
     else sticky.removeClass('fixed');
   });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 })(jQuery);

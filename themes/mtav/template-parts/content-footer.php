@@ -24,7 +24,7 @@ $tiktok_url    = get_field('tiktok_link', 'options');
 ?>
 
 <footer>
-    <div class="top-footer">
+    <div class="top-footer" id="footer-form">
         <div class="container">
             <div class="stay-connect-wrapper">
 
