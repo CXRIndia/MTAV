@@ -277,7 +277,7 @@
       max-width: 270px;
       margin-right: 20px;
     }
-    @include mq('t-1025', 'min') {
+    @include mq('lap-1302', 'min') {
       max-width: 270px;
       margin-right: 0;
     }
@@ -312,7 +312,7 @@
       @include mq('t-992', 'min') {
         font-size: 22px;
       }
-      @include mq('t-1025', 'min') {
+      @include mq('lap-1302', 'min') {
         font-size: 30px;
       }
       br{

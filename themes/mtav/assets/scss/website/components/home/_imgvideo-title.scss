@@ -160,6 +160,7 @@
         justify-content: center;
         height: 100px;
         transition: all .3s;
+        border: solid 3px $brand-black;
         @include mq('t-992', 'max') {
           font-size: 14px;
           height: 56px;

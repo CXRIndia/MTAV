@@ -72,7 +72,7 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
             </div>
 
             <?php if($mtav_banner_title && !empty($mtav_banner_title)) :?>
-                <h1 class="brand-white">
+                <h1 class="brand-white" data-aos="fade-up">
                     <?php echo wp_kses_post(MTAV_Remove_ptag($mtav_banner_title)); ?>
                 </h1>
             <?php endif; ?>

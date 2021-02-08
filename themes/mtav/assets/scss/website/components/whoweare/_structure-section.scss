@@ -56,7 +56,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 32px;
-        @include mq(t-1025, max) {
+        @include mq(lap-1302, max) {
           padding: 40px;
           margin-bottom: 17px;
         }
@@ -105,6 +105,10 @@
             line-height: 20px;
             margin-top: 14px;
             text-align: right;
+            @include mq(lap-1302, max) {
+              font-size: 12px;
+              line-height: 1.4;
+            }
             @include mq(t-1025, max) {
               margin-top: 7px;
               font-size: 11px;

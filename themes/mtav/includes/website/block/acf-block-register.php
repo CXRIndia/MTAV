@@ -165,30 +165,6 @@ function MTAV_Acf_init()
 
         acf_register_block_type(
             array(
-            'name'              => 'mtav-players-block',
-            'title'             => __('MTAV Players Block'),
-            'description'       => __('A custom players format block.'),
-            'render_callback'   => 'MTAV_Players_Block_Render_callback',
-            'category'          => 'mtav',
-            'icon'              => 'id-alt',
-            'keywords'          => array( 'image' ),
-            )
-        );
-
-        acf_register_block_type(
-            array(
-            'name'              => 'mtav-staff-block',
-            'title'             => __('MTAV Staff Block'),
-            'description'       => __('A custom staff format block.'),
-            'render_callback'   => 'MTAV_Staff_Block_Render_callback',
-            'category'          => 'mtav',
-            'icon'              => 'id-alt',
-            'keywords'          => array( 'image' ),
-            )
-        );
-
-        acf_register_block_type(
-            array(
             'name'              => 'mtav-separator-block',
             'title'             => __('MTAV Separator Block'),
             'description'       => __('A custom separator format block.'),
