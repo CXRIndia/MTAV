@@ -60,7 +60,7 @@ function MTAV_scripts()
     $distFile = json_decode($distFileJson, true);
 
     wp_enqueue_script('mtav-global-js', STYLESHEETURI . '/dist/' . $distFile['global']['js'], array('jquery'), null, true);
-    wp_enqueue_style('mtav-campaigntemplate-css', STYLESHEETURI . '/assets/css/website/vendor/aos.css');
+    wp_enqueue_style('mtav-campaigntemplate-css', STYLESHEETURI . '/assets/css/website/plugins/aos.css');
 
     if (is_page_template('html-template/campaigntemplate-page.php')
         || is_page_template('html-template/campaigntemplate02-page.php')
