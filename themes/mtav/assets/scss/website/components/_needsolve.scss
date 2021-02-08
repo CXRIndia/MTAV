@@ -63,7 +63,7 @@
         max-width: 400px;
       }
       @media(min-width: 1025px) and (max-width: 1399px){
-        max-width: 480px;
+        max-width: 450px;
       }
       .need-solve--image {
         display: flex;
@@ -119,12 +119,13 @@
         max-width: 400px;
       }
       @media(min-width: 1025px) and (max-width: 1399px){
-        max-width: 480px;
+        max-width: 450px;
       }
       .need-solve--image {
         display: flex;
         @include mq(t-768, max) {
           margin-bottom: 20px;
+          display: block;
         }
         @include mq('t-768', 'min') {
           justify-content: flex-end;

@@ -211,3 +211,20 @@ img{
     display: block;
   }
 }
+.campaign-page{
+  header {
+    .header-menu {
+      .menu-wrapper {
+        ul {
+          li{
+            &.active{
+              a{
+                color: $brand-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

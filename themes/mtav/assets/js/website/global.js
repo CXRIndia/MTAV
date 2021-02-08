@@ -3,6 +3,8 @@ require('jquery');
 import 'lazysizes';
 
 import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import 'aos/src/sass/aos.scss';
 
 window.lazySizesConfig = window.lazySizesConfig || {};
 window.lazySizesConfig.loadMode = 1;
@@ -57,6 +59,7 @@ window.lazySizesConfig.loadMode = 1;
     //     $("#contact_form_msg").hide();
     //   }, 7000);
     // }, false);
+    AOS.init();
   });
 
   $(window).scroll(function () {
@@ -66,5 +69,4 @@ window.lazySizesConfig.loadMode = 1;
     if (scroll >= 50) sticky.addClass('fixed');
     else sticky.removeClass('fixed');
   });
-  AOS.init();
 })(jQuery);
