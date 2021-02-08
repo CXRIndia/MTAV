@@ -23,7 +23,7 @@
             </div>
 
             <div class="logo-wrapper">
-                <img class="lazyload"
+                <img class="lazyload logo-wrapper--anim"
                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/morethanvote-logo.svg"
                     alt="logo">
