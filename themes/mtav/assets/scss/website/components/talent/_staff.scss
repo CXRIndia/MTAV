@@ -91,6 +91,7 @@
       .staff-member{
         // display: flex;
         margin-bottom: 21px;
+        align-items: center;
         @include mq('t-992', 'max') {
           margin-bottom: 16px;
         }
