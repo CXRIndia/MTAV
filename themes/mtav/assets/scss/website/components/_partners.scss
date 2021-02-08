@@ -42,6 +42,7 @@
       max-width: 148px;
       margin: 0 16px 54px;
       height: 61px;
+      padding: 0 20px;
     }
     @include mq(t-768, max) {
       max-width: 150px;
