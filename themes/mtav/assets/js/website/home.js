@@ -184,6 +184,11 @@ require('../../scss/website/home-page.scss');
         left: '-30%',
         ease: Linear.easeNone,
       }),
+      TweenMax.to(".logo-wrapper--anim", 0.3, {
+        marginTop: '0',
+        opacity: '1',
+        ease: Linear.easeNone,
+      }),
     ]);
 
     //Timeinterval for animation delay
@@ -269,6 +274,11 @@ require('../../scss/website/home-page.scss');
       TweenMax.to(".hand6-wrapper", .5, {
         top: '-34%',
         left: '-30%',
+        ease: Linear.easeNone,
+      }),
+      TweenMax.to(".logo-wrapper--anim", 0.3, {
+        marginTop: '0',
+        opacity: '1',
         ease: Linear.easeNone,
       }),
     ]);

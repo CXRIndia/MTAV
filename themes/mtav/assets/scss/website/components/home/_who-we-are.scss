@@ -42,6 +42,7 @@
     .img-wrapper{
       // padding: 0 30px;
       display: flex;
+      align-items: flex-end;
       @include mq('t-768', 'max') {
         padding: 0;
         margin: 0 -24px;
