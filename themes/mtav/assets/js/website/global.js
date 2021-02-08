@@ -37,6 +37,10 @@ window.lazySizesConfig.loadMode = 1;
 
   $(window).load(function () {
     AOS.init();
+    AOS.init({
+      once: true
+
+    });
   });
 
   $(window).scroll(function () {
