@@ -11,8 +11,9 @@ body {
   background-image: url("../../images/png/bg-gradient.png");
   background-size: contain;
   background-color: #ccc;
+  overflow-x: hidden;
   &.modal-open{
-    overflow-y: hidden;
+    overflow: hidden;
   }
 }
 .common-page{
