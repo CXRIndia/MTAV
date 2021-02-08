@@ -239,6 +239,17 @@ header {
   }
   .fixed{
     .header-menu {
+      .menu-wrapper {
+        ul{
+          &#menu-main-menu {
+            li{
+              a{
+                color: $brand-white !important;
+              }
+            }
+          }
+        }
+      }
       .hamburger-wrapper {
         .white-hamburger{
           display: block;

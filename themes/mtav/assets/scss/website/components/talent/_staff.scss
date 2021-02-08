@@ -89,7 +89,7 @@
       }
 
       .staff-member{
-        display: flex;
+        // display: flex;
         margin-bottom: 21px;
         @include mq('t-992', 'max') {
           margin-bottom: 16px;
@@ -101,6 +101,7 @@
         border-radius: 50%;
         img{
           max-width: 234px;
+          display: block;
           @include mq(t-992, max) {
             max-width: 324px;
           }
