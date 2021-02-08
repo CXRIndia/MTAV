@@ -29,7 +29,7 @@
     <div class="big-block-wrapper"
         style="background-image: url('<?php echo  esc_url($left_column_img_url); ?>')">
         <div class="gradient-bg"></div>
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-right">
             <div class="heading-compo">
                 <div class="line-block">
                     <div class="left-block">
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="small-block-wrapper">
+    <div class="small-block-wrapper" data-aos="fade-left">
     <?php if($right_column_title && !empty($right_column_title)) :?>
         <h5 class="section-title">
         <?php echo wp_kses_post($right_column_title);?>

@@ -58,7 +58,7 @@ foreach ($all_categories as $key => $category) {
                 ?>
                 <div class="single-block"
                     style="background-image: url('<?php echo  esc_url($campaignImgUrl); ?>">
-                    <div class="content-block">
+                    <div class="content-block" data-aos="fade-up">
                         <div class="heading-compo">
                             <div class="line-block">
                                 <div class="left-block">

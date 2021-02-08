@@ -59,7 +59,7 @@ if(!empty($players_ids)) :
                     $playerHandle = get_field('instagram_handle', $player_id);
                     $instaLink = 'https://instagram.com/'.$playerHandle;
                     ?>
-                    <div class="single-block">
+                    <div class="single-block" data-aos="fade-up">
                         <div>
                             <div class="icon">
                                 <img class="lazyload"
