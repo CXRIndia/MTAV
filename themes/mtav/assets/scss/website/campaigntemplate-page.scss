@@ -53,6 +53,11 @@
         top: 0;
         z-index: -1;
       }
+      .mobile-heading{
+        @include mq(t-768, max) {
+          padding: 0;
+        }
+      }
     }
   }
 }

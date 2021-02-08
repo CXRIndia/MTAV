@@ -27,7 +27,7 @@
 <div class="campaign-launch--wrapper">
     <div class="container">
         <div class="campign-launch--inner">
-            <div class="mobile-heading">
+            <div class="mobile-heading" data-aos="fade-right">
                 <div class="heading-compo black">
                     <div class="line-block">
                         <div class="left-block">
@@ -40,7 +40,7 @@
                     <h1><?php echo wp_kses_post($title);?></h1>
                 <?php endif;?>
             </div>
-            <div class="content">
+            <div class="content" data-aos="fade-right">
                 <div class="heading-compo black">
                     <div class="line-block">
                         <div class="left-block">
@@ -59,7 +59,7 @@
                 </div>
                 <?php endif;?>
             </div>
-            <div class="video">
+            <div class="video" data-aos="fade-left">
                 <a href="javascript:void(0)" class="js-fullvideo">
                     <img class="lazyload play-icon"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="

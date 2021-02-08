@@ -16,7 +16,7 @@
     <div class="container">
         <div class="conatctinfo-wrapper">
 
-            <div class="content-block">
+            <div class="content-block" data-aos="fade-right">
                 <div class="heading-compo black">
                     <div class="line-block">
                         <div class="left-block">
@@ -39,7 +39,7 @@
             </div>
 
             <?php if($form_code && !empty($form_code)) :?>
-            <div class="form-wrapper">
+            <div class="form-wrapper" data-aos="fade-left">
                 <?php echo $form_code;?>
             </div>
             <?php endif;?>
