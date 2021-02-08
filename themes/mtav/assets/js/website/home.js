@@ -15,9 +15,6 @@ require('../../scss/website/home-page.scss');
 
   // START : Home By The NUmber Js
   var swiper = new Swiper('.bythenumber-slider', {
-    // slidesPerView: 3,
-    // spaceBetween: 30,
-    // slidesPerGroup: 3,
     navigation: {
       nextEl: '.bythenumber-next',
       prevEl: '.bythenumber-prev',
@@ -316,8 +313,5 @@ require('../../scss/website/home-page.scss');
       }),
     ]);
   }
-
-
-
   // END : Home Hand Banner Js
 })(jQuery);

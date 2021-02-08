@@ -1,5 +1,3 @@
-require('jquery');
-
 require('js/wpadmin/admin.js');
 require('css/wpadmin/admin.css');
 

@@ -23,16 +23,13 @@ window.lazySizesConfig.loadMode = 1;
 
   //// START : Full Video Popup
   $('.js-fullvideo').on('click', function () {
-    // $('.fullvideo-popup').addClass('open');
     $('.fullvideo-popup').fadeIn();
     $('body').addClass('modal-open');
   });
 
   $('.js-video-close').on('click', function () {
-    // $('.fullvideo-popup').removeClass('open');
     $('.fullvideo-popup').fadeOut();
     $('body').removeClass('modal-open');
-    // $('iframe').get(0).pause();
     $("iframe").attr("src", $("iframe").attr("src"));
   });
   //// END : Full Video Popup
