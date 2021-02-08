@@ -14,7 +14,7 @@
 
 <div class="ivoted-section">
     <div class="container">
-        <div class="ivoted-inner-wrapper">
+        <div class="ivoted-inner-wrapper" data-aos="fade-up">
 
         <?php if($block_image_id && !empty($block_image_id)) :?>
             <div class="image-wrapper">

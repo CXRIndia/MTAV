@@ -40,7 +40,7 @@
                 </div>
                 <h1><?php echo wp_kses_post($title);?></h1>
             </div>
-                <div class="need-solve--left">
+                <div class="need-solve--left" data-aos="fade-right">
                     <div class="need-solve--content">
                         <div>
                             <div class="heading-compo black">
@@ -77,7 +77,7 @@
                 </div>
                 <?php } else {?>
 
-                <div class="need-solve--right">
+                <div class="need-solve--right" data-aos="fade-left">
                 <div class="mobile-heading">
                         <div class="heading-compo black">
                             <div class="line-block">

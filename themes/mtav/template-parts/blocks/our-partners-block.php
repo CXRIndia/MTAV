@@ -32,7 +32,7 @@
 
         </div>
 
-        <div class="partners-logo--wrapper">
+        <div class="partners-logo--wrapper" data-aos="fade-up">
 
         <?php foreach ($partners as $data) {
 

@@ -67,6 +67,7 @@
       }
       .need-solve--image {
         display: flex;
+        align-items: flex-start;
         @include mq(t-768, max) {
           order: 1;
           margin-bottom: 20px;
@@ -123,6 +124,7 @@
       }
       .need-solve--image {
         display: flex;
+        align-items: flex-start;
         @include mq(t-768, max) {
           margin-bottom: 20px;
           display: block;

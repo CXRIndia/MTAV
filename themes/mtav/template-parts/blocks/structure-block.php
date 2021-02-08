@@ -46,7 +46,7 @@
 
                 if ($key % 2 == 0) {
                     ?>
-            <div class="block-left block-wrapper">
+            <div class="block-left block-wrapper" data-aos="fade-right">
                 <div class="block-top">
 
                     <?php if($top_left_img_id && !empty($top_left_img_id)) :?>
@@ -91,7 +91,7 @@
             </div>
                     <?php
                 } else {?>
-            <div class="block-right block-wrapper">
+            <div class="block-right block-wrapper" data-aos="fade-left">
                 <div class="block-top">
 
                     <?php if($top_left_img_id && !empty($top_left_img_id)) :?>

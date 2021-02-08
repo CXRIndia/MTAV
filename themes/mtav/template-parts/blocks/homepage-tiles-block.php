@@ -29,7 +29,7 @@
     <div class="big-block-wrapper"
         style="background-image: url('<?php echo  esc_url($big_tile_img_url); ?>')">
         <div class="gradient-bg"></div>
-        <div class="content-block">
+        <div class="content-block" data-aos="fade-right">
             <div class="heading-compo">
             <?php if($big_tile_subhead && !empty($big_tile_subhead)) : ?>
                 <h5 class="title">
@@ -83,7 +83,7 @@
         <div class="single-block"
             style="background-image: url('<?php echo  esc_url($small_tile_img_url); ?>')">
             <div class="gradient-bg"></div>
-            <div class="content-block">
+            <div class="content-block" data-aos="fade-left">
                 <div class="heading-compo">
                     <div class="line-block">
                         <div class="left-block">

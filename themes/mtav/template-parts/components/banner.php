@@ -49,7 +49,7 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
 <div id = "bannerImage" class="banner">
     <div class="inner-wrapper">
         <div class="container">
-            <div class="heading-compo">
+            <div class="heading-compo" data-aos="fade-up">
 
             <?php if($mtav_banner_subhead && !empty($mtav_banner_subhead)) :?>
                 <h5 class="title">
@@ -76,14 +76,14 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
                     <?php echo wp_kses_post(MTAV_Remove_ptag($mtav_banner_title)); ?>
                 </h1>
             <?php endif; ?>
-
+            <div data-aos="fade-up">
             <?php if($mtav_banner_subtitle && !empty($mtav_banner_subtitle)) :?>
                 <?php echo wp_kses_post($mtav_banner_subtitle); ?>
             <?php endif; ?>
-
+            </div>
             <?php if($mtav_banner_btn_label && !empty($mtav_banner_btn_label)) :?>
             <a href="<?php echo esc_url($mtav_banner_btn_url);?>"
-               class="btn btn-primary"
+               class="btn btn-primary" data-aos="fade-up"
                 <?php if($open_in_new_tab == true) : echo "target='_blank'";
                 endif;?>>
                 <?php echo wp_kses_post($mtav_banner_btn_label); ?>

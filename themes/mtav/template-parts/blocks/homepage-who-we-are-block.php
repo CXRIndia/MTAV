@@ -13,7 +13,7 @@
 ?>
 <div class="container-fluid whoweare-sec">
     <div class="container">
-        <div class="header-block">
+        <div class="header-block" data-aos="fade-up">
             <div class="heading-compo">
             <?php if($subhead && !empty($subhead)) :?>
                 <h5 class="title">
