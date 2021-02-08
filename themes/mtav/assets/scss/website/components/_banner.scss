@@ -20,6 +20,9 @@
     @include mq('t-992', 'max') {
       min-height: 100vh;
     }
+    @include mq('t-768', 'max') {
+      min-height: 568px;
+    }
     .container{
       margin-top: auto;
       margin-bottom: 80px;
