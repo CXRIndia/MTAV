@@ -1,5 +1,3 @@
-require('jquery');
-
 import "TweenMax";
 import ScrollMagic from 'ScrollMagic';
 import 'animation.gsap';

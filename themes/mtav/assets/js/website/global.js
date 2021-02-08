@@ -1,10 +1,9 @@
-require('jquery');
-
 import 'lazysizes';
 
 import AOS from 'aos';
 // import 'aos/dist/aos.css';
-// import 'aos/src/sass/aos.scss';
+
+import '../website/contact-form';
 
 window.lazySizesConfig = window.lazySizesConfig || {};
 window.lazySizesConfig.loadMode = 1;
@@ -40,25 +39,6 @@ window.lazySizesConfig.loadMode = 1;
 
 
   $(window).load(function () {
-
-    // var wpcf7Elm = document.querySelector('.wpcf7');
-    // wpcf7Elm.addEventListener('wpcf7mailsent', function (event) {
-    //   $('#contact_hide').hide()
-    //   $("#contact_form_msg").text("Mail Sent Successfully!");
-    //   setTimeout(function () {
-    //     $('#contact_hide').show();
-    //     $("#contact_form_msg").hide();
-    //   }, 7000);
-    // }, false);
-
-    // wpcf7Elm.addEventListener('wpcf7mailfailed', function (event) {
-    //   $('#contact_hide').hide()
-    //   $("#contact_form_msg").text("Something went Wrong. Please try again!");
-    //   setTimeout(function () {
-    //     $('#contact_hide').show();
-    //     $("#contact_form_msg").hide();
-    //   }, 7000);
-    // }, false);
     AOS.init();
   });
 
