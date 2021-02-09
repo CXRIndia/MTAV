@@ -1,6 +1,6 @@
-require('jquery');
-
-import Swiper, { Navigation } from 'swiper';
+import Swiper, {
+  Navigation
+} from 'swiper';
 // configure Swiper to use modules
 Swiper.use([Navigation]);
 
@@ -29,8 +29,6 @@ require('../../scss/website/campaign-page.scss');
   var swiper = new Swiper('.media-slider', {
     slidesPerView: 1.4,
     spaceBetween: 20,
-    // slidesPerGroup: 3,
-    // loop: true,
     breakpoints: {
       992: {
         spaceBetween: 40,

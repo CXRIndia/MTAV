@@ -91,7 +91,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="1" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="7" y="13.2">1</tspan>
+                                            <tspan x="7.5" y="13.5">1</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -112,7 +112,7 @@
                                     <g id="Group-2" transform="translate(10.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="2" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="6.94116211" y="13.2">2</tspan>
+                                            <tspan x="5.7" y="13.5">2</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="20" cy="16" r="12.5"></circle>
@@ -135,7 +135,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="3" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="7.44116211" y="13.2">3</tspan>
+                                            <tspan x="5.8" y="13.5">3</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -156,7 +156,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="4" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="6.44116211" y="13.2">4</tspan>
+                                            <tspan x="5.7" y="13.4">4</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -177,7 +177,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="5" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="6.94116211" y="13.2">5</tspan>
+                                            <tspan x="5.8" y="13.8">5</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -198,7 +198,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="6" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="7.44116211" y="13.2">6</tspan>
+                                            <tspan x="5.7" y="13.4">6</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -219,7 +219,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="7" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="7.44116211" y="13.2">7</tspan>
+                                            <tspan x="6" y="13.4">7</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -241,7 +241,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="8" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="7.44116211" y="13.2">8</tspan>
+                                            <tspan x="5.8" y="13.9">8</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -262,7 +262,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="9" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="7.44116211" y="13.2">9</tspan>
+                                            <tspan x="5.8" y="13.4">9</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>
@@ -283,7 +283,7 @@
                                     <g id="Group-2" transform="translate(6.000000, 6.000000)">
                                         <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
                                         <text id="10" font-size="11" font-weight="normal" fill="#FFFFFF">
-                                            <tspan x="4.38232422" y="13.2">10</tspan>
+                                            <tspan x="3.8" y="13.4">10</tspan>
                                         </text>
                                     </g>
                                     <circle id="Oval-Copy" stroke="#000000" cx="16" cy="16" r="12.5"></circle>

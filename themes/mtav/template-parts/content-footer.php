@@ -24,7 +24,7 @@ $tiktok_url    = get_field('tiktok_link', 'options');
 ?>
 
 <footer>
-    <div class="top-footer">
+    <div class="top-footer" id="footer-form">
         <div class="container">
             <div class="stay-connect-wrapper">
 
@@ -60,28 +60,31 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                     </div>
 
                     <div class="form-wrapper">
-                    <div class="main-form">
-<div class="form-group">
-    <label class="lbl-title">First Name</label>
-    <input type="text" name="your-name" value="" >
-    <span class="error">First name is required</span>
-</div>
-<div class="form-group">
-    <label class="lbl-title">Email</label>
-    <input type="email" name="your-email" value="" >
-</div>
-<div class="form-group">
-    <label class="lbl-title">Mobile Number</label>
-    <input type="text" name="your-number" value="" >
-</div>
-<div class="form-group">
-    <label class="lbl-title">Zip Code</label>
-    <input type="text" name="zip-code" value="" >
-</div>
-</div>
-<div class="btn-wrapper">
-<input type="submit" value="Send">
-</div>
+                        <div class="main-form">
+                            <div class="form-group">
+                                <label class="lbl-title">First Name</label>
+                                <input type="text" name="contact-name" id="js-contact-name" value="" >
+                                <span class="error" id="js-invalid-contact-name" ></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="lbl-title">Email</label>
+                                <input type="email" name="contact-email" id="js-contact-email" value="" >
+                                <span class="error" id="js-invalid-contact-email"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="lbl-title">Mobile Number</label>
+                                <input type="text" name="contact-number" id="js-contact-number" value="" >
+                                <span class="error" id="js-invalid-contact-number"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="lbl-title">Zip Code</label>
+                                <input type="text" name="contact-zipcode" id="js-contact-zipcode" value="" >
+                                <span class="error" id="js-invalid-contact-zipcode"></span>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <input type="submit" value="Send" id="js-contact-submit">
+                        </div>
 
                     <?php if($note && !empty($note)) :?>
                         <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>

@@ -1,7 +1,9 @@
 :root {
   font-size: 100%;
 }
-
+html{
+    overflow-x: hidden;
+}
 body {
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
@@ -227,5 +229,14 @@ img{
         }
       }
     }
+  }
+}
+.one-silde{
+  display: none;
+}
+.two-silde{
+  display: none;
+  @include mq(t-768, max) {
+    display: block;
   }
 }
