@@ -110,6 +110,10 @@ function MTAV_scripts()
         wp_enqueue_style('mtav-talent-css', STYLESHEETURI . '/dist/' . $distFile['talent']['css']);
     }
 
+    if (is_page('page.php') ) {
+        wp_enqueue_style('defaultpage-css', STYLESHEETURI . '/dist/' . $distFile['defaultpage']['css']);
+    }
+
     if (is_single()) {
         wp_enqueue_script('mtav-campaign-js', STYLESHEETURI . '/dist/' . $distFile['campaign']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-campaign-css', STYLESHEETURI . '/dist/' . $distFile['campaign']['css']);

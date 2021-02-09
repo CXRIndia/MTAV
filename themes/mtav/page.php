@@ -10,7 +10,7 @@
  * @link     MTAV
  */
 
-MTAV_Page_Entry_top('');
+MTAV_Page_Entry_top('default-page');
 
 ?>
 
