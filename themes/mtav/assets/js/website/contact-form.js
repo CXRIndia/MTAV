@@ -16,6 +16,15 @@ function validateNumber(inputText) {
   }
 }
 
+function validateString(inputText) {
+  var stringFormat = '^[a-zA-Z]{3,16}$';
+  if (inputText.match(stringFormat)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function lengthRange(userInput, minlength, maxlength) {
   if (userInput.length >= minlength && userInput.length <= maxlength) {
     return true;
@@ -42,6 +51,9 @@ function lengthRange(userInput, minlength, maxlength) {
       if (contactName.val() === '') {
         contactName.next('.error').text('First name is required');
         errorFlag = true;
+      } else if (!validateString(contactName.val())) {
+        contactName.next('.error').text('Please enter a valid First name');
+        errorFlag = true;
       }
 
       if (contactEmail.val() === '') {
@@ -56,7 +68,7 @@ function lengthRange(userInput, minlength, maxlength) {
         contactNumber.next('.error').text('Number is required');
         errorFlag = true;
       } else if (!validateNumber(contactNumber.val())) {
-        contactNumber.next('.error').text('Number is not valid');
+        contactNumber.next('.error').text('Please enter a valid Mobile Number');
         errorFlag = true;
       } else if (!lengthRange(contactNumber.val(), 10, 10)) {
         contactNumber.next('.error').text('Mobile Number should contain atleast 10 digits');
@@ -67,7 +79,7 @@ function lengthRange(userInput, minlength, maxlength) {
         contactZipcode.next('.error').text('Zipcode is required');
         errorFlag = true;
       } else if (!validateNumber(contactZipcode.val())) {
-        contactZipcode.next('.error').text('Zipcode is not valid');
+        contactZipcode.next('.error').text('Please enter a valid Zip Code');
         errorFlag = true;
       } else if (!lengthRange(contactZipcode.val(), 5, 5)) {
         contactZipcode.next('.error').text('Zip code field should contain atleast 5 digits');

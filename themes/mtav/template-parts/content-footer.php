@@ -63,22 +63,22 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                         <div class="main-form">
                             <div class="form-group">
                                 <label class="lbl-title">First Name</label>
-                                <input type="text" name="contact-name js-form-field" id="js-contact-name" value="" >
+                                <input type="text" name="contact-name" id="js-contact-name" value="" >
                                 <span class="error" id="js-invalid-contact-name" ></span>
                             </div>
                             <div class="form-group">
                                 <label class="lbl-title">Email</label>
-                                <input type="email" name="contact-email js-form-field" id="js-contact-email" value="" >
+                                <input type="email" name="contact-email" id="js-contact-email" value="" >
                                 <span class="error" id="js-invalid-contact-email"></span>
                             </div>
                             <div class="form-group">
                                 <label class="lbl-title">Mobile Number</label>
-                                <input type="text" name="contact-number js-form-field" id="js-contact-number" value="" >
+                                <input type="text" name="contact-number" maxlength="10" id="js-contact-number" value="" >
                                 <span class="error" id="js-invalid-contact-number"></span>
                             </div>
                             <div class="form-group">
                                 <label class="lbl-title">Zip Code</label>
-                                <input type="text" name="contact-zipcode js-form-field" id="js-contact-zipcode" value="" >
+                                <input type="text" name="contact-zipcode" maxlength="5" id="js-contact-zipcode" value="" >
                                 <span class="error" id="js-invalid-contact-zipcode"></span>
                             </div>
                         </div>
