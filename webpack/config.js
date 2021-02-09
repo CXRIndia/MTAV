@@ -44,6 +44,7 @@ module.exports = function () {
     appWhatwedoneJs: resolveApp('js/website/whathavewedone.js'),
     appTalentJs: resolveApp('js/website/talent.js'),
     appArchiveJs: resolveApp('js/website/archive.js'),
+    appDefaultPageJs: resolveApp('js/website/defaultpage.js'),
     appNodeModules: resolveApp('../../node_modules'),
   };
 
@@ -78,6 +79,9 @@ module.exports = function () {
     ],
     error404: [
       appPaths.appError404Js,
+    ],
+    defaultpage: [
+      appPaths.appDefaultPageJs,
     ],
   };
 
