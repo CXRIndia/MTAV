@@ -94,7 +94,7 @@
         line-height: 32px;
         text-transform: uppercase;
         margin-bottom: 24px;
-        @include mq(t-992, max) {
+        @include mq(t-1025, max) {
           font-size: 16px;
           line-height: 22px;
           margin-bottom: 12px;
@@ -105,7 +105,7 @@
         }
       }
       .btn{
-        @include mq(t-992, max) {
+        @include mq(t-1025, max) {
           font-size: 14px;
           padding: 6px 16px;
         }
