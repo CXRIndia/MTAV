@@ -2,9 +2,7 @@
   font-size: 100%;
 }
 html{
-  @include mq(t-768, max) {
     overflow-x: hidden;
-  }
 }
 body {
   -webkit-overflow-scrolling: touch;
