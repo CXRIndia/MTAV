@@ -62,18 +62,6 @@ function MTAV_scripts()
     wp_enqueue_script('mtav-global-js', STYLESHEETURI . '/dist/' . $distFile['global']['js'], array('jquery'), null, true);
     wp_enqueue_style('mtav-aos-css', STYLESHEETURI . '/assets/css/website/plugins/aos.css');
 
-    $customTemplates = ['campaign1.php',
-                        'campaign2.php',
-                        'campaign3.php',
-                        'terms-condition.php',
-                        'privacy-policy.php',
-                        'cookie-policy.php',
-                        'whoweare.php',
-                        'letter.php',
-                        'whathavewedone.php',
-                        'talent.php'
-                    ];
-
     if (is_page_template('campaign1.php')
         || is_page_template('campaign2.php')
         || is_page_template('campaign3.php')
@@ -115,11 +103,7 @@ function MTAV_scripts()
         wp_enqueue_style('mtav-talent-css', STYLESHEETURI . '/dist/' . $distFile['talent']['css']);
     }
 
-    if (is_page()
-        && ! is_page_template($customTemplates)
-        && !is_404()
-        && is_front_page()
-    ) {
+    if (basename(get_page_template()) === 'page.php') {
         wp_enqueue_style('defaultpage-css', STYLESHEETURI . '/dist/' . $distFile['defaultpage']['css']);
     }
 
