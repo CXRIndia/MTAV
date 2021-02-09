@@ -199,33 +199,45 @@ acf_add_local_field_group(
                 'operator' => '==',
                 'value' => 'page',
             ),
-        ),
-        array(
             array(
                 'param' => 'page_template',
                 'operator' => '!=',
                 'value' => 'campaign1.php',
             ),
-        ),
-        array(
             array(
                 'param' => 'page_template',
                 'operator' => '!=',
                 'value' => 'campaign2.php',
             ),
-        ),
-        array(
             array(
                 'param' => 'page_template',
                 'operator' => '!=',
                 'value' => 'campaign3.php',
             ),
-        ),
-        array(
             array(
                 'param' => 'page_type',
-                'operator' => '==',
+                'operator' => '!=',
                 'value' => 'front_page',
+            ),
+            array(
+                'param' => 'page_template',
+                'operator' => '!=',
+                'value' => 'default',
+            ),
+            array(
+                'param' => 'page_template',
+                'operator' => '!=',
+                'value' => 'privacy-policy.php',
+            ),
+            array(
+                'param' => 'page_template',
+                'operator' => '!=',
+                'value' => 'terms-condition.php',
+            ),
+            array(
+                'param' => 'page_template',
+                'operator' => '!=',
+                'value' => 'cookie-policy.php',
             ),
         ),
     ),
