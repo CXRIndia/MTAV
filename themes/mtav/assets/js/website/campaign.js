@@ -22,8 +22,12 @@ require('../../scss/website/campaign-page.scss');
     $('.city').show();
   })
 
-  const marginleft = $("#sliderPadding").offset().left;
-  $('.media-slider').css('padding-left', marginleft + "px");
+
+  if (screen.width >= 600) {
+    let marginleft = $("#sliderPadding").offset().left;
+    let valueOfLeft = marginleft + 15;
+    $('.media-slider').css('padding-left', valueOfLeft + "px");
+  }
 
   // START : Home By The NUmber Js
   var swiper = new Swiper('.media-slider', {
