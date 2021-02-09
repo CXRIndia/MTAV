@@ -51,9 +51,11 @@ window.lazySizesConfig.loadMode = 1;
     else sticky.removeClass('fixed');
   });
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#footer-form"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+      $('.mobile-menu').fadeOut();
+      $('body').removeClass('modal-open');
 
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'

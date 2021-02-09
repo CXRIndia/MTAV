@@ -1,3 +1,5 @@
+rm -rf themes/mtav/dist/*
+
 yarn build
 
 zip -r mtav.zip themes/mtav/
