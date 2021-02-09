@@ -10,14 +10,18 @@
  * @link     MTAV
  */
 
+$args = array(
+    'orderby' => 'date',
+    'order'   => 'DESC',
+);
 
-$all_categories = get_categories();
+$all_categories = get_categories($args);
 
 foreach ($all_categories as $key => $category) {
     $args = array(
         'post_type'     => 'post',
         'numberposts'   => '-1',
-        'category'      => $category->term_id
+        'category'      => $category->term_id,
     );
     $campaign_posts = get_posts($args);
     ?>
