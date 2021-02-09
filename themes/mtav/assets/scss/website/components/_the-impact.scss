@@ -1,5 +1,7 @@
 .the-impact--wrapper {
   padding: 80px 0;
+  float: left;
+  width: 100%;
   @include mq(t-768, max) {
     padding: 56px 0 0;
   }
@@ -31,25 +33,30 @@
 }
 
 .impact-structure--one {
-  display: flex;
-  justify-content: space-between;
-  @include mq(t-768, max) {
-    flex-direction: column;
-  }
+  // display: flex;
+  // justify-content: space-between;
+  clear: initial;
+  float: left;
+  width: 100%;
+
   .imapact-content {
-    width: 100%;
+    max-width: 18%;
+    clear: initial;
+    float: left;
+    &:not(:last-child){
+      margin-right: 9.33%;
+      @include mq(t-768, max) {
+        margin-right: 0;
+      }
+    }
+    @include mq(t-768, max) {
+      max-width: 100%;
+    }
     @include mq(t-768, max) {
       display: flex;
       position: relative;
       margin-bottom: 24px;
       padding-bottom: 20px;
-    }
-    @include mq('t-768', 'min') {
-      max-width: 154px;
-    }
-
-    @include mq('t-992', 'min') {
-      max-width: 220px;
     }
     &:last-child{
       @include mq(t-768, max) {
@@ -88,6 +95,7 @@
         font-size: 42px;
         height: 100px;
       }
+
     }
 
     &--para {
@@ -113,13 +121,28 @@
 }
 
 .impact-structure--two {
-  display: flex;
-  justify-content: space-between;
-  @include mq(t-768, max) {
-    flex-direction: column;
-  }
+  // display: flex;
+  // justify-content: space-between;
+  clear: initial;
+  float: left;
+  width: 100%;
+  // @include mq(t-768, max) {
+  //   flex-direction: column;
+  // }
   .imapact-content {
     width: 100%;
+    max-width: 18%;
+    clear: initial;
+    float: left;
+    @media(max-width: 767px){
+      max-width: 100%;
+    }
+    &:not(:last-child){
+      margin-right: 9.33%;
+      @include mq(t-768, max) {
+        margin-right: 0;
+      }
+    }
     @include mq(t-768, max) {
       display: flex;
       position: relative;
@@ -151,13 +174,21 @@
     }
 
     &.video-featuring {
-      @include mq('t-768', 'min') {
-        max-width: 300px;
+      max-width: 41%;
+    clear: initial;
+    float: left;
+    @media(max-width: 1199px){
+      max-width: 34%;
+    }
+    @media(max-width: 767px){
+      max-width: 100%;
+    }
+    &:not(:last-child){
+      margin-right: 9.33%;
+      @include mq(t-768, max) {
+        margin-right: 0;
       }
-
-      @include mq('t-992', 'min') {
-        max-width: 494px;
-      }
+    }
       .imapact-content--title {
         @include mq(t-768, max) {
           font-size: 18px;
@@ -166,6 +197,9 @@
           display: flex;
           align-items: flex-start;
         }
+      }
+      .imapact-content--para{
+        padding-right: 10px;
       }
     }
 
@@ -241,7 +275,7 @@
 
 .impact-structure--three {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   @include mq(t-768, max) {
     flex-direction: column;
   }
