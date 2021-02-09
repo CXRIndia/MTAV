@@ -54,10 +54,10 @@ acf_add_local_field_group(
             'delay' => 0,
         ),
         array(
-            'key' => 'field_601d1b97b7023',
-            'label' => 'Form Code',
-            'name' => 'form_code',
-            'type' => 'textarea',
+            'key' => 'field_602281d29af22',
+            'label' => 'Select Form Code Type',
+            'name' => 'select_form_code_type',
+            'type' => 'select',
             'instructions' => '',
             'required' => 0,
             'conditional_logic' => 0,
@@ -66,10 +66,71 @@ acf_add_local_field_group(
                 'class' => '',
                 'id' => '',
             ),
+            'choices' => array(
+                'select' => 'Select',
+                'short_code' => 'Form Short Code',
+                'form_code' => 'HTML Form Code',
+            ),
+            'default_value' => 'select',
+            'allow_null' => 0,
+            'multiple' => 0,
+            'ui' => 0,
+            'return_format' => 'value',
+            'ajax' => 0,
+            'placeholder' => '',
+        ),
+        array(
+            'key' => 'field_602282429af23',
+            'label' => 'Form Shortcode',
+            'name' => 'form_shortcode',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => array(
+                array(
+                    array(
+                        'field' => 'field_602281d29af22',
+                        'operator' => '==',
+                        'value' => 'short_code',
+                    ),
+                ),
+            ),
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'maxlength' => '',
+        ),
+        array(
+            'key' => 'field_601d1b97b7023',
+            'label' => 'HTML Form Code',
+            'name' => 'form_code',
+            'type' => 'textarea',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => array(
+                array(
+                    array(
+                        'field' => 'field_602281d29af22',
+                        'operator' => '==',
+                        'value' => 'form_code',
+                    ),
+                ),
+            ),
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
             'default_value' => '',
             'placeholder' => '',
             'maxlength' => '',
-            'rows' => '',
+            'rows' => 4,
             'new_lines' => '',
         ),
     ),
@@ -92,4 +153,3 @@ acf_add_local_field_group(
     'description' => '',
     )
 );
-

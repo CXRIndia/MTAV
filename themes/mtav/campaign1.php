@@ -12,11 +12,13 @@
 
 MTAV_Page_Entry_top('has-black-hamburger campaigntemplate-page header-position');
 
-$page_id     = get_the_ID();
-$all_fields  = get_fields($page_id);
-$title       = $all_fields['title'];
-$description = $all_fields['description'];
-$form_code   = $all_fields['form_code'];
+$page_id        = get_the_ID();
+$all_fields     = get_fields($page_id);
+$title          = $all_fields['title'];
+$description    = $all_fields['description'];
+$select         = $all_fields['select_form_code_type'];
+$form_code      = $all_fields['form_code'];
+$form_shortcode = $all_fields['short_code'];
 
 ?>
 

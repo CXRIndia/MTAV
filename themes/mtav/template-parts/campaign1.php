@@ -43,6 +43,11 @@
                 <?php echo $form_code;?>
             </div>
             <?php endif;?>
+
+            <?php if($form_shortcode && !empty($form_shortcode)) :
+                echo do_shortcode($form_shortcode);
+            endif;?>
+
         </div>
     </div>
 </div>

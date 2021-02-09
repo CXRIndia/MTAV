@@ -16,10 +16,12 @@ $page_id                = get_the_ID();
 $all_fields             = get_fields($page_id);
 $title                  = $all_fields['title'];
 $description            = $all_fields['description'];
+$select                 = $all_fields['select_form_code_type'];
 $form_code              = $all_fields['form_code'];
+$form_shortcode         = $all_fields['short_code'];
 $videp_sec_title        = $all_fields['video_section_title'];
 $$video_sec_description = $all_fields['video_section_description'];
-$video_thumb_img_id           = $all_fields['video_thumbnail_image'];
+$video_thumb_img_id     = $all_fields['video_thumbnail_image'];
 $video_url              = $all_fields['video_url'];
 
 if ($video_thumb_img_id && !empty($video_thumb_img_id)) {
