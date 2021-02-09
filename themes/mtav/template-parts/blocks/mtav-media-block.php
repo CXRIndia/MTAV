@@ -33,6 +33,7 @@
     </div>
 
     <div class="media-slider-wrapper">
+        <div class="container" id="sliderPadding"></div>
             <div class="swiper-container media-slider">
                 <div class="swiper-wrapper">
 
