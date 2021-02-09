@@ -73,12 +73,12 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                             </div>
                             <div class="form-group">
                                 <label class="lbl-title">Mobile Number</label>
-                                <input type="text" name="contact-number" id="js-contact-number" value="" >
+                                <input type="text" name="contact-number" maxlength="10" id="js-contact-number" value="" >
                                 <span class="error" id="js-invalid-contact-number"></span>
                             </div>
                             <div class="form-group">
                                 <label class="lbl-title">Zip Code</label>
-                                <input type="text" name="contact-zipcode" id="js-contact-zipcode" value="" >
+                                <input type="text" name="contact-zipcode" maxlength="5" id="js-contact-zipcode" value="" >
                                 <span class="error" id="js-invalid-contact-zipcode"></span>
                             </div>
                         </div>

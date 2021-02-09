@@ -9,6 +9,8 @@ require('../../scss/website/components/mtav-swiper.scss');
 require('../../scss/website/campaign-page.scss');
 (function ($) {
 
+  console.log('Test');
+
   $(".city").mouseover(function () {
     $('.city').hide();
     $(this).show();
@@ -19,6 +21,9 @@ require('../../scss/website/campaign-page.scss');
     $('.city').next().hide();
     $('.city').show();
   })
+
+  const marginleft = $("#sliderPadding").offset().left;
+  $('.media-slider').css('padding-left', marginleft + "px");
 
   // START : Home By The NUmber Js
   var swiper = new Swiper('.media-slider', {
@@ -40,9 +45,7 @@ require('../../scss/website/campaign-page.scss');
     },
   });
 
-  if ($("#sliderPadding").length > 0) {
-    var marginleft = $("#sliderPadding").offset().left;
-    $('.media-slider').css('padding-left', marginleft + "px");
-  }
+
+  // console.log(marginleft);
   console.log('Campaign js');
 })(jQuery);

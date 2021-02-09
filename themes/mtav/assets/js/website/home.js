@@ -13,6 +13,23 @@ require('../../scss/website/home-page.scss');
 (function ($) {
   console.log('Home js');
 
+  var p = $(".imgvideo-title-sec");
+  var offset = p.offset();
+  offset = offset.top;
+
+  $(window).scroll(function () {
+
+    var sc = $(window).scrollTop();
+    // console.log("Scroll", sc);
+    // console.log("window offset", offset)
+
+    if ($(window).scrollTop() > offset + 900) {
+      $('header').fadeIn();
+    } else {
+      $('header').fadeOut();
+    }
+  });
+
   // START : Home By The NUmber Js
   var swiper = new Swiper('.bythenumber-slider', {
     navigation: {

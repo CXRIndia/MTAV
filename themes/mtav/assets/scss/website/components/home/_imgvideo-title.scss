@@ -131,18 +131,18 @@
         .btn{
           font-size: 18px;
           text-align: center;
-          @include rem(padding, 11, 13, 13);
+          @include rem(padding, 12, 13, 12);
           min-width: 163px;
 
           @include mq('t-992', 'max') {
             font-size: 14px;
-            padding: 5px 15px 7px;
+            padding: 6px 15px 6px;
             min-width: 136px;
           }
           @include mq('t-768', 'max') {
             font-size: 18px;
             text-align: center;
-            @include rem(padding, 15, 24, 17);
+            @include rem(padding, 16, 24, 16);
           }
         }
       }

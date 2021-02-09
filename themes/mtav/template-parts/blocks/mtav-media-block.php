@@ -47,8 +47,9 @@
     </div>
 
     <div class="media-slider-wrapper">
-        <div class="swiper-container media-slider">
-            <div class="swiper-wrapper">
+        <div class="container" id="sliderPadding"></div>
+            <div class="swiper-container media-slider">
+                <div class="swiper-wrapper">
 
             <?php foreach ($media_ids as $media_id) {
                 $media_title = get_field('title', $media_id);
