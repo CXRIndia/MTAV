@@ -110,7 +110,7 @@ function MTAV_scripts()
         wp_enqueue_style('mtav-talent-css', STYLESHEETURI . '/dist/' . $distFile['talent']['css']);
     }
 
-    if (is_page('page.php') ) {
+    if (basename(get_page_template()) === 'page.php') {
         wp_enqueue_style('defaultpage-css', STYLESHEETURI . '/dist/' . $distFile['defaultpage']['css']);
     }
 
