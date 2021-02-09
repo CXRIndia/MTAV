@@ -62,10 +62,19 @@ function MTAV_scripts()
     wp_enqueue_script('mtav-global-js', STYLESHEETURI . '/dist/' . $distFile['global']['js'], array('jquery'), null, true);
     wp_enqueue_style('mtav-aos-css', STYLESHEETURI . '/assets/css/website/plugins/aos.css');
 
-    if (is_page_template('html-template/campaigntemplate-page.php')
-        || is_page_template('html-template/campaigntemplate02-page.php')
-        || is_page_template('html-template/campaigntemplate03-page.php')
-        || is_page_template('campaign1.php')
+    $customTemplates = ['campaign1.php',
+                        'campaign2.php',
+                        'campaign3.php',
+                        'terms-condition.php',
+                        'privacy-policy.php',
+                        'cookie-policy.php',
+                        'whoweare.php',
+                        'letter.php',
+                        'whathavewedone.php',
+                        'talent.php'
+                    ];
+
+    if (is_page_template('campaign1.php')
         || is_page_template('campaign2.php')
         || is_page_template('campaign3.php')
         || is_page_template('terms-condition.php')
@@ -76,41 +85,41 @@ function MTAV_scripts()
         wp_enqueue_style('mtav-campaigntemplate-css', STYLESHEETURI . '/dist/' . $distFile['campaigntemplate']['css']);
     }
 
-    if (is_404() || is_page_template('html-template/error404-page.php')) {
+    if (is_404()) {
         wp_enqueue_script('mtav-error404-js', STYLESHEETURI . '/dist/' . $distFile['error404']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-error404-css', STYLESHEETURI . '/dist/' . $distFile['error404']['css']);
     }
 
-    if (is_front_page() || is_page_template('html-template/homepage.php')) {
+    if (is_front_page()) {
         wp_enqueue_script('mtav-home-js', STYLESHEETURI . '/dist/' . $distFile['home']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-home-css', STYLESHEETURI . '/dist/' . $distFile['home']['css']);
     }
 
-    if (is_page_template('html-template/whowearepage.php') || is_page_template('whoweare.php')) {
+    if (is_page_template('whoweare.php')) {
         wp_enqueue_script('mtav-whoweare-js', STYLESHEETURI . '/dist/' . $distFile['whoweare']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-whoweare-css', STYLESHEETURI . '/dist/' . $distFile['whoweare']['css']);
     }
 
-    if (is_page_template('html-template/letter.php') || is_page_template('letter.php')) {
+    if (is_page_template('letter.php')) {
         wp_enqueue_script('mtav-letter-js', STYLESHEETURI . '/dist/' . $distFile['letter']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-letter-css', STYLESHEETURI . '/dist/' . $distFile['letter']['css']);
     }
 
-    if (is_page_template('html-template/whathavewedone.php')
-        || is_page_template('whathavewedone.php')
-    ) {
+    if (is_page_template('whathavewedone.php')) {
         wp_enqueue_script('mtav-whatwedone-js', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-whatwedone-css', STYLESHEETURI . '/dist/' . $distFile['whatwedone']['css']);
     }
 
-    if (is_page_template('html-template/talent-page.php')
-        || is_page_template('talent.php')
-    ) {
+    if (is_page_template('talent.php')) {
         wp_enqueue_script('mtav-talent-js', STYLESHEETURI . '/dist/' . $distFile['talent']['js'], array('jquery'), null, true);
         wp_enqueue_style('mtav-talent-css', STYLESHEETURI . '/dist/' . $distFile['talent']['css']);
     }
 
-    if (is_page('page.php') ) {
+    if (is_page()
+        && ! is_page_template($customTemplates)
+        && !is_404()
+        && is_front_page()
+    ) {
         wp_enqueue_style('defaultpage-css', STYLESHEETURI . '/dist/' . $distFile['defaultpage']['css']);
     }
 

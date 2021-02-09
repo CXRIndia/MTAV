@@ -1,7 +1,6 @@
 <?php
 /**
- * Template Name: Campaign Template 02 - HTML
- * php version 7.4
+ * Php version 7.4
  *
  * @category MTAV
  * @package  MTAV
