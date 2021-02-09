@@ -59,7 +59,7 @@ function lengthRange(userInput, minlength, maxlength) {
         contactNumber.next('.error').text('Number is not valid');
         errorFlag = true;
       } else if (!lengthRange(contactNumber.val(), 10, 10)) {
-        contactNumber.next('.error').text('Number should be 10 digit');
+        contactNumber.next('.error').text('Mobile Number should contain atleast 10 digits');
         errorFlag = true;
       }
 
@@ -70,7 +70,7 @@ function lengthRange(userInput, minlength, maxlength) {
         contactZipcode.next('.error').text('Zipcode is not valid');
         errorFlag = true;
       } else if (!lengthRange(contactZipcode.val(), 5, 5)) {
-        contactZipcode.next('.error').text('Zipcode should be 5 digit');
+        contactZipcode.next('.error').text('Zip code field should contain atleast 5 digits');
         errorFlag = true;
       }
 
@@ -81,6 +81,10 @@ function lengthRange(userInput, minlength, maxlength) {
           $('#contact_hide').show();
           $("#contact_form_msg").hide();
         }, 7000);
+        contactName.val('')
+        contactEmail.val('')
+        contactNumber.val('')
+        contactZipcode.val('')
       }
 
     })
