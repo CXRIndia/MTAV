@@ -100,6 +100,14 @@
         z-index: 6;
         width: 55%;
         top: 27%;
+
+        // @media (min-aspect-ratio: 16/9) {
+        //   width: 55%;
+        // }
+        // @media (min-aspect-ratio: 4/3) {
+        //   width: 42%;
+        //   top: 15%;
+        // }
       }
       .hand2-wrapper {
         z-index: 5;
@@ -145,30 +153,56 @@
       }
       .hand1-wrapper {
         z-index: 6;
-        top: 27%;
         width: 58.5%;
+        top: 27%;
+
+        // @media (min-aspect-ratio: 4/3) {
+        //   width: 47%;
+        //   top: 17%;
+        // }
+        // @media (aspect-ratio: 1/1) {
+        //   width: 58.5%;
+        //   top: 27%;
+        // }
       }
       .hand2-wrapper {
         z-index: 5;
         right: 0;
         top: 25%;
         width: 52%;
+
+        // @media (min-aspect-ratio: 4/3) {
+        //   width: 42%;
+        //   top: 15%;
+        // }
       }
       .hand3-wrapper {
         z-index: 4;
         right: 0;
         width: 63.5%;
+
+        // @media (min-aspect-ratio: 4/3) {
+        //   width: 43%;
+        // }
       }
       .hand4-wrapper {
         z-index: 3;
         bottom: 0;
         width: 64%;
+
+        // @media (min-aspect-ratio: 4/3) {
+        //   width: 35%;
+        // }
       }
       .hand5-wrapper {
         z-index: 2;
         bottom: 0;
         right: 0;
         width: 65.5%;
+
+        // @media (min-aspect-ratio: 4/3) {
+        //   width: 35%;
+        // }
       }
       .hand6-wrapper {
         z-index: 1;
