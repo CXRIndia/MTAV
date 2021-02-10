@@ -58,13 +58,8 @@
           padding: 0;
         }
       }
-    }
-  }
-}
-.campaigntemplate-page {
-  .campaigntemplate-main-wrapper{
-    &.campaigntemplate-2{
-      .campaign-launch--wrapper{
+
+      &.transparent-bg {
         &::after{
           background-color: transparent;
         }
@@ -72,3 +67,14 @@
     }
   }
 }
+// .campaigntemplate-page {
+//   .campaigntemplate-main-wrapper{
+//     &.campaigntemplate-2{
+//       .campaign-launch--wrapper{
+//         &::after{
+//           background-color: transparent;
+//         }
+//       }
+//     }
+//   }
+// }
