@@ -12,12 +12,17 @@
 
 MTAV_Page_Entry_top('has-black-hamburger campaigntemplate-page header-position');
 
-$page_id     = get_the_ID();
-$all_fields  = get_fields($page_id);
-$title       = $all_fields['title'];
-$description = $all_fields['description'];
+$page_id            = get_the_ID();
+$all_fields         = get_fields($page_id);
+$title              = $all_fields['title'];
+$description        = $all_fields['description'];
 $video_thumb_img_id = $all_fields['video_thumbnail_image'];
-$video_url    = $all_fields['video_url'];
+$video_url          = $all_fields['video_url'];
+$light_background   = $all_fields['check_for_light_background'];
+
+if ($light_background == 'true') {
+    $class = 'transparent-bg';
+}
 
 if ($video_thumb_img_id && !empty($video_thumb_img_id)) {
     $video_thumb_img_array = wp_get_attachment_image_src($video_thumb_img_id, 'full');

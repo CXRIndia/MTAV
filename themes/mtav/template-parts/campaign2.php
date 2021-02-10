@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<div class="campaign-launch--wrapper">
+<div class="campaign-launch--wrapper <?php echo $class;?>">
     <div class="container">
         <div class="campign-launch--inner">
             <div class="mobile-heading" data-aos="fade-right">

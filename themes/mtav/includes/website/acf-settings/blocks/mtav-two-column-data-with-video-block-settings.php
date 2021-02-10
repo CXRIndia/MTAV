@@ -93,6 +93,25 @@ acf_add_local_field_group(
             'max_size' => '',
             'mime_types' => '',
         ),
+        array(
+            'key' => 'field_6023cbe90582f',
+            'label' => 'Check for light Background',
+            'name' => 'check_for_light_background',
+            'type' => 'true_false',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'message' => '',
+            'default_value' => 0,
+            'ui' => 0,
+            'ui_on_text' => '',
+            'ui_off_text' => '',
+        ),
     ),
     'location' => array(
         array(

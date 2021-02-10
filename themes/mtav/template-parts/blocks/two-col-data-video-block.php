@@ -25,7 +25,7 @@
     </div>
 </div>
 
-<div class="campaign-launch--wrapper">
+<div class="campaign-launch--wrapper <?php echo $class;?>">
 <div class="mobile-heading">
                 <div class="heading-compo black">
                     <div class="line-block">
@@ -64,7 +64,7 @@
                 <?php endif; ?>
 
             </div>
-            <div class="video" data-aos="fade-left">
+            <div class="video <?php echo $class;?>" data-aos="fade-left">
                 <a href="javascript:void(0)" class="js-fullvideo">
                     <img class="lazyload play-icon"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="

@@ -477,10 +477,15 @@ function MTAV_The_Impact_Block_Render_callback( $block )
 function MTAV_Data_Video_Block_Render_callback( $block )
 {
 
-    $title = get_field('title');
-    $description = get_field('description');
-    $video_url = get_field('video_url');
+    $title              = get_field('title');
+    $description        = get_field('description');
+    $video_url          = get_field('video_url');
     $video_thumb_img_id = get_field('video_thumbnail');
+    $light_background   = get_field('check_for_light_background');
+
+    if ($light_background == 'true') {
+        $class = 'transparent-bg';
+    }
 
     if ($video_thumb_img_id && !empty($video_thumb_img_id)) {
         $video_thumb_img_array = wp_get_attachment_image_src($video_thumb_img_id, 'full');
