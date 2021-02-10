@@ -185,6 +185,33 @@ acf_add_local_field_group(
                     'default_value' => '',
                     'placeholder' => '',
                 ),
+                array(
+                    'key' => 'field_60239d8609852',
+                    'label' => 'Open Link in New Tab',
+                    'name' => 'open_link_in_new_tab',
+                    'type' => 'true_false',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => array(
+                        array(
+                            array(
+                                'field' => 'field_602372728287e',
+                                'operator' => '==',
+                                'value' => 'page',
+                            ),
+                        ),
+                    ),
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'message' => '',
+                    'default_value' => 0,
+                    'ui' => 0,
+                    'ui_on_text' => '',
+                    'ui_off_text' => '',
+                ),
             ),
         ),
         array(

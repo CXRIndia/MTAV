@@ -27,6 +27,7 @@ function MTAV_Tiles_Block_Render_callback( $block )
     $big_tile_btn_label     = $big_tile_data['button_label'];
     $big_tile_btn_url       = $big_tile_data['page_url'];
     $big_tile_video_url     = $big_tile_data['video_url'];
+    $open_in_new_tab        = $big_tile_data['open_link_in_new_tab'];
 
     if ($big_tile_img_id && !empty($big_tile_img_id)) {
         $big_tile_img_array = wp_get_attachment_image_src($big_tile_img_id, 'full');
@@ -119,6 +120,7 @@ function MTAV_Protect_Black_Voters_Block_Render_callback( $block )
     $left_column_btn_label   = $left_column_data['button_label'];
     $left_column_page_url    = $left_column_data['page_url'];
     $video_url               = $left_column_data['video_url'];
+    $open_in_new_tab         = $left_column_data['open_link_in_new_tab'];
 
     $right_column_data  = get_field('right_column_data');
     $right_column_title = $right_column_data['title'];

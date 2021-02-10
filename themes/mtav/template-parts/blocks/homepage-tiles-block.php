@@ -64,7 +64,9 @@
             <?php if($big_tile_btn_url && !empty($big_tile_btn_url)) :?>
                 <div class="btn-wrapper">
                     <a href="<?php echo esc_url($big_tile_btn_url);?>"
-                    class="btn btn-primary" target="_blank">
+                    class="btn btn-primary"
+                    <?php if($open_in_new_tab == true) : echo "target='_blank'";
+                    endif;?>>
                         <?php echo wp_kses_post($big_tile_btn_label);?>
                     </a>
                 </div>

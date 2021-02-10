@@ -65,7 +65,9 @@
             <?php if($left_column_page_url && !empty($left_column_page_url)) :?>
                 <div class="btn-wrapper">
                     <a href="<?php echo esc_url($left_column_page_url);?>"
-                    class="btn btn-primary" target="_blank">
+                    class="btn btn-primary"
+                    <?php if($open_in_new_tab == true) : echo "target='_blank'";
+                    endif;?>>
                         <?php echo wp_kses_post($left_column_btn_label);?>
                     </a>
                 </div>
