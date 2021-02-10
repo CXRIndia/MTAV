@@ -142,6 +142,13 @@ acf_add_local_field_group(
                 'value' => 'campaign1.php',
             ),
         ),
+        array(
+            array(
+                'param' => 'block',
+                'operator' => '==',
+                'value' => 'acf/mtav-data-from-block',
+            ),
+        ),
     ),
     'menu_order' => 0,
     'position' => 'normal',

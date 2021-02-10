@@ -17,8 +17,15 @@ $all_fields             = get_fields($page_id);
 $title                  = $all_fields['title'];
 $description            = $all_fields['description'];
 $select                 = $all_fields['select_form_code_type'];
-$form_code              = $all_fields['form_code'];
-$form_shortcode         = $all_fields['short_code'];
+
+if ($select == 'form_code') {
+    $form_code = $all_fields['form_code'];
+}
+
+if ($select == 'short_code') {
+    $form_shortcode = $all_fields['form_shortcode'];
+}
+
 $videp_sec_title        = $all_fields['video_section_title'];
 $$video_sec_description = $all_fields['video_section_description'];
 $video_thumb_img_id     = $all_fields['video_thumbnail_image'];
