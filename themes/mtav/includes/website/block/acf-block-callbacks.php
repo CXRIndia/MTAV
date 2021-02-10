@@ -115,10 +115,10 @@ function MTAV_Protect_Black_Voters_Block_Render_callback( $block )
     $left_column_title       = $left_column_data['title'];
     $left_column_description = $left_column_data['description'];
     $left_column_img_id      = $left_column_data['block_image'];
+    $select                  = $left_column_data['select_button_redirection_type'];
     $left_column_btn_label   = $left_column_data['button_label'];
-    $left_column_btn_url     = $left_column_data['button_url'];
+    $left_column_page_url    = $left_column_data['page_url'];
     $video_url               = $left_column_data['video_url'];
-    $video_thumbnail         = $left_column_data['video_thumbnail'];
 
     $right_column_data  = get_field('right_column_data');
     $right_column_title = $right_column_data['title'];

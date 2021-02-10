@@ -93,6 +93,32 @@ acf_add_local_field_group(
                     'mime_types' => '',
                 ),
                 array(
+                    'key' => 'field_60237adbfe340',
+                    'label' => 'Select Button Redirection Type',
+                    'name' => 'select_button_redirection_type',
+                    'type' => 'select',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'choices' => array(
+                        'select' => 'Select',
+                        'video' => 'Video Popup',
+                        'page' => 'Page Link',
+                    ),
+                    'default_value' => false,
+                    'allow_null' => 0,
+                    'multiple' => 0,
+                    'ui' => 0,
+                    'return_format' => 'value',
+                    'ajax' => 0,
+                    'placeholder' => '',
+                ),
+                array(
                     'key' => 'field_60127985c0c13',
                     'label' => 'Button Label',
                     'name' => 'button_label',
@@ -118,7 +144,39 @@ acf_add_local_field_group(
                     'type' => 'url',
                     'instructions' => '',
                     'required' => 0,
-                    'conditional_logic' => 0,
+                    'conditional_logic' => array(
+                        array(
+                            array(
+                                'field' => 'field_60237adbfe340',
+                                'operator' => '==',
+                                'value' => 'video',
+                            ),
+                        ),
+                    ),
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => '',
+                    'placeholder' => '',
+                ),
+                array(
+                    'key' => 'field_60237b2afe341',
+                    'label' => 'Page URL',
+                    'name' => 'page_url',
+                    'type' => 'url',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => array(
+                        array(
+                            array(
+                                'field' => 'field_60237adbfe340',
+                                'operator' => '==',
+                                'value' => 'page',
+                            ),
+                        ),
+                    ),
                     'wrapper' => array(
                         'width' => '',
                         'class' => '',

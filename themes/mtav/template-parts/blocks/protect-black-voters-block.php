@@ -54,13 +54,22 @@
             endif;
             ?>
 
-            <?php if($left_column_btn_label && !empty($left_column_btn_label)) :?>
+            <?php if($video_url && !empty($video_url)) :?>
                 <div class="btn-wrapper">
                     <a href="javascript:void(0)" class="btn btn-primary js-fullvideo">
                         <?php echo wp_kses_post($left_column_btn_label);?>
                     </a>
                 </div>
             <?php endif; ?>
+
+            <?php if($left_column_page_url && !empty($left_column_page_url)) :?>
+                <div class="btn-wrapper">
+                    <a href="<?php echo esc_url($left_column_page_url);?>"
+                    class="btn btn-primary" target="_blank">
+                        <?php echo wp_kses_post($left_column_btn_label);?>
+                    </a>
+                </div>
+            <?php endif;?>
 
         </div>
     </div>
