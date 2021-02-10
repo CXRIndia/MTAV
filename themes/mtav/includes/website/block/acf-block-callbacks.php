@@ -23,10 +23,10 @@ function MTAV_Tiles_Block_Render_callback( $block )
     $big_tile_title         = $big_tile_data['title'];
     $big_tile_subhead       = $big_tile_data['subhead'];
     $big_tile_img_id        = $big_tile_data['tile_background_image'];
+    $select                 = $big_tile_data['select_button_redirection_type'];
     $big_tile_btn_label     = $big_tile_data['button_label'];
-    $big_tile_btn_url       = $big_tile_data['button_url'];
+    $big_tile_btn_url       = $big_tile_data['page_url'];
     $big_tile_video_url     = $big_tile_data['video_url'];
-    $big_tile_video_thum_id = $big_tile_data['video_thumbnail'];
 
     if ($big_tile_img_id && !empty($big_tile_img_id)) {
         $big_tile_img_array = wp_get_attachment_image_src($big_tile_img_id, 'full');

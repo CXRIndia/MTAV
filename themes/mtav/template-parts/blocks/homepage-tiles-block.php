@@ -53,12 +53,21 @@
             </h1>
             <?php endif; ?>
 
-            <?php if($big_tile_btn_label && !empty($big_tile_btn_label)) :?>
+            <?php if($big_tile_video_url && !empty($big_tile_video_url)) :?>
             <div class="btn-wrapper">
                 <a href="javascript:void(0)" class="btn btn-primary js-fullvideo">
                     <?php echo wp_kses_post($big_tile_btn_label);?>
                 </a>
             </div>
+            <?php endif;?>
+
+            <?php if($big_tile_btn_url && !empty($big_tile_btn_url)) :?>
+                <div class="btn-wrapper">
+                    <a href="<?php echo esc_url($big_tile_btn_url);?>"
+                    class="btn btn-primary" target="_blank">
+                        <?php echo wp_kses_post($big_tile_btn_label);?>
+                    </a>
+                </div>
             <?php endif;?>
 
         </div>
