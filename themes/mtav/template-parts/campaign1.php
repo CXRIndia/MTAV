@@ -44,9 +44,11 @@
             </div>
             <?php endif;?>
 
-            <?php if($form_shortcode && !empty($form_shortcode)) :
-                echo do_shortcode($form_shortcode);
-            endif;?>
+            <?php if($form_shortcode && !empty($form_shortcode)) : ?>
+            <div class="form-wrapper" data-aos="fade-left">
+                <?php echo do_shortcode($form_shortcode); ?>
+            </div>
+            <?php endif;?>
 
         </div>
     </div>
