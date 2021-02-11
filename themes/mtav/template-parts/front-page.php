@@ -10,6 +10,7 @@
  * @link     MTAV
  */
 
+$width = "<script>document.write(screen.width);</script>";
 ?>
 
 <div class="js-hand-trigger"></div>
@@ -35,6 +36,7 @@
                     data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/scrolldown-arrow.svg" alt="hand">
             </div>
 
+            <?php if($width > 1200) : ?>
             <div class="dsk-block">
                 <div class="hand1-wrapper">
                     <img class="lazyload"
@@ -67,7 +69,9 @@
                         data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-6.png" alt="hand">
                 </div>
             </div>
+            <?php endif; ?>
 
+            <?php if(($width >= 768) && ($width <= 1159) ) : ?>
             <div class="tablet-block">
                 <div class="hand1-wrapper">
                     <img class="lazyload"
@@ -100,7 +104,9 @@
                         data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/tablet/tablet-hand-6.png" alt="hand">
                 </div>
             </div>
+            <?php endif; ?>
 
+            <?php if($width <= 767) : ?>
             <div class="mo-block">
                 <div class="hand1-wrapper">
                     <img class="lazyload"
@@ -133,6 +139,7 @@
                         data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-6.png" alt="hand">
                 </div>
             </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>
