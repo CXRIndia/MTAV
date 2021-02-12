@@ -19,7 +19,7 @@
         <div class="hans-img-wrapper">
             <div class="overlay">
                 <div class="bg-color"></div>
-                <div class="gradient"></div>
+                <div class="gradient-home"></div>
             </div>
 
             <div class="logo-wrapper">
