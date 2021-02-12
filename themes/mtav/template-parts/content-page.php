@@ -12,7 +12,8 @@
 
 ?>
 
-<div class="banner" style="background-image: url('<?php echo  esc_url($mtav_banner_img_url); ?>')">
+<div class="banner lazyload"
+    data-bg="<?php echo  esc_url($mtav_banner_img_url); ?>">
     <div class="inner-wrapper">
         <div class="container">
             <div class="heading-compo">

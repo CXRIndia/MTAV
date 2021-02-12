@@ -31,8 +31,8 @@
 </div>
 
 <div class="container-fluid imgvideo-title-sec-two">
-    <div class="big-block-wrapper"
-        style="background-image: url('<?php echo  esc_url($left_column_img_url); ?>')">
+    <div class="big-block-wrapper lazyload"
+        data-bg="<?php echo  esc_url($left_column_img_url); ?>">
         <div class="gradient-bg"></div>
         <div class="content-block" data-aos="fade-right">
             <div class="heading-compo">

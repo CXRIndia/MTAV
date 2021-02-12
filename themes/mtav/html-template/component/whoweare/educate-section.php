@@ -1,6 +1,6 @@
 <div class="container-fluid imgvideo-title-sec-two">
-    <div class="big-block-wrapper"
-        style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/educate.png')">
+    <div class="big-block-wrapper lazyload"
+        data-bg="<?php echo esc_url(THEMEURI); ?>/assets/images/png/educate.png">
         <div class="gradient-bg"></div>
         <div class="content-block">
             <div class="heading-compo">

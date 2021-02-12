@@ -1,6 +1,6 @@
 <div class="container-fluid imgvideo-title-sec">
-    <div class="big-block-wrapper"
-        style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/videotitle-img.png')">
+    <div class="big-block-wrapper lazyload"
+        data-bg="<?php echo  esc_url(THEMEURI); ?>/assets/images/png/videotitle-img.png">
         <div class="gradient-bg"></div>
         <div class="content-block">
             <div class="heading-compo">
@@ -25,8 +25,8 @@
         </div>
     </div>
     <div class="small-block-wrapper">
-        <div class="single-block"
-            style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/img-title-bg.png')">
+        <div class="single-block lazyload"
+            data-bg="<?php echo  esc_url(THEMEURI); ?>/assets/images/png/img-title-bg.png">
             <div class="gradient-bg"></div>
             <div class="content-block">
                 <div class="heading-compo">
@@ -47,8 +47,8 @@
                 </div>
             </div>
         </div>
-        <div class="single-block"
-            style="background-image: url('<?php echo  esc_url(THEMEURI); ?>/assets/images/png/img-title-bg2.png')">
+        <div class="single-block lazyload"
+            data-bg="<?php echo  esc_url(THEMEURI); ?>/assets/images/png/img-title-bg2.png">
             <div class="gradient-bg"></div>
             <div class="content-block">
                 <div class="heading-compo">

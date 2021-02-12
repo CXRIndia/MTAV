@@ -86,14 +86,24 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                             <input type="submit" value="Send" id="js-contact-submit">
                         </div> -->
 
-
                         <script src='https://actionnetwork.org/widgets/v3/form/mtav-footer-form?format=js&source=widget'></script>
                         <div id='can-form-area-mtav-footer-form' style='width: 100%'></div>
 
-                    <?php if($note && !empty($note)) :?>
-                        <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
-                    <?php endif; ?>
+                        <?php if($note && !empty($note)) :?>
+                            <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
+                        <?php endif; ?>
                     </div>
+
+                    <!-- <div class="form-wrapper">
+                    <?php //if ($contact_form && !empty($contact_form)) {
+                         //echo do_shortcode($contact_form);
+                    // };
+                    ?>
+                    <?php //if($note && !empty($note)) :?>
+                        <p class="form-content"><?php //echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
+                    <?php //endif; ?>
+                    </div> -->
+
                 </div>
             </div>
         </div>
@@ -163,7 +173,7 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                             <a href="<?php echo esc_url($tiktok_url);?>" target="_blank">
                                 <img class="lazyload"
                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                    data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/ticktok-icon.svg" alt="youtube">
+                                    data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/ticktok-icon.svg" alt="tiktok">
                             </a>
                         </li>
                     <?php endif; ?>

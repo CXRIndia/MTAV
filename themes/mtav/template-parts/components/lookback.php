@@ -60,8 +60,8 @@ foreach ($all_categories as $key => $category) {
                     $campaignImgUrl   = MTAV_Get_image($campaignImgArray);
                 }
                 ?>
-                <div class="single-block"
-                    style="background-image: url('<?php echo  esc_url($campaignImgUrl); ?>">
+                <div class="single-block lazyload"
+                    data-bg="<?php echo  esc_url($campaignImgUrl); ?>">
                     <div class="content-block" data-aos="fade-up">
                         <div class="heading-compo">
                             <div class="line-block">
