@@ -26,13 +26,6 @@
     <?php endif; ?>
     <?php wp_head(); ?>
 
-
-    <style>
-
-
-
-    </style>
-
 </head>
 
 <body <?php body_class('transparent-nav'); ?>>
