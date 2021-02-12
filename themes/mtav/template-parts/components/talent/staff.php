@@ -11,16 +11,16 @@
  */
 $args = array(
     'post_type'  => 'team',
-    'meta_key'   => 'person_designation',
-    'orderby'    => 'title',
-    'order'      => 'ASC',
     'meta_query' => array(
         array(
             'key'     => 'person_designation',
             'value'   => 'staff',
         ),
     ),
-    'fields'     => 'ids',
+    'meta_key' => 'staff_order',
+    'orderby'  => 'meta_value',
+    'order'    => 'ASC',
+    'fields'   => 'ids',
     'posts_per_page' => -1,
 );
 $query = new WP_Query($args);
@@ -30,7 +30,6 @@ if (!empty($query->posts)) {
 } else {
     $staff_ids = [];
 }
-
 
 if(!empty($staff_ids)) :
     ?>
