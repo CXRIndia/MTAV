@@ -12,18 +12,19 @@
 
 $args = array(
     'post_type'  => 'team',
+    'order'     => 'ASC',
+    'meta_key' => 'staff_order',
+    'orderby'   => 'meta_value_num',
     'meta_query' => array(
         array(
             'key'     => 'person_designation',
             'value'   => 'player',
         ),
     ),
-    'meta_key' => 'staff_order',
-    'orderby'  => 'meta_value',
-    'order'    => 'ASC',
-    'fields'     => 'ids',
+    'fields'   => 'ids',
     'posts_per_page' => -1,
 );
+
 $query = new WP_Query($args);
 
 if (!empty($query->posts)) {
