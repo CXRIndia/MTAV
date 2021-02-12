@@ -150,6 +150,48 @@ function MTAV_Mime_types($file_types)
 add_filter('upload_mimes', 'MTAV_Mime_types');
 
 /**
+ * Enable upload for webp image files.
+ *
+ * @param $existing_mimes object.
+ *
+ * @return void.
+ * MTAV_Webp_Is_displayable
+ */
+function MTAV_Webp_Upload_mimes($existing_mimes)
+{
+    $existing_mimes['webp'] = 'image/webp';
+    return $existing_mimes;
+}
+add_filter('mime_types', 'MTAV_Webp_Upload_mimes');
+
+/**
+ * Enable preview / thumbnail for webp image files.
+ *
+ * @param $result object.
+ * @param $path   object.
+
+ * @return $result.
+ */
+function MTAV_Webp_Is_displayable($result, $path)
+{
+    if ($result === false) {
+        $displayable_image_types = array( IMAGETYPE_WEBP );
+        $info = @getimagesize($path);
+
+        if (empty($info)) {
+            $result = false;
+        } elseif (!in_array($info[2], $displayable_image_types)) {
+            $result = false;
+        } else {
+            $result = true;
+        }
+    }
+
+    return $result;
+}
+add_filter('file_is_displayable_image', 'MTAV_Webp_Is_displayable', 10, 2);
+
+/**
  * MTAV remove p tag from content
  *
  * @param string $content post content.

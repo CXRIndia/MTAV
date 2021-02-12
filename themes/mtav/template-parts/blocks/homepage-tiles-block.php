@@ -30,8 +30,9 @@
 </div>
 
 <div class="container-fluid imgvideo-title-sec">
-    <div class="big-block-wrapper"
-        style="background-image: url('<?php echo  esc_url($big_tile_img_url); ?>')">
+    <div class="big-block-wrapper lazyload"
+        data-bg="<?php echo  esc_url($big_tile_img_url); ?>"
+        >
         <div class="gradient-bg"></div>
         <div class="content-block" data-aos="fade-right">
             <div class="heading-compo">
@@ -95,8 +96,8 @@
             $small_tile_img_url   = MTAV_Get_image($small_tile_img_array);
         }
         ?>
-        <div class="single-block"
-            style="background-image: url('<?php echo  esc_url($small_tile_img_url); ?>')">
+        <div class="single-block lazyload"
+            data-bg="<?php echo  esc_url($small_tile_img_url); ?>">
             <div class="gradient-bg"></div>
             <div class="content-block" data-aos="fade-left">
                 <div class="heading-compo">

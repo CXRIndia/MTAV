@@ -60,7 +60,8 @@
                 $media_img_alt   = MTAV_Get_Image_alt($media_img_id, "Column Image");
                 $media_img_url   = MTAV_Get_image($media_img_array);
                 ?>
-                <div class="swiper-slide" style="background-image: url(<?php echo esc_url($media_img_url); ?>">
+                <div class="swiper-slide lazyload"
+                    data-bg="<?php echo esc_url($media_img_url); ?>">
                     <div class="slider-content">
                     <?php if($media_title && !empty($media_title)) :?>
                         <div class="title">
@@ -87,8 +88,10 @@
     <div class="container<?php echo esc_attr($arrowClass)?>">
         <div class="media-slider--buttons">
             <!-- Add Arrows -->
-            <div class="swiper-button-next media-next" style="background-image: url(<?php echo esc_url(THEMEURI); ?>/assets/images/icons/media-slider-next.svg);"></div>
-            <div class="swiper-button-prev media-prev" style="background-image: url(<?php echo esc_url(THEMEURI); ?>/assets/images/icons/media-slider-prev.svg);"></div>
+            <div class="swiper-button-next media-next lazyload"
+                data-bg="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/media-slider-next.svg"></div>
+            <div class="swiper-button-prev media-prev lazyload"
+                data-bg="<?php echo esc_url(THEMEURI); ?>/assets/images/icons/media-slider-prev.svg"></div>
         </div>
     </div>
 </div>
