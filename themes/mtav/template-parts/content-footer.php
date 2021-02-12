@@ -59,7 +59,7 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                         <?php endif; ?>
                     </div>
 
-                    <!-- <div class="form-wrapper"> -->
+                    <div class="form-wrapper">
                         <!-- <div class="main-form">
                             <div class="form-group">
                                 <label class="lbl-title">First Name</label>
@@ -87,20 +87,23 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                         </div> -->
 
                         <!-- <link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' /> -->
-                        <!-- <script src='https://actionnetwork.org/widgets/v3/form/mtav-footer-form?format=js&source=widget'></script>
-                        <div id='can-form-area-mtav-footer-form' style='width: 100%'></div> -->
+                        <script src='https://actionnetwork.org/widgets/v3/form/mtav-footer-form?format=js&source=widget'></script>
+                        <div id='can-form-area-mtav-footer-form' style='width: 100%'></div>
 
-                    <!-- </div> -->
-
-                    <div class="form-wrapper">
-                    <?php if ($contact_form && !empty($contact_form)) {
-                         echo do_shortcode($contact_form);
-                    };
-                    ?>
-                    <?php if($note && !empty($note)) :?>
-                        <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
-                    <?php endif; ?>
+                        <?php if($note && !empty($note)) :?>
+                            <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
+                        <?php endif; ?>
                     </div>
+
+                    <!-- <div class="form-wrapper">
+                    <?php //if ($contact_form && !empty($contact_form)) {
+                         //echo do_shortcode($contact_form);
+                    // };
+                    ?>
+                    <?php //if($note && !empty($note)) :?>
+                        <p class="form-content"><?php //echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
+                    <?php //endif; ?>
+                    </div> -->
 
                 </div>
             </div>
