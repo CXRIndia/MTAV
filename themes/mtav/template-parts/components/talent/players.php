@@ -12,16 +12,16 @@
 
 $args = array(
     'post_type'  => 'team',
-    'order'     => 'ASC',
-    'meta_key' => 'staff_order',
-    'orderby'   => 'meta_value_num',
+    'meta_key'   => 'person_designation',
+    'orderby'    => 'title',
+    'order'      => 'ASC',
     'meta_query' => array(
         array(
             'key'     => 'person_designation',
             'value'   => 'player',
         ),
     ),
-    'fields'   => 'ids',
+    'fields'     => 'ids',
     'posts_per_page' => -1,
 );
 
