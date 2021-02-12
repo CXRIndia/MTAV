@@ -9,13 +9,7 @@
  * @license  https://cemtrexlabs.com 1.0
  * @link     MTAV
  */
-$user_agent = $_SERVER['HTTP_USER_AGENT'];
 
-if (stripos($user_agent, 'Chrome') !== false) {
-    echo "Google Chrome";
-} elseif (stripos($user_agent, 'Safari') !== false) {
-    echo "Safari";
-}
 ?>
 
 <div class="js-hand-trigger"></div>

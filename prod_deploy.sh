@@ -1,14 +1,16 @@
+rm -rf themes/mtav/dist/*
+
 yarn build
 
 zip -r mtav.zip themes/mtav/
 
 echo "Uploading theme zip file"
 
-scp -i ~/.ssh/mtav_production.pem mtav.zip ubuntu@3.225.88.143:/home/ubuntu/wordpress/mtav_stage/wp-content/themes
+scp -i ~/.ssh/mtav_production.pem mtav.zip ubuntu@3.225.88.143:/home/ubuntu/mtav_prod/wp-content/themes
 
 ssh -i ~/.ssh/mtav_production.pem ubuntu@3.225.88.143 << EOF
   pwd
-  cd wordpress/mtav_stage/wp-content/themes
+  cd mtav_prod/wp-content/themes
   pwd
   ls -alh
   echo "Extracting theme zip file"
@@ -28,4 +30,4 @@ pwd
 
 cd ../../..
 
-# scp -i ~/.ssh/mtav_production.pem /home/swapnil/Projects/mtav/plugins/advanced-custom-fields-pro.zip ubuntu@3.225.88.143:/home/ubuntu/wordpress/mtav_stage/wp-content/plugins
+#scp -i ~/.ssh/mtav_production.pem /home/swapnil/Projects/mtav/plugins/advanced-custom-fields-pro.zip ubuntu@3.225.88.143:/home/ubuntu/mtav_prod/wp-content/plugins
