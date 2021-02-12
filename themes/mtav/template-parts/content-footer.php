@@ -86,7 +86,7 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                             <input type="submit" value="Send" id="js-contact-submit">
                         </div> -->
 
-                        <link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' />
+                        <!-- <link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' /> -->
                         <script src='https://actionnetwork.org/widgets/v3/form/mtav-footer-form?format=js&source=widget'></script>
                         <div id='can-form-area-mtav-footer-form' style='width: 100%'></div>
 

@@ -32,15 +32,15 @@
     #can_embed_form_inner h4{
         display: none;
     }
-    .can_embed #can_embed_form,
+    /* .can_embed #can_embed_form,
     .can_embed #donate_auto_modal {
         background-color: transparent !important;
         color: black !important;
-    }
+    } */
     /* Change link color */
     .can_embed #can_embed_form a,
     .can_embed #donate_auto_modal a {
-        color: purple !important;
+        color: white;
     }
 
     /* Heading colors */
@@ -72,22 +72,22 @@
     }
 
     /* Button Background Color */
-    .can_embed .can_button,
+    /* .can_embed .can_button,
     .can_embed #can_embed_form input[type="submit"],
     .can_embed #can_embed_form .button,
     .can_embed #donate_auto_modal input[type="submit"],
     .can_embed #donate_auto_modal .button {
         background-color: blue !important;
-    }
+    } */
 
     /* Button Background Color on Hover */
-    .can_embed .can_button:hover,
+    /* .can_embed .can_button:hover,
     .can_embed #can_embed_form input[type="submit"]:hover,
     .can_embed #can_embed_form .button:hover,
     .can_embed #donate_auto_modal input[type="submit"]:hover,
     .can_embed #donate_auto_modal .button:hover {
-        background-color: green !important;
-    }
+        /* background-color: green !important; */
+    } */
 
     /* Thank You Page Header Background Color */
     .can_embed #can_embed_form #can_thank_you,

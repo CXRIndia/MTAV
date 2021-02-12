@@ -65,7 +65,8 @@ footer{
 
       .form-wrapper{
         width: 50%;
-        padding-left: 58px;
+        // padding-left: 58px;
+        padding-left: 100px;
         @include mq('t-992', 'max') {
           padding-left: 0;
         }
@@ -280,4 +281,117 @@ footer{
       }
     }
   }
+}
+
+#can_embed_form_inner {
+  li {
+    &::marker {
+      background: transparent;
+      color: transparent;
+    }
+  }
+}
+.core_field {
+  label {
+    display: none;
+  }
+  input{
+    color: $brand-white;
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    min-height: 46px;
+    background-color: transparent;
+    @include mq('t-992', 'max') {
+      min-height: 32px;
+    }
+    @include mq('t-768', 'max') {
+      min-height: 46px;
+    }
+  }
+}
+
+.can_embed .can_button,
+.can_embed #can_embed_form input[type="submit"],
+.can_embed #can_embed_form .button,
+.can_embed #donate_auto_modal input[type="submit"],
+.can_embed #donate_auto_modal .button {
+  font-size: 20px;
+  @include rem(padding, 9, 32, 11);
+  @include Font-Pitch;
+  line-height: 1;
+  border: 3px solid;
+  display: inline-block;
+  transition: all .3s;
+  cursor: pointer;
+  background: $brand-primary;
+  border-color: $brand-primary;
+  color: $brand-black;
+  min-width: 176px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  appearance: none;
+  -webkit-appearance: none;
+  @include mq(t-992, max) {
+    @include rem(font-size, 11);
+    min-width: 112px;
+    letter-spacing: .55px;
+    @include rem(padding, 8, 10, 7);
+  }
+  @include mq(t-768, max) {
+    font-size: 18px;
+    height: 56px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    background: $brand-black;
+    border-color: $brand-primary;
+    color: $brand-primary;
+  }
+}
+
+#can-form-area-mtav-footer-form {
+
+}
+
+#form_col2 {
+  color: $brand-white;
+  margin: 20px 0;
+
+  .js-d_sharing {
+    margin-top: 10px;
+  }
+}
+
+#action_info {
+  margin-bottom: 20px;
+}
+
+#can_embed_form select {
+  height: 33px!important;
+    width: 100%!important;
+    opacity: 0!important;
+    position: absolute!important;
+    z-index: 999999!important;
+    left: 0!important;
+    top: 0!important;
+    line-height: 44px!important;
+    height: 44px!important;
+    border: 1px solid #b0b0b0!important;
+    // background: url(/images/select2x2.png) no-repeat right -42px top 10px!important;
+    background-size: 60px 40px!important;
+    background-color: #fff!important;
+    box-sizing: border-box!important;
+    border-radius: 0!important;
+    padding: 0 30px 0 10px!important;
+    zoom: 1!important;
+    white-space: nowrap!important;
+    display: block!important;
+    margin-bottom: 15px!important;
+    width: 100%!important;
+    max-width: 100%!important;
 }
