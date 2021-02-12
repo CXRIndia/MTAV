@@ -46,7 +46,7 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
     });
 </script>
 
-<div id = "bannerImage" class="banner">
+<div id="bannerImage" class="banner">
     <div class="inner-wrapper">
         <div class="container">
             <div class="heading-compo" data-aos="fade-up">

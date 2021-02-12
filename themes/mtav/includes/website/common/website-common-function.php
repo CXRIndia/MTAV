@@ -310,3 +310,14 @@ function MTAV_Get_Youtube_Video_url( $url )
 
     return $youtube_url;
 }
+
+/**
+ * Removed the unnecessary js files.
+ *
+ * @return void.
+ */
+function MTAV_Deregister_scripts()
+{
+    wp_deregister_script('wp-embed');
+}
+add_action('wp_footer', 'MTAV_Deregister_scripts');

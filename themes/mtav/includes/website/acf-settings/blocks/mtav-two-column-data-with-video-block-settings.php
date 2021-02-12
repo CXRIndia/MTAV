@@ -98,7 +98,8 @@ acf_add_local_field_group(
             'label' => 'Check for light Background',
             'name' => 'check_for_light_background',
             'type' => 'true_false',
-            'instructions' => '',
+            'instructions' => 'Check for light background
+Uncheck for yellow background',
             'required' => 0,
             'conditional_logic' => 0,
             'wrapper' => array(
@@ -107,7 +108,7 @@ acf_add_local_field_group(
                 'id' => '',
             ),
             'message' => '',
-            'default_value' => 0,
+            'default_value' => 1,
             'ui' => 0,
             'ui_on_text' => '',
             'ui_off_text' => '',

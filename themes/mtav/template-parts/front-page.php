@@ -133,6 +133,7 @@
                         data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-6.png" alt="hand">
                 </div>
             </div>
+
         </div>
     </div>
 </div>
