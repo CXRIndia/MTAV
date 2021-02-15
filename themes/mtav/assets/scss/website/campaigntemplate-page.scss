@@ -30,7 +30,8 @@
       @include mq(t-768, max) {
         width: 100%;
         padding-left: 0;
-        padding-top: 40px;
+        padding: 30px 20px;
+        margin-top: 20px;
       }
     }
     .main-title{
