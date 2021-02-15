@@ -37,34 +37,53 @@
 
             <div class="dsk-block">
                 <div class="hand1-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-1.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/desktop-webp/hand-1.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-1.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand2-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-2.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/desktop-webp/hand-2.webp" type="image/webp">
+                        <img
+                            class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-2.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand3-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-3.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/desktop-webp/hand-3.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-3.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand4-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-4.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/desktop-webp/hand-4.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-4.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand5-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-5.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/desktop-webp/hand-5.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-5.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand6-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-6.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/desktop-webp/hand-6.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/hand-6.png" alt="Alt Text!">
+                    </picture>
                 </div>
             </div>
 
@@ -103,34 +122,52 @@
 
             <div class="mo-block">
                 <div class="hand1-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-1.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile-webp/mobile-hand-1.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-1.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand2-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-2.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile-webp/mobile-hand-2.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-2.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand3-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-3.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile-webp/mobile-hand-3.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-3.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand4-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-4.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile-webp/mobile-hand-4.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-4.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand5-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-5.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile-webp/mobile-hand-5.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-5.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="hand6-wrapper">
-                    <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-6.png" alt="hand">
+                    <picture>
+                        <source data-srcset="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile-webp/mobile-hand-6.webp" type="image/webp">
+                        <img class="lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="<?php echo esc_url(THEMEURI); ?>/assets/images/hands/mobile/mobile-hand-6.png" alt="Alt Text!">
+                    </picture>
                 </div>
             </div>
 
