@@ -3,6 +3,9 @@
 }
 html{
     overflow-x: hidden;
+    &.modal-open{
+      overflow: hidden;
+    }
 }
 body {
   -webkit-overflow-scrolling: touch;

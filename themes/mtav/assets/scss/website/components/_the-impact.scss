@@ -303,18 +303,21 @@
         margin-bottom: 0;
       }
     }
-    @include mq('t-768', 'min') {
-      max-width: 154px;
-    }
+    // @include mq('t-768', 'min') {
+    //   max-width: 154px;
+    // }
 
-    @include mq('t-992', 'min') {
-      max-width: 270px;
-      margin-right: 20px;
+    @include mq('t-768', 'min') {
+      max-width: 33%;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
-    @include mq('lap-1302', 'min') {
-      max-width: 270px;
-      margin-right: 0;
-    }
+    // @include mq('lap-1302', 'min') {
+    //   max-width: 270px;
+    //   margin-right: 0;
+    // }
     &--subtitle {
       margin-bottom: 10px;
       @include mq(t-768, max) {

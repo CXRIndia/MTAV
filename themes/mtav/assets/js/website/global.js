@@ -13,11 +13,13 @@ window.lazySizesConfig.loadMode = 1;
   $('.js-menuopen').on('click', function () {
     $('.mobile-menu').fadeIn();
     $('body').addClass('modal-open');
+    $('html').addClass('modal-open');
   });
 
   $('.js-menuclose').on('click', function () {
     $('.mobile-menu').fadeOut();
     $('body').removeClass('modal-open');
+    $('html').removeClass('modal-open');
   });
   //// END : Mobile Menu Modal
 
@@ -25,11 +27,13 @@ window.lazySizesConfig.loadMode = 1;
   $('.js-fullvideo').on('click', function () {
     $('.fullvideo-popup').fadeIn();
     $('body').addClass('modal-open');
+    $('html').addClass('modal-open');
   });
 
   $('.js-video-close').on('click', function () {
     $('.fullvideo-popup').fadeOut();
     $('body').removeClass('modal-open');
+    $('html').removeClass('modal-open');
     $("iframe").attr("src", $("iframe").attr("src"));
   });
   //// END : Full Video Popup
