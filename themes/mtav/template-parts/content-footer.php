@@ -23,7 +23,8 @@ $youtube_url    = get_field('youtube_link', 'options');
 $tiktok_url    = get_field('tiktok_link', 'options');
 ?>
 
-<footer>
+<footer class="lazyload"
+        data-bg="<?php echo  esc_url(THEMEURI); ?>/assets/images/png/footer-bg.png">
     <div class="top-footer" id="footer-form">
         <div class="container">
             <div class="stay-connect-wrapper">
