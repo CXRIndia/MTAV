@@ -117,7 +117,7 @@
         .staff-member-inner {
           min-height: 234px;
           background-color: $brand-primary;
-          width: 100%;
+          min-width: 234px;
         }
       }
 
