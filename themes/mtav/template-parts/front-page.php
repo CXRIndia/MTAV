@@ -11,7 +11,6 @@
  */
 
 ?>
-
 <div class="js-hand-trigger"></div>
 <div class="dummy"></div>
 <div class="hand-banner js-handanimation">

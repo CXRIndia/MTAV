@@ -17,6 +17,7 @@ $logo_image_array = wp_get_attachment_image_src($logo_id, 'full');
 $logo_image_alt   = MTAV_Get_Image_alt($logo_id, "logo");
 $logo_image_url   = MTAV_Get_image($logo_image_array);
 ?>
+
 <header>
     <div class="container">
         <div class="header-menu">

@@ -10,8 +10,13 @@ Swiper.use([Navigation]);
 require('../../scss/website/components/mtav-swiper.scss');
 
 require('../../scss/website/home-page.scss');
+
 (function ($) {
   console.log('Home js');
+
+  $(window).load(function () {
+    $('#overlay').fadeOut();
+  });
 
   var p = $(".imgvideo-title-sec");
   var offset = p.offset();
