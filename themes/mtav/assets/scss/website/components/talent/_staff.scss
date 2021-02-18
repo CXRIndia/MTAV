@@ -99,7 +99,6 @@
         @include mq('t-768', 'max') {
           display: block;
         }
-        background-color: $brand-primary;
         border-radius: 50%;
         img{
           max-width: 234px;
@@ -117,6 +116,7 @@
 
         .staff-member-inner {
           min-height: 234px;
+          background-color: $brand-primary;
         }
       }
 
