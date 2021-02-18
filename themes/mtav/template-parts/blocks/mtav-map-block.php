@@ -249,10 +249,10 @@
                                 </g>
                                 <g id="Group-3" class="city--hover">
                                     <text id="JEFFERSON-COUNTY,-AL" font-size="11" font-weight="normal" fill="#000000">
-                                        <tspan x="4.77978516" y="10">JEFFERSON COUNTY, AL</tspan>
+                                        <tspan x="0" y="10">JEFFERSON COUNTY, AL</tspan>
                                     </text>
                                     <text id="1,242" font-size="22" font-weight="normal" letter-spacing="1.2" fill="#000000">
-                                        <tspan x="75.4731445" y="36">1,242</tspan>
+                                        <tspan x="70" y="36">1,242</tspan>
                                     </text>
                                     <line x1="165.5" y1="21.1400316" x2="145.5" y2="21.1400316" id="Path-5" stroke="#000000"></line>
                                 </g>
@@ -270,10 +270,10 @@
                                 </g>
                                 <g id="Group-3-Copy" class="city--hover">
                                     <text id="MILWAUKEE-COUNTY,-WI" font-size="11" font-weight="normal" fill="#000000">
-                                        <tspan x="6.78515625" y="10">MILWAUKEE COUNTY, WI</tspan>
+                                        <tspan x="-4    " y="10">MILWAUKEE COUNTY, WI</tspan>
                                     </text>
                                     <text id="813" font-size="22" font-weight="normal" letter-spacing="1.2" fill="#000000">
-                                        <tspan x="105.693945" y="36">813</tspan>
+                                        <tspan x="98" y="36">813</tspan>
                                     </text>
                                     <line x1="167.5" y1="21.1400316" x2="147.5" y2="21.1400316" id="Path-5" stroke="#000000"></line>
                                 </g>

@@ -101,6 +101,10 @@
         position: absolute;
         display: flex;
         align-items: flex-start;
+
+        picture {
+          display: flex;
+        }
       }
       .hand1-wrapper {
         z-index: 6;
