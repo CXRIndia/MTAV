@@ -43,12 +43,14 @@
       // padding: 0 30px;
       display: flex;
       align-items: flex-end;
+      min-height: 400px;
       @include mq('t-768', 'max') {
         padding: 0;
         margin: 0 -24px;
       }
       @include mq(t-768, max) {
-        display: block;
+        display: flex;
+        min-height: 280px;
       }
       img{
         max-width: 100%;
