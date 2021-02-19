@@ -6,8 +6,8 @@
     bottom: 0;
     width: 100%;
     z-index: 0;
-    background-color: #FFFCF4;
-    .gradient-home{
+    background-color: #fffcf4;
+    .gradient-home {
       position: absolute;
       top: 0;
       left: 0px;
@@ -17,36 +17,36 @@
       background-image: url("../../images/png/bg-transpernt.png");
       background-size: contain;
     }
-    .bg-color{
+    .bg-color {
       background-color: $brand-primary;
       width: calc(100% - 100px);
       z-index: 0;
       height: 100%;
       margin: 0 auto;
-      @include mq('t-992', 'max') {
+      @include mq("t-992", "max") {
         width: calc(100% - 40px);
       }
-      @media(min-width: 768px){
+      @media (min-width: 768px) {
         width: calc(100% - 24px);
       }
     }
   }
   //
 
-  .logo-wrapper{
+  .logo-wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+    img {
       max-width: 100%;
       width: auto !important;
-      @include mq('t-992', 'max') {
+      @include mq("t-992", "max") {
         max-width: 318px;
       }
-      @include mq('t-768', 'max') {
+      @include mq("t-768", "max") {
         max-width: 268px;
       }
     }
@@ -58,14 +58,14 @@
   }
   //
 
-  .scroll-arrow{
+  .scroll-arrow {
     position: absolute;
     right: 80px;
     bottom: 40px;
-    @include mq('t-992', 'max') {
+    @include mq("t-992", "max") {
       display: none;
     }
-    img{
+    img {
       max-width: 100%;
       width: auto !important;
     }
@@ -77,7 +77,7 @@
     z-index: 10;
     overflow: hidden;
 
-    >div {
+    > div {
       position: absolute;
 
       img {
@@ -85,25 +85,25 @@
       }
     }
 
-    .dsk-block{
+    .dsk-block {
       width: 100%;
       height: 100%;
-      @media(max-width: 1025px){
+      @media (max-width: 1025px) {
         display: none;
       }
 
-      @media(width: 1024px) and (height: 768px) and (orientation: landscape) {
+      @media (width: 1024px) and (height: 768px) and (orientation: landscape) {
         display: block;
       }
 
-
-      > div{
+      > div {
         position: absolute;
         display: flex;
         align-items: flex-start;
 
         picture {
           display: flex;
+          align-items: center;
         }
       }
       .hand1-wrapper {
@@ -141,20 +141,20 @@
         width: 36%;
       }
     }
-    .tablet-block{
+    .tablet-block {
       width: 100%;
       height: 100%;
-      @media(min-width: 1025px){
+      @media (min-width: 1025px) {
         display: none;
       }
-      @media(width: 1024px) and (height: 768px) and (orientation: landscape) {
+      @media (width: 1024px) and (height: 768px) and (orientation: landscape) {
         display: none;
       }
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         display: none;
       }
 
-      > div{
+      > div {
         position: absolute;
       }
       .hand1-wrapper {
@@ -218,13 +218,13 @@
         }
       }
     }
-    .mo-block{
+    .mo-block {
       width: 100%;
       height: 100%;
-      @media(min-width: 768px){
+      @media (min-width: 768px) {
         display: none;
       }
-      > div{
+      > div {
         position: absolute;
       }
       .hand1-wrapper {
