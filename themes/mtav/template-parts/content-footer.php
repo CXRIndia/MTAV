@@ -63,7 +63,7 @@ $tiktok_url     = get_field('tiktok_link', 'options');
                     <div class="form-wrapper">
 
                     <?php if($contact_form && !empty($contact_form)) : ?>
-                    <div class="form-wrapper" data-aos="fade-left">
+                    <div data-aos="fade-left">
                         <?php echo do_shortcode($contact_form); ?>
                     </div>
                     <?php endif;?>
