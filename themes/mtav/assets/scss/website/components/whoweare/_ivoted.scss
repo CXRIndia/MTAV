@@ -1,4 +1,4 @@
-.ivoted-section{
+.ivoted-section {
   // background-image: url("../../images/png/yellow-bg.png");
   background-image: url("../../images/png/bg-transpernt.png");
   background-size: contain;
@@ -10,7 +10,7 @@
   @include mq(t-768, max) {
     padding-top: 0;
   }
-  &:after{
+  &:after {
     content: "";
     background-color: $brand-primary;
     position: absolute;
@@ -19,17 +19,18 @@
     top: 0;
     z-index: -1;
   }
-  .ivoted-inner-wrapper{
+  .ivoted-inner-wrapper {
     display: flex;
     @include mq(t-768, max) {
       flex-direction: column;
     }
-    .image-wrapper{
+    .image-wrapper {
       width: 39%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      img{
+      img {
+        max-width: 50%;
         @include mq(t-992, max) {
           max-width: 202px;
         }
@@ -44,8 +45,7 @@
         padding-left: 32px;
       }
     }
-    .content-section{
-
+    .content-section {
       margin-bottom: 118px;
       width: 61%;
       @include mq(t-992, max) {
@@ -58,7 +58,7 @@
         margin: 0;
         width: 100%;
       }
-      h1{
+      h1 {
         margin-bottom: 14px;
         @include mq(t-992, max) {
           font-size: 32px;
@@ -71,7 +71,7 @@
           margin-bottom: 16px;
         }
       }
-      p{
+      p {
         font-size: 22px;
         line-height: 1.4;
         letter-spacing: 0.5px;
