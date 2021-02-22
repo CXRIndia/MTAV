@@ -20,7 +20,7 @@ $facebook_url   = get_field('facebook_link', 'options');
 $twitter_url    = get_field('twitter_link', 'options');
 $instagram_url  = get_field('instagram_link', 'options');
 $youtube_url    = get_field('youtube_link', 'options');
-$tiktok_url    = get_field('tiktok_link', 'options');
+$tiktok_url     = get_field('tiktok_link', 'options');
 ?>
 
 <footer class="lazyload"
@@ -61,49 +61,17 @@ $tiktok_url    = get_field('tiktok_link', 'options');
                     </div>
 
                     <div class="form-wrapper">
-                        <!-- <div class="main-form">
-                            <div class="form-group">
-                                <label class="lbl-title">First Name</label>
-                                <input type="text" name="contact-name" id="js-contact-name" value="" >
-                                <span class="error" id="js-invalid-contact-name" ></span>
-                            </div>
-                            <div class="form-group">
-                                <label class="lbl-title">Email</label>
-                                <input type="email" name="contact-email" id="js-contact-email" value="" >
-                                <span class="error" id="js-invalid-contact-email"></span>
-                            </div>
-                            <div class="form-group">
-                                <label class="lbl-title">Mobile Number</label>
-                                <input type="text" name="contact-number" maxlength="10" id="js-contact-number" value="" >
-                                <span class="error" id="js-invalid-contact-number"></span>
-                            </div>
-                            <div class="form-group">
-                                <label class="lbl-title">Zip Code</label>
-                                <input type="text" name="contact-zipcode" maxlength="5" id="js-contact-zipcode" value="" >
-                                <span class="error" id="js-invalid-contact-zipcode"></span>
-                            </div>
-                        </div>
-                        <div class="btn-wrapper">
-                            <input type="submit" value="Send" id="js-contact-submit">
-                        </div> -->
 
-                        <script src='https://actionnetwork.org/widgets/v3/form/mtav-footer-form?format=js&source=widget'></script>
-                        <div id='can-form-area-mtav-footer-form' style='width: 100%'></div>
+                    <?php if($form_shortcode && !empty($form_shortcode)) : ?>
+                    <div class="form-wrapper" data-aos="fade-left">
+                        <?php echo do_shortcode($form_shortcode); ?>
+                    </div>
+                    <?php endif;?>
 
                         <?php if($note && !empty($note)) :?>
                             <p class="form-content"><?php echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
                         <?php endif; ?>
                     </div>
-
-                    <!-- <div class="form-wrapper">
-                    <?php //if ($contact_form && !empty($contact_form)) {
-                         //echo do_shortcode($contact_form);
-                    // };
-                    ?>
-                    <?php //if($note && !empty($note)) :?>
-                        <p class="form-content"><?php //echo wp_kses_post(MTAV_Remove_ptag($note)); ?></p>
-                    <?php //endif; ?>
-                    </div> -->
 
                 </div>
             </div>
