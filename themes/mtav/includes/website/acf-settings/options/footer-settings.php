@@ -55,7 +55,7 @@ acf_add_local_field_group(
         ),
         array(
             'key' => 'field_601151d3f99cd',
-            'label' => 'Contact Form',
+            'label' => 'Contact Form Shortcode',
             'name' => 'contact_form',
             'type' => 'text',
             'instructions' => '',
