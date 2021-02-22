@@ -1,147 +1,147 @@
-footer{
+footer {
   // background-image: url("../../images/png/footer-bg.png");
   color: $brand-white;
   background-size: cover;
-  .top-footer{
+  .top-footer {
     border-bottom: 1px solid $brand-white;
   }
-  .stay-connect-wrapper{
+  .stay-connect-wrapper {
     padding: 100px 0;
-    @include mq('t-992', 'max') {
+    @include mq("t-992", "max") {
       padding: 40px 0 72px;
     }
-    @include mq('t-768', 'max') {
+    @include mq("t-768", "max") {
       padding: 56px 0;
     }
 
-    .heading-compo{
-      @include mq('t-992', 'max') {
+    .heading-compo {
+      @include mq("t-992", "max") {
         margin-bottom: 40px;
       }
-      @include mq('t-768', 'max') {
+      @include mq("t-768", "max") {
         margin-bottom: 20px;
       }
     }
 
-    .stay-connect-block{
+    .stay-connect-block {
       display: flex;
-      @include mq('t-768', 'max') {
+      @include mq("t-768", "max") {
         flex-direction: column;
       }
-      .content-block{
+      .content-block {
         width: 50%;
-        @include mq('t-768', 'min') {
+        @include mq("t-768", "min") {
           padding-right: 50px;
         }
-        @include mq('t-768', 'max') {
+        @include mq("t-768", "max") {
           width: 100%;
           margin-bottom: 24px;
         }
-        .title{
+        .title {
           margin-bottom: 16px;
           color: $brand-white;
-          @include mq('t-992', 'max') {
+          @include mq("t-992", "max") {
             font-size: 26px;
             line-height: 32px;
             margin-bottom: 9px;
           }
-          @include mq('t-768', 'max') {
+          @include mq("t-768", "max") {
             margin-bottom: 7px;
           }
         }
-        .content{
+        .content {
           @include rem(font-size, 22);
-          letter-spacing: .5px;
-          @include mq('t-992', 'max') {
+          letter-spacing: 0.5px;
+          @include mq("t-992", "max") {
             font-size: 12px;
-            letter-spacing: .2px;
+            letter-spacing: 0.2px;
           }
-          @include mq('t-768', 'max') {
+          @include mq("t-768", "max") {
             font-size: 14px;
             line-height: 18px;
-            letter-spacing: .32px;
+            letter-spacing: 0.32px;
           }
         }
       }
 
-      .form-wrapper{
+      .form-wrapper {
         width: 50%;
         // padding-left: 58px;
         padding-left: 100px;
-        @include mq('t-992', 'max') {
+        @include mq("t-992", "max") {
           padding-left: 0;
         }
-        @include mq('t-768', 'max') {
+        @include mq("t-768", "max") {
           width: 100%;
         }
 
-        .main-form{
+        .main-form {
           display: flex;
           flex-wrap: wrap;
           margin: 0 -11px;
-          @include mq('t-768', 'max') {
+          @include mq("t-768", "max") {
             margin: 0;
           }
-          .form-group{
+          .form-group {
             padding: 0 11px;
             width: 50%;
             margin-bottom: 16px;
-            @include mq('t-992', 'max') {
+            @include mq("t-992", "max") {
               margin-bottom: 8px;
             }
-            @include mq('t-768', 'max') {
+            @include mq("t-768", "max") {
               margin-bottom: 16px;
               width: 100%;
               padding: 0;
             }
-            .lbl-title{
+            .lbl-title {
               font-size: 14px;
               @include Font-Pitch;
               display: flex;
               margin-bottom: 10px;
-              @include mq('t-992', 'max') {
+              @include mq("t-992", "max") {
                 font-size: 12px;
                 margin-bottom: 4px;
               }
-              @include mq('t-768', 'max') {
+              @include mq("t-768", "max") {
                 font-size: 14px;
                 margin-bottom: 10px;
               }
             }
-              input{
-                color: $brand-white;
-                width: 100%;
-                padding: 10px 15px;
-                border: 1px solid #fff;
+            input {
+              color: $brand-white;
+              width: 100%;
+              padding: 10px 15px;
+              border: 1px solid #fff;
+              min-height: 46px;
+              background-color: transparent;
+              @include mq("t-992", "max") {
+                min-height: 32px;
+              }
+              @include mq("t-768", "max") {
                 min-height: 46px;
-                background-color: transparent;
-                @include mq('t-992', 'max') {
-                  min-height: 32px;
-                }
-                @include mq('t-768', 'max') {
-                  min-height: 46px;
-                }
               }
-              .error{
-                color: $brand-error;
-                font-size: 14px;
-              }
+            }
+            .error {
+              color: $brand-error;
+              font-size: 14px;
+            }
           }
         }
 
-        .btn-wrapper{
+        .btn-wrapper {
           margin: 6px 0 12px;
-          @include mq('t-992', 'max') {
+          @include mq("t-992", "max") {
             margin: 8px 0 16px;
           }
-          input{
+          input {
             font-size: 20px;
             @include rem(padding, 9, 32, 11);
             @include Font-Pitch;
             line-height: 1;
             border: 3px solid;
             display: inline-block;
-            transition: all .3s;
+            transition: all 0.3s;
             cursor: pointer;
             background: $brand-primary;
             border-color: $brand-primary;
@@ -155,7 +155,7 @@ footer{
             @include mq(t-992, max) {
               @include rem(font-size, 11);
               min-width: 112px;
-              letter-spacing: .55px;
+              letter-spacing: 0.55px;
               @include rem(padding, 8, 10, 7);
             }
             @include mq(t-768, max) {
@@ -174,7 +174,7 @@ footer{
           }
         }
 
-        .form-content{
+        .form-content {
           font-size: 12px;
           @include Font-Pitch;
           padding-right: 100px;
@@ -191,39 +191,39 @@ footer{
   }
 
   //
-  .bottom-footer{
+  .bottom-footer {
     padding: 32px 0;
-    @include mq('t-992', 'max') {
+    @include mq("t-992", "max") {
       padding: 16px 0 18px;
     }
-    @include mq('t-768', 'max') {
+    @include mq("t-768", "max") {
       padding: 32px 0;
     }
   }
-  .page-footer{
+  .page-footer {
     display: flex;
     justify-content: space-between;
-    @include mq('t-768', 'max') {
-      flex-direction: column
+    @include mq("t-768", "max") {
+      flex-direction: column;
     }
-    .copy-right{
+    .copy-right {
       @include rem(font-size, 16);
       display: flex;
       align-items: center;
-      @include mq('t-768', 'max') {
-        flex-direction: column
+      @include mq("t-768", "max") {
+        flex-direction: column;
       }
-      @include mq('t-768', 'max') {
+      @include mq("t-768", "max") {
         align-items: flex-start;
       }
-      p{
+      p {
         padding-right: 100px;
         @include Font-GangsterBold;
-        @include mq('t-992', 'max') {
+        @include mq("t-992", "max") {
           font-size: 10px;
           padding-right: 40px;
         }
-        @include mq('t-768', 'max') {
+        @include mq("t-768", "max") {
           font-size: 14px;
           line-height: 16px;
           padding-right: 0;
@@ -231,30 +231,30 @@ footer{
         }
       }
 
-      #menu-footer-menu{
+      #menu-footer-menu {
         display: flex;
-        @include mq('t-768', 'max') {
+        @include mq("t-768", "max") {
           flex-direction: column;
           margin-bottom: 32px;
         }
-        li{
+        li {
           display: flex;
-          &:not(:last-child){
+          &:not(:last-child) {
             margin-right: 40px;
-            a{
-              @include mq('t-768', 'max') {
+            a {
+              @include mq("t-768", "max") {
                 margin-bottom: 8px;
               }
             }
           }
-          a{
+          a {
             color: $brand-white;
             @include rem(font-size, 16);
             display: inline-block;
-            @include mq('t-992', 'max') {
+            @include mq("t-992", "max") {
               font-size: 10px;
             }
-            @include mq('t-768', 'max') {
+            @include mq("t-768", "max") {
               font-size: 12px;
               line-height: 14px;
             }
@@ -263,19 +263,19 @@ footer{
       }
     }
 
-    .social-menu{
-      ul{
+    .social-menu {
+      ul {
         display: flex;
-        li{
+        li {
           display: inline-flex;
           align-items: center;
-          &:not(:last-child){
+          &:not(:last-child) {
             padding-right: 24px;
             @include mq(t-768, max) {
               padding-right: 40px;
             }
           }
-          a{
+          a {
             display: inline-flex;
           }
         }
@@ -397,92 +397,100 @@ footer{
 //     max-width: 100%!important;
 // }
 #can_embed_form_inner h2,
-    #can_embed_form_inner h4{
-        display: none;
-    }
-    .can_embed #can_embed_form a,
-    .can_embed #donate_auto_modal a {
-        color: white;
-    }
-
-    /* Heading colors */
-    .can_embed #can_embed_form h1,
-    .can_embed #donate_auto_modal h1,
-    .can_embed #can_embed_form h2,
-    .can_embed #donate_auto_modal h2,
-    .can_embed #can_embed_form h3,
-    .can_embed #donate_auto_modal h3,
-    .can_embed #can_embed_form h4,
-    .can_embed #donate_auto_modal h4,
-    .can_embed #can_embed_form h5,
-    .can_embed #donate_auto_modal h5,
-    .can_embed #can_embed_form h6,
-    .can_embed #donate_auto_modal h6 {
-        color: red !important;
-    }
-
-    /* Welcome message background color */
-    .can_embed #can_embed_form #action_welcome_message #action_welcome_message_inner,
-    .can_embed #donate_auto_modal #action_welcome_message #action_welcome_message_inner {
-        background-color: rgba(0,0,0,.10) !important;
-    }
-
-    .can_embed #logo_wrap {
-        display: none !important;
-    }
-
-    /* Thank You Page Header Background Color */
-    .can_embed #can_embed_form #can_thank_you,
-    .can_embed #donate_auto_modal #can_thank_you {
-        background-color: lightblue !important;
-    }
-
-    /* Thank You Page Header Text Color */
-    .can_embed #can_embed_form #can_thank_you,
-    .can_embed #donate_auto_modal #can_thank_you,
-    .can_embed #can_embed_form #can_thank_you h1,
-    .can_embed #donate_auto_modal #can_thank_you h1,
-    .can_embed #can_embed_form #can_thank_you h4,
-    .can_embed #donate_auto_modal #can_thank_you h4,
-    .can_embed #can_embed_form #can_thank_you #action_info .action_info_user,
-    .can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user,
-    .can_embed #can_embed_form #can_thank_you #action_info .action_info_user a,
-    .can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user a {
-        color: black !important;
-    }
-
-    /* Thank You Page Divider Line */
-    .can_embed #can_embed_form #can_thank_you #action_info,
-    .can_embed #donate_auto_modal #can_thank_you #action_info {
-        border-color: black !important;
-    }
-
-#can_embed_form, #donate_auto_modal,
-#donate_make_recurring_modal {
-  padding: 0!important;
-  border: none!important;
-  color: #434343!important;
-  font-size: 16px!important;
-  line-height: 30px!important;
-  font-family: helvetica,Arial,sans-serif!important;
-  font-weight: 400!important;
-  outline: none!important;
-  background-color: transparent !important;
-  width: 100%!important;
-  max-width: 100%!important;
-  box-sizing: border-box!important;
+#can_embed_form_inner h4 {
+  display: none;
+}
+.can_embed #can_embed_form a,
+.can_embed #donate_auto_modal a {
+  color: white;
 }
 
-#can_embed_form.can_float #form_col1, #can_embed_form.can_float #form_col2{
+/* Heading colors */
+.can_embed #can_embed_form h1,
+.can_embed #donate_auto_modal h1,
+.can_embed #can_embed_form h2,
+.can_embed #donate_auto_modal h2,
+.can_embed #can_embed_form h3,
+.can_embed #donate_auto_modal h3,
+.can_embed #can_embed_form h4,
+.can_embed #donate_auto_modal h4,
+.can_embed #can_embed_form h5,
+.can_embed #donate_auto_modal h5,
+.can_embed #can_embed_form h6,
+.can_embed #donate_auto_modal h6 {
+  color: red !important;
+}
+
+/* Welcome message background color */
+.can_embed
+  #can_embed_form
+  #action_welcome_message
+  #action_welcome_message_inner,
+.can_embed
+  #donate_auto_modal
+  #action_welcome_message
+  #action_welcome_message_inner {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.can_embed #logo_wrap {
+  display: none !important;
+}
+
+/* Thank You Page Header Background Color */
+.can_embed #can_embed_form #can_thank_you,
+.can_embed #donate_auto_modal #can_thank_you {
+  background-color: #fc0 !important;
+}
+
+/* Thank You Page Header Text Color */
+.can_embed #can_embed_form #can_thank_you,
+.can_embed #donate_auto_modal #can_thank_you,
+.can_embed #can_embed_form #can_thank_you h1,
+.can_embed #donate_auto_modal #can_thank_you h1,
+.can_embed #can_embed_form #can_thank_you h4,
+.can_embed #donate_auto_modal #can_thank_you h4,
+.can_embed #can_embed_form #can_thank_you #action_info .action_info_user,
+.can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user,
+.can_embed #can_embed_form #can_thank_you #action_info .action_info_user a,
+.can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user a {
+  color: black !important;
+}
+
+/* Thank You Page Divider Line */
+.can_embed #can_embed_form #can_thank_you #action_info,
+.can_embed #donate_auto_modal #can_thank_you #action_info {
+  border-color: black !important;
+}
+
+#can_embed_form,
+#donate_auto_modal,
+#donate_make_recurring_modal {
+  padding: 0 !important;
+  border: none !important;
+  color: #434343 !important;
+  font-size: 16px !important;
+  line-height: 30px !important;
+  font-family: helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  outline: none !important;
+  background-color: transparent !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#can_embed_form.can_float #form_col1,
+#can_embed_form.can_float #form_col2 {
   width: 100% !important;
 }
 
-#can_embed_form input[type=text],
-#can_embed_form input[type=password],
-#can_embed_form input[type=url],
-#can_embed_form input[type=email],
-#can_embed_form input[type=tel],
-#can_embed_form input[type=number] {
+#can_embed_form input[type="text"],
+#can_embed_form input[type="password"],
+#can_embed_form input[type="url"],
+#can_embed_form input[type="email"],
+#can_embed_form input[type="tel"],
+#can_embed_form input[type="number"] {
   color: $brand-white !important;
   width: 100% !important;
   padding: 10px 15px !important;
@@ -502,22 +510,21 @@ footer{
   margin-bottom: 25px !important;
 }
 
-#can_embed_form input[type=text]:focus,
-#can_embed_form input[type=password]:focus,
-#can_embed_form input[type=url]:focus,
-#can_embed_form input[type=email]:focus,
-#can_embed_form input[type=tel]:focus,
-#can_embed_form input[type=number]:focus {
-  border-color: #FFCC00 !important;
+#can_embed_form input[type="text"]:focus,
+#can_embed_form input[type="password"]:focus,
+#can_embed_form input[type="url"]:focus,
+#can_embed_form input[type="email"]:focus,
+#can_embed_form input[type="tel"]:focus,
+#can_embed_form input[type="number"]:focus {
+  border-color: #ffcc00 !important;
 }
 
-
 .can_button,
-#donate_auto_modal input[type=submit],
+#donate_auto_modal input[type="submit"],
 #donate_auto_modal .button,
-#donate_make_recurring_modal input[type=submit],
+#donate_make_recurring_modal input[type="submit"],
 #donate_make_recurring_modal .button,
-#can_embed_form input[type=submit],
+#can_embed_form input[type="submit"],
 #can_embed_form .button {
   font-size: 20px !important;
   padding: 12px 0 !important;
@@ -525,7 +532,7 @@ footer{
   line-height: 1 !important;
   border: 3px solid !important;
   display: inline-block !important;
-  transition: all .3s !important;
+  transition: all 0.3s !important;
   cursor: pointer !important;
   background: $brand-primary !important;
   border-color: $brand-primary !important;
@@ -536,26 +543,26 @@ footer{
   text-transform: uppercase !important;
   appearance: none !important;
   -webkit-appearance: none !important;
-
 }
 
 .can_button:hover,
-#donate_auto_modal input[type=submit]:hover,
+#donate_auto_modal input[type="submit"]:hover,
 #donate_auto_modal .button:hover,
-#donate_make_recurring_modal input[type=submit]:hover,
+#donate_make_recurring_modal input[type="submit"]:hover,
 #donate_make_recurring_modal .button:hover,
-#can_embed_form input[type=submit]:hover,
+#can_embed_form input[type="submit"]:hover,
 #can_embed_form .button:hover {
   background: $brand-black !important;
 }
 
 #can_embed_form .floatlabel-wrapper .floatlabel-label-active {
   top: -17px !important;
-  color: #FFCC00 !important;
+  color: #ffcc00 !important;
 }
 
-#can_embed_form .floatlabel-wrapper .floatlabel-label.floatlabel-label-focus, #can_embed_form #action_info .action_info_user a:hover {
-  color: #FFCC00 !important;
+#can_embed_form .floatlabel-wrapper .floatlabel-label.floatlabel-label-focus,
+#can_embed_form #action_info .action_info_user a:hover {
+  color: #ffcc00 !important;
 }
 
 #can_embed_form_inner * {
@@ -563,7 +570,7 @@ footer{
 }
 
 #can_embed_form:not(.full) #action_info {
-  margin-top: 10px!important;
+  margin-top: 10px !important;
   margin-bottom: 20px !important;
 }
 
