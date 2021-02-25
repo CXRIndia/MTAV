@@ -84,7 +84,7 @@
     h1 {
       font-size: 40px;
       line-height: 44px;
-      @include mq("t-992", "max") {
+      @include mq("t-1200", "max") {
         font-size: 32px;
         line-height: 37px;
       }
