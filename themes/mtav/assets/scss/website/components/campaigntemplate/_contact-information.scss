@@ -2,9 +2,15 @@
   padding: 80px 0;
   .conatctinfo-wrapper{
     display: flex;
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
     .content-block{
       padding-right: 27.5px;
       width: 50%;
+      @media(max-width: 767px){
+        width: 100%;
+      }
     }
     .heading-compo{
 
@@ -24,6 +30,9 @@
       width: 50%;
       background: #000;
       padding: 30px;
+      @media(max-width: 767px){
+        width: 100%;
+      }
     }
   }
 
