@@ -50,7 +50,7 @@ if(!empty($players_ids)) :
                     </div>
                 </div>
 
-                <h1 class="title">Players</h1>
+                <h1 class="title">ROSTER</h1>
             </div>
 
             <div class="players-wrapper">
