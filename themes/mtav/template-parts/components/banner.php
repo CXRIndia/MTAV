@@ -13,6 +13,7 @@
 $page_id                    = get_the_ID();
 $mtav_banner_fields         =   get_fields($page_id);
 $top_banner_data            = $mtav_banner_fields['top_banner_settings'];
+$check_for_banner_image     = $top_banner_data['check_for_banner_image'];
 $mtav_banner_image_id       = $top_banner_data['banner_background_image'];
 $mtav_banner_title          = $top_banner_data['banner_title'];
 $mtav_banner_subtitle       = $top_banner_data['banner_subtitle'];
@@ -46,6 +47,7 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
     });
 </script>
 
+<?php if($check_for_banner_image == true) : ?>
 <div id="bannerImage" class="banner">
     <div class="inner-wrapper">
         <div class="container">
@@ -93,3 +95,4 @@ if ($mtav_mob_banner_image_id && !empty($mtav_mob_banner_image_id)) {
         </div>
     </div>
 </div>
+<?php endif;?>
