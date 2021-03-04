@@ -31,40 +31,13 @@ acf_add_local_field_group(
             'layout' => 'block',
             'sub_fields' => array(
                 array(
-                    'key' => 'field_6040c83b8a938',
-                    'label' => 'Check for Banner Image',
-                    'name' => 'check_for_banner_image',
-                    'type' => 'true_false',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'message' => '',
-                    'default_value' => 1,
-                    'ui' => 0,
-                    'ui_on_text' => '',
-                    'ui_off_text' => '',
-                ),
-                array(
                     'key' => 'field_601beeae0a76e',
                     'label' => 'Desktop Banner Background Image',
                     'name' => 'banner_background_image',
                     'type' => 'image',
                     'instructions' => '',
                     'required' => 0,
-                    'conditional_logic' => array(
-                        array(
-                            array(
-                                'field' => 'field_6040c83b8a938',
-                                'operator' => '==',
-                                'value' => '1',
-                            ),
-                        ),
-                    ),
+                    'conditional_logic' => 0,
                     'wrapper' => array(
                         'width' => '',
                         'class' => '',
@@ -88,15 +61,7 @@ acf_add_local_field_group(
                     'type' => 'image',
                     'instructions' => '',
                     'required' => 0,
-                    'conditional_logic' => array(
-                        array(
-                            array(
-                                'field' => 'field_6040c83b8a938',
-                                'operator' => '==',
-                                'value' => '1',
-                            ),
-                        ),
-                    ),
+                    'conditional_logic' => 0,
                     'wrapper' => array(
                         'width' => '',
                         'class' => '',
@@ -144,15 +109,7 @@ acf_add_local_field_group(
                     'type' => 'wysiwyg',
                     'instructions' => '',
                     'required' => 0,
-                    'conditional_logic' => array(
-                        array(
-                            array(
-                                'field' => 'field_6040c83b8a938',
-                                'operator' => '==',
-                                'value' => '1',
-                            ),
-                        ),
-                    ),
+                    'conditional_logic' => 0,
                     'wrapper' => array(
                         'width' => '',
                         'class' => '',
@@ -171,15 +128,7 @@ acf_add_local_field_group(
                     'type' => 'text',
                     'instructions' => '',
                     'required' => 0,
-                    'conditional_logic' => array(
-                        array(
-                            array(
-                                'field' => 'field_6040c83b8a938',
-                                'operator' => '==',
-                                'value' => '1',
-                            ),
-                        ),
-                    ),
+                    'conditional_logic' => 0,
                     'wrapper' => array(
                         'width' => '',
                         'class' => '',
@@ -198,15 +147,7 @@ acf_add_local_field_group(
                     'type' => 'wysiwyg',
                     'instructions' => '',
                     'required' => 0,
-                    'conditional_logic' => array(
-                        array(
-                            array(
-                                'field' => 'field_6040c83b8a938',
-                                'operator' => '==',
-                                'value' => '1',
-                            ),
-                        ),
-                    ),
+                    'conditional_logic' => 0,
                     'wrapper' => array(
                         'width' => '',
                         'class' => '',
