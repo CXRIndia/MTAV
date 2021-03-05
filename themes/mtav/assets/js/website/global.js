@@ -1,7 +1,6 @@
 import "lazysizes";
 
 import AOS from "aos";
-// import 'aos/dist/aos.css';
 
 import "../website/contact-form";
 
@@ -9,7 +8,7 @@ window.lazySizesConfig = window.lazySizesConfig || {};
 window.lazySizesConfig.loadMode = 1;
 
 (function ($) {
-  //// START : Mobile Menu Modal
+
   $(".js-menuopen").on("click", function () {
     $(".mobile-menu").fadeIn();
     $("body").addClass("modal-open");
@@ -21,9 +20,7 @@ window.lazySizesConfig.loadMode = 1;
     $("body").removeClass("modal-open");
     $("html").removeClass("modal-open");
   });
-  //// END : Mobile Menu Modal
 
-  //// START : Full Video Popup
   $(".js-fullvideo").on("click", function () {
     $(".fullvideo-popup").fadeIn();
     $("body").addClass("modal-open");
@@ -36,7 +33,6 @@ window.lazySizesConfig.loadMode = 1;
     $("html").removeClass("modal-open");
     $("iframe").attr("src", $("iframe").attr("src"));
   });
-  //// END : Full Video Popup
 
   $(window).load(function () {
     AOS.init();

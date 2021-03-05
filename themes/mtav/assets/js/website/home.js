@@ -4,7 +4,6 @@ import "animation.gsap";
 import "debug.addIndicators";
 
 import Swiper, { Navigation } from "swiper";
-// configure Swiper to use modules
 Swiper.use([Navigation]);
 
 require("../../scss/website/components/mtav-swiper.scss");
@@ -12,7 +11,6 @@ require("../../scss/website/components/mtav-swiper.scss");
 require("../../scss/website/home-page.scss");
 
 (function ($) {
-  console.log("Home js");
 
   $(window).load(function () {
     $("#overlay").fadeOut();
@@ -24,8 +22,6 @@ require("../../scss/website/home-page.scss");
 
   $(window).scroll(function () {
     var sc = $(window).scrollTop();
-    // console.log("Scroll", sc);
-    // console.log("window offset", offset)
 
     if ($(window).scrollTop() > offset + 900) {
       $("header").fadeIn();
@@ -34,16 +30,13 @@ require("../../scss/website/home-page.scss");
     }
   });
 
-  // START : Home By The NUmber Js
   var swiper = new Swiper(".bythenumber-slider", {
     navigation: {
       nextEl: ".bythenumber-next",
       prevEl: ".bythenumber-prev",
     },
   });
-  // END : Home By The NUmber Js
 
-  // START : Home Hand Banner Js
   var controller = new ScrollMagic.Controller();
   var wipeAnimation = new TimelineMax();
 
@@ -54,14 +47,10 @@ require("../../scss/website/home-page.scss");
   })
     .setPin(".js-handanimation")
     .setTween(wipeAnimation)
-    // .addIndicators({name: "1 (duration: 7000)"})
     .addTo(controller);
 
   let wwidth = $(window).width();
-  console.log(wwidth);
   if (wwidth > 1024) {
-    console.log("Hand Animation Desktop");
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand1-wrapper", 0.5, {
@@ -74,7 +63,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand3-wrapper", 0.5, {
@@ -89,7 +77,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand5-wrapper", 0.5, {
@@ -109,7 +96,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand1-wrapper", 0.3, {
@@ -142,8 +128,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
   } else if (wwidth > 767) {
-    console.log("Hand Animation Tablet");
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand1-wrapper", 0.5, {
@@ -156,7 +140,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand3-wrapper", 0.5, {
@@ -171,7 +154,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand5-wrapper", 0.5, {
@@ -191,7 +173,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand1-wrapper", 0.3, {
@@ -224,8 +205,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
   } else {
-    console.log("Hand Animation Mobile");
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand1-wrapper", 0.5, {
@@ -238,7 +217,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand3-wrapper", 0.5, {
@@ -253,7 +231,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand5-wrapper", 0.5, {
@@ -273,7 +250,6 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
 
-    //Timeinterval for animation delay
     wipeAnimation.add([TweenMax.to(".dummy", 0.2, {})]);
     wipeAnimation.add([
       TweenMax.to(".hand1-wrapper", 0.3, {
@@ -306,5 +282,4 @@ require("../../scss/website/home-page.scss");
       }),
     ]);
   }
-  // END : Home Hand Banner Js
 })(jQuery);
