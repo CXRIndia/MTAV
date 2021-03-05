@@ -35,6 +35,7 @@ window.lazySizesConfig.loadMode = 1;
     $("body").removeClass("modal-open");
     $("html").removeClass("modal-open");
     $("iframe").attr("src", $("iframe").attr("src"));
+    $("iframe").attr("data-src", $("iframe").attr("data-src"));
   });
   //// END : Full Video Popup
 
