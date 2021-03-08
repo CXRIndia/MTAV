@@ -31,7 +31,7 @@ window.lazySizesConfig.loadMode = 1;
     $(".fullvideo-popup").fadeOut();
     $("body").removeClass("modal-open");
     $("html").removeClass("modal-open");
-    $("iframe").attr("src", $("iframe").attr("src"));
+    $("iframe").attr("src", $("iframe").attr("data-src"));
   });
 
   $(window).load(function () {

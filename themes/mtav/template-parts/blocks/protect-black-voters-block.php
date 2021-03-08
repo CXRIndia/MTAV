@@ -21,7 +21,8 @@
         </a>
     </div>
     <div class="popup-body">
-        <iframe src="<?php echo esc_url(MTAV_Get_Youtube_Video_url($video_url));?>"
+        <iframe data-src="<?php echo esc_url(MTAV_Get_Youtube_Video_url($video_url));?>"
+            class="lazyload"
             frameborder="0"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
